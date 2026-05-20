@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ZX Spectrum Харків 128К Rev 3.0 | Конструктор ретро комп'ютера</title>
+    <meta name="description" content="Харків 128К Rev 3.0 — український клон ZX Spectrum на DRAM 16РУ5. AY звук, VGA/SCART, USB клавіатура, NEMOBUS. Конструктор для збірки.">
+    <meta name="keywords" content="Харків 128К, ZX Spectrum, 16РУ5, DRAM, конструктор спектрум, Garage 42, ZX DIY, NEMOBUS">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ZX Spectrum Харків 128К Rev 3.0">
+    <meta property="og:description" content="Класичний клон ZX Spectrum на динамічній пам’яті 16РУ5. Сучасні інтерфейси та повна сумісність.">
+    <meta property="og:image" content="../img/kharkov/1.webp">
+    <meta property="og:type" content="product">
+
+    <link rel="canonical" href="https://garage42.neocities.org/html/kharkiv-128-rev3.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="../index.html"><h1>ZX SPECTRUM GARAGE №42</h1></a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">← До каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/kharkov/1.webp" alt="Харків 128К Rev 3.0" itemprop="image">
+            </div>
+
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/kharkov/1.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/2.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/3.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/7.jpg" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 itemprop="name">Харків 128К Rev 3.0 (конструктор)</h1>
+            <div class="sku">SKU: ZX-001</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+
+                <table class="spec-table">
+                    <tr><td>CPU</td><td>Z80A @ 3.5 MHz</td></tr>
+                    <tr><td>RAM</td><td>128K DRAM (16РУ5)</td></tr>
+                    <tr><td>Звук</td><td>AY-3-8910 / YM2149</td></tr>
+                    <tr><td>Відео</td><td>VGA / SCART / RCA / S-Video</td></tr>
+                    <tr><td>Кодер</td><td>AD725</td></tr>
+                    <tr><td>Інтерфейси</td><td>2× NEMOBUS, EDGE</td></tr>
+                    <tr><td>Клавіатура</td><td>USB (RP2040-Zero)</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="4150">4 150</span>
+                    <span itemprop="priceCurrency">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock">
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-001','Харків 128К Rev 3.0')" class="btn-action">
+                Замовити
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 LOAD "INFO"</h2>
+
+        <div class="text-content" itemprop="description">
+
+            <strong>Харків 128К Rev 3.0</strong> — сучасна ревізія класичного українського клону ZX Spectrum.  
+            Плата зберігає оригінальну архітектуру та використовує динамічну пам’ять на мікросхемах <strong>16РУ5</strong>, що забезпечує максимальну сумісність із класичним софтом.  
+            <br><br>
+
+            У третій ревізії виправлено більшість помилок попередніх версій. Незначні неточності на платі присутні, але легко усуваються — у комплекті є повна документація.  
+            <br><br>
+
+            Плата протестована з <strong>DivMMC</strong> через шину <strong>NEMOBUS</strong>.  
+            <br><br>
+
+            Вбудовані можливості:
+            <br>
+            • USB-клавіатура (RP2040-Zero)  
+            • VGA, SCART, RCA, S-Video  
+            • відеокодер AD725  
+            • аудіовихід 3.5 мм  
+            • підтримка AY  
+            • 2× NEMOBUS + EDGE  
+            <br><br>
+
+            У комплект входить:
+            <br>
+            • друкована плата  
+            • всі мікросхеми та логіка  
+            • прошита ПЗП  
+            • пасивні компоненти  
+            <br><br>
+
+            Підійде як для досвідчених, так і для першої збірки ZX Spectrum.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description">
+        <h2>20 REM "Q&A"</h2>
+
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Ваше питання..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-001')">
+                Надіслати
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="">
+</div>
+
+<script src="../js/card.js"></script>
+
+</body>
+</html>

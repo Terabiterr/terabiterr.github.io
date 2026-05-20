@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO ТИТАН: ОСНОВНІ МЕТА-ТЕГИ -->
+    <title>ZX Spectrum Харків 128кб | Купити легендарний конструктор Rev 3.0</title>
+    <meta name="description" content="Повна картка товару ZX Spectrum Харків 128кб: історія, технічні характеристики, комплектація та ціна. Замовляйте ретро-комп'ютери в Україні від Garage №42.">
+    <meta name="keywords" content="ZX Spectrum, Харків 128кб, купити ZX Spectrum, ретро комп'ютер, конструктор Z80, Garage 42, Україна">
+    
+    <!-- Соціальні мережі (Open Graph) -->
+    <meta property="og:title" content="ZX Spectrum Харків 128кб - Конструктор Rev 3.0">
+    <meta property="og:description" content="Відкрий світ ретро-комп'ютинг з Garage №42. Легендарний Харків 128кб доступний для збірки.">
+    <meta property="og:image" content="../img/kharkov/1.webp">
+    <meta property="og:type" content="product">
+    
+    <link rel="canonical" href="https://garage42.neocities.org/html/kharkov-128.html">
+    <link rel="stylesheet" href="../css/index.css">
+    
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;"><h1>ZX SPECTRUM GARAGE №42</h1></a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися на головну</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/kharkov/1.webp" alt="ZX Spectrum Харків 128кб - Конструктор" itemprop="image">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/kharkov/1.webp" alt="Вигляд плати" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/2.webp" alt="Компоненти" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/3.webp" alt="Збірка" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/7.jpg" alt="Готовий пристрій" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- КУПІВЛЯ -->
+        <div class="info-section">
+            <h1 class="product-h1" itemprop="name">ХАРКІВ 128КБ [REV 3.0]</h1>
+            <div class="sku">SKU: ZX-001 | СТАН: НОВИЙ</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <table class="spec-table">
+                    <tr><td class="label">Архітектура</td><td class="val">Z80A / 128K SRAM</td></tr>
+                    <tr><td class="label">Звук</td><td class="val">Yamaha YM2149F</td></tr>
+                    <tr><td class="label">Відео</td><td class="val">PAL/RGB (AD725)</td></tr>
+                    <tr><td class="label">Гарантія</td><td class="val">12 місяців</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="4150">4 150</span> 
+                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                </div>
+                <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-001', 'Харків 128КБ')" class="btn-action">
+                ЗАМОВИТИ В TELEGRAM
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 LOAD "ОПИС ТОВАРУ"</h2>
+        <div class="text-content" itemprop="description">
+            <strong>Харків 128кб</strong> — це втілення класики в сучасному виконанні. Ревізія 3.0 розроблена в <strong>Garage №42</strong> спеціально для тих, хто цінує автентичність без технічних проблем минулого. Завдяки використанню статичної пам'яті (SRAM), ви отримуєте ідеальну картинку без перешкод. <br><br>
+            Це повний конструктор (DIY Kit) для самостійної збірки. У набір входить якісна друкована плата, усі необхідні мікросхеми, роз'єми та пасивні елементи. Кожна плата проходить контроль якості перед відправкою з Харкова.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "ВІДГУКИ"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Напишіть ваше запитання або відгук..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-001')">Відправити на модерацію</button>
+        </div>
+
+        <div id="comments-display" style="margin-top: 20px;">
+            <div class="comment-item">
+                <span class="comment-user">@Admin_Garage42:</span>
+                <p style="font-size: 12px; margin-top: 5px;">Дякуємо за інтерес! Ревізія 3.0 вже в наявності та готова до відправки.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+<script src="../js/card.js"></script>
+</body>
+</html>

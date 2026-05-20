@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Kharkiv 128 Rev 2 -->
+    <title>Харків 128 Rev 2 (Зібраний) | ZX Spectrum 128K клон</title>
+    <meta name="description" content="ZX Spectrum Харків 128 Rev 2 — зібраний та протестований клон 128K. AY звук, стабільна робота, готовий до використання.">
+    <meta name="keywords" content="Харків 128 Rev 2, ZX Spectrum 128K, Spectrum Харків купити, AY звук, ретро комп'ютер">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Харків 128 — баланс ціни і можливостей">
+    <meta property="og:description" content="128К пам’яті, AY звук, вже зібраний і готовий до роботи.">
+    <meta property="og:image" content="../img/kharkov/4.webp">
+    <meta property="og:type" content="product">
+    
+    <link rel="canonical" href="https://garage42.neocities.org/html/kharkiv-128-rev2-assembled.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+        
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/kharkov/4.webp" alt="Харків 128 Rev 2 зібраний" itemprop="image">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/kharkov/4.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/4.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/5.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/kharkov/6.webp" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 class="product-h1" itemprop="name">Харків 128 Rev 2.0 (Зібраний)</h1>
+            <div class="sku">SKU: ZX-012 | СТАН: ГОТОВИЙ ДО РОБОТИ</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <table class="spec-table">
+                    <tr><td class="label">Тип</td><td class="val">ZX Spectrum 128K клон</td></tr>
+                    <tr><td class="label">Пам'ять</td><td class="val">128 KB RAM</td></tr>
+                    <tr><td class="label">Процесор</td><td class="val">Z80 (або аналог)</td></tr>
+                    <tr><td class="label">Звук</td><td class="val">AY-3-8912 + Buzzer</td></tr>
+                    <tr><td class="label">Відео</td><td class="val">Композит / можливий RGB мод</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="3950">3950</span> 
+                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-012', 'Kharkiv 128 Rev2 Assembled')" class="btn-action">
+                ЗАМОВИТИ В TELEGRAM
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 LOAD "KHARKIV EXPERIENCE"</h2>
+        <div class="text-content" itemprop="description">
+            <strong>Харків 128 Rev 2</strong> — це збалансований клон ZX Spectrum 128K, який поєднує розширені можливості та надійність у повністю готовому до роботи форматі.<br><br>
+
+            Пристрій вже <strong>зібраний і протестований</strong>, тому ви можете одразу почати користуватись без пайки чи налаштувань.<br><br>
+
+            Завдяки <strong>128 KB пам’яті</strong> та наявності <strong>AY звуку</strong>, відкривається доступ до більш просунутих ігор, демо та програм, недоступних для 48K моделей.<br><br>
+
+            Rev 2 версія відома більш стабільною роботою та вдосконаленою схемотехнікою у порівнянні з ранніми варіантами.<br><br>
+
+            Це ідеальний вибір для:
+            • тих, хто хоче більше, ніж 48K<br>
+            • стабільного щоденного використання<br>
+            • входу в світ 128K Spectrum без переплати<br><br>
+
+            Золота середина між простими клонами та топовими рішеннями.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "ПИТАННЯ ТА ПІДКЛЮЧЕННЯ"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Запитайте про відео вихід або сумісність..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-012')">
+                Написати в Garage №42
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+
+<script src="../js/card.js"></script>
+</body>
+</html>

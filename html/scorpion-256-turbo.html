@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Scorpion 256 Turbo -->
+    <title>Scorpion 256 Turbo+ & SMUK2 | ZX Spectrum плати</title>
+    <meta name="description" content="Scorpion 256 Turbo+ — потужний ZX Spectrum сумісний клон з розширеною пам'яттю та швидкодією. Плати SMUK2 у комплекті.">
+    <meta name="keywords" content="Scorpion 256 Turbo, ZX Spectrum 256K, SMUK2, Spectrum клон плата, ретро комп'ютер">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Scorpion 256 — Turbo рівень Spectrum">
+    <meta property="og:description" content="256K, швидкість, розширення. Для просунутих систем.">
+    <meta property="og:image" content="../img/scorpion/1.png">
+    <meta property="og:type" content="product">
+    
+    <link rel="canonical" href="https://garage42.neocities.org/html/scorpion-256-turbo.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+        
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/scorpion/1.jpg" alt="Scorpion 256 Turbo плата" itemprop="image">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/scorpion/1.jpg" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/scorpion/1.jpg" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/scorpion/2.jpg" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 class="product-h1" itemprop="name">Scorpion 256 Turbo+ / SMUK2</h1>
+            <div class="sku">SKU: ZX-016 | СТАН: ПЛАТИ</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <table class="spec-table">
+                    <tr><td class="label">Тип</td><td class="val">ZX Spectrum сумісний клон</td></tr>
+                    <tr><td class="label">Пам'ять</td><td class="val">256 KB RAM</td></tr>
+                    <tr><td class="label">Рівень</td><td class="val">Turbo / розширений</td></tr>
+                    <tr><td class="label">Сумісність</td><td class="val">ZX Spectrum 128/256</td></tr>
+                    <tr><td class="label">Комплект</td><td class="val">SMUK2 плати</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="1000">1000</span> 
+                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-016', 'Scorpion 256 Turbo')" class="btn-action">
+                ЗАМОВИТИ В TELEGRAM
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 FAST "TURBO MODE ENABLED"</h2>
+        <div class="text-content" itemprop="description">
+            <strong>Scorpion 256 Turbo+</strong> — це розширений ZX Spectrum-сумісний клас пристроїв, створений для підвищеної продуктивності та роботи з великими демо і програмами.<br><br>
+
+            Завдяки <strong>256 KB пам’яті</strong> система відкриває доступ до розширених сценаріїв використання, які недоступні на класичних 48K/128K конфігураціях.<br><br>
+
+            Плати <strong>SMUK2</strong> входять у комплект і забезпечують додаткову функціональність та стабільність системи.<br><br>
+
+            Цей рівень обладнання орієнтований на:
+            • просунутих ентузіастів<br>
+            • розробку складних демо<br>
+            • експерименти з розширеннями ZX-архітектури<br><br>
+
+            Scorpion — це вже не класика. Це швидкість і масштаб.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "ПИТАННЯ ПО TURBO"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Запитайте про сумісність або SMUK2..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-016')">
+                Написати в Garage №42
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+
+<script src="../js/card.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Головна -->
+  <url>
+    <loc>https://garage42.neocities.org/</loc>
+  </url>
+
+  <!-- Товари -->
+  <url>
+    <loc>https://garage42.neocities.org/html/divmmc-microdrv.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/kharkiv-128-rev3.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/picard-wifi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/harlequin-128.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/pentagon-128.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/leningrad-48.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/turbosound-kempston.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/lviv-48.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/usb-keyboard-rp2040.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/murmulator-hdmi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/leningrad-48-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/harlequin-128-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/kharkiv-128-rev2-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/pentagon-128-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/kharkiv-128-rev3-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/zx-evolution-cs2.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/scorpion-256-turbo.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/aurora-elka.html</loc>
+  </url>
+  
+    <url>
+    <loc>https://garage42.neocities.org/html/leningrad_clear</loc>
+  </url>
+      <url>
+    <loc>https://garage42.neocities.org/html/books_zx</loc>
+  </url>
+
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Головна -->
+  <url>
+    <loc>https://garage42.neocities.org/</loc>
+  </url>
+
+  <!-- Товари -->
+  <url>
+    <loc>https://garage42.neocities.org/html/divmmc-microdrv.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/kharkiv-128-rev3.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/picard-wifi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/harlequin-128.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/pentagon-128.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/leningrad-48.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/turbosound-kempston.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/lviv-48.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/usb-keyboard-rp2040.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/murmulator-hdmi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/leningrad-48-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/harlequin-128-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/kharkiv-128-rev2-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/pentagon-128-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/kharkiv-128-rev3-assembled.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/zx-evolution-cs2.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/scorpion-256-turbo.html</loc>
+  </url>
+
+  <url>
+    <loc>https://garage42.neocities.org/html/aurora-elka.html</loc>
+  </url>
+  
+    <url>
+    <loc>https://garage42.neocities.org/html/leningrad_clear</loc>
+  </url>
+      <url>
+    <loc>https://garage42.neocities.org/html/books_zx</loc>
+  </url>
+
+>>>>>>> 49a4c83 (Добавлены все папки сайта)
+</urlset>

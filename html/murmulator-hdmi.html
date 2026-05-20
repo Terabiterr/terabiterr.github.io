@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Murmulator -->
+    <title>Murmulator HDMI / Type-C | Емулятор ZX Spectrum</title>
+    <meta name="description" content="Murmulator — сучасний HDMI емулятор ZX Spectrum з живленням через USB Type-C. Простий запуск ретро без пайки.">
+    <meta name="keywords" content="Murmulator, ZX Spectrum HDMI, емулятор Spectrum, RP2040 Spectrum, ретро комп'ютер HDMI">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Murmulator — Spectrum через HDMI">
+    <meta property="og:description" content="Підключи до телевізора і грай. Без пайки, без касет.">
+    <meta property="og:image" content="../img/murmulator/1.webp">
+    <meta property="og:type" content="product">
+    
+    <link rel="canonical" href="https://garage42.neocities.org/html/murmulator-hdmi.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+        
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/murmulator/1.webp" alt="Murmulator HDMI ZX Spectrum емулятор" itemprop="image">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/murmulator/1.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/murmulator/2.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/murmulator/3.webp" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 class="product-h1" itemprop="name">Murmulator HDMI / Type-C</h1>
+            <div class="sku">SKU: ZX-009 | СТАН: ОЧІКУЄТЬСЯ</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <table class="spec-table">
+                    <tr><td class="label">Тип</td><td class="val">Емулятор ZX Spectrum</td></tr>
+                    <tr><td class="label">Відео</td><td class="val">HDMI (цифровий вихід)</td></tr>
+                    <tr><td class="label">Живлення</td><td class="val">USB Type-C</td></tr>
+                    <tr><td class="label">Носії</td><td class="val">SD карта / образи</td></tr>
+                    <tr><td class="label">Керування</td><td class="val">USB клавіатура / джойстик</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="750">750</span> 
+                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/PreOrder" />
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-009', 'Murmulator HDMI')" class="btn-action">
+                ПЕРЕДЗАМОВИТИ
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 LOAD "NO CASSETTE NEEDED"</h2>
+        <div class="text-content" itemprop="description">
+            <strong>Murmulator</strong> — це сучасний спосіб отримати повноцінний ZX Spectrum без жодної пайки та складних налаштувань.<br><br>
+
+            Це <strong>емулятор</strong>, який відтворює роботу Spectrum і виводить зображення прямо через <strong>HDMI</strong>. Просто підключіть до телевізора або монітора — і ви вже в 80-х.<br><br>
+
+            Живлення здійснюється через <strong>USB Type-C</strong>, а програми запускаються з SD-карти — більше ніяких касет, шуму та довгого завантаження.<br><br>
+
+            Підтримується підключення <strong>USB-клавіатури або джойстика</strong>, що робить пристрій максимально зручним для сучасного використання.<br><br>
+
+            Це ідеальний варіант для тих, хто хоче:
+            • швидко почати грати<br>
+            • показати Spectrum на сучасному ТВ<br>
+            • не заморочуватись із залізом<br><br>
+
+            Увімкнув — і працює.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "ПЕРЕДЗАМОВЛЕННЯ"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Запитайте про дату появи або характеристики..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-009')">
+                Написати в Garage №42
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+
+<script src="../js/card.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Pentagon 128 -->
+    <title>Pentagon 128 (Зібраний) | ZX Spectrum для демосцени</title>
+    <meta name="description" content="Pentagon 128 — легендарний клон ZX Spectrum для демосцени. Зібраний, AY звук, максимальна сумісність з демо та іграми.">
+    <meta name="keywords" content="Pentagon 128, ZX Spectrum демосцена, AY звук, Spectrum 128K купити, ретро комп'ютер">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pentagon 128 — вибір демосцени">
+    <meta property="og:description" content="Правильні таймінги, AY звук і максимум сумісності.">
+    <meta property="og:image" content="../img/pentagon/4.webp">
+    <meta property="og:type" content="product">
+    
+    <link rel="canonical" href="https://garage42.neocities.org/html/pentagon-128-assembled.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+        
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/pentagon/4.webp" alt="Pentagon 128 зібраний" itemprop="image">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/pentagon/4.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/pentagon/5.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/pentagon/6.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/pentagon/7.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/pentagon/8.webp" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 class="product-h1" itemprop="name">Pentagon 128K AY (Зібраний)</h1>
+            <div class="sku">SKU: ZX-013 | СТАН: ГОТОВИЙ ДО РОБОТИ</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <table class="spec-table">
+                    <tr><td class="label">Тип</td><td class="val">ZX Spectrum 128K клон</td></tr>
+                    <tr><td class="label">Пам'ять</td><td class="val">128 KB RAM</td></tr>
+                    <tr><td class="label">Звук</td><td class="val">AY-3-8912 + Buzzer</td></tr>
+                    <tr><td class="label">Особливість</td><td class="val">Точні таймінги Pentagon</td></tr>
+                    <tr><td class="label">Відео</td><td class="val">Композит / RGB мод</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="4300">4300</span> 
+                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-013', 'Pentagon 128 Assembled')" class="btn-action">
+                ЗАМОВИТИ В TELEGRAM
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 LOAD "DEMO MODE"</h2>
+        <div class="text-content" itemprop="description">
+            <strong>Pentagon 128</strong> — це легендарний клон ZX Spectrum, який став стандартом для демосцени завдяки своїм унікальним таймінгам.<br><br>
+
+            Багато культових демо створювались саме під Pentagon, і лише на ньому вони працюють <strong>так, як задумано авторами</strong>.<br><br>
+
+            Ця версія вже <strong>зібрана і протестована</strong>, тому ви отримуєте готовий інструмент без необхідності пайки чи налаштувань.<br><br>
+
+            Оснащений <strong>AY звуком</strong>, що відкриває доступ до повноцінного музичного супроводу в іграх і демо.<br><br>
+
+            Це вибір для:
+            • демосцени та фанатів ефектів<br>
+            • максимального “правильного” Spectrum досвіду<br>
+            • колекціонерів і ентузіастів<br><br>
+
+            Якщо хочеш бачити демо так, як їх задумували — це Pentagon.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "ПИТАННЯ ПО ДЕМО"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Запитайте про сумісність з демками або іграми..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-013')">
+                Написати в Garage №42
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+
+<script src="../js/card.js"></script>
+</body>
+</html>

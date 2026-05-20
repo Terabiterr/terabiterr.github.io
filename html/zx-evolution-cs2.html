@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: ZX Evolution CS2 -->
+    <title>ZX Evolution CS2 | Модульна платформа ZX Spectrum</title>
+    <meta name="description" content="ZX Evolution CS2 — сучасна модульна платформа ZX Spectrum. Чиста плата для розширених DIY і ретро-проєктів.">
+    <meta name="keywords" content="ZX Evolution CS2, Spectrum платформа, ZX клон плата, DIY ретро комп'ютер, Spectrum expansion">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ZX Evolution CS2 — платформа без обмежень">
+    <meta property="og:description" content="Будуй свій Spectrum як хочеш. Модульна архітектура.">
+    <meta property="og:image" content="../img/zx_evo/1.png">
+    <meta property="og:type" content="product">
+    
+    <link rel="canonical" href="https://garage42.neocities.org/html/zx-evolution-cs2.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+        
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/zx_evo/1.jpg" alt="ZX Evolution CS2 плата" itemprop="image">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/zx_evo/1.jpg" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/zx_evo/2.jpg" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 class="product-h1" itemprop="name">ZX Evolution CS2</h1>
+            <div class="sku">SKU: ZX-015 | СТАН: ЧИСТА ПЛАТА</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <table class="spec-table">
+                    <tr><td class="label">Тип</td><td class="val">Модульна платформа</td></tr>
+                    <tr><td class="label">Сумісність</td><td class="val">ZX Spectrum / розширення</td></tr>
+                    <tr><td class="label">Архітектура</td><td class="val">Розширювана (modular)</td></tr>
+                    <tr><td class="label">Призначення</td><td class="val">DIY / експерименти</td></tr>
+                    <tr><td class="label">Форм-фактор</td><td class="val">Плата-конструктор</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="550">550</span> 
+                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-015', 'ZX Evolution CS2')" class="btn-action">
+                ЗАМОВИТИ В TELEGRAM
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 LET EVOLUTION = TRUE</h2>
+        <div class="text-content" itemprop="description">
+            <strong>ZX Evolution CS2</strong> — це не просто клон ZX Spectrum, а модульна платформа для створення власних ретро-систем.<br><br>
+
+            На відміну від класичних плат, тут акцент зроблено не на фіксовану конфігурацію, а на <strong>гнучкість і розширення</strong>.<br><br>
+
+            Ви можете будувати систему поступово, додаючи:
+            • відеомодулі<br>
+            • звукові розширення<br>
+            • контролери та інтерфейси<br><br>
+
+            Це ідеальне рішення для тих, хто хоче не просто “зібрати Spectrum”, а <strong>експериментувати з архітектурою</strong>.<br><br>
+
+            CS2 підходить для:
+            • DIY ентузіастів<br>
+            • розробників ретро-проєктів<br>
+            • глибокого занурення в залізо ZX-екосистеми<br><br>
+
+            Це вже не копія. Це платформа.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "ПИТАННЯ ПО АРХІТЕКТУРІ"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Запитайте про модулі або розширення..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-015')">
+                Написати в Garage №42
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+
+<script src="../js/card.js"></script>
+</body>
+</html>

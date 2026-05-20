@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Lviv 48 -->
+    <title>ZX Spectrum Львів 48КБ | Конструктор точного клона</title>
+    <meta name="description" content="ZX Spectrum Львів 48КБ — якісний клон з покращеною схемотехнікою. Конструктор для збірки власного ретро-комп'ютера. Garage №42.">
+    <meta name="keywords" content="ZX Spectrum Львів, Lviv 48, Spectrum 48K конструктор, ретро комп'ютер, DIY ZX, Garage 42">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Львів 48 — акуратний Spectrum клон">
+    <meta property="og:description" content="Якісна реалізація ZX Spectrum 48K для збірки своїми руками.">
+    <meta property="og:image" content="../img/lviv/1.webp">
+    <meta property="og:type" content="product">
+    
+    <link rel="canonical" href="https://garage42.neocities.org/html/lviv-48.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+        
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/lviv/1.webp" alt="ZX Spectrum Львів 48 конструктор" itemprop="image">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/lviv/1.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/lviv/2.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/lviv/3.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/lviv/4.webp" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 class="product-h1" itemprop="name">ZX Spectrum Львів 48КБ</h1>
+            <div class="sku">SKU: ZX-007 | СТАН: КОНСТРУКТОР</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <table class="spec-table">
+                    <tr><td class="label">Тип</td><td class="val">Клон ZX Spectrum 48K</td></tr>
+                    <tr><td class="label">Пам'ять</td><td class="val">48 KB RAM</td></tr>
+                    <tr><td class="label">Процесор</td><td class="val">Z80 (або аналог)</td></tr>
+                    <tr><td class="label">Відео</td><td class="val">Стабільний композит / RGB мод</td></tr>
+                    <tr><td class="label">Особливість</td><td class="val">Покращена схемотехніка</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="3800">3800</span> 
+                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-007', 'Lviv 48')" class="btn-action">
+                ЗАМОВИТИ В TELEGRAM
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 LOAD "ПРО ЛЬВІВ 48"</h2>
+        <div class="text-content" itemprop="description">
+            <strong>Львів 48</strong> — це один із найбільш акуратних та продуманих клонів ZX Spectrum 48K, створений з урахуванням досвіду попередніх схем. Він зберігає повну сумісність із класичним софтом, але водночас пропонує більш стабільну роботу та чистіший відеосигнал.<br><br>
+
+            Цей варіант представлений як <strong>конструктор</strong>, що дозволяє самостійно зібрати комп'ютер і отримати справжнє задоволення від процесу. Компоненти стандартні та доступні, що робить плату зручною як для досвідчених радіоаматорів, так і для тих, хто хоче прокачати навички пайки.<br><br>
+
+            У порівнянні з більш ранніми клонами, "Львів" відомий своєю надійністю та меншою кількістю “глюків”, що робить його чудовою базою для щоденного використання або колекції.<br><br>
+
+            Якщо ти шукаєш Spectrum, який просто працює — це саме він.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "ЗАПИТАННЯ ПО ЗБІРЦІ"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Запитайте про компоненти, сумісність або складність..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-007')">
+                Написати в Garage №42
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+
+<script src="../js/card.js"></script>
+</body>
+</html>

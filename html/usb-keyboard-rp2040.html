@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: USB Keyboard Converter -->
+    <title>USB → ZX Spectrum конвертер клавіатури | RP2040</title>
+    <meta name="description" content="Конвертер USB клавіатури для ZX Spectrum на RP2040. Підключайте сучасні клавіатури до ретро-комп'ютера без модифікацій.">
+    <meta name="keywords" content="ZX Spectrum USB конвертер, RP2040 keyboard adapter, USB to ZX Spectrum, Kempston keyboard, DIY Spectrum">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="USB → Spectrum — сучасна клавіатура без болю">
+    <meta property="og:description" content="Підключи будь-яку USB клавіатуру до ZX Spectrum. Просто і зручно.">
+    <meta property="og:image" content="../img/keyboard/1.webp">
+    <meta property="og:type" content="product">
+    
+    <link rel="canonical" href="https://garage42.neocities.org/html/usb-keyboard-rp2040.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+        
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/keyboard/1.webp" alt="USB до ZX Spectrum конвертер клавіатури" itemprop="image">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/keyboard/1.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/keyboard/2.webp" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/keyboard/3.webp" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 class="product-h1" itemprop="name">USB → ZX Spectrum конвертер (RP2040)</h1>
+            <div class="sku">SKU: ZX-008 | СТАН: КОНСТРУКТОР</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <table class="spec-table">
+                    <tr><td class="label">Тип</td><td class="val">Конвертер клавіатури</td></tr>
+                    <tr><td class="label">Мікроконтролер</td><td class="val">RP2040</td></tr>
+                    <tr><td class="label">Вхід</td><td class="val">USB клавіатура</td></tr>
+                    <tr><td class="label">Вихід</td><td class="val">ZX Spectrum (матриця клавіш)</td></tr>
+                    <tr><td class="label">Сумісність</td><td class="val">ZX Spectrum / клони</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="420">420</span> 
+                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-008', 'USB Keyboard Converter RP2040')" class="btn-action">
+                ЗАМОВИТИ В TELEGRAM
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 PRINT "USB → SPECTRUM READY"</h2>
+        <div class="text-content" itemprop="description">
+            <strong>USB → ZX Spectrum конвертер</strong> — це міст між сучасними клавіатурами та класичним ретро-комп'ютером.<br><br>
+
+            Плата приймає сигнал від звичайної <strong>USB-клавіатури</strong> і перетворює його у формат, зрозумілий ZX Spectrum (матриця клавіш). Це дозволяє повністю замінити рідну клавіатуру без складних модифікацій.<br><br>
+
+            Основа пристрою — <strong>RP2040</strong>, що забезпечує швидку реакцію, стабільність та можливість оновлення прошивки. Ви можете адаптувати розкладку, додати кастомні функції або оптимізувати під конкретний клон.<br><br>
+
+            Ідеальне рішення для:
+            • кастомних корпусів<br>
+            • відновлення старих Spectrum без клавіатури<br>
+            • комфортної роботи та гри<br><br>
+
+            Просто підключив — і працює.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "ПИТАННЯ ПО ПІДКЛЮЧЕННЮ"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Запитайте про підтримку клавіатур або розкладку..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-008')">
+                Написати в Garage №42
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+
+<script src="../js/card.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PiCard RP2350 для ZX Spectrum | Чисті плати + Wi-Fi Pentagon LEO</title>
+    
+    <meta name="description" content="PiCard на RP2350: DivMMC, General Sound, Kempston, Sega/Dendy. Чисті плати + Wi-Fi модуль для Pentagon LEO 1024K.">
+    <meta name="keywords" content="PiCard, RP2350, ZX Spectrum, DivMMC, General Sound, Kempston, Pentagon LEO, WiFi модуль, ретро плата">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PiCard RP2350 для ZX Spectrum">
+    <meta property="og:description" content="Універсальний інтерфейс: DivMMC, GS, Kempston, Sega/Dendy + Wi-Fi модуль.">
+    <meta property="og:image" content="../img/pentagon_leo/1.png">
+    <meta property="og:url" content="https://garage42.neocities.org/html/picard-wifi">
+    <meta property="og:type" content="product">
+
+    <link rel="canonical" href="https://garage42.neocities.org/html/picard-wifi">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="../index.html"><h1>ZX SPECTRUM GARAGE №42</h1></a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">← До каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+
+        <!-- ГАЛЕРЕЯ -->
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/pentagon_leo/2.jpg" alt="PiCard RP2350 плата" itemprop="image">
+            </div>
+
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/pentagon_leo/2.jpg" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/pentagon_leo/1.jpg" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <!-- ІНФО -->
+        <div class="info-section">
+            <h1 itemprop="name">PiCard RP2350 + Wi-Fi модуль [чисті плати]</h1>
+            <div class="sku">SKU: ZX-002</div>
+
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+
+                <table class="spec-table">
+                    <tr><td>Мікроконтролер</td><td>RP2350</td></tr>
+                    <tr><td>Функції</td><td>DivMMC / General Sound / Kempston</td></tr>
+                    <tr><td>Геймпади</td><td>Sega / Dendy</td></tr>
+                    <tr><td>Шина</td><td>NEMOBUS / сумісні</td></tr>
+                    <tr><td>Додатково</td><td>Wi-Fi плата для Pentagon LEO 1024K</td></tr>
+                    <tr><td>Тип</td><td>Чисті друковані плати (без компонентів)</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span itemprop="price" content="350">350</span>
+                    <span itemprop="priceCurrency">UAH</span>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock">
+            </div>
+
+            <a href="#" onclick="handleOrder('ZX-002','PiCard RP2350')" class="btn-action">
+                Замовити
+            </a>
+
+            <!-- ЛІНК НА WIFI -->
+            <a href="https://garage42.neocities.org/html/picard-wifi" class="btn-back" target="_blank">
+                Детально про Wi-Fi модуль →
+            </a>
+        </div>
+    </div>
+
+    <!-- ОПИС -->
+    <div class="full-description">
+        <h2>10 LOAD "PICARD"</h2>
+
+        <div class="text-content" itemprop="description">
+
+            <strong>PiCard</strong> — це сучасний багатофункціональний інтерфейс для ZX Spectrum, побудований на мікроконтролері <strong>RP2350</strong>.  
+            <br><br>
+
+            Проєкт об'єднує одразу кілька ключових розширень:
+            <br>
+            • DivMMC (робота з SD-картами)  
+            • General Sound  
+            • Kempston joystick  
+            • підтримка геймпадів Sega / Dendy  
+            <br><br>
+
+            Це універсальний "комбайн", який дозволяє отримати максимум можливостей без встановлення кількох окремих плат.  
+            <br><br>
+
+            Плата протестована в реальних конфігураціях та сумісна з сучасними розширеннями через NEMOBUS.  
+            <br><br>
+
+            У комплект входить:
+            <br>
+            • чиста плата PiCard  
+            • окрема чиста плата Wi-Fi для <strong>Pentagon LEO 1024K</strong>  
+            <br><br>
+
+            Детальний опис Wi-Fi модуля:
+            <br>
+            <a href="https://garage42.neocities.org/html/picard-wifi" target="_blank">
+                garage42.neocities.org/html/picard-wifi
+            </a>
+            <br><br>
+
+            Плати призначені для самостійної збірки та пайки.  
+            <br><br>
+
+            Ідеальний варіант для створення сучасного та максимально функціонального ZX Spectrum.
+        </div>
+    </div>
+
+    <!-- КОМЕНТАРІ -->
+    <div class="full-description">
+        <h2>20 REM "Q&A"</h2>
+
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Питайте про прошивки, сумісність або збірку..."></textarea>
+            <button class="btn-comment" onclick="submitComment('ZX-002')">
+                Надіслати
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="">
+</div>
+
+<script src="../js/card.js"></script>
+
+</body>
+</html>
