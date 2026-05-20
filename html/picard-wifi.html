@@ -5,145 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>PiCard RP2350 для ZX Spectrum | Чисті плати + Wi-Fi Pentagon LEO</title>
-    
-    <meta name="description" content="PiCard на RP2350: DivMMC, General Sound, Kempston, Sega/Dendy. Чисті плати + Wi-Fi модуль для Pentagon LEO 1024K.">
-    <meta name="keywords" content="PiCard, RP2350, ZX Spectrum, DivMMC, General Sound, Kempston, Pentagon LEO, WiFi модуль, ретро плата">
+    <meta name="description" content="PiCard на RP2350: емуляція DivMMC, General Sound, Kempston, Sega/Dendy. Набір чистих плат + Wi-Fi модуль для Pentagon LEO 1024K від Garage №42.">
+    <meta name="keywords" content="PiCard, RP2350, ZX Spectrum, DivMMC, General Sound, Kempston, Pentagon LEO, WiFi модуль, ретро плата, Garage 42">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="PiCard RP2350 для ZX Spectrum">
-    <meta property="og:description" content="Універсальний інтерфейс: DivMMC, GS, Kempston, Sega/Dendy + Wi-Fi модуль.">
-    <meta property="og:image" content="../img/pentagon_leo/1.png">
-    <meta property="og:url" content="https://garage42.neocities.org/html/picard-wifi">
+    <meta property="og:description" content="Універсальний інтерфейс: DivMMC, GS, Kempston, Sega/Dendy + Wi-Fi модуль у форматі чистих плат від Garage №42.">
+    <meta property="og:image" content="https://zxkit.com.ua/img/pentagon_leo/1.webp">
+    <meta property="og:url" content="https://zxkit.com.ua/html/picard-wifi.html">
     <meta property="og:type" content="product">
 
-    <link rel="canonical" href="https://garage42.neocities.org/html/picard-wifi">
+    <link rel="canonical" href="https://zxkit.com.ua/html/picard-wifi.html">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/card.css">
-</head>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "PiCard RP2350 + Wi-Fi модуль [чисті плати]",
+      "image": [
+        "https://zxkit.com.ua/img/pentagon_leo/1.webp"
+      ],
+      "description": "Комплект із двох чистих друкованих плат для самостійної збірки: багатофункціональний емулятор розширень PiCard на базі процесора RP2350 та мережевий Wi-Fi модуль для підключення комп'ютера Pentagon LEO 1024K.",
+      "sku": "ZX-002",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://zxkit.com.ua/html/picard-wifi.html",
+        "priceCurrency": "UAH",
+        "price": "350",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+    </script>
+</head>
 <body>
 
-<header>
+<header style="width: 100%;">
     <div class="header-inner">
-        <a href="../index.html"><h1>ZX SPECTRUM GARAGE №42</h1></a>
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
     </div>
 </header>
 
 <nav class="back-nav">
-    <a href="../index.html" class="btn-back">← До каталогу</a>
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
 </nav>
 
 <div class="container-wide">
-    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
+    <div class="product-grid">
 
-        <!-- ГАЛЕРЕЯ -->
         <div class="gallery-section">
             <div class="main-viewer" onclick="openZoom()">
-                <img id="active-img" src="../img/pentagon_leo/2.jpg" alt="PiCard RP2350 плата" itemprop="image">
+                <img id="active-img" src="../img/pentagon_leo/1.webp" alt="PiCard RP2350 чиста плата розширення">
             </div>
-
             <div class="thumbs-row">
-                <img class="thumb active" src="../img/pentagon_leo/2.jpg" onclick="updateGallery(this)">
-                <img class="thumb" src="../img/pentagon_leo/1.jpg" onclick="updateGallery(this)">
+                <img class="thumb active" src="../img/pentagon_leo/1.webp" alt="Плата інтрефейсу PiCard" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/pentagon_leo/2.webp" alt="Плата Wi-Fi модуля Pentagon LEO" onclick="updateGallery(this)">
             </div>
         </div>
 
-        <!-- ІНФО -->
         <div class="info-section">
-            <h1 itemprop="name">PiCard RP2350 + Wi-Fi модуль [чисті плати]</h1>
-            <div class="sku">SKU: ZX-002</div>
+            <h1>PiCard RP2350 + Wi-Fi модуль [чисті плати]</h1>
+            <div class="sku">SKU: ZX-002 | СТАН: ЧИСТІ ПЛАТИ</div>
 
-            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-
+            <div>
                 <table class="spec-table">
-                    <tr><td>Мікроконтролер</td><td>RP2350</td></tr>
-                    <tr><td>Функції</td><td>DivMMC / General Sound / Kempston</td></tr>
-                    <tr><td>Геймпади</td><td>Sega / Dendy</td></tr>
-                    <tr><td>Шина</td><td>NEMOBUS / сумісні</td></tr>
-                    <tr><td>Додатково</td><td>Wi-Fi плата для Pentagon LEO 1024K</td></tr>
-                    <tr><td>Тип</td><td>Чисті друковані плати (без компонентів)</td></tr>
+                    <tr><td class="label">Мікроконтролер</td><td class="val">RP2350</td></tr>
+                    <tr><td class="label">Функції</td><td class="val">DivMMC / General Sound / Kempston</td></tr>
+                    <tr><td class="label">Геймпади</td><td class="val">Sega / Dendy</td></tr>
+                    <tr><td class="label">Шина</td><td class="val">NEMOBUS / сумісні</td></tr>
+                    <tr><td class="label">Додатково</td><td class="val">Wi-Fi плата для Pentagon LEO 1024K</td></tr>
+                    <tr><td class="label">Тип</td><td class="val">Чисті друковані плати (PCB)</td></tr>
                 </table>
 
                 <div class="price-tag">
-                    <span itemprop="price" content="350">350</span>
-                    <span itemprop="priceCurrency">UAH</span>
+                    <span>350</span>
+                    <span>UAH</span>
                 </div>
-
-                <link itemprop="availability" href="https://schema.org/InStock">
             </div>
 
             <a href="#" onclick="handleOrder('ZX-002','PiCard RP2350')" class="btn-action">
-                Замовити
-            </a>
-
-            <!-- ЛІНК НА WIFI -->
-            <a href="https://garage42.neocities.org/html/picard-wifi" class="btn-back" target="_blank">
-                Детально про Wi-Fi модуль →
+                ЗАМОВИТИ В TELEGRAM
             </a>
         </div>
     </div>
 
-    <!-- ОПИС -->
     <div class="full-description">
         <h2>10 LOAD "PICARD"</h2>
-
-        <div class="text-content" itemprop="description">
-
-            <strong>PiCard</strong> — це сучасний багатофункціональний інтерфейс для ZX Spectrum, побудований на мікроконтролері <strong>RP2350</strong>.  
+        <div class="text-content">
+            <strong>PiCard</strong> — це сучасний багатофункціональний інтерфейс для ZX Spectrum, побудований на потужному мікроконтролері нового покоління <strong>RP2350</strong>.  
             <br><br>
 
-            Проєкт об'єднує одразу кілька ключових розширень:
+            Проєкт об'єднує в собі архітектуру одразу кількох ключових та дефіцитних периферійних розширень минулого:
             <br>
-            • DivMMC (робота з SD-картами)  
-            • General Sound  
-            • Kempston joystick  
-            • підтримка геймпадів Sega / Dendy  
-            <br><br>
-
-            Це універсальний "комбайн", який дозволяє отримати максимум можливостей без встановлення кількох окремих плат.  
-            <br><br>
-
-            Плата протестована в реальних конфігураціях та сумісна з сучасними розширеннями через NEMOBUS.  
-            <br><br>
-
-            У комплект входить:
+            • <strong>DivMMC</strong> (стабільна робота з SD-картами, завантаження ігор за секунди)<br>
+            • <strong>General Sound</strong> (музична плата для відтворення якісних MOD-треків)<br>
+            • <strong>Kempston joystick</strong> (класичний інтерфейс керування)<br>
+            • <strong>Геймпади Sega / Dendy</strong> (можливість прямого підключення сучасних чи ретро-пультів)<br>
             <br>
-            • чиста плата PiCard  
-            • окрема чиста плата Wi-Fi для <strong>Pentagon LEO 1024K</strong>  
-            <br><br>
 
-            Детальний опис Wi-Fi модуля:
-            <br>
-            <a href="https://garage42.neocities.org/html/picard-wifi" target="_blank">
-                garage42.neocities.org/html/picard-wifi
-            </a>
-            <br><br>
+            Це універсальний «комбайн», який дозволяє отримати максимум можливостей від комп'ютера без встановлення кількох окремих плат в обмежений простір корпусу. Плата розроблена під системний роз'єм типу **NEMOBUS** та повністю сумісна з більшістю розширених клонів Спектрума.<br><br>
 
-            Плати призначені для самостійної збірки та пайки.  
-            <br><br>
+            <strong>У комплект поставки входить:</strong><br>
+            • Чиста друкована плата основного інтерфейсу PiCard<br>
+            • Окрема чиста друкована плата сумісного Wi-Fi модуля для комп'ютера <strong>Pentagon LEO 1024K</strong><br><br>
 
-            Ідеальний варіант для створення сучасного та максимально функціонального ZX Spectrum.
+            Плати постачаються без встановлених радіокомпонентів, мають якісну паяльну маску, чітку шовкографію та призначені для самостійної збірки, монтажу та пайки досвідченими ентузіастами.
         </div>
     </div>
 
-    <!-- КОМЕНТАРІ -->
-    <div class="full-description">
-        <h2>20 REM "Q&A"</h2>
-
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>20 REM "Q&A / ДОПОМОГА ЗІ ЗБІРКОЮ"</h2>
         <div class="comment-box">
-            <textarea id="user-comment" class="comment-input" placeholder="Питайте про прошивки, сумісність або збірку..."></textarea>
+            <textarea id="user-comment" class="comment-input" placeholder="Питайте про прошивки для RP2350, список деталей для замовлення або сумісність із вашою платою..."></textarea>
             <button class="btn-comment" onclick="submitComment('ZX-002')">
-                Надіслати
+                Відправити адміну
             </button>
         </div>
     </div>
 </div>
 
 <div id="zoom-modal" onclick="this.style.display='none'">
-    <img id="zoom-img" src="">
+    <img id="zoom-img" src="" alt="Збільшене фото плати">
 </div>
 
 <script src="../js/card.js"></script>
-
 </body>
 </html>
