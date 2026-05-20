@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO ТИТАН: Harlequin 128 -->
     <title>Harlequin 128 Rev 2D | Чиста плата ZX Spectrum 128K без ULA</title>
     <meta name="description" content="Чиста плата Harlequin 128 для збірки 100% сумісного клону ZX Spectrum 128K на дискретній логіці. Купити в Україні від Garage №42.">
     <meta name="keywords" content="Harlequin 128, Арлекін Спектрум, ZX Spectrum 128K, чиста плата, DIY Spectrum, Garage 42, ретро комп'ютер">
     
-    <!-- Open Graph -->
     <meta property="og:title" content="Harlequin 128 - Чиста плата для фанатів">
     <meta property="og:description" content="Зберіть свій власний Spectrum 128K з нуля. Повна сумісність, сучасні компоненти, ідеальна картинка.">
-    <meta property="og:image" content="../img/harlequin/1.png">
+    <meta property="og:image" content="https://zxkit.com.ua/img/harlequin/1.webp">
     <meta property="og:type" content="product">
+    <meta property="og:url" content="https://zxkit.com.ua/html/harlequin-128.html">
     
-    <link rel="canonical" href="https://garage42.neocities.org/html/harlequin-128.html">
+    <link rel="canonical" href="https://zxkit.com.ua/html/harlequin-128.html">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/card.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Harlequin 128 [Rev 2D]",
+      "image": [
+        "https://zxkit.com.ua/img/harlequin/1.webp"
+      ],
+      "description": "Чиста друкована плата преміум-клону ZX Spectrum 128K. Створена на розсипній логіці серії 74HC без використання дефіцитних чипів ULA. Форм-фактор повністю сумісний з оригінальними корпусами 48K.",
+      "sku": "ZX-003",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://zxkit.com.ua/html/harlequin-128.html",
+        "priceCurrency": "UAH",
+        "price": "4200",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+    </script>
 </head>
 <body>
 
 <header style="width: 100%;">
     <div class="header-inner">
-        <a href="../index.html" style="text-decoration: none; color: inherit;"><h1>ZX SPECTRUM GARAGE №42</h1></a>
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
     </div>
 </header>
 
@@ -32,11 +54,11 @@
 </nav>
 
 <div class="container-wide">
-    <div class="product-grid" itemscope itemtype="https://schema.org/Product">
-        <!-- ГАЛЕРЕЯ -->
+    <div class="product-grid">
+        
         <div class="gallery-section">
             <div class="main-viewer" onclick="openZoom()">
-                <img id="active-img" src="../img/harlequin/1.webp" alt="Harlequin 128 чиста плата" itemprop="image">
+                <img id="active-img" src="../img/harlequin/1.webp" alt="Harlequin 128 чиста плата">
             </div>
             <div class="thumbs-row">
                 <img class="thumb active" src="../img/harlequin/1.webp" alt="Вигляд плати зверху" onclick="updateGallery(this)">
@@ -47,12 +69,11 @@
             </div>
         </div>
 
-        <!-- КУПІВЛЯ -->
         <div class="info-section">
-            <h1 class="product-h1" itemprop="name">Harlequin 128 [Rev 2D]</h1>
+            <h1 class="product-h1">Harlequin 128 [Rev 2D]</h1>
             <div class="sku">SKU: ZX-003 | СТАН: ЧИСТА ПЛАТА</div>
 
-            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <div>
                 <table class="spec-table">
                     <tr><td class="label">Тип</td><td class="val">Клон на розсипній логіці</td></tr>
                     <tr><td class="label">Пам'ять</td><td class="val">128 KB RAM</td></tr>
@@ -62,10 +83,9 @@
                 </table>
 
                 <div class="price-tag">
-                    <span itemprop="price" content="450">4200</span> 
-                    <span itemprop="priceCurrency" content="UAH">UAH</span>
+                    <span>4200</span> 
+                    <span>UAH</span>
                 </div>
-                <link itemprop="availability" href="https://schema.org/InStock" />
             </div>
 
             <a href="#" onclick="handleOrder('ZX-003', 'Harlequin 128')" class="btn-action">
@@ -74,16 +94,15 @@
         </div>
     </div>
 
-    <!-- ОПИС -->
     <div class="full-description">
         <h2>10 LOAD "ПРО ПРОЄКТ HARLEQUIN"</h2>
-        <div class="text-content" itemprop="description">
+        <div class="text-content">
             <strong>Harlequin 128</strong> — це витвір інженерного мистецтва для справжніх перфекціоністів. На відміну від багатьох інших клонів, він не використовує спеціалізовані чипи ULA, замінюючи їх звичайною логікою серії 74HC. Це робить комп'ютер практично "вічним", адже будь-яку деталь можна легко замінити. <br><br>
+            
             Плата виконана у класичному форм-факторі, що дозволяє встановити її в оригінальний корпус від ZX Spectrum 48K або гумову "плюшку". Ви отримуєте <strong>чисту плату</strong> з синьою або чорною маскою (залежно від партії), яка підтримує 128К режим, має вбудований RGB-вихід та роз'єм для підключення джойстика. Це ідеальна база для створення надійного та автентичного Спектрума.
         </div>
     </div>
 
-    <!-- КОМЕНТАРІ -->
     <div class="full-description" style="margin-top: 2px;">
         <h2>20 REM "ВІДГУКИ ТА ПІДТРИМКА"</h2>
         <div class="comment-box">
@@ -97,6 +116,6 @@
     <img id="zoom-img" src="" alt="Збільшене фото">
 </div>
 
-    <script src="../js/card.js"></script>
+<script src="../js/card.js"></script>
 </body>
 </html>
