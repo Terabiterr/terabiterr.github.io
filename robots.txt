@@ -1,8 +1,10 @@
-<<<<<<< HEAD
 User-agent: *
 Allow: /
-=======
-User-agent: *
-Allow: /
->>>>>>> 49a4c83 (Добавлены все папки сайта)
-Sitemap: https://garage42.neocities.org/sitemap.xml
+Allow: /index.html
+Allow: /html/
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Вказуємо шлях до карти сайту для Google та інших пошуковиків
+Sitemap: https://zxkit.com.ua/sitemap.xml
