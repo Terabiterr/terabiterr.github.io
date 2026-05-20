@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://garage42.neocities.org/sitemap.xml
