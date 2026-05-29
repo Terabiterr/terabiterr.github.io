@@ -154,5 +154,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-  
+    <url>
+    <loc>https://zxkit.com.ua/html/pentagon-crocodile.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+      <url>
+    <loc>https://zxkit.com.ua/html/zxevo-assembled.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 </urlset>
