@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DIY Tetris | 8-бітна класика на STM32</title>
+    <meta name="description" content="Саморобний тетріс на базі мікроконтролера STM32 та світлодіодної матриці. Акриловий корпус, стандартне керування. Ідеальний подарунок для гіка.">
+    <meta name="keywords" content="DIY Тетріс, STM32 тетріс, ретро-ігри, саморобний тетріс, купити тетріс, Garage 42">
+    
+    <meta property="og:title" content="DIY Tetris — олдскул на сучасному залізі">
+    <meta property="og:description" content="Мікроконтролер STM32, світлодіодна матриця та акриловий корпус. Твій персональний портал у 90-ті.">
+    <meta property="og:image" content="../img/diy_tetris/1.jpg">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://zxkit.com.ua/html/diy-tetris.html">
+    
+    <link rel="canonical" href="https://zxkit.com.ua/html/diy-tetris.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/card.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "DIY Тетріс (STM32)",
+      "description": "Саморобний ігровий девайс на мікроконтролері STM32 з яскравою світлодіодною матрицею та надійним акриловим корпусом.",
+      "sku": "DIY-TETRIS-STM",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://zxkit.com.ua/html/diy-tetris.html",
+        "priceCurrency": "UAH",
+        "price": "499",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+    </script>
+</head>
+<body>
+
+<header style="width: 100%;">
+    <div class="header-inner">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1>ZX SPECTRUM GARAGE №42</h1>
+        </a>
+    </div>
+</header>
+
+<nav class="back-nav">
+    <a href="../index.html" class="btn-back">Повернутися до каталогу</a>
+</nav>
+
+<div class="container-wide">
+    <div class="product-grid">
+        
+        <div class="gallery-section">
+            <div class="main-viewer" onclick="openZoom()">
+                <img id="active-img" src="../img/diy_tetris/1.jpg" alt="DIY Тетріс">
+            </div>
+            <div class="thumbs-row">
+                <img class="thumb active" src="../img/diy_tetris/1.jpg" alt="Тетріс вигляд 1" onclick="updateGallery(this)">
+                <img class="thumb" src="../img/diy_tetris/2.jpg" alt="Тетріс вигляд 2" onclick="updateGallery(this)">
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h1 class="product-h1">DIY Тетріс (STM32)</h1>
+            <div class="sku">SKU: DIY-TETRIS-STM | СТАН: HANDMADE / DIY</div>
+
+            <div>
+                <table class="spec-table">
+                    <tr><td class="label">Платформа</td><td class="val">STM32</td></tr>
+                    <tr><td class="label">Дисплей</td><td class="val">Світлодіодна матриця</td></tr>
+                    <tr><td class="label">Корпус</td><td class="val">Прозорий акрил</td></tr>
+                    <tr><td class="label">Керування</td><td class="val">Стандартні кнопки</td></tr>
+                </table>
+
+                <div class="price-tag">
+                    <span>499</span> 
+                    <span>UAH</span>
+                </div>
+            </div>
+
+            <a href="#" onclick="handleOrder('DIY-TETRIS-STM', 'DIY Tetris')" class="btn-action">
+                ЗАМОВИТИ В TELEGRAM
+            </a>
+        </div>
+    </div>
+
+    <div class="full-description">
+        <h2>10 LOAD "TETRIS_ENGINE"</h2>
+        <div class="text-content">
+            Забудьте про складні ігри з безкінечними оновленнями. Справжній кайф — це рядок, що зникає в самий відповідальний момент, і швидкість, що зростає до небес.<br><br>
+            
+            Цей **DIY Тетріс** побудований на базі потужного мікроконтролера <strong>STM32</strong> та яскравої світлодіодної матриці. Ми помістили класику в стильний прозорий акриловий корпус, щоб ви могли бачити серце девайса, яке змушує фігури падати точно туди, куди ви хочете (ну, майже завжди).<br><br>
+            
+            <strong>Чому він крутий:</strong><br>
+            • Це реальне залізо в ваших руках, а не пікселі на смартфоні.<br>
+            • Акриловий корпус захищає електроніку та надає пристрою вигляду справжнього інженерного прототипу.<br>
+            • Легендарний геймплей у компактному форматі.<br><br>
+            
+            <strong>20 GOTO "GAME_OVER":</strong><br>
+            Це ідеальний девайс, щоб "залипнути" на перерві, здивувати друзів або просто отримати порцію дофаміну, складаючи цеглинки. Проста естетика, надійний контролер і нічого зайвого. **Твій персональний рівень майстерності чекає на перевірку.**
+        </div>
+    </div>
+
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>30 REM "EXPERIMENT MODE"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Питання про збірку чи код?"></textarea>
+            <button class="btn-comment" onclick="submitComment('DIY-TETRIS-STM')">Написати в Garage №42</button>
+        </div>
+    </div>
+</div>
+
+<div id="zoom-modal" onclick="this.style.display='none'">
+    <img id="zoom-img" src="" alt="Збільшене фото">
+</div>
+
+<script src="../js/card.js"></script>
+</body>
+</html>

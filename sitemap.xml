@@ -178,4 +178,28 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+    <url>
+    <loc>https://zxkit.com.ua/html/dendy_8bit.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+      <url>
+    <loc>https://zxkit.com.ua/html/diy_tetris.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+        <url>
+    <loc>https://zxkit.com.ua/html/s90_amfiton.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+          <url>
+    <loc>https://zxkit.com.ua/html/xbox_360.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 </urlset>
