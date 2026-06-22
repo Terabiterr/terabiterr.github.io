@@ -23,6 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
         loadComponents();
     }
 
+    // Завантажуємо деталі товару, якщо ми на сторінці шаблону
+    if (document.getElementById('product-container')) {
+        loadProductDetails();
+    }
+
     initSidebarEffects();
 });
 
@@ -58,7 +63,6 @@ function renderPage() {
         </a>
     `).join('');
 
-    // Оновлення UI пагінації
     document.getElementById('page-info').innerText = `PAGE ${currentPage} OF ${totalPages}`;
     document.getElementById('prevPage').disabled = (currentPage === 1);
     document.getElementById('nextPage').disabled = (currentPage === totalPages);
@@ -98,6 +102,37 @@ async function loadComponents() {
 }
 
 /**
+ * 4. Завантаження деталей конкретного товару
+ */
+async function loadProductDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    const container = document.getElementById('product-container');
+
+    if (!productId) return;
+
+    try {
+        const response = await fetch(`/data/products/${productId}.json`);
+        const data = await response.json();
+
+        // Оновлюємо DOM (припустимо, що у вашому template.html є ці ID)
+        document.title = data.meta.title;
+        container.innerHTML = `
+            <h1>${data.product.name}</h1>
+            <div class="gallery">${data.product.images.map(img => `<img src="${img}" alt="${data.product.name}">`).join('')}</div>
+            <div class="info">
+                <div class="price">${data.product.price} ${data.product.currency}</div>
+                <ul>${data.product.specs.map(s => `<li><b>${s.label}:</b> ${s.val}</li>`).join('')}</ul>
+                <div class="description">${data.product.description}</div>
+            </div>
+        `;
+    } catch (err) {
+        container.innerHTML = "<h1>Товар не знайдено</h1>";
+        console.error("Помилка завантаження товару:", err);
+    }
+}
+
+/**
  * 3. Ефекти інтерфейсу
  */
 function initSidebarEffects() {
@@ -107,7 +142,6 @@ function initSidebarEffects() {
     });
 }
 
-// Обробка помилок зображень (заглушка)
 document.addEventListener('error', function (e) {
     if (e.target.tagName.toLowerCase() === 'img') {
         e.target.style.opacity = '0.5';
