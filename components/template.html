@@ -2,45 +2,69 @@
 <html lang="uk-UA">
 <head>
     <meta charset="UTF-8">
-    <title>Завантаження...</title> <link rel="stylesheet" href="/css/index.css">
+    <title id="page-title">Завантаження...</title>
+    <meta id="meta-desc" name="description" content="">
+    <meta id="meta-keys" name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        .product-container { max-width: 800px; margin: 20px auto; padding: 20px; border: 1px solid var(--zx-cyan); }
+        .price-big { font-size: 24px; color: var(--zx-yellow); font-weight: bold; margin: 15px 0; }
+        .btn-tg { display: inline-block; padding: 10px 20px; background: var(--zx-magenta); color: #fff; text-decoration: none; cursor: pointer; }
+    </style>
 </head>
 <body>
+
     <main class="container">
-        <article id="product-content">
+        <div class="product-container" id="product-root">
             <h1 id="p-name">Завантаження...</h1>
-            <img id="p-image" src="" alt="" style="max-width: 300px;">
-            <p>Аналог: <span id="p-analog"></span></p>
-            <div class="price-tag">Ціна: <span id="p-price"></span> UAH</div>
-            <p id="p-desc"></p>
-            <button onclick="orderItem()">ЗАМОВИТИ В TG</button>
-        </article>
+            <img id="p-image" src="" alt="" style="max-width: 100%; height: auto;">
+            <p><strong>Аналог:</strong> <span id="p-analog"></span></p>
+            <div class="price-big" id="p-price"></div>
+            <p id="p-desc" style="line-height: 1.6;"></p>
+            <a id="tg-link" class="btn-tg" href="#">ЗАМОВИТИ В TELEGRAM >></a>
+            <br><br>
+            <a href="/components.html"> << ПОВЕРНУТИСЯ ДО КАТАЛОГУ</a>
+        </div>
     </main>
 
     <script>
-        // Получаем ID из URL (например, template.html?id=4164-15nl)
-        const params = new URLSearchParams(window.location.search);
-        const productId = params.get('id');
+        async function loadProduct() {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
 
-        fetch('/data/components.json')
-            .then(res => res.json())
-            .then(data => {
-                const product = data.find(item => item.id === productId);
+            if (!id) return;
+
+            try {
+                const response = await fetch('/data/components.json');
+                const data = await response.json();
+                const product = data.find(item => item.id === id);
+
                 if (product) {
-                    document.title = `${product.name} — ZX-Kit`;
+                    // Заповнення мета-даних
+                    document.getElementById('page-title').innerText = `${product.name} купити в Україні — ZX-Kit`;
+                    document.getElementById('meta-desc').content = product.description;
+                    document.getElementById('meta-keys').content = product.keywords;
+
+                    // Заповнення сторінки
                     document.getElementById('p-name').innerText = product.name;
                     document.getElementById('p-analog').innerText = product.analog;
-                    document.getElementById('p-price').innerText = product.price;
+                    document.getElementById('p-price').innerText = `${product.price} ${product.currency}`;
                     document.getElementById('p-desc').innerText = product.description;
                     document.getElementById('p-image').src = product.image;
-                } else {
-                    document.body.innerHTML = '<h1>Товар не знайдено</h1><a href="/components.html">Назад до каталогу</a>';
-                }
-            });
+                    document.getElementById('p-image').alt = product.name;
 
-        function orderItem() {
-            const name = document.getElementById('p-name').innerText;
-            window.location.href = `https://t.me/terabiterr?text=Вітаю! Хочу замовити ${name}`;
+                    // Посилання на TG
+                    document.getElementById('tg-link').href = `https://t.me/terabiterr?text=Вітаю! Хочу замовити ${product.name} (${product.id})`;
+                } else {
+                    document.getElementById('product-root').innerHTML = '<h1>Товар не знайдено</h1><a href="/components.html">Повернутися до каталогу</a>';
+                }
+            } catch (err) {
+                console.error("Помилка завантаження товару:", err);
+            }
         }
+
+        loadProduct();
     </script>
 </body>
 </html>
