@@ -88,22 +88,32 @@ document.addEventListener('error', function (e) {
 }, true);
 
 async function loadComponents() {
+    // Получаем контейнер для компонентов, если он существует
+    const container = document.getElementById('components-list'); // Убедитесь, что такой ID есть
+    
+    // Если на текущей странице нет места для вывода компонентов, выходим
+    if (!container) return; 
+
     try {
         const response = await fetch('/data/components.json');
         const components = await response.json();
         
-        const container = document.getElementById('catalog-section');
+        // Очищаем контейнер перед вставкой
+        container.innerHTML = ''; 
         
         components.forEach(item => {
-            const row = `
-                <div class="card">
+            const card = document.createElement('a');
+            card.href = item.url;
+            card.className = 'card-link';
+            card.innerHTML = `
+                <article class="card">
                     <h3>${item.name}</h3>
                     <p>Аналог: ${item.analog}</p>
                     <div class="card-price">${item.price} ${item.currency}</div>
-                    <a href="${item.url}">ДЕТАЛЬНІШЕ >></a>
-                </div>
+                    <div style="font-size:8px; color:var(--zx-cyan)">ДЕТАЛЬНІШЕ >></div>
+                </article>
             `;
-            container.innerHTML += row;
+            container.appendChild(card);
         });
     } catch (err) {
         console.error("Помилка завантаження бази:", err);

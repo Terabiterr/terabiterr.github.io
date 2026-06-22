@@ -30,22 +30,6 @@
                 </div>
         </section>
     </main>
-
-    <script>
-        // Скрипт загрузки базы
-        fetch('/data/components.json')
-            .then(res => res.json())
-            .then(data => {
-                const list = document.getElementById('components-list');
-                list.innerHTML = data.map(item => `
-                    <article class="card">
-                        <h3>${item.name}</h3>
-                        <p style="font-size: 10px; color: var(--zx-magenta);">Аналог: ${item.analog}</p>
-                        <div class="card-price">${item.price} ${item.currency}</div>
-                        <a href="${item.url}" class="card-link" style="text-decoration: underline;">ДЕТАЛЬНІШЕ >></a>
-                    </article>
-                `).join('');
-            });
-    </script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
