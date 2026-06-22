@@ -2,71 +2,50 @@
 <html lang="uk-UA">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Радіокомпоненти | ZX-Kit Україна</title>
+    <title>Радіокомпоненти для ZX Spectrum | Купити в Україні — ZX-Kit</title>
+    <meta name="description" content="Каталог радіокомпонентів для ремонту та збірки ZX Spectrum: мікросхеми, пам'ять, плати розширення. Замовляйте в Україні.">
     <link rel="stylesheet" href="/css/index.css">
-    <style>
-        /* Додаткові стилі для сітки товарів, якщо потрібно */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px 0;
-        }
-    </style>
 </head>
 <body>
-
     <header>
         <div class="header-inner">
-            <h1>ZX SPECTRUM ZX-KIT: COMPONENTS</h1>
-            <img src="./logo.svg" alt="ZX-Kit Logo" class="logo">
+            <h1>ZX-KIT: RADIO COMPONENTS</h1>
         </div>
     </header>
 
     <main class="container">
-        <section id="catalog-section">
-            <h2 style="color: var(--zx-yellow); border-left: 4px solid var(--zx-magenta); padding-left: 10px;">
-                КАТАЛОГ КОМПОНЕНТІВ [PARTS_DATABASE]
-            </h2>
-            
-            <div id="components-list" class="grid">
-                <p style="color: gray;">Завантаження бази компонентів...</p>
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <div class="box-title">MENU.SYS</div>
+                <a href="/" class="contact-link"> >> ГОЛОВНА</a>
+                <a href="/components.html" class="contact-link"> >> КОМПОНЕНТИ</a>
             </div>
+        </aside>
+
+        <section id="catalog-section">
+            <h2 style="color: var(--zx-yellow); border-left: 4px solid var(--zx-cyan); padding-left: 10px;">
+                БАЗА КОМПОНЕНТІВ [PARTS_DATABASE]
+            </h2>
+            <div class="grid" id="components-list">
+                </div>
         </section>
     </main>
 
-    <footer>
-        <div style="text-align: center; margin: 40px 0; font-size: 10px; color: #555;">
-            &copy; 2026 ZX SPECTRUM ZX-KIT UKRAINE.
-        </div>
-    </footer>
-
     <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            const list = document.getElementById('components-list');
-            try {
-                const response = await fetch('/data/components.json');
-                const data = await response.json();
-                
-                if (data.length === 0) {
-                    list.innerHTML = '<p>Товарів поки немає.</p>';
-                    return;
-                }
-
+        // Скрипт загрузки базы
+        fetch('/data/components.json')
+            .then(res => res.json())
+            .then(data => {
+                const list = document.getElementById('components-list');
                 list.innerHTML = data.map(item => `
                     <article class="card">
                         <h3>${item.name}</h3>
-                        <p style="font-size: 12px; color: #ccc;">Аналог: ${item.analog}</p>
-                        <div class="card-price" style="margin: 10px 0; color: var(--zx-cyan);">${item.price} ${item.currency}</div>
+                        <p style="font-size: 10px; color: var(--zx-magenta);">Аналог: ${item.analog}</p>
+                        <div class="card-price">${item.price} ${item.currency}</div>
                         <a href="${item.url}" class="card-link" style="text-decoration: underline;">ДЕТАЛЬНІШЕ >></a>
                     </article>
                 `).join('');
-            } catch (err) {
-                list.innerHTML = '<p style="color: red;">Помилка завантаження даних (JSON not found).</p>';
-                console.error(err);
-            }
-        });
+            });
     </script>
 </body>
 </html>
