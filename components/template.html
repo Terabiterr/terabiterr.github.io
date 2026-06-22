@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk-UA">
+
 <head>
     <meta charset="UTF-8">
     <title id="page-title">Завантаження...</title>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/card.css">
 </head>
+
 <body>
 
     <div class="back-nav">
@@ -27,10 +29,16 @@
             <div>
                 <h1 class="product-h1" id="p-name">Завантаження...</h1>
                 <div class="sku" id="p-id">SKU: ---</div>
-                
+
                 <table class="spec-table">
-                    <tr><td class="label">Аналог</td><td class="val" id="p-analog">---</td></tr>
-                    <tr><td class="label">Ціна</td><td class="val price-tag" id="p-price">---</td></tr>
+                    <tr>
+                        <td class="label">Аналог</td>
+                        <td class="val" id="p-analog">---</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Ціна</td>
+                        <td class="val price-tag" id="p-price">---</td>
+                    </tr>
                 </table>
 
                 <a href="#" id="tg-order" class="btn-action">Замовити в Telegram</a>
@@ -46,7 +54,13 @@
     <div id="zoom-modal">
         <img id="modal-img" src="">
     </div>
-
+    <div class="full-description" style="margin-top: 2px;">
+        <h2>30 REM "EXPERIMENT MODE"</h2>
+        <div class="comment-box">
+            <textarea id="user-comment" class="comment-input" placeholder="Запитайте про компонент..."></textarea>
+            <button class="btn-comment" onclick="submitComment()">Написати в Garage №42</button>
+        </div>
+    </div>
     <script>
         async function loadProduct() {
             const params = new URLSearchParams(window.location.search);
@@ -80,13 +94,13 @@
                     if (product.images && product.images.length > 0) {
                         mainViewerImg.src = product.images[0];
                         const thumbsRow = document.getElementById('thumbs-row');
-                        
+
                         product.images.forEach((src, index) => {
                             const img = document.createElement('img');
                             img.src = src;
                             img.className = 'thumb';
                             if (index === 0) img.classList.add('active');
-                            
+
                             img.onclick = () => {
                                 mainViewerImg.src = src;
                                 document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
@@ -111,7 +125,18 @@
             }
         }
 
+        function submitComment() {
+    const comment = document.getElementById('user-comment').value;
+    const productName = document.getElementById('p-name').innerText;
+    if (!comment) return alert("Будь ласка, напишіть запитання!");
+    
+    // Формуємо повідомлення для Telegram
+    const text = `Запитання по компоненту ${productName}: ${comment}`;
+    window.open(`https://t.me/terabiterr?text=${encodeURIComponent(text)}`, '_blank');
+}
+
         loadProduct();
     </script>
 </body>
+
 </html>
