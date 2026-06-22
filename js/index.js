@@ -103,7 +103,7 @@ async function loadComponents() {
         
         components.forEach(item => {
             const card = document.createElement('a');
-            card.href = item.url;
+            card.href = 'components/template.html?id=' + item.id;
             card.className = 'card-link';
             card.innerHTML = `
                 <article class="card">
