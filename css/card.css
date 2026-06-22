@@ -53,10 +53,12 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    /* Галерея займає 2 частини, опис - 1 частину, але не менше 350px */
+    grid-template-columns: 2fr minmax(350px, 1fr); 
     gap: 2px;
     background-color: #222;
     border: 1px solid #222;
+    align-items: start;
 }
 
 .product-grid>div {
