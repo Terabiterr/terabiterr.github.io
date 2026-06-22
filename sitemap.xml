@@ -1,211 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://zxkit.com.ua/index.html</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://zxkit.com.ua/</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://zxkit.com.ua/html/books_zx.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/aurora-elka.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/divmmc-microdrv.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/harlequin-128.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/harlequin-128-assembled.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/kharkiv-128-rev2-assembled.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/kharkiv-128-rev3.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/kharkiv-128-rev3-assembled.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/kharkiv-512.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/leningrad-48.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/leningrad-48-assembled.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/leningrad_clear.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/lviv-48.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/murmulator-hdmi.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/pentagon-128.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/pentagon-128-assembled.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/picard-wifi.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/scorpion-256-turbo.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/turbosound-kempston.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/usb-keyboard-rp2040.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://zxkit.com.ua/html/picard_clear.html</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-    <url>
-    <loc>https://zxkit.com.ua/html/pentagon_crocodile.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-      <url>
-    <loc>https://zxkit.com.ua/html/zxevo-assembled.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-        <url>
-    <loc>https://zxkit.com.ua/html/leningrad_48_assembled_2.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://zxkit.com.ua/html/sega_genessis.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-    <url>
-    <loc>https://zxkit.com.ua/html/dendy_8bit.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-      <url>
-    <loc>https://zxkit.com.ua/html/diy_tetris.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-        <url>
-    <loc>https://zxkit.com.ua/html/s90_amfiton.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-          <url>
-    <loc>https://zxkit.com.ua/html/xbox_360.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-    <url>
-    <loc>https://zxkit.com.ua/html/pc_amd.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.00</priority>
-  </url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-CROCODILE-01</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-EVO-4MB</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-A01</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-B003</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-000</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-001</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-C02</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-002</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-003</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-004</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-005</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-006</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-007</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-008</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-009</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-011</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-012</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-013</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-015</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-016</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-017</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=ZX-018</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=DENDY-018</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=TETRIS-018</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=XBOX-360-120</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zxkit.com.ua/products/template.html?id=HI-FI-018</loc><lastmod>2026-06-23</lastmod><priority>0.8</priority></url>
 </urlset>
