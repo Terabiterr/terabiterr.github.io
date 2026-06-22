@@ -1,0 +1,13 @@
+[
+  {
+    "id": "IC-001",
+    "name": "4164-15NL",
+    "analog": "565РУ5",
+    "price": 42.00,
+    "currency": "UAH",
+    "category": "Микросхемы",
+    "description": "Динамічна пам'ять DRAM 64Кx1, швидкість 150нс.",
+    "url": "/components/4164-15nl.html",
+    "image": "/img/components/4164-15nl.jpg"
+  }
+]

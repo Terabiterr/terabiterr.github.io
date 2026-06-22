@@ -86,3 +86,29 @@ document.addEventListener('error', function (e) {
         e.target.style.opacity = '0.5';
     }
 }, true);
+
+async function loadComponents() {
+    try {
+        const response = await fetch('/data/components.json');
+        const components = await response.json();
+        
+        const container = document.getElementById('catalog-section');
+        
+        components.forEach(item => {
+            const row = `
+                <div class="card">
+                    <h3>${item.name}</h3>
+                    <p>Аналог: ${item.analog}</p>
+                    <div class="card-price">${item.price} ${item.currency}</div>
+                    <a href="${item.url}">ДЕТАЛЬНІШЕ >></a>
+                </div>
+            `;
+            container.innerHTML += row;
+        });
+    } catch (err) {
+        console.error("Помилка завантаження бази:", err);
+    }
+}
+
+// Запускаем при загрузке страницы
+document.addEventListener('DOMContentLoaded', loadComponents);
