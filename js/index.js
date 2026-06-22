@@ -79,44 +79,42 @@ async function loadUniversalProduct() {
     
     if (!id) return;
 
-    const dataSource = type === 'comp' ? '/data/components.json' : '/data/products.json';
-    const backLink = document.getElementById('back-link');
-    if (backLink) backLink.href = type === 'comp' ? '/components.html' : '/';
+    const dataSource = type === 'comp' ? '/data/components.json' : '/data/catalog.json'; // ПЕРЕВІРТЕ: чи каталог зветься catalog.json?
 
     try {
         const response = await fetch(dataSource);
         const allItems = await response.json();
+        
+        // Знаходимо товар
         const item = allItems.find(p => String(p.id) === String(id));
-
         if (!item) {
             document.getElementById('product-root').innerHTML = '<h1>Товар не знайдено</h1>';
             return;
         }
 
-        // Рендер даних (уніфіковано для двох структур JSON)
-        const name = item.name || item.product?.name;
-        const price = item.price || item.product?.price;
-        const desc = item.description || item.product?.description;
-        const images = item.images || item.product?.images;
-
-        document.title = `${name} | ZX-Kit`;
-        document.getElementById('p-name').innerText = name;
+        // Рендеринг - ВИПРАВЛЕНО під ваші поля (name, img/images, price)
+        document.title = `${item.name} | ZX-Kit`;
+        document.getElementById('p-name').innerText = item.name;
         document.getElementById('p-sku').innerText = `ID: ${item.id}`;
-        document.getElementById('p-price').innerText = `${price} ${item.currency || 'UAH'}`;
-        document.getElementById('p-desc').innerHTML = desc;
-        document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Вітаю! Хочу замовити ${name}`;
-
-        if (images && images.length > 0) {
+        document.getElementById('p-price').innerText = `${item.price} UAH`;
+        document.getElementById('p-desc').innerHTML = item.description || "Опис відсутній.";
+        
+        // Обробка зображень: пробуємо і 'images' (масив), і 'img' (одне фото)
+        const images = item.images || (item.img ? [item.img] : []);
+        
+        if (images.length > 0) {
             document.getElementById('main-img').src = images[0];
-            document.getElementById('thumbs-row').innerHTML = images.map((src, i) => `
-                <img src="${src}" class="thumb ${i === 0 ? 'active' : ''}" 
-                     onclick="changeMainImage(this, '${src}')">
-            `).join('');
-            initZoom();
+            const thumbsRow = document.getElementById('thumbs-row');
+            if (thumbsRow) {
+                thumbsRow.innerHTML = images.map((src, i) => `
+                    <img src="${src}" class="thumb ${i === 0 ? 'active' : ''}" 
+                         onclick="changeMainImage(this, '${src}')">
+                `).join('');
+            }
         }
-    } catch (err) { console.error("Помилка завантаження деталів:", err); }
+        initZoom();
+    } catch (err) { console.error("Помилка:", err); }
 }
-
 /**
  * 4. ГАЛЕРЕЯ ТА ІНШЕ
  */
