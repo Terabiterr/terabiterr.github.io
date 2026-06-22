@@ -53,10 +53,15 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    /* Замість "1fr 400px" використовуємо minmax. 
+       Це дозволить галереї займати до 60% простору, 
+       а текстовій частині — не бути занадто вузькою.
+    */
+    grid-template-columns: minmax(400px, 1fr) 400px; 
     gap: 2px;
     background-color: #222;
     border: 1px solid #222;
+    align-items: start; /* Щоб контент притискався до верху */
 }
 
 .product-grid>div {
