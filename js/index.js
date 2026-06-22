@@ -107,43 +107,46 @@ async function loadComponents() {
 async function loadProductDetails() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
-    
+    const container = document.getElementById('product-root');
+
     if (!productId) return;
 
     try {
-        const response = await fetch(`/data/products/${productId}.json`);
-        const data = await response.json();
-
-        // Заповнюємо метадані
-        document.title = data.meta.title;
+        // Завантажуємо весь список товарів
+        const response = await fetch('/data/products.json');
+        const products = await response.json();
         
-        // Заповнюємо існуючі елементи замість переписування всього блоку
+        // Шукаємо конкретний товар у масиві
+        const data = products.find(p => p.id === productId);
+
+        if (!data) {
+            container.innerHTML = "<h1>Товар не знайдено</h1>";
+            return;
+        }
+
+        // Рендеринг (використовуємо існуючі ID з вашого template.html)
+        document.title = data.meta.title;
         document.getElementById('p-name').innerText = data.product.name;
         document.getElementById('p-sku').innerText = `SKU: ${data.product.sku}`;
         document.getElementById('p-price').innerHTML = `<span>${data.product.price}</span> <span>${data.product.currency}</span>`;
         document.getElementById('p-desc').innerHTML = data.product.description;
 
-        // Таблиця характеристик
         const specsTable = document.getElementById('p-specs');
-        specsTable.innerHTML = data.product.specs.map(s => 
-            `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`
-        ).join('');
+        specsTable.innerHTML = data.product.specs.map(s => `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`).join('');
 
-        // Галерея
         const mainImg = document.getElementById('main-img');
         const thumbsRow = document.getElementById('thumbs-row');
         mainImg.src = data.product.images[0];
-        
-        thumbsRow.innerHTML = data.product.images.map((src, i) => 
-            `<img src="${src}" class="thumb ${i === 0 ? 'active' : ''}" onclick="changeMainImage(this, '${src}')">`
-        ).join('');
+        thumbsRow.innerHTML = data.product.images.map((src, i) => `
+            <img src="${src}" class="thumb ${i === 0 ? 'active' : ''}" 
+                 onclick="document.getElementById('main-img').src='${src}'; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('active')); this.classList.add('active')">
+        `).join('');
 
-        // Кнопка Telegram
         document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Вітаю! Хочу замовити ${data.product.name}`;
 
     } catch (err) {
-        document.getElementById('product-root').innerHTML = "<h1>Товар не знайдено</h1>";
-        console.error("Помилка завантаження товару:", err);
+        console.error("Помилка:", err);
+        container.innerHTML = "<h1>Помилка завантаження даних</h1>";
     }
 }
 
