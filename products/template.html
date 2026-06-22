@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="uk-UA">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Завантаження...</title>
     <meta id="meta-desc" name="description" content="">
     <meta id="meta-keys" name="keywords" content="">
-    
+
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/card.css">
-    
+
     <script type="application/ld+json" id="schema-ld"></script>
 </head>
 
@@ -41,7 +42,7 @@
                 <div class="sku" id="p-sku">SKU: ---</div>
 
                 <table class="spec-table" id="p-specs">
-                    </table>
+                </table>
 
                 <div class="price-tag" id="p-price">---</div>
 
@@ -53,10 +54,21 @@
             <h2>10 LOAD "ОПИС"</h2>
             <div class="text-content" id="p-desc"></div>
         </div>
+        <div class="full-description" style="margin-top: 2px;">
+            <h2>30 REM "ПИТАННЯ ТА ПІДТРИМКА"</h2>
+            <div class="comment-box">
+                <textarea id="user-comment" class="comment-input"
+                    placeholder="Запитайте про наявність чи особливості налаштування..."></textarea>
+                <button class="btn-comment" onclick="submitComment()">
+                    Написати в Garage №42
+                </button>
+            </div>
+        </div>
     </main>
 
     <div id="zoom-modal"><img id="modal-img" src=""></div>
 
     <script src="/js/index.js"></script>
 </body>
+
 </html>
