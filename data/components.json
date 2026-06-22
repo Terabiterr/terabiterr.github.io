@@ -1,11 +1,11 @@
 [
   {
-    "id": "IC-4164",
+    "id": "4164-15nl",
     "name": "4164-15NL",
     "analog": "565РУ5",
     "price": 42,
     "currency": "UAH",
-    "url": "/components/4164-15nl.html",
+    "description": "Динамічна пам'ять DRAM 64Кx1, швидкість 150нс.",
     "image": "/img/components/4164-15nl.jpg"
   }
 ]
