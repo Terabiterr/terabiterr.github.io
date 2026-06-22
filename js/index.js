@@ -107,29 +107,51 @@ async function loadComponents() {
 async function loadProductDetails() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
-    const container = document.getElementById('product-root');
-
+    
     if (!productId) return;
 
     try {
         const response = await fetch(`/data/products/${productId}.json`);
         const data = await response.json();
 
-        // Оновлюємо DOM (припустимо, що у вашому template.html є ці ID)
+        // Заповнюємо метадані
         document.title = data.meta.title;
-        container.innerHTML = `
-            <h1>${data.product.name}</h1>
-            <div class="gallery">${data.product.images.map(img => `<img src="${img}" alt="${data.product.name}">`).join('')}</div>
-            <div class="info">
-                <div class="price">${data.product.price} ${data.product.currency}</div>
-                <ul>${data.product.specs.map(s => `<li><b>${s.label}:</b> ${s.val}</li>`).join('')}</ul>
-                <div class="description">${data.product.description}</div>
-            </div>
-        `;
+        
+        // Заповнюємо існуючі елементи замість переписування всього блоку
+        document.getElementById('p-name').innerText = data.product.name;
+        document.getElementById('p-sku').innerText = `SKU: ${data.product.sku}`;
+        document.getElementById('p-price').innerHTML = `<span>${data.product.price}</span> <span>${data.product.currency}</span>`;
+        document.getElementById('p-desc').innerHTML = data.product.description;
+
+        // Таблиця характеристик
+        const specsTable = document.getElementById('p-specs');
+        specsTable.innerHTML = data.product.specs.map(s => 
+            `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`
+        ).join('');
+
+        // Галерея
+        const mainImg = document.getElementById('main-img');
+        const thumbsRow = document.getElementById('thumbs-row');
+        mainImg.src = data.product.images[0];
+        
+        thumbsRow.innerHTML = data.product.images.map((src, i) => 
+            `<img src="${src}" class="thumb ${i === 0 ? 'active' : ''}" onclick="changeMainImage(this, '${src}')">`
+        ).join('');
+
+        // Кнопка Telegram
+        document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Вітаю! Хочу замовити ${data.product.name}`;
+
     } catch (err) {
-        container.innerHTML = "<h1>Товар не знайдено</h1>";
+        document.getElementById('product-root').innerHTML = "<h1>Товар не знайдено</h1>";
         console.error("Помилка завантаження товару:", err);
     }
+}
+
+// Додайте цю функцію окремо в index.js, щоб галерея працювала
+function changeMainImage(element, src) {
+    document.getElementById('main-img').src = src;
+    document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+    element.classList.add('active');
 }
 
 /**
