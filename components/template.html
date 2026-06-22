@@ -7,33 +7,55 @@
     <meta id="meta-keys" name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
-    <style>
-        .product-container { max-width: 800px; margin: 20px auto; padding: 20px; border: 1px solid var(--zx-cyan); }
-        .price-big { font-size: 24px; color: var(--zx-yellow); font-weight: bold; margin: 15px 0; }
-        .btn-tg { display: inline-block; padding: 10px 20px; background: var(--zx-magenta); color: #fff; text-decoration: none; cursor: pointer; }
-    </style>
+    <link rel="stylesheet" href="/css/card.css">
 </head>
 <body>
 
-    <main class="container">
-        <div class="product-container" id="product-root">
-            <h1 id="p-name">Завантаження...</h1>
-            <img id="p-image" src="" alt="" style="max-width: 100%; height: auto;">
-            <p><strong>Аналог:</strong> <span id="p-analog"></span></p>
-            <div class="price-big" id="p-price"></div>
-            <p id="p-desc" style="line-height: 1.6;"></p>
-            <a id="tg-link" class="btn-tg" href="#">ЗАМОВИТИ В TELEGRAM >></a>
-            <br><br>
-            <a href="/components.html"> << ПОВЕРНУТИСЯ ДО КАТАЛОГУ</a>
+    <div class="back-nav">
+        <a href="/components.html" class="btn-back">Назад до каталогу</a>
+    </div>
+
+    <main class="container-wide">
+        <div class="product-grid" id="product-root">
+            <div>
+                <div class="main-viewer" id="main-viewer">
+                    <img id="main-img" src="" alt="Основне фото">
+                </div>
+                <div class="thumbs-row" id="thumbs-row"></div>
+            </div>
+
+            <div>
+                <h1 class="product-h1" id="p-name">Завантаження...</h1>
+                <div class="sku" id="p-id">SKU: ---</div>
+                
+                <table class="spec-table">
+                    <tr><td class="label">Аналог</td><td class="val" id="p-analog">---</td></tr>
+                    <tr><td class="label">Ціна</td><td class="val price-tag" id="p-price">---</td></tr>
+                </table>
+
+                <a href="#" id="tg-order" class="btn-action">Замовити в Telegram</a>
+            </div>
+        </div>
+
+        <div class="full-description">
+            <h2>Детальний опис</h2>
+            <div class="text-content" id="p-desc"></div>
         </div>
     </main>
+
+    <div id="zoom-modal">
+        <img id="modal-img" src="">
+    </div>
 
     <script>
         async function loadProduct() {
             const params = new URLSearchParams(window.location.search);
             const id = params.get('id');
+            const mainViewerImg = document.getElementById('main-img');
+            const zoomModal = document.getElementById('zoom-modal');
+            const modalImg = document.getElementById('modal-img');
 
-            if (!id) return;
+            if (!id) { window.location.href = '/components.html'; return; }
 
             try {
                 const response = await fetch('/data/components.json');
@@ -41,26 +63,51 @@
                 const product = data.find(item => item.id === id);
 
                 if (product) {
-                    // Заповнення мета-даних
-                    document.getElementById('page-title').innerText = `${product.name} купити в Україні — ZX-Kit`;
+                    // Мета-теги
+                    document.getElementById('page-title').innerText = `${product.name} купити — ZX-Kit`;
                     document.getElementById('meta-desc').content = product.description;
                     document.getElementById('meta-keys').content = product.keywords;
 
-                    // Заповнення сторінки
+                    // Контент
                     document.getElementById('p-name').innerText = product.name;
+                    document.getElementById('p-id').innerText = `SKU: ${product.id}`;
                     document.getElementById('p-analog').innerText = product.analog;
                     document.getElementById('p-price').innerText = `${product.price} ${product.currency}`;
                     document.getElementById('p-desc').innerText = product.description;
-                    document.getElementById('p-image').src = product.image;
-                    document.getElementById('p-image').alt = product.name;
+                    document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Вітаю! Хочу замовити ${product.name} (${product.id})`;
 
-                    // Посилання на TG
-                    document.getElementById('tg-link').href = `https://t.me/terabiterr?text=Вітаю! Хочу замовити ${product.name} (${product.id})`;
+                    // Галерея
+                    if (product.images && product.images.length > 0) {
+                        mainViewerImg.src = product.images[0];
+                        const thumbsRow = document.getElementById('thumbs-row');
+                        
+                        product.images.forEach((src, index) => {
+                            const img = document.createElement('img');
+                            img.src = src;
+                            img.className = 'thumb';
+                            if (index === 0) img.classList.add('active');
+                            
+                            img.onclick = () => {
+                                mainViewerImg.src = src;
+                                document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+                                img.classList.add('active');
+                            };
+                            thumbsRow.appendChild(img);
+                        });
+                    }
+
+                    // Зум
+                    document.getElementById('main-viewer').onclick = () => {
+                        modalImg.src = mainViewerImg.src;
+                        zoomModal.style.display = 'flex';
+                    };
+                    zoomModal.onclick = () => zoomModal.style.display = 'none';
+
                 } else {
-                    document.getElementById('product-root').innerHTML = '<h1>Товар не знайдено</h1><a href="/components.html">Повернутися до каталогу</a>';
+                    document.getElementById('product-root').innerHTML = '<h1>Товар не знайдено</h1>';
                 }
             } catch (err) {
-                console.error("Помилка завантаження товару:", err);
+                console.error("Помилка:", err);
             }
         }
 
