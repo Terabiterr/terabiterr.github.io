@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Завантажуємо деталі товару, якщо ми на сторінці шаблону
-    if (document.getElementById('product-container')) {
+    if (document.getElementById('product-root')) {
         loadProductDetails();
     }
 
@@ -107,7 +107,7 @@ async function loadComponents() {
 async function loadProductDetails() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
-    const container = document.getElementById('product-container');
+    const container = document.getElementById('product-root');
 
     if (!productId) return;
 
