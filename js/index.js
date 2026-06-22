@@ -102,19 +102,24 @@ async function loadComponents() {
         container.innerHTML = ''; 
         
         components.forEach(item => {
-            const card = document.createElement('a');
-            card.href = 'components/template.html?id=' + item.id;
-            card.className = 'card-link';
-            card.innerHTML = `
-                <article class="card">
-                    <h3>${item.name}</h3>
-                    <p>Аналог: ${item.analog}</p>
-                    <div class="card-price">${item.price} ${item.currency}</div>
-                    <div style="font-size:8px; color:var(--zx-cyan)">ДЕТАЛЬНІШЕ >></div>
-                </article>
-            `;
-            container.appendChild(card);
-        });
+    const card = document.createElement('a');
+    card.href = 'components/template.html?id=' + item.id;
+    card.className = 'card-link';
+    
+    // Додаємо картинку (беремо першу з масиву images)
+    const imgUrl = (item.images && item.images.length > 0) ? item.images[0] : '/img/no-image.png';
+
+    card.innerHTML = `
+        <article class="card">
+            <img src="${imgUrl}" alt="${item.name}" style="width:100%; height:160px; object-fit:cover; border-bottom: 4px solid var(--zx-cyan);">
+            <h3>${item.name}</h3>
+            <p>Аналог: ${item.analog}</p>
+            <div class="card-price">${item.price} ${item.currency}</div>
+            <div style="font-size:8px; color:var(--zx-cyan)">ДЕТАЛЬНІШЕ >></div>
+        </article>
+    `;
+    container.appendChild(card);
+});
     } catch (err) {
         console.error("Помилка завантаження бази:", err);
     }
