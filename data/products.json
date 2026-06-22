@@ -1,0 +1,35 @@
+{
+  "id": "ZX-CROCODILE-01",
+  "meta": {
+    "title": "Pentagon 1024 ZP Crocodile Rev 3 | Ексклюзивний ZX Spectrum для профі",
+    "description": "Pentagon 1024 ZP Crocodile Rev 3 — абсолютний топ у світі ZX Spectrum. Повна комплектація, найкращий звук General Sound, сучасні інтерфейси. Купити преміум ретро-систему в Україні.",
+    "keywords": "Pentagon 1024, ZP Crocodile, ZX Spectrum, TurboSound, General Sound, NemoBus, DivMMC, преміум спектрум, купити ретро комп'ютер, Garage 42"
+  },
+  "product": {
+    "name": "Pentagon 1024 ZP Crocodile Rev 3",
+    "sku": "ZX-CROCODILE-01",
+    "price": 14999,
+    "currency": "UAH",
+    "images": [
+      "../img/pentagon_crocodile/1.jpg",
+      "../img/pentagon_crocodile/2.jpg",
+      "../img/pentagon_crocodile/3.jpg",
+      "../img/pentagon_crocodile/4.jpg",
+      "../img/pentagon_crocodile/5.jpg",
+      "../img/pentagon_crocodile/6.jpg",
+      "../img/pentagon_crocodile/7.jpg",
+      "../img/pentagon_crocodile/8.jpg",
+      "../img/pentagon_crocodile/9.jpg"
+    ],
+    "specs": [
+      {"label": "Рівень", "val": "Топова ретро-станція"},
+      {"label": "Аудіо", "val": "TurboSound + General Sound"},
+      {"label": "Інтерфейс", "val": "HDMI / NemoBus / DivMMC"},
+      {"label": "Ексклюзив", "val": "Миша MS (Rare) + корпус-стенд"}
+    ],
+    "description": "<strong>Pentagon 1024 ZP Crocodile Rev 3</strong> — це не просто комп'ютер, це справжній \"космічний корабель\" у світі ретро-геймінгу. Якщо ви шукаєте вершину еволюції ZX Spectrum, де зібрані всі сучасні реалії, ви знайшли свій ідеал.<br><br>Ми створили цей комплект для тих, хто не визнає компромісів. Ви отримуєте повністю зібрану, відкалібровану та готову до роботи станцію в ергономічному корпусі-стенді, яку не соромно поставити в центрі вашого робочого простору.<br><br><strong>Що робить його королем серед інших:</strong><br>• <strong>Звук найвищого рівня:</strong> Поєднання TurboSound (2x Yamaha) та General Sound (1533 серія з процесором Toshiba) видає аудіо, від якого мурахи по шкірі.<br>• <strong>Безмежні можливості:</strong> DivMMC, GOTEK з екраном, NemoBus OPL3 — все, що потрібно для миттєвого завантаження будь-якого софту.<br>• <strong>Сучасна картинка:</strong> Вбудований HDMI-конвертер забезпечує ідеальне зображення на сучасних моніторах.<br>• <strong>Колекційні бонуси:</strong> До комплекту входить унікальна, нова кулькова миша Microsoft (дуже рідкісний екземпляр) та зручний блок живлення 400W ISO.<br><br>Це інвестиція в якість, надійність та безмежне задоволення від кожного запуску. Це Spectrum для тих, хто хоче мати <i>найкращий</i> пристрій, який коли-небудь був створений у цій тематиці.<br><br>Ваше місце в спільноті харківських спектрумістів: <a href=\"https://t.me/kharkov_zxspectrum\">t.me/kharkov_zxspectrum</a>",
+    "schema": {
+      "description": "Абсолютно топовий Pentagon 1024 ZP Crocodile Rev 3. Найкращий звук General Sound, TurboSound, HDMI, підтримка всього можливого заліза. Повна комплектація з корпусом."
+    }
+  }
+}

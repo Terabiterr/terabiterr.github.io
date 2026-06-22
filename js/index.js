@@ -1,129 +1,115 @@
-/* 
-    GARAGE №42 - CORE ENGINE [JS]
-    Цей файл відповідає за динамічні елементи головної сторінки:
-    1. Магічний рядок (Marquee)
-    2. Пагінація каталогу
-    3. Анімація при скролі
+/* GARAGE №42 - CORE ENGINE [JS]
+    Керує завантаженням товарів з catalog.json, пагінацією та ефектами.
 */
 
-// Налаштування пагінації
-const itemsPerPage = 12; 
+// Глобальні змінні
+let allProducts = [];
 let currentPage = 1;
+const itemsPerPage = 12;
 
 /**
- * Оновлює видимість карток товарів залежно від поточної сторінки
+ * Ініціалізація системи при завантаженні
  */
-function updatePagination() {
-    const cards = document.querySelectorAll('.card-link'); 
-    const totalPages = Math.ceil(cards.length / itemsPerPage);
-    
-    cards.forEach((card, index) => {
-        const isVisible = index >= (currentPage - 1) * itemsPerPage && index < currentPage * itemsPerPage;
-        card.style.display = isVisible ? 'block' : 'none';
-    });
-
-    // Оновлення текстового індикатора сторінок
-    const pageInfo = document.getElementById('page-info');
-    if (pageInfo) {
-        pageInfo.innerText = `PAGE ${currentPage} OF ${totalPages || 1}`;
-    }
-
-    // Керування станом кнопок
-    const prevBtn = document.getElementById('prevPage');
-    const nextBtn = document.getElementById('nextPage');
-
-    if (prevBtn) prevBtn.disabled = (currentPage === 1);
-    if (nextBtn) nextBtn.disabled = (currentPage === totalPages || totalPages === 0);
-}
-
-/**
- * Змінює поточну сторінку
- * @param {number} step - Крок (1 або -1)
- */
-function changePage(step) {
-    const cards = document.querySelectorAll('.card-link');
-    const totalPages = Math.ceil(cards.length / itemsPerPage);
-    
-    if (currentPage + step >= 1 && currentPage + step <= totalPages) {
-        currentPage += step;
-        updatePagination();
-        
-        // Плавний скрол вгору до початку каталогу
-        const catalogHeader = document.querySelector('#catalog-section');
-        if (catalogHeader) {
-            catalogHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }
-}
-
-/**
- * Ефект "друкарської машинки" для маркерів у сайдбарі (опціонально)
- */
-function initSidebarEffects() {
-    const lines = document.querySelectorAll('.guide-line');
-    lines.forEach((line, index) => {
-        setTimeout(() => {
-            line.style.color = 'var(--zx-yellow)';
-        }, index * 200);
-    });
-}
-
-// Запуск при завантаженні DOM
 document.addEventListener('DOMContentLoaded', () => {
-    updatePagination();
-    initSidebarEffects();
-    
     console.log("Garage 42 System: Ready. SEO Mode: Active.");
+    
+    // Завантажуємо каталог, якщо ми на головній
+    if (document.getElementById('products')) {
+        loadCatalog();
+    }
+
+    // Завантажуємо компоненти, якщо ми на сторінці компонентів
+    if (document.getElementById('components-list')) {
+        loadComponents();
+    }
+
+    initSidebarEffects();
 });
 
 /**
- * Обробка помилок завантаження зображень
- * (якщо фото не знайдено, замінюємо на заглушку)
+ * 1. Завантаження та відображення каталогу товарів
  */
-document.addEventListener('error', function (e) {
-    if (e.target.tagName.toLowerCase() === 'img') {
-        // e.target.src = './img/no-image.png'; // Можна додати свою заглушку
-        e.target.style.opacity = '0.5';
+async function loadCatalog() {
+    try {
+        const response = await fetch('/data/catalog.json');
+        allProducts = await response.json();
+        renderPage();
+    } catch (err) {
+        console.error("Помилка завантаження каталогу:", err);
+        document.getElementById('products').innerHTML = "<p>Помилка завантаження даних...</p>";
     }
-}, true);
+}
 
-async function loadComponents() {
-    // Получаем контейнер для компонентов, если он существует
-    const container = document.getElementById('components-list'); // Убедитесь, что такой ID есть
+function renderPage() {
+    const container = document.getElementById('products');
+    const totalPages = Math.ceil(allProducts.length / itemsPerPage);
     
-    // Если на текущей странице нет места для вывода компонентов, выходим
-    if (!container) return; 
+    const start = (currentPage - 1) * itemsPerPage;
+    const paginatedItems = allProducts.slice(start, start + itemsPerPage);
 
+    container.innerHTML = paginatedItems.map(p => `
+        <a href="/products/template.html?id=${p.id}" class="card-link">
+            <article class="card">
+                <img src="${p.img}" alt="${p.name}" loading="lazy">
+                <h3>${p.name}</h3>
+                <div class="card-price">${p.price} UAH</div>
+                <div style="font-size:8px; color:var(--zx-cyan)">ID: ${p.id} | ДЕТАЛЬНІШЕ >></div>
+            </article>
+        </a>
+    `).join('');
+
+    // Оновлення UI пагінації
+    document.getElementById('page-info').innerText = `PAGE ${currentPage} OF ${totalPages}`;
+    document.getElementById('prevPage').disabled = (currentPage === 1);
+    document.getElementById('nextPage').disabled = (currentPage === totalPages);
+}
+
+function changePage(step) {
+    const totalPages = Math.ceil(allProducts.length / itemsPerPage);
+    if (currentPage + step >= 1 && currentPage + step <= totalPages) {
+        currentPage += step;
+        renderPage();
+        document.querySelector('#catalog-section').scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+/**
+ * 2. Завантаження радіокомпонентів
+ */
+async function loadComponents() {
+    const container = document.getElementById('components-list');
     try {
         const response = await fetch('/data/components.json');
         const components = await response.json();
         
-        // Очищаем контейнер перед вставкой
-        container.innerHTML = ''; 
-        
-        components.forEach(item => {
-    const card = document.createElement('a');
-    card.href = 'components/template.html?id=' + item.id;
-    card.className = 'card-link';
-    
-    // Додаємо картинку (беремо першу з масиву images)
-    const imgUrl = (item.images && item.images.length > 0) ? item.images[0] : '/img/no-image.png';
-
-    card.innerHTML = `
-        <article class="card">
-            <img src="${imgUrl}" alt="${item.name}" style="width:100%; height:160px; object-fit:cover; border-bottom: 4px solid var(--zx-cyan);">
-            <h3>${item.name}</h3>
-            <p>Аналог: ${item.analog}</p>
-            <div class="card-price">${item.price} ${item.currency}</div>
-            <div style="font-size:8px; color:var(--zx-cyan)">ДЕТАЛЬНІШЕ >></div>
-        </article>
-    `;
-    container.appendChild(card);
-});
+        container.innerHTML = components.map(item => `
+            <a href="components/template.html?id=${item.id}" class="card-link">
+                <article class="card">
+                    <img src="${(item.images && item.images[0]) || '/img/no-image.png'}" alt="${item.name}">
+                    <h3>${item.name}</h3>
+                    <p>Аналог: ${item.analog}</p>
+                    <div class="card-price">${item.price} ${item.currency}</div>
+                </article>
+            </a>
+        `).join('');
     } catch (err) {
-        console.error("Помилка завантаження бази:", err);
+        console.error("Помилка завантаження компонентів:", err);
     }
 }
 
-// Запускаем при загрузке страницы
-document.addEventListener('DOMContentLoaded', loadComponents);
+/**
+ * 3. Ефекти інтерфейсу
+ */
+function initSidebarEffects() {
+    const lines = document.querySelectorAll('.guide-line');
+    lines.forEach((line, index) => {
+        setTimeout(() => line.style.color = 'var(--zx-yellow)', index * 200);
+    });
+}
+
+// Обробка помилок зображень (заглушка)
+document.addEventListener('error', function (e) {
+    if (e.target.tagName.toLowerCase() === 'img') {
+        e.target.style.opacity = '0.5';
+    }
+}, true);

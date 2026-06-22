@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Завантаження...</title>
+    <meta id="meta-desc" name="description" content="">
+    <meta id="meta-keys" name="keywords" content="">
+    
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/card.css">
+    
+    <script type="application/ld+json" id="schema-ld"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a href="/" style="text-decoration: none; color: inherit;">
+                <h1>ZX SPECTRUM GARAGE №42</h1>
+            </a>
+        </div>
+    </header>
+
+    <nav class="back-nav">
+        <a href="/" class="btn-back">Повернутися до каталогу</a>
+    </nav>
+
+    <main class="container-wide" id="product-root">
+        <div class="product-grid">
+            <div class="gallery-section">
+                <div class="main-viewer" id="main-viewer">
+                    <img id="main-img" src="" alt="Product">
+                </div>
+                <div class="thumbs-row" id="thumbs-row"></div>
+            </div>
+
+            <div class="info-section">
+                <h1 class="product-h1" id="p-name">Завантаження...</h1>
+                <div class="sku" id="p-sku">SKU: ---</div>
+
+                <table class="spec-table" id="p-specs">
+                    </table>
+
+                <div class="price-tag" id="p-price">---</div>
+
+                <a href="#" id="tg-order" class="btn-action">ЗАМОВИТИ В TELEGRAM</a>
+            </div>
+        </div>
+
+        <div class="full-description">
+            <h2>10 LOAD "ОПИС"</h2>
+            <div class="text-content" id="p-desc"></div>
+        </div>
+    </main>
+
+    <div id="zoom-modal"><img id="modal-img" src=""></div>
+
+    <script>
+        async function loadProduct() {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            if (!id) { window.location.href = '/'; return; }
+
+            try {
+                const response = await fetch('/data/products.json');
+                const products = await response.json();
+                const product = products.find(p => p.id === id);
+
+                if (!product) {
+                    document.getElementById('product-root').innerHTML = '<h1>Товар не знайдено</h1>';
+                    return;
+                }
+
+                // 1. Meta & Title
+                document.title = product.meta.title;
+                document.getElementById('meta-desc').content = product.meta.description;
+                document.getElementById('meta-keys').content = product.meta.keywords;
+
+                // 2. Основна інформація
+                document.getElementById('p-name').innerText = product.product.name;
+                document.getElementById('p-sku').innerText = `SKU: ${product.product.sku}`;
+                document.getElementById('p-price').innerHTML = `<span>${product.product.price}</span> <span>${product.product.currency}</span>`;
+                document.getElementById('p-desc').innerHTML = product.product.description;
+
+                // 3. Таблиця характеристик
+                const specsTable = document.getElementById('p-specs');
+                product.product.specs.forEach(s => {
+                    specsTable.innerHTML += `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`;
+                });
+
+                // 4. Галерея
+                const mainImg = document.getElementById('main-img');
+                const thumbsRow = document.getElementById('thumbs-row');
+                mainImg.src = product.product.images[0];
+
+                product.product.images.forEach((src, i) => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.className = 'thumb' + (i === 0 ? ' active' : '');
+                    img.onclick = () => {
+                        mainImg.src = src;
+                        document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+                        img.classList.add('active');
+                    };
+                    thumbsRow.appendChild(img);
+                });
+
+                // 5. SEO Schema (JSON-LD)
+                const schema = {
+                    "@context": "https://schema.org/",
+                    "@type": "Product",
+                    "name": product.product.name,
+                    "sku": product.product.sku,
+                    "description": product.product.schema.description,
+                    "offers": {
+                        "@type": "Offer",
+                        "price": product.product.price,
+                        "priceCurrency": product.product.currency
+                    }
+                };
+                document.getElementById('schema-ld').innerText = JSON.stringify(schema);
+
+                // 6. Кнопка Telegram
+                document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Вітаю! Хочу замовити ${product.product.name}`;
+
+            } catch (err) {
+                console.error("Помилка:", err);
+            }
+        }
+
+        loadProduct();
+    </script>
+</body>
+</html>
