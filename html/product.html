@@ -4,59 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Завантаження...</title>
-    <meta id="meta-desc" name="description" content="">
-    <meta id="meta-keys" name="keywords" content="">
-    
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/card.css">
-    
-    <script type="application/ld+json" id="schema-ld"></script>
 </head>
 <body>
-
     <nav class="back-nav">
-        <a href="/" id="back-link" class="btn-back">Повернутися до каталогу</a>
+        <a href="/" class="btn-back">Повернутися до каталогу</a>
     </nav>
 
-    <main class="container-wide">
-        <article class="product-grid" id="product-root">
+    <main class="container-wide" id="product-root">
+        <article class="product-grid">
             <div class="gallery-section">
                 <div class="main-viewer" id="main-viewer">
-                    <img id="main-img" src="" alt="Товар">
+                    <img id="main-img" src="" alt="Product">
                 </div>
                 <div class="thumbs-row" id="thumbs-row"></div>
             </div>
 
             <div class="info-section">
                 <h1 class="product-h1" id="p-name">Завантаження...</h1>
-                <div class="sku" id="p-sku">SKU: ---</div>
+                <div class="sku" id="p-id">SKU: ---</div>
+                
+                <table class="spec-table" id="p-specs"></table>
 
-                <table class="spec-table">
-                    <tbody id="p-specs">
-                        <tr><td class="label">Ціна</td><td class="val price-tag" id="p-price">---</td></tr>
-                    </tbody>
-                </table>
-
+                <div class="price-tag" id="p-price">---</div>
                 <a href="#" id="tg-order" class="btn-action">ЗАМОВИТИ В TELEGRAM</a>
             </div>
         </article>
 
         <section class="full-description">
-            <h2>10 LOAD "ОПИС"</h2>
+            <h2>Опис</h2>
             <div class="text-content" id="p-desc"></div>
-        </section>
-
-        <section class="full-description" style="margin-top: 2px;">
-            <h2>30 REM "ПИТАННЯ ТА ПІДТРИМКА"</h2>
-            <div class="comment-box">
-                <textarea id="user-comment" class="comment-input" placeholder="Запитайте про товар..."></textarea>
-                <button class="btn-comment" onclick="submitComment()">Написати в Garage №42</button>
-            </div>
         </section>
     </main>
 
     <div id="zoom-modal"><img id="modal-img" src=""></div>
-
-    <script src="/js/product-loader.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
