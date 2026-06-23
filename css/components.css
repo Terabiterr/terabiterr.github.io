@@ -1,0 +1,113 @@
+/* css/components.css */
+
+/* Сітка для карток компонентів */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* Картка компонента */
+.card {
+    background: #121212;
+    border: 2px solid #222;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--zx-cyan, #00ffff);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Зображення */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #000;
+    margin-bottom: 15px;
+}
+
+/* Типографіка */
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #eee;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-price {
+    margin-top: auto;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--zx-yellow, #ffff00);
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        padding: 15px;
+    }
+}
+/* css/components.css */
+
+/* --- Кольорова смуга ZX Spectrum --- */
+.spectrum-bar {
+    position: fixed; /* Зафіксувати вгорі сторінки */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Висота смуги */
+    display: flex;
+    z-index: 10000; /* Щоб бути поверх усіх елементів */
+}
+
+.spectrum-bar div {
+    flex: 1; /* Кожен колір займає рівну частину ширини */
+}
+
+/* Оригінальні кольори завантаження Spectrum */
+.bar-red { background-color: #FF0000; }
+.bar-yellow { background-color: #FFFF00; }
+.bar-green { background-color: #00FF00; }
+.bar-cyan { background-color: #00FFFF; }
+
+
+/* --- Анімація заголовка --- */
+.zx-title {
+    /* Анімація: назва 'zx-blink', тривалість 1.5с, нескінченно, різка зміна */
+    animation: zx-blink 1.5s steps(1, end) infinite;
+    /* Тінь для ефекту світіння */
+    text-shadow: 0 0 5px var(--zx-cyan, #00ffff);
+}
+
+/* Опис анімації */
+@keyframes zx-blink {
+    0%, 100% {
+        color: #fff; /* Білий колір */
+        text-shadow: 0 0 5px var(--zx-cyan, #00ffff);
+    }
+    50% {
+        color: var(--zx-cyan, #00ffff); /* Колір циан */
+        text-shadow: 0 0 10px #fff;
+    }
+}
