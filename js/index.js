@@ -1,22 +1,33 @@
 // --- Змінні для пагінації ---
 let allProducts = [];
 let currentPage = 1;
-const itemsPerPage = 8; // Скільки товарів на 1 сторінці
+const itemsPerPage = 8; 
 
 document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Якщо ми на сторінці товару/компонента
     if (document.getElementById('product-root')) {
-        initProductPage();
+        // Визначаємо, що саме завантажувати
+        if (urlParams.has('isComponent')) {
+            initComponentPage();
+        } else {
+            initProductPage();
+        }
     }
+    
+    // Якщо на головній (каталог)
     if (document.getElementById('products')) {
         loadCatalog();
     }
-    // Додаємо цей блок:
+    
+    // Якщо на сторінці компонентів (список)
     if (document.getElementById('components-list')) {
         loadComponents();
     }
 });
 
-// --- Логіка каталогу з пагінацією ---
+// --- Логіка каталогу ---
 async function loadCatalog() {
     try {
         const response = await fetch('/data/catalog.json');
@@ -30,11 +41,10 @@ async function loadComponents() {
         const response = await fetch('/data/components.json');
         const components = await response.json();
         const container = document.getElementById('components-list');
-        
         if (!container) return;
 
         container.innerHTML = components.map(c => `
-            <a href="${c.url}" class="card-link">
+            <a href="/products/template.html?id=${c.id}&isComponent=true" class="card-link">
                 <article class="card">
                     <img src="${c.images[0]}" alt="${c.name}" loading="lazy">
                     <h3>${c.name}</h3>
@@ -42,7 +52,7 @@ async function loadComponents() {
                 </article>
             </a>
         `).join('');
-    } catch (err) { console.error("Помилка завантаження компонентів:", err); }
+    } catch (err) { console.error("Помилка компонентів:", err); }
 }
 
 function renderPage() {
@@ -69,7 +79,6 @@ function renderPage() {
 window.changePage = function(step) {
     const maxPages = Math.ceil(allProducts.length / itemsPerPage);
     const newPage = currentPage + step;
-    
     if (newPage >= 1 && newPage <= maxPages) {
         currentPage = newPage;
         renderPage();
@@ -77,36 +86,18 @@ window.changePage = function(step) {
     }
 };
 
-// --- Логіка сторінки товару ---
+// --- Логіка сторінки товару (Звичайний товар) ---
 async function initProductPage() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
+    const id = new URLSearchParams(window.location.search).get('id');
     if (!id) return;
 
     try {
-        const prodResp = await fetch('/data/products.json');
-        const productsList = await prodResp.json();
-        let item = productsList.find(p => p.id === id);
-        let data = null;
-        let isComponent = false;
+        const resp = await fetch('/data/products.json');
+        const list = await resp.json();
+        const item = list.find(p => p.id === id);
+        if (!item) return;
 
-        if (item) {
-            data = item.product;
-        } else {
-            const compResp = await fetch('/data/components.json');
-            const compList = await compResp.json();
-            item = compList.find(p => p.id === id);
-            if (item) {
-                data = item;
-                isComponent = true;
-            }
-        }
-
-        if (!data) {
-            document.getElementById('p-name').innerText = "Товар не знайдено";
-            return;
-        }
-
+        const data = item.product;
         document.title = data.name;
         document.getElementById('p-name').innerText = data.name;
         document.getElementById('p-price').innerHTML = `<span>${data.price} ${data.currency || 'UAH'}</span>`;
@@ -114,26 +105,52 @@ async function initProductPage() {
         document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Хочу замовити ${data.name}`;
 
         const specsTable = document.getElementById('p-specs');
+        if (specsTable && data.specs) {
+            specsTable.innerHTML = data.specs.map(s => `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`).join('');
+        }
+
+        renderGallery(data.images);
+        initZoom();
+    } catch (err) { console.error(err); }
+}
+
+// --- Логіка сторінки компонента ---
+async function initComponentPage() {
+    const id = new URLSearchParams(window.location.search).get('id');
+    if (!id) return;
+
+    try {
+        const resp = await fetch('/data/components.json');
+        const list = await resp.json();
+        const data = list.find(p => p.id === id);
+        if (!data) return;
+
+        document.title = data.name;
+        document.getElementById('p-name').innerText = data.name;
+        document.getElementById('p-price').innerHTML = `<span>${data.price} ${data.currency || 'UAH'}</span>`;
+        document.getElementById('p-desc').innerHTML = data.description;
+        document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Хочу замовити компонент ${data.name}`;
+
+        const specsTable = document.getElementById('p-specs');
         if (specsTable) {
-            if (isComponent) {
-                specsTable.innerHTML = `<tr><td class="label">Аналог</td><td class="val">${data.analog || '---'}</td></tr>`;
-            } else if (data.specs) {
-                specsTable.innerHTML = data.specs.map(s => `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`).join('');
-            }
+            specsTable.innerHTML = `<tr><td class="label">Аналог</td><td class="val">${data.analog || '---'}</td></tr>`;
         }
 
-        const mainImg = document.getElementById('main-img');
-        const thumbsRow = document.getElementById('thumbs-row');
-        if (data.images && data.images.length > 0) {
-            mainImg.src = data.images[0];
-            thumbsRow.innerHTML = data.images.map((src, i) => `
-                <img src="${src}" class="thumb ${i === 0 ? 'active' : ''}" onclick="changeMainImage(this, '${src}')">
-            `).join('');
-        }
+        renderGallery(data.images);
+        initZoom();
+    } catch (err) { console.error(err); }
+}
 
-        initZoom(); // Активуємо функцію зуму після завантаження фото
-
-    } catch (err) { console.error("Помилка завантаження даних:", err); }
+// --- Допоміжні функції ---
+function renderGallery(images) {
+    const mainImg = document.getElementById('main-img');
+    const thumbsRow = document.getElementById('thumbs-row');
+    if (images && images.length > 0) {
+        mainImg.src = images[0];
+        thumbsRow.innerHTML = images.map((src, i) => `
+            <img src="${src}" class="thumb ${i === 0 ? 'active' : ''}" onclick="changeMainImage(this, '${src}')">
+        `).join('');
+    }
 }
 
 function changeMainImage(element, src) {
@@ -142,7 +159,6 @@ function changeMainImage(element, src) {
     element.classList.add('active');
 }
 
-// --- Функція зуму зображень ---
 function initZoom() {
     const mainImg = document.getElementById('main-img');
     const zoomModal = document.getElementById('zoom-modal');
@@ -153,6 +169,5 @@ function initZoom() {
         document.getElementById('modal-img').src = mainImg.src;
         zoomModal.style.display = 'flex';
     };
-    
     zoomModal.onclick = () => { zoomModal.style.display = 'none'; };
 }
