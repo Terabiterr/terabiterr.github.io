@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('products')) {
         loadCatalog();
     }
+    // Додаємо цей блок:
+    if (document.getElementById('components-list')) {
+        loadComponents();
+    }
 });
 
 // --- Логіка каталогу з пагінацією ---
@@ -19,6 +23,26 @@ async function loadCatalog() {
         allProducts = await response.json();
         renderPage();
     } catch (err) { console.error("Помилка завантаження каталогу:", err); }
+}
+
+async function loadComponents() {
+    try {
+        const response = await fetch('/data/components.json');
+        const components = await response.json();
+        const container = document.getElementById('components-list');
+        
+        if (!container) return;
+
+        container.innerHTML = components.map(c => `
+            <a href="${c.url}" class="card-link">
+                <article class="card">
+                    <img src="${c.images[0]}" alt="${c.name}" loading="lazy">
+                    <h3>${c.name}</h3>
+                    <div class="card-price">${c.price} ${c.currency || 'UAH'}</div>
+                </article>
+            </a>
+        `).join('');
+    } catch (err) { console.error("Помилка завантаження компонентів:", err); }
 }
 
 function renderPage() {
