@@ -87,3 +87,16 @@ function initZoom() {
         };
     }
 }
+
+/**
+ * 3. Логіка пагінації (для головної сторінки)
+ */
+function changePage(step) {
+    currentPage += step;
+    renderPage();
+    // Прокручуємо до секції з товарами
+    const section = document.querySelector('#products') || document.querySelector('#catalog-section');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
