@@ -86,6 +86,36 @@ window.changePage = function(step) {
     }
 };
 
+//SEO
+function injectSchema(data) {
+    // Видаляємо стару схему, якщо вона вже була
+    const existingScript = document.querySelector('script[type="application/ld+json"]');
+    if (existingScript) {
+        existingScript.remove();
+    }
+
+    const schema = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": data.name,
+        "sku": data.sku,
+        "description": data.schema?.description || data.description.substring(0, 150), // Fallback, якщо schema пуста
+        "image": window.location.origin + data.images[0], // Бажано повний URL
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": data.currency || "UAH",
+            "price": data.price,
+            "availability": "https://schema.org/InStock",
+            "url": window.location.href // Поточний URL товару
+        }
+    };
+    
+    let script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+}
+
 // --- Логіка сторінки товару (Звичайний товар) ---
 async function initProductPage() {
     const id = new URLSearchParams(window.location.search).get('id');
@@ -109,6 +139,7 @@ async function initProductPage() {
             specsTable.innerHTML = data.specs.map(s => `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`).join('');
         }
 
+        injectSchema(data);
         renderGallery(data.images);
         initZoom();
     } catch (err) { console.error(err); }
