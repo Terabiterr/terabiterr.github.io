@@ -117,6 +117,57 @@ function injectSchema(data) {
 }
 
 // --- Логіка сторінки товару (Звичайний товар) ---
+// Функція для оновлення SEO та Schema.org
+function updateProductSEO(item) {
+    const data = item.product;
+    const meta = item.meta;
+
+    // 1. Title & Meta Tags
+    document.title = meta.title || data.name;
+    
+    const descTag = document.getElementById('meta-desc') || document.querySelector('meta[name="description"]');
+    if (descTag) descTag.setAttribute("content", meta.description);
+
+    const keyTag = document.getElementById('meta-keys') || document.querySelector('meta[name="keywords"]');
+    if (keyTag) keyTag.setAttribute("content", meta.keywords);
+
+    // 2. Canonical URL (запобігає дублям в індексації)
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', window.location.href.split('?')[0] + '?id=' + item.id);
+
+    // 3. Schema.org JSON-LD
+    const existingSchema = document.querySelector('script[type="application/ld+json"]');
+    if (existingSchema) existingSchema.remove();
+
+    const schema = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": data.name,
+        "sku": data.sku,
+        "description": data.schema?.description || meta.description,
+        // Виправляємо шлях: видаляємо '..' і додаємо домен
+        "image": window.location.origin + data.images[0].replace('..', ''),
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": data.currency || "UAH",
+            "price": data.price,
+            "availability": "https://schema.org/InStock",
+            "url": window.location.href
+        }
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+}
+
+// --- Логіка сторінки товару ---
 async function initProductPage() {
     const id = new URLSearchParams(window.location.search).get('id');
     if (!id) return;
@@ -128,21 +179,30 @@ async function initProductPage() {
         if (!item) return;
 
         const data = item.product;
-        document.title = data.name;
+
+        // Оновлюємо SEO
+        updateProductSEO(item);
+
+        // Відображення даних
         document.getElementById('p-name').innerText = data.name;
         document.getElementById('p-price').innerHTML = `<span>${data.price} ${data.currency || 'UAH'}</span>`;
         document.getElementById('p-desc').innerHTML = data.description;
         document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Хочу замовити ${data.name}`;
 
+        // SKU (якщо є в шаблоні)
+        const skuEl = document.getElementById('p-id');
+        if (skuEl) skuEl.innerText = `SKU: ${data.sku}`;
+
         const specsTable = document.getElementById('p-specs');
         if (specsTable && data.specs) {
-            specsTable.innerHTML = data.specs.map(s => `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`).join('');
+            specsTable.innerHTML = data.specs.map(s => 
+                `<tr><td class="label">${s.label}</td><td class="val">${s.val}</td></tr>`
+            ).join('');
         }
 
-        injectSchema(data);
         renderGallery(data.images);
         initZoom();
-    } catch (err) { console.error(err); }
+    } catch (err) { console.error("Помилка ініціалізації сторінки:", err); }
 }
 
 // --- Логіка сторінки компонента ---
