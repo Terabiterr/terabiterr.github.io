@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База знань ZXKit | Спектрум та електроніка</title>
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+
+    <header>
+        <h1>Вікі ZXKit</h1>
+    </header>
+
+    <main>
+        <section id="posts-list">
+            <p>Завантаження статей...</p>
+        </section>
+    </main>
+
+    <script src="/js/posts.js"></script>
+    <script>
+        async function renderIndex() {
+            const container = document.getElementById('posts-list');
+            const posts = await fetchPosts(); // Використовуємо функцію з вашого js/posts.js
+
+            if (posts && posts.length > 0) {
+                container.innerHTML = ''; // Очищаємо текст "Завантаження"
+                
+                posts.forEach(post => {
+                    const articleLink = document.createElement('article');
+                    articleLink.innerHTML = `
+                        <h2><a href="posts/template.html?id=${post.id}">${post.title}</a></h2>
+                        <p>${post.description}</p>
+                        <small>Дата: ${post.date}</small>
+                    `;
+                    container.appendChild(articleLink);
+                });
+            } else {
+                container.innerHTML = '<p>Поки що статей немає, але скоро вони з"являться!</p>';
+            }
+        }
+
+        renderIndex();
+    </script>
+</body>
+</html>
