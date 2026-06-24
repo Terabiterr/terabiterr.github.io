@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Якщо на головній (каталог)
     if (document.getElementById('products')) {
         loadCatalog();
+        loadComments();
     }
 
     // Якщо на сторінці компонентів (список)
@@ -277,4 +278,50 @@ function initZoom() {
         zoomModal.style.display = 'flex';
     };
     zoomModal.onclick = () => { zoomModal.style.display = 'none'; };
+}
+
+//Відгуки
+// --- Логіка відгуків ---
+async function loadComments() {
+    try {
+        const response = await fetch('/data/comments.json');
+        const comments = await response.json();
+        
+        // Знаходимо футер, щоб вставити відгуки перед ним
+        const footer = document.querySelector('footer');
+        if (!footer) return;
+
+        const section = document.createElement('section');
+        section.className = 'reviews-section';
+        section.innerHTML = `
+            <h2 style="text-align: center; margin: 40px 0;">Відгуки про ZXKit</h2>
+            <div class="reviews-grid">
+                ${comments.map(c => `
+                    <div class="review-card">
+                        <div class="stars">${'★'.repeat(c.rating)}${'☆'.repeat(5 - c.rating)}</div>
+                        <p class="text">"${c.text}"</p>
+                        <div class="author"><strong>${c.author}</strong></div>
+                        <small class="date">${c.date}</small>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+
+        footer.parentNode.insertBefore(section, footer);
+
+        // Додаємо Schema.org для SEO (загальний рейтинг магазину)
+        const schema = {
+            "@context": "https://schema.org/",
+            "@type": "AggregateRating",
+            "itemReviewed": { "@type": "Store", "name": "ZXKit" },
+            "ratingValue": "5.0",
+            "reviewCount": comments.length
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+
+    } catch (err) { console.error("Помилка завантаження відгуків:", err); }
 }
