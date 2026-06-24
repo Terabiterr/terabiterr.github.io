@@ -328,26 +328,39 @@ async function loadComments() {
 
 // Функція відправки відгуку/питання в Telegram
 window.submitComment = function() {
-    const commentInput = document.getElementById('user-comment');
+    // 1. Отримуємо елементи
+    const nameInput = document.getElementById('name');
+    const commentInput = document.getElementById('comment');
+    const ratingInput = document.getElementById('rating');
+    
+    // 2. Перевіряємо, чи існують ці елементи на сторінці (захист від помилок)
+    if (!nameInput || !commentInput) {
+        console.error("Поля форми не знайдені на цій сторінці!");
+        return;
+    }
+
+    const name = nameInput.value.trim();
     const commentText = commentInput.value.trim();
+    const rating = ratingInput ? ratingInput.value : "5";
     
     // Отримуємо назву товару, якщо ми на сторінці товару
     const productName = document.getElementById('p-name') ? document.getElementById('p-name').innerText : "Головна сторінка";
 
-    if (commentText === "") {
-        alert("Будь ласка, напишіть текст відгуку або питання.");
+    // 3. Валідація
+    if (name === "" || commentText === "") {
+        alert("Будь ласка, заповніть ім'я та текст відгуку.");
         return;
     }
 
-    // Формуємо текст повідомлення
-    const message = `✉️ Нове повідомлення з сайту (Відгук/Питання)\n\n📦 Товар: ${productName}\n💬 Повідомлення: ${commentText}`;
+    // 4. Формуємо текст повідомлення
+    const message = `🔔 Новий відгук з сайту\n\n📦 Товар: ${productName}\n👤 Ім'я: ${name}\n⭐ Рейтинг: ${rating}/5\n💬 Відгук: ${commentText}`;
 
-    // ВАРІАНТ А: Відкриття Telegram (найпростіший метод, без API токена)
-    // Працює миттєво і не потребує налаштування бота на клієнтській стороні
+    // 5. Відкриваємо Telegram
     const telegramUrl = `https://t.me/terabiterr?text=${encodeURIComponent(message)}`;
     window.open(telegramUrl, '_blank');
 
-    // Очищаємо поле
+    // 6. Очищаємо поля
+    nameInput.value = "";
     commentInput.value = "";
-    alert("Дякуємо! Ваше повідомлення відправлено в Garage №42.");
+    alert("Дякуємо! Ваше повідомлення відправлено.");
 };
