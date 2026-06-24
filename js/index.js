@@ -325,3 +325,29 @@ async function loadComments() {
 
     } catch (err) { console.error("Помилка завантаження відгуків:", err); }
 }
+
+// Функція відправки відгуку/питання в Telegram
+window.submitComment = function() {
+    const commentInput = document.getElementById('user-comment');
+    const commentText = commentInput.value.trim();
+    
+    // Отримуємо назву товару, якщо ми на сторінці товару
+    const productName = document.getElementById('p-name') ? document.getElementById('p-name').innerText : "Головна сторінка";
+
+    if (commentText === "") {
+        alert("Будь ласка, напишіть текст відгуку або питання.");
+        return;
+    }
+
+    // Формуємо текст повідомлення
+    const message = `✉️ Нове повідомлення з сайту (Відгук/Питання)\n\n📦 Товар: ${productName}\n💬 Повідомлення: ${commentText}`;
+
+    // ВАРІАНТ А: Відкриття Telegram (найпростіший метод, без API токена)
+    // Працює миттєво і не потребує налаштування бота на клієнтській стороні
+    const telegramUrl = `https://t.me/terabiterr?text=${encodeURIComponent(message)}`;
+    window.open(telegramUrl, '_blank');
+
+    // Очищаємо поле
+    commentInput.value = "";
+    alert("Дякуємо! Ваше повідомлення відправлено в Garage №42.");
+};

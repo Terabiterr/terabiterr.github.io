@@ -240,3 +240,13 @@ footer {
     color: var(--zx-green); 
     font-size: 9px; 
 }
+
+.review-form { 
+    display: flex; flex-direction: column; gap: 15px; 
+    max-width: 500px; margin: 40px auto; padding: 20px;
+    background: #000; border: 4px solid var(--zx-magenta);
+}
+.review-form input, .review-form textarea, .review-form select {
+    background: #111; border: 2px solid var(--zx-cyan); color: white;
+    padding: 10px; font-family: 'Press Start 2P', monospace; font-size: 10px;
+}

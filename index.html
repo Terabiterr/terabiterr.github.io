@@ -12,22 +12,61 @@
         gtag('config', 'G-60LGMQHR54');
     </script>
     <title>Купити ZX Spectrum, ретро-консолі та радіокомпоненти | Магазин ZX-Kit Харків</title>
-    <meta name="description" content="Магазин ZX-Kit: продаж ZX Spectrum (Харків 128, Harlequin, Pentagon), ретро-консолей, PC, моніторів та радіокомпонентів для DIY-проєктів. Доставка по Україні.">
-    <meta name="keywords" content="ZX Spectrum купити, ретро-комп'ютери, радіокомпоненти, ігрові консолі, DIY конструктори, Харків, ZX-Kit, Pentagon 128, Harlequin">
-    
+    <meta name="description"
+        content="Магазин ZX-Kit: продаж ZX Spectrum (Харків 128, Harlequin, Pentagon), ретро-консолей, PC, моніторів та радіокомпонентів для DIY-проєктів. Доставка по Україні.">
+    <meta name="keywords"
+        content="ZX Spectrum купити, ретро-комп'ютери, радіокомпоненти, ігрові консолі, DIY конструктори, Харків, ZX-Kit, Pentagon 128, Harlequin">
+
     <link rel="canonical" href="https://zxkit.com.ua/">
     <link rel="stylesheet" href="/css/index.css">
     <style>
-        .card-link { text-decoration: none; color: inherit; display: block; transition: transform 0.2s; }
-        .card-link:hover { transform: translateY(-5px); }
-        .card-link:hover .card { border-color: var(--zx-cyan); }
-        .pagination-container { text-align: center; margin-top: 30px; }
-        .page-btn { cursor: pointer; padding: 10px; background: var(--zx-black); border: 1px solid var(--zx-cyan); color: var(--zx-cyan); }
-        
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        .card-link:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-link:hover .card {
+            border-color: var(--zx-cyan);
+        }
+
+        .pagination-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .page-btn {
+            cursor: pointer;
+            padding: 10px;
+            background: var(--zx-black);
+            border: 1px solid var(--zx-cyan);
+            color: var(--zx-cyan);
+        }
+
         /* Footer styles */
-        footer { margin-top: 50px; padding: 20px; border-top: 2px solid var(--zx-magenta); color: #888; font-size: 12px; }
-        .footer-content { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
-        .footer-section { max-width: 300px; }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 2px solid var(--zx-magenta);
+            color: #888;
+            font-size: 12px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-section {
+            max-width: 300px;
+        }
     </style>
 </head>
 
@@ -39,7 +78,8 @@
         </div>
     </header>
     <div class="marquee">
-        <div class="marquee-content">*** КУПИТИ ZX SPECTRUM *** РЕТРО-КОНСОЛІ ТА РАДІОКОМПОНЕНТИ *** ДОСТАВКА ПО УКРАЇНІ ТА СВІТУ *** КОНСТРУКТОРИ ДЛЯ САМОСТІЙНОЇ ЗБІРКИ ***</div>
+        <div class="marquee-content">*** КУПИТИ ZX SPECTRUM *** РЕТРО-КОНСОЛІ ТА РАДІОКОМПОНЕНТИ *** ДОСТАВКА ПО УКРАЇНІ
+            ТА СВІТУ *** КОНСТРУКТОРИ ДЛЯ САМОСТІЙНОЇ ЗБІРКИ ***</div>
     </div>
 
     <main class="container">
@@ -58,18 +98,19 @@
                 <a href="/components.html" class="contact-link"> >> РАДІОКОМПОНЕНТИ</a>
             </div>
             <div class="sidebar-box" style="border-color: var(--zx-yellow);">
-            <div class="sidebar-box" style="border-color: var(--zx-magenta);">
-                <div class="box-title">CONTACTS.SYS</div>
-                <a href="https://t.me/terabiterr" class="contact-link"> TELEGRAM: @terabiterr</a>
-                <a href="tel:+380983424229" class="contact-link"> PHONE: +380 (98) 342-42-29</a>
-            </div>
+                <div class="sidebar-box" style="border-color: var(--zx-magenta);">
+                    <div class="box-title">CONTACTS.SYS</div>
+                    <a href="https://t.me/terabiterr" class="contact-link"> TELEGRAM: @terabiterr</a>
+                    <a href="tel:+380983424229" class="contact-link"> PHONE: +380 (98) 342-42-29</a>
+                </div>
         </aside>
 
         <section id="catalog-section">
-            <h2 style="color: var(--zx-yellow); font-size: 14px; margin-bottom: 20px; border-left: 4px solid var(--zx-cyan); padding-left: 10px;">
+            <h2
+                style="color: var(--zx-yellow); font-size: 14px; margin-bottom: 20px; border-left: 4px solid var(--zx-cyan); padding-left: 10px;">
                 КАТАЛОГ ОБЛАДНАННЯ [SELECT PRODUCT]
             </h2>
-            
+
             <section class="grid" id="products"></section>
 
             <div class="pagination-container">
@@ -79,20 +120,35 @@
             </div>
         </section>
     </main>
-
+    <section class="review-form-section">
+        <h2 style="text-align: center; color: var(--zx-yellow);">Залишити відгук</h2>
+        <form id="review-form" class="review-form">
+            <input type="text" id="name" placeholder="Ваше ім'я" required>
+            <select id="rating">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+            </select>
+            <textarea id="comment" placeholder="Ваш відгук про ZXKit..." required></textarea>
+            <button type="submit" class="page-btn">Надіслати на модерацію</button>
+        </form>
+    </section>
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h4>ZX-KIT ХАРКІВ</h4>
-                <p>Ваш надійний провідник у світ 8-бітного ретро-геймінгу. Продаж ZX Spectrum, сучасних DIY-конструкторів, консолей та комплектуючих.</p>
+                <p>Ваш надійний провідник у світ 8-бітного ретро-геймінгу. Продаж ZX Spectrum, сучасних
+                    DIY-конструкторів, консолей та комплектуючих.</p>
             </div>
             <div class="footer-section">
                 <h4>АСОРТИМЕНТ</h4>
-                <p>Spectrum 128k, Harlequin, Pentagon, радіокомпоненти, ігрові приставки (Dendy, Xbox), PC-збірки та монітори для ентузіастів.</p>
+                <p>Spectrum 128k, Harlequin, Pentagon, радіокомпоненти, ігрові приставки (Dendy, Xbox), PC-збірки та
+                    монітори для ентузіастів.</p>
             </div>
             <div class="footer-section">
                 <h4>КОНТАКТИ</h4>
-                <p>Підтримка та замовлення: <a href="https://t.me/terabiterr" style="color:var(--zx-cyan)">Telegram</a><br>Харків, Україна</p>
+                <p>Підтримка та замовлення: <a href="https://t.me/terabiterr"
+                        style="color:var(--zx-cyan)">Telegram</a><br>Харків, Україна</p>
             </div>
         </div>
         <div style="text-align:center; margin-top: 20px;">&copy; 2026 ZX-KIT. Всі права захищені.</div>
@@ -100,4 +156,5 @@
 
     <script src="/js/index.js"></script>
 </body>
+
 </html>
