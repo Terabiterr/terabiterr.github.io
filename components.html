@@ -36,10 +36,19 @@
             <h2 style="color: var(--zx-yellow); border-left: 4px solid var(--zx-cyan); padding-left: 10px;">
                 БАЗА КОМПОНЕНТІВ [PARTS_DATABASE]
             </h2>
+            <div class="catalog-controls">
+                <input type="text" id="search-input" placeholder="Пошук компонентів...">
+                <div class="filters">
+                    <button onclick="filterComponents('all')">Всі</button>
+                    <button onclick="filterComponents('ceramic')">Кераміка</button>
+                </div>
+            </div>
+            <div id="pagination" class="pagination-container"></div>
             <div class="grid" id="components-list"></div>
         </section>
     </main>
     <script src="/js/index.js"></script>
+    <script src="/js/components.js"></script>
 </body>
 
 </html>
