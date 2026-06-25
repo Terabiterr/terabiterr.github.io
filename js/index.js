@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Якщо на головній (каталог)
     if (document.getElementById('products')) {
         loadCatalog();
-        loadComments();
     }
 
     // Якщо на сторінці компонентів (список)
