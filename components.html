@@ -53,6 +53,19 @@
             <div id="pagination" class="pagination-container"></div>
         </section>
     </main>
+    <section class="review-form-section">
+        <h2 style="text-align: center; color: var(--zx-yellow);">Залишити відгук</h2>
+        <form id="review-form" class="review-form">
+            <input type="text" id="name" placeholder="Ваше ім'я" required>
+            <select id="rating">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+            </select>
+            <textarea id="comment" placeholder="Ваш відгук про ZXKit..." required></textarea>
+            <button type="button" onclick="submitComment()" class="page-btn">Надіслати на модерацію</button>
+        </form>
+    </section>
     <footer class="site-footer">
         <div class="footer-inner">
             <div class="footer-column">
