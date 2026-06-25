@@ -284,3 +284,74 @@ header {
     background: #111; border: 2px solid var(--zx-cyan); color: white;
     padding: 10px; font-family: 'Press Start 2P', monospace; font-size: 10px;
 }
+
+/* --- 10. Повна мобільна адаптація для components.html --- */
+
+@media (max-width: 768px) {
+    /* Зменшуємо загальні відступи */
+    .container {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    /* Ховаємо сайдбар або робимо його компактним */
+    .sidebar {
+        display: none; /* Часто сайдбар на мобільних заважає; якщо треба залишити, додайте margin-bottom: 20px */
+    }
+
+    /* Заголовки */
+    .zx-title {
+        font-size: 14px;
+        text-shadow: 2px 2px var(--zx-red);
+    }
+
+    /* Пошук та фільтри */
+    .catalog-controls {
+        margin-bottom: 20px;
+    }
+
+    .filter-btn {
+        padding: 6px 8px;
+        font-size: 8px; /* Менший шрифт, щоб кнопки влазили в ряд */
+    }
+
+    /* Картки */
+    .grid {
+        gap: 15px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card img {
+        height: 140px;
+    }
+
+    .card h3 {
+        font-size: 12px;
+    }
+
+    /* Пагінація - робимо кнопки трохи меншими */
+    .pagination-container button {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Для дуже вузьких екранів */
+    header {
+        padding: 15px 10px;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
