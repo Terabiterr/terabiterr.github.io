@@ -36,9 +36,20 @@
             <h2 style="color: var(--zx-yellow); border-left: 4px solid var(--zx-cyan); padding-left: 10px;">
                 БАЗА КОМПОНЕНТІВ [PARTS_DATABASE]
             </h2>
+            
             <div class="catalog-controls">
                 <input type="text" id="search-input" placeholder="Пошук компонентів...">
+                
+                <div class="filter-container">
+                    <button class="filter-btn active" data-category="all">ВСЕ</button>
+                    <button class="filter-btn" data-category="resistors">РЕЗИСТОРИ</button>
+                    <button class="filter-btn" data-category="capacitors">КОНДЕНСАТОРИ</button>
+                    <button class="filter-btn" data-category="ics">МІКРОСХЕМИ</button>
+                    <button class="filter-btn" data-category="transistors">ТРАНЗИСТОРИ</button>
+                    <button class="filter-btn" data-category="other">ІНШЕ</button>
+                </div>
             </div>
+            
             <div class="grid" id="components-list"></div>
             <div id="pagination" class="pagination-container"></div>
         </section>
