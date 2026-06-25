@@ -19,15 +19,50 @@ const CatalogManager = {
         } catch (err) { console.error("Помилка завантаження компонентів:", err); }
     },
 
+    setupEventListeners() {
+        // 1. Слухач для звичайного пошуку
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
+        }
+
+        // 2. Слухачі для кнопок фільтрації
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const categoryValue = e.target.dataset.category; // наприклад: "конденсатор"
+                const btnText = e.target.innerText; // наприклад: "КОНДЕНСАТОРИ"
+
+                // Оновлюємо активну кнопку
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Якщо "ВСЕ" — очищаємо, інакше вписуємо категорію
+                const term = categoryValue === 'all' ? '' : categoryValue;
+                if (searchInput) searchInput.value = categoryValue === 'all' ? '' : btnText;
+                
+                this.handleSearch(term);
+            });
+        });
+    },
+
     handleSearch(term) {
-        const t = term.toLowerCase();
+    const t = term.toLowerCase();
+    
+    // Якщо вибрано "ВСЕ" (порожній рядок)
+    if (t === "") {
+        this.filteredData = [...this.allData];
+    } else {
+        // Шукаємо слово в назві (name) або короткому описі (short_description)
         this.filteredData = this.allData.filter(c => 
             c.name.toLowerCase().includes(t) || 
-            c.description.toLowerCase().includes(t)
+            (c.short_description && c.short_description.toLowerCase().includes(t)) ||
+            (c.description && c.description.toLowerCase().includes(t))
         );
-        this.currentPage = 1;
-        this.render();
-    },
+    }
+    
+    this.currentPage = 1;
+    this.render();
+},
 
     changePage(step) {
         const max = Math.ceil(this.filteredData.length / this.itemsPerPage);
