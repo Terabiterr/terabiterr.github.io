@@ -364,3 +364,5 @@ window.submitComment = function() {
     commentInput.value = "";
     alert("Дякуємо! Ваше повідомлення відправлено.");
 };
+
+loadComments()
