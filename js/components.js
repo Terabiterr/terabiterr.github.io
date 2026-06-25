@@ -9,49 +9,33 @@ const CatalogManager = {
             const resp = await fetch('/data/components.json');
             this.allData = await resp.json();
             this.filteredData = [...this.allData];
-            
-            // Спочатку рендеримо все
             this.render();
             
-            // Налаштовуємо події
-            this.setupEventListeners();
-        } catch (err) { console.error("Помилка:", err); }
-    },
-
-    setupEventListeners() {
-        // Пошук
-        const searchInput = document.getElementById('search-input');
-        searchInput?.addEventListener('input', (e) => this.handleSearch(e.target.value));
-
-        // Кнопки
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-
-                const val = e.target.dataset.category;
-                if (searchInput) searchInput.value = val ? e.target.innerText : "";
-                
-                this.handleSearch(val);
-            });
-        });
+            // Слухач для пошуку
+            const searchInput = document.getElementById('search-input');
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
+            }
+        } catch (err) { console.error("Помилка завантаження компонентів:", err); }
     },
 
     handleSearch(term) {
         const t = term.toLowerCase();
-        
-        if (t === "") {
-            this.filteredData = [...this.allData];
-        } else {
-            // Фільтрація: шукаємо слово в name або description
-            this.filteredData = this.allData.filter(c => 
-                (c.name && c.name.toLowerCase().includes(t)) || 
-                (c.description && c.description.toLowerCase().includes(t))
-            );
-        }
-        
+        this.filteredData = this.allData.filter(c => 
+            c.name.toLowerCase().includes(t) || 
+            c.description.toLowerCase().includes(t)
+        );
         this.currentPage = 1;
         this.render();
+    },
+
+    changePage(step) {
+        const max = Math.ceil(this.filteredData.length / this.itemsPerPage);
+        if (this.currentPage + step >= 1 && this.currentPage + step <= max) {
+            this.currentPage += step;
+            this.render();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     },
 
     render() {
@@ -62,11 +46,11 @@ const CatalogManager = {
         const pageItems = this.filteredData.slice(start, start + this.itemsPerPage);
 
         container.innerHTML = pageItems.map(c => `
-            <a href="${c.url}" class="card-link">
+            <a href="/products/template.html?id=${c.id}&isComponent=true" class="card-link">
                 <article class="card">
-                    <img src="${c.images[0]}" alt="${c.name}">
+                    <img src="${c.images[0]}" alt="${c.name}" loading="lazy">
                     <h3>${c.name}</h3>
-                    <div class="card-price">${c.price} ${c.currency}</div>
+                    <div class="card-price">${c.price} ${c.currency || 'UAH'}</div>
                 </article>
             </a>
         `).join('');
@@ -78,20 +62,20 @@ const CatalogManager = {
         const nav = document.getElementById('pagination');
         if (!nav) return;
         const total = Math.ceil(this.filteredData.length / this.itemsPerPage);
-        nav.innerHTML = total > 1 ? `
-            <button onclick="CatalogManager.changePage(-1)">«</button>
-            <span>${this.currentPage}/${total}</span>
-            <button onclick="CatalogManager.changePage(1)">»</button>
-        ` : '';
-    },
+        
+        if (total <= 1) { nav.innerHTML = ''; return; }
 
-    changePage(step) {
-        const max = Math.ceil(this.filteredData.length / this.itemsPerPage);
-        if (this.currentPage + step >= 1 && this.currentPage + step <= max) {
-            this.currentPage += step;
-            this.render();
-        }
+        nav.innerHTML = `
+            <button onclick="CatalogManager.changePage(-1)" ${this.currentPage === 1 ? 'disabled' : ''}>«</button>
+            <span>PAGE ${this.currentPage} / ${total}</span>
+            <button onclick="CatalogManager.changePage(1)" ${this.currentPage === total ? 'disabled' : ''}>»</button>
+        `;
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => CatalogManager.init());
+// Запуск
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('components-list')) {
+        CatalogManager.init();
+    }
+});
