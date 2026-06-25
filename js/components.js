@@ -9,18 +9,16 @@ const CatalogManager = {
             const resp = await fetch('/data/components.json');
             this.allData = await resp.json();
             this.filteredData = [...this.allData];
-            this.render();
             
-            // Слухач для пошуку
-            const searchInput = document.getElementById('search-input');
-            if (searchInput) {
-                searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
-            }
+            this.render();
+            // ВИКЛИКАЄМО МЕТОД, ДЕ НАЛАШТОВАНІ ВСІ СЛУХАЧІ
+            this.setupEventListeners(); 
+            
         } catch (err) { console.error("Помилка завантаження компонентів:", err); }
     },
 
     setupEventListeners() {
-        // 1. Слухач для звичайного пошуку
+        // 1. Слухач для пошуку (один раз тут!)
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
             searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
@@ -29,40 +27,39 @@ const CatalogManager = {
         // 2. Слухачі для кнопок фільтрації
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const categoryValue = e.target.dataset.category; // наприклад: "конденсатор"
-                const btnText = e.target.innerText; // наприклад: "КОНДЕНСАТОРИ"
-
-                // Оновлюємо активну кнопку
+                const categoryValue = e.target.dataset.category; 
+                
+                // Оновлюємо UI кнопок
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 e.target.classList.add('active');
 
-                // Якщо "ВСЕ" — очищаємо, інакше вписуємо категорію
-                const term = categoryValue === 'all' ? '' : categoryValue;
-                if (searchInput) searchInput.value = categoryValue === 'all' ? '' : btnText;
+                // Оновлюємо поле пошуку
+                if (searchInput) {
+                    searchInput.value = categoryValue === 'all' ? '' : e.target.innerText;
+                }
                 
-                this.handleSearch(term);
+                this.handleSearch(categoryValue === 'all' ? '' : categoryValue);
             });
         });
     },
 
     handleSearch(term) {
-    const t = term.toLowerCase();
-    
-    // Якщо вибрано "ВСЕ" (порожній рядок)
-    if (t === "") {
-        this.filteredData = [...this.allData];
-    } else {
-        // Шукаємо слово в назві (name) або короткому описі (short_description)
-        this.filteredData = this.allData.filter(c => 
-            c.name.toLowerCase().includes(t) || 
-            (c.short_description && c.short_description.toLowerCase().includes(t)) ||
-            (c.description && c.description.toLowerCase().includes(t))
-        );
-    }
-    
-    this.currentPage = 1;
-    this.render();
-},
+        const t = term.toLowerCase();
+        
+        if (t === "") {
+            this.filteredData = [...this.allData];
+        } else {
+            // Фільтрація
+            this.filteredData = this.allData.filter(c => 
+                c.name.toLowerCase().includes(t) || 
+                (c.short_description && c.short_description.toLowerCase().includes(t)) ||
+                (c.description && c.description.toLowerCase().includes(t))
+            );
+        }
+        
+        this.currentPage = 1;
+        this.render();
+    },
 
     changePage(step) {
         const max = Math.ceil(this.filteredData.length / this.itemsPerPage);
@@ -81,7 +78,7 @@ const CatalogManager = {
         const pageItems = this.filteredData.slice(start, start + this.itemsPerPage);
 
         container.innerHTML = pageItems.map(c => `
-            <a href="/products/template.html?id=${c.id}&isComponent=true" class="card-link">
+            <a href="${c.url}" class="card-link">
                 <article class="card">
                     <img src="${c.images[0]}" alt="${c.name}" loading="lazy">
                     <h3>${c.name}</h3>
@@ -108,7 +105,6 @@ const CatalogManager = {
     }
 };
 
-// Запуск
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('components-list')) {
         CatalogManager.init();
