@@ -11,33 +11,35 @@ const CatalogManager = {
             this.filteredData = [...this.allData];
             this.render();
             
-            // Слухач для пошуку
-            const searchInput = document.getElementById('search-input');
-            if (searchInput) {
-                searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
-            }
-            setupFilterButtons()
-        } catch (err) { console.error("Помилка завантаження компонентів:", err); }
+            // Налаштовуємо всі обробники
+            this.setupEventListeners();
+        } catch (err) { 
+            console.error("Помилка завантаження компонентів:", err); 
+        }
     },
 
-    setupFilterButtons() {
+    setupEventListeners() {
+        // 1. Пошук
         const searchInput = document.getElementById('search-input');
-        
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
+        }
+
+        // 2. Фільтри (обробка кнопок)
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 // Візуальна активність
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 e.target.classList.add('active');
 
-                // Значення фільтру
+                // Значення з data-category
                 const filterValue = e.target.dataset.category;
                 
-                // Вписуємо в пошук (як ви хотіли)
+                // Вписуємо текст у пошук, якщо натиснули кнопку, крім "ВСЕ"
                 if (searchInput) {
                     searchInput.value = filterValue === "" ? "" : e.target.innerText;
                 }
                 
-                // Викликаємо ваш робочий метод пошуку
                 this.handleSearch(filterValue);
             });
         });
@@ -45,10 +47,13 @@ const CatalogManager = {
 
     handleSearch(term) {
         const t = term.toLowerCase();
+        
+        // Фільтрація: назва або опис
         this.filteredData = this.allData.filter(c => 
-            c.name.toLowerCase().includes(t) || 
-            c.description.toLowerCase().includes(t)
+            (c.name && c.name.toLowerCase().includes(t)) || 
+            (c.description && c.description.toLowerCase().includes(t))
         );
+        
         this.currentPage = 1;
         this.render();
     },
@@ -97,7 +102,6 @@ const CatalogManager = {
     }
 };
 
-// Запуск
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('components-list')) {
         CatalogManager.init();
