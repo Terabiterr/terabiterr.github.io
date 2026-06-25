@@ -16,7 +16,31 @@ const CatalogManager = {
             if (searchInput) {
                 searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
             }
+            setupFilterButtons()
         } catch (err) { console.error("Помилка завантаження компонентів:", err); }
+    },
+
+    setupFilterButtons() {
+        const searchInput = document.getElementById('search-input');
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Візуальна активність
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Значення фільтру
+                const filterValue = e.target.dataset.category;
+                
+                // Вписуємо в пошук (як ви хотіли)
+                if (searchInput) {
+                    searchInput.value = filterValue === "" ? "" : e.target.innerText;
+                }
+                
+                // Викликаємо ваш робочий метод пошуку
+                this.handleSearch(filterValue);
+            });
+        });
     },
 
     handleSearch(term) {
