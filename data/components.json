@@ -14,66 +14,66 @@
     "keywords": "4164-15NL, 565РУ5, ремонт ZX Spectrum, пам'ять для Спектрума, радіокомпоненти Україна, DRAM для ретро комп'ютерів, мікросхеми купити",
     "stock_status": "in_stock"
   },
-    {
-  "id": "XTAL-14MHZ-HC49",
-  "name": "Кварцевий резонатор 14Mhz HC49",
-  "analog": "відсутній",
-  "price": 15.50,
-  "currency": "UAH",
-  "url": "/components/template.html?id=XTAL-14MHZ-HC49",
-  "images": [
-    "/img/components/xtal-14mhz-hc49.webp"
-  ],
-  "short_description": "Високоякісний кварцевий резонатор 14.000 МГц у корпусі HC-49U.",
-  "description": "Кварцевий резонатор на 14 МГц у стандартному низькопрофільному корпусі HC-49. Ідеально підходить для використання у схемах генерації тактової частоти для ZX Spectrum, його клонів, а також у різноманітних мікроконтролерних проєктах та радіоаматорських конструкціях. Забезпечує стабільну частоту та надійну роботу пристрою. Компонент є новим та протестованим.",
-  "keywords": "кварцевий резонатор 14Mhz, кварц 14 МГц, HC49, деталі для ZX Spectrum, тактовий генератор, ретро комп'ютери запчастини, купити кварц Україна",
-  "stock_status": "in_stock"
-},
-{
-  "id": "ceramic-disc-2pf",
-  "name": "Конденсатор керамічний дисковий 2пФ",
-  "analog": "К10-7В",
-  "price": 1.5,
-  "currency": "UAH",
-  "url": "/components/template.html?id=ceramic-disc-2pf",
-  "images": [
-    "/img/components/ceramic-disc-capacitor.jpeg"
-  ],
-  "short_description": "Малогабаритний дисковий керамічний конденсатор ємністю 2 пФ.",
-  "description": "Керамічний дисковий конденсатор номіналом 2 пФ. Такі компоненти (часто згадуються як 'червоні прапорці') використовуються для фільтрації високочастотних завад, в коливальних контурах та узгоджувальних ланцюгах. Відрізняються високою температурною стабільністю та довговічністю.",
-  "keywords": "керамічний конденсатор, дисковий конденсатор, 2пФ, радіодеталі, електронні компоненти, конденсатор 2pF, ремонт електроніки",
-  "stock_status": "in_stock"
-},
-{
-  "id": "ceramic-disc-5pf",
-  "name": "Конденсатор керамічний дисковий 5пФ",
-  "analog": "К10-7В",
-  "price": 1.5,
-  "currency": "UAH",
-  "url": "/components/template.html?id=ceramic-disc-5pf",
-  "images": [
-    "/img/components/ceramic-disc-capacitor.jpeg"
-  ],
-  "short_description": "Малогабаритний дисковий керамічний конденсатор ємністю 5 пФ.",
-  "description": "Керамічний дисковий конденсатор номіналом 5 пФ. Використовується в високочастотних пристроях, радіочастотних фільтрах та колах корекції частоти. Завдяки малим розмірам та стабільним характеристикам, він ідеально підходить для монтажу в компактні друковані плати.",
-  "keywords": "керамічний конденсатор, дисковий конденсатор, 5пФ, радіодеталі, електронні компоненти, конденсатор 5pF, ремонт електроніки",
-  "stock_status": "in_stock"
-},
-{
-  "id": "ceramic-disc-10pf",
-  "name": "Конденсатор керамічний дисковий 10пФ",
-  "analog": "К10-7В",
-  "price": 1.5,
-  "currency": "UAH",
-  "url": "/components/template.html?id=ceramic-disc-10pf",
-  "images": [
-    "/img/components/ceramic-disc-capacitor.jpeg"
-  ],
-  "short_description": "Малогабаритний дисковий керамічний конденсатор ємністю 10 пФ.",
-  "description": "Керамічний дисковий конденсатор номіналом 10 пФ. Використовується в широкому спектрі електронних пристроїв, включаючи високочастотні контури, фільтри та ланцюги розв'язки по живленню. Відрізняється стабільністю ємності та надійністю в роботі.",
-  "keywords": "керамічний конденсатор, дисковий конденсатор, 10пФ, радіодеталі, електронні компоненти, конденсатор 10pF, ремонт електроніки",
-  "stock_status": "in_stock"
-},
+  {
+    "id": "XTAL-14MHZ-HC49",
+    "name": "Кварцевий резонатор 14Mhz HC49",
+    "analog": "відсутній",
+    "price": 15.50,
+    "currency": "UAH",
+    "url": "/components/template.html?id=XTAL-14MHZ-HC49",
+    "images": [
+      "/img/components/xtal-14mhz-hc49.webp"
+    ],
+    "short_description": "Високоякісний кварцевий резонатор 14.000 МГц у корпусі HC-49U.",
+    "description": "Кварцевий резонатор на 14 МГц у стандартному низькопрофільному корпусі HC-49. Ідеально підходить для використання у схемах генерації тактової частоти для ZX Spectrum, його клонів, а також у різноманітних мікроконтролерних проєктах та радіоаматорських конструкціях. Забезпечує стабільну частоту та надійну роботу пристрою. Компонент є новим та протестованим.",
+    "keywords": "кварцевий резонатор 14Mhz, кварц 14 МГц, HC49, деталі для ZX Spectrum, тактовий генератор, ретро комп'ютери запчастини, купити кварц Україна",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "ceramic-disc-2pf",
+    "name": "Конденсатор керамічний дисковий 2пФ",
+    "analog": "К10-7В",
+    "price": 1.5,
+    "currency": "UAH",
+    "url": "/components/template.html?id=ceramic-disc-2pf",
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
+    "short_description": "Малогабаритний дисковий керамічний конденсатор ємністю 2 пФ.",
+    "description": "Керамічний дисковий конденсатор номіналом 2 пФ. Такі компоненти (часто згадуються як 'червоні прапорці') використовуються для фільтрації високочастотних завад, в коливальних контурах та узгоджувальних ланцюгах. Відрізняються високою температурною стабільністю та довговічністю.",
+    "keywords": "керамічний конденсатор, дисковий конденсатор, 2пФ, радіодеталі, електронні компоненти, конденсатор 2pF, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "ceramic-disc-5pf",
+    "name": "Конденсатор керамічний дисковий 5пФ",
+    "analog": "К10-7В",
+    "price": 1.5,
+    "currency": "UAH",
+    "url": "/components/template.html?id=ceramic-disc-5pf",
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
+    "short_description": "Малогабаритний дисковий керамічний конденсатор ємністю 5 пФ.",
+    "description": "Керамічний дисковий конденсатор номіналом 5 пФ. Використовується в високочастотних пристроях, радіочастотних фільтрах та колах корекції частоти. Завдяки малим розмірам та стабільним характеристикам, він ідеально підходить для монтажу в компактні друковані плати.",
+    "keywords": "керамічний конденсатор, дисковий конденсатор, 5пФ, радіодеталі, електронні компоненти, конденсатор 5pF, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "ceramic-disc-10pf",
+    "name": "Конденсатор керамічний дисковий 10пФ",
+    "analog": "К10-7В",
+    "price": 1.5,
+    "currency": "UAH",
+    "url": "/components/template.html?id=ceramic-disc-10pf",
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
+    "short_description": "Малогабаритний дисковий керамічний конденсатор ємністю 10 пФ.",
+    "description": "Керамічний дисковий конденсатор номіналом 10 пФ. Використовується в широкому спектрі електронних пристроїв, включаючи високочастотні контури, фільтри та ланцюги розв'язки по живленню. Відрізняється стабільністю ємності та надійністю в роботі.",
+    "keywords": "керамічний конденсатор, дисковий конденсатор, 10пФ, радіодеталі, електронні компоненти, конденсатор 10pF, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
   {
     "id": "ceramic-disc-22pf",
     "name": "Конденсатор керамічний дисковий 22пФ",
@@ -81,7 +81,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-22pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 22 пФ.",
     "description": "Керамічний конденсатор 22 пФ. Часто використовується в колах кварцових резонаторів, ВЧ-фільтрах та для загальної стабілізації сигналу в електронних схемах.",
     "keywords": "керамічний конденсатор, 22пФ, радіодеталі, конденсатор 22pF",
@@ -94,7 +96,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-30pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 30 пФ.",
     "description": "Керамічний конденсатор 30 пФ. Застосовується в радіочастотних пристроях для налаштування коливальних контурів та як блокувальний елемент.",
     "keywords": "керамічний конденсатор, 30пФ, радіодеталі, конденсатор 30pF",
@@ -107,7 +111,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-33pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 33 пФ.",
     "description": "Керамічний конденсатор 33 пФ. Надійний компонент для високочастотних застосувань, забезпечення фільтрації завад та фазозсувних ланцюгів.",
     "keywords": "керамічний конденсатор, 33пФ, радіодеталі, конденсатор 33pF",
@@ -120,7 +126,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-47pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 47 пФ.",
     "description": "Керамічний конденсатор 47 пФ. Використовується в радіочастотних та телевізійних схемах для узгодження та фільтрації сигналів.",
     "keywords": "керамічний конденсатор, 47пФ, радіодеталі, конденсатор 47pF",
@@ -133,7 +141,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-68pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 68 пФ.",
     "description": "Керамічний конденсатор 68 пФ. Застосовується в коливальних контурах та як розв'язуючий елемент у високочастотній техніці.",
     "keywords": "керамічний конденсатор, 68пФ, радіодеталі, конденсатор 68pF",
@@ -146,7 +156,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-100pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 100 пФ.",
     "description": "Керамічний конденсатор 100 пФ. Стандартний компонент для фільтрації завад у схемах живлення мікросхем.",
     "keywords": "керамічний конденсатор, 100пФ, радіодеталі, конденсатор 100pF",
@@ -159,7 +171,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-220pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 220 пФ.",
     "description": "Керамічний конденсатор 220 пФ. Використовується в аудіо- та відеоапаратурі, а також у схемах таймерів.",
     "keywords": "керамічний конденсатор, 220пФ, радіодеталі, конденсатор 220pF",
@@ -172,7 +186,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-330pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 330 пФ.",
     "description": "Керамічний конденсатор 330 пФ. Застосовується для придушення високочастотних перешкод та стабілізації сигналів.",
     "keywords": "керамічний конденсатор, 330пФ, радіодеталі, конденсатор 330pF",
@@ -185,7 +201,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-470pf",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 470 пФ.",
     "description": "Керамічний конденсатор 470 пФ. Надійний елемент для використання у фільтрах низьких частот та схемах зв'язку між каскадами підсилення.",
     "keywords": "керамічний конденсатор, 470пФ, радіодеталі, конденсатор 470pF",
@@ -198,7 +216,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-680p",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Дисковий керамічний конденсатор ємністю 680 пФ.",
     "description": "Керамічний конденсатор 680 пФ. Використовується для фільтрації високочастотних завад та в колах зв'язку.",
     "keywords": "керамічний конденсатор, 680пФ, 681, радіодеталі, конденсатор 680pF",
@@ -211,7 +231,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-102",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 1000 пФ (маркування 102).",
     "description": "Керамічний конденсатор 1 нФ (1000 пФ). Широко застосовується як блокувальний у ланцюгах живлення мікросхем.",
     "keywords": "керамічний конденсатор, 1нФ, 102, радіодеталі, конденсатор 1000pF",
@@ -224,7 +246,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-152",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 1500 пФ (маркування 152).",
     "description": "Керамічний конденсатор 1.5 нФ. Використовується в аудіофільтрах та ланцюгах корекції АЧХ.",
     "keywords": "керамічний конденсатор, 1.5нФ, 152, радіодеталі, конденсатор 1500pF",
@@ -237,7 +261,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-222",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 2200 пФ (маркування 222).",
     "description": "Керамічний конденсатор 2.2 нФ. Надійний компонент для загальних застосувань у схемотехніці.",
     "keywords": "керамічний конденсатор, 2.2нФ, 222, радіодеталі, конденсатор 2200pF",
@@ -250,7 +276,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-332",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 3300 пФ (маркування 332).",
     "description": "Керамічний конденсатор 3.3 нФ. Використовується у фільтрах нижніх частот та колах затримки.",
     "keywords": "керамічний конденсатор, 3.3нФ, 332, радіодеталі, конденсатор 3300pF",
@@ -263,7 +291,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-472",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 4700 пФ (маркування 472).",
     "description": "Керамічний конденсатор 4.7 нФ. Застосовується в ланцюгах розв'язки живлення та перехідних колах.",
     "keywords": "керамічний конденсатор, 4.7нФ, 472, радіодеталі, конденсатор 4700pF",
@@ -276,7 +306,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-682",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 6800 пФ (маркування 682).",
     "description": "Керамічний конденсатор 6.8 нФ. Використовується в схемах частотної корекції, фільтрах та як блокувальний у ланцюгах низької напруги.",
     "keywords": "керамічний конденсатор, 6.8нФ, 682, радіодеталі, конденсатор 6800pF",
@@ -289,7 +321,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-103",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 10 нФ (маркування 103).",
     "description": "Керамічний конденсатор 10 нФ. Популярний компонент для фільтрації високочастотних завад у схемах живлення.",
     "keywords": "керамічний конденсатор, 10нФ, 103, радіодеталі, конденсатор 0.01uF",
@@ -302,7 +336,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-223",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 22 нФ (маркування 223).",
     "description": "Керамічний конденсатор 22 нФ. Застосовується в аудіо-схемах, таймерах та генераторах імпульсів.",
     "keywords": "керамічний конденсатор, 22нФ, 223, радіодеталі, конденсатор 0.022uF",
@@ -315,7 +351,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-473",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 47 нФ (маркування 473).",
     "description": "Керамічний конденсатор 47 нФ. Використовується в колах зв'язку між каскадами та для придушення завад у мережі живлення.",
     "keywords": "керамічний конденсатор, 47нФ, 473, радіодеталі, конденсатор 0.047uF",
@@ -328,7 +366,9 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-683",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Конденсатор ємністю 68 нФ (маркування 683).",
     "description": "Керамічний конденсатор 68 нФ. Надійний компонент для загальних схемотехнічних рішень та фільтрів.",
     "keywords": "керамічний конденсатор, 68нФ, 683, радіодеталі, конденсатор 0.068uF",
@@ -341,10 +381,372 @@
     "price": 1.5,
     "currency": "UAH",
     "url": "/components/template.html?id=ceramic-disc-104",
-    "images": ["/img/components/ceramic-disc-capacitor.jpeg"],
+    "images": [
+      "/img/components/ceramic-disc-capacitor.jpeg"
+    ],
     "short_description": "Найпопулярніший конденсатор 100 нФ (маркування 104).",
     "description": "Керамічний конденсатор 100 нФ (0.1 мкФ). Стандарт індустрії, що використовується майже у кожному пристрої як фільтруючий конденсатор для стабілізації напруги живлення мікросхем.",
     "keywords": "керамічний конденсатор, 100нФ, 104, 0.1мкФ, радіодеталі",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "mlt-0125-510r",
+    "name": "Резистор МЛТ-0,125 510 Ом ±5%",
+    "analog": "С2-23 0.125Вт 510 Ом",
+    "price": 1.20,
+    "currency": "UAH",
+    "url": "/components/resistors/mlt-0125-510r.html",
+    "images": [
+      "/img/components/mlt-0125.jpeg"
+    ],
+    "short_description": "Постійний металодіелектричний резистор МЛТ-0,125 потужністю 0,125 Вт, опір 510 Ом, допуск ±5%.",
+    "description": "Високонадійний резистор МЛТ-0,125 номіналом 510 Ом призначений для роботи в електричних колах постійного та змінного струму. Завдяки стабільним характеристикам та стійкості до зовнішніх впливів, компоненти серії МЛТ широко застосовуються в радіоаматорській техніці, ремонті вимірювальних приладів та проектуванні схем. Точний номінал 510 Ом та допуск ±5% гарантують надійну роботу вашого пристрою. Товар в наявності, підходить для монтажу в отвори (THT).",
+    "keywords": "резистор МЛТ-0,125, купити резистор 510 Ом, МЛТ 0.125Вт, радіодеталі Україна, постійний резистор, компоненти для пайки, електронні компоненти, резистор 510 Ом ціна",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "mlt-0125-100r",
+    "name": "Резистор МЛТ-0,125 100 Ом ±5%",
+    "analog": "С2-23 0.125Вт 100 Ом",
+    "price": 1.20,
+    "currency": "UAH",
+    "url": "/components/resistors/mlt-0125-100r.html",
+    "images": [
+      "/img/components/mlt-0125.jpeg"
+    ],
+    "short_description": "Постійний металодіелектричний резистор МЛТ-0,125 потужністю 0,125 Вт, опір 100 Ом, допуск ±5%.",
+    "description": "Надійний резистор МЛТ-0,125 з номінальним опором 100 Ом — це класичний елемент для стабільної роботи в радіоелектронних схемах. Компонент характеризується високою термічною стійкістю та низьким рівнем власних шумів. Ідеально підходить для використання в дільниках напруги, обмежувальних ланцюгах та при ремонті вітчизняної або зарубіжної техніки. Товар відповідає стандарту ±5%, що забезпечує необхідну точність для більшості аматорських та професійних завдань.",
+    "keywords": "резистор МЛТ-0,125, купити резистор 100 Ом, МЛТ 100 Ом, радіодеталі Україна, постійний резистор 0.125Вт, компоненти для пайки, резистори оптом, електронні компоненти",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "mlt-0125-100r",
+    "name": "Резистор МЛТ-0,125 100 Ом ±5%",
+    "analog": "С2-23 0.125Вт 100 Ом",
+    "price": 1.20,
+    "currency": "UAH",
+    "url": "/components/resistors/mlt-0125-100r.html",
+    "images": [
+      "/img/components/mlt-0125.jpeg"
+    ],
+    "short_description": "Постійний металодіелектричний резистор МЛТ-0,125 потужністю 0,125 Вт, опір 100 Ом, допуск ±5%.",
+    "description": "Надійний резистор МЛТ-0,125 з номінальним опором 100 Ом — це класичний елемент для стабільної роботи в радіоелектронних схемах. Компонент характеризується високою термічною стійкістю та низьким рівнем власних шумів. Ідеально підходить для використання в дільниках напруги, обмежувальних ланцюгах та при ремонті вітчизняної або зарубіжної техніки. Товар відповідає стандарту ±5%, що забезпечує необхідну точність для більшості аматорських та професійних завдань.",
+    "keywords": "резистор МЛТ-0,125, купити резистор 100 Ом, МЛТ 100 Ом, радіодеталі Україна, постійний резистор 0.125Вт, компоненти для пайки, резистори оптом, електронні компоненти",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-10r-1pct",
+    "name": "Резистор 0,25Вт 10 Ом ±1%",
+    "analog": "С2-29 0.25Вт 10 Ом",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-10r-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний металоплівковий резистор, потужність 0,25 Вт (1/4W), опір 10 Ом, допуск ±1%.",
+    "description": "Високоточний прецизійний резистор з допуском 1% та номіналом 10 Ом. Завдяки низькому відхиленню від номінального значення та потужності 0,25 Вт (1/4W), цей компонент ідеально підходить для вимірювальних приладів, аудіоапаратури та схем, де критично важливою є стабільність параметрів. Металоплівкова технологія забезпечує низький рівень власних шумів та температурну стабільність.",
+    "keywords": "резистор 10 Ом 1%, прецизійний резистор, 0.25Вт 10 Ом, резистор 1/4W, радіодеталі Україна, високоточні резистори, компоненти для пайки",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-22r-1pct",
+    "name": "Резистор 0,25Вт 22 Ом ±1%",
+    "analog": "С2-29 0.25Вт 22 Ом",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-22r-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 22 Ом, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 22 Ом з допуском 1%. Ідеальний для стабільних схем.",
+    "keywords": "резистор 22 Ом 1%, 0.25Вт 22 Ом, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-47r-1pct",
+    "name": "Резистор 0,25Вт 47 Ом ±1%",
+    "analog": "С2-29 0.25Вт 47 Ом",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-47r-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 47 Ом, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 47 Ом з допуском 1%. Забезпечує низький рівень шумів.",
+    "keywords": "резистор 47 Ом 1%, 0.25Вт 47 Ом, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-150r-1pct",
+    "name": "Резистор 0,25Вт 150 Ом ±1%",
+    "analog": "С2-29 0.25Вт 150 Ом",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-150r-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 150 Ом, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 150 Ом з допуском 1%. Надійний компонент для точних схем.",
+    "keywords": "резистор 150 Ом 1%, 0.25Вт 150 Ом, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-680r-1pct",
+    "name": "Резистор 0,25Вт 680 Ом ±1%",
+    "analog": "С2-29 0.25Вт 680 Ом",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-680r-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 680 Ом, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 680 Ом з допуском 1%.",
+    "keywords": "резистор 680 Ом 1%, 0.25Вт 680 Ом, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-2k-1pct",
+    "name": "Резистор 0,25Вт 2 кОм ±1%",
+    "analog": "С2-29 0.25Вт 2 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-2k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 2 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 2 кОм з допуском 1%.",
+    "keywords": "резистор 2 кОм 1%, 0.25Вт 2к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-22k-1pct",
+    "name": "Резистор 0,25Вт 2,2 кОм ±1%",
+    "analog": "С2-29 0.25Вт 2.2 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-22k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 2,2 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 2,2 кОм з допуском 1%.",
+    "keywords": "резистор 2.2 кОм 1%, 0.25Вт 2.2к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-33k-1pct",
+    "name": "Резистор 0,25Вт 3,3 кОм ±1%",
+    "analog": "С2-29 0.25Вт 3.3 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-33k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 3,3 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 3,3 кОм з допуском 1%.",
+    "keywords": "резистор 3.3 кОм 1%, 0.25Вт 3.3к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-47k-1pct",
+    "name": "Резистор 0,25Вт 4,7 кОм ±1%",
+    "analog": "С2-29 0.25Вт 4.7 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-47k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 4,7 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 4,7 кОм з допуском 1%.",
+    "keywords": "резистор 4.7 кОм 1%, 0.25Вт 4.7к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-51k-1pct",
+    "name": "Резистор 0,25Вт 5,1 кОм ±1%",
+    "analog": "С2-29 0.25Вт 5.1 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-51k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 5,1 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 5,1 кОм з допуском 1%.",
+    "keywords": "резистор 5.1 кОм 1%, 0.25Вт 5.1к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-68k-1pct",
+    "name": "Резистор 0,25Вт 6,8 кОм ±1%",
+    "analog": "С2-29 0.25Вт 6.8 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-68k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 6,8 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 6,8 кОм з допуском 1%.",
+    "keywords": "резистор 6.8 кОм 1%, 0.25Вт 6.8к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-20k-1pct",
+    "name": "Резистор 0,25Вт 20 кОм ±1%",
+    "analog": "С2-29 0.25Вт 20 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-20k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 20 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 20 кОм з допуском 1%.",
+    "keywords": "резистор 20 кОм 1%, 0.25Вт 20к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-47k-1pct-2",
+    "name": "Резистор 0,25Вт 47 кОм ±1%",
+    "analog": "С2-29 0.25Вт 47 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-47k-1pct-2.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 47 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 47 кОм з допуском 1%.",
+    "keywords": "резистор 47 кОм 1%, 0.25Вт 47к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-51k-1pct-2",
+    "name": "Резистор 0,25Вт 51 кОм ±1%",
+    "analog": "С2-29 0.25Вт 51 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-51k-1pct-2.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 51 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 51 кОм з допуском 1%.",
+    "keywords": "резистор 51 кОм 1%, 0.25Вт 51к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-68k-1pct-2",
+    "name": "Резистор 0,25Вт 68 кОм ±1%",
+    "analog": "С2-29 0.25Вт 68 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-68k-1pct-2.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 68 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 68 кОм з допуском 1%.",
+    "keywords": "резистор 68 кОм 1%, 0.25Вт 68к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-100k-1pct",
+    "name": "Резистор 0,25Вт 100 кОм ±1%",
+    "analog": "С2-29 0.25Вт 100 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-100k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 100 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 100 кОм з допуском 1%.",
+    "keywords": "резистор 100 кОм 1%, 0.25Вт 100к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-220k-1pct",
+    "name": "Резистор 0,25Вт 220 кОм ±1%",
+    "analog": "С2-29 0.25Вт 220 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-220k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 220 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 220 кОм з допуском 1%.",
+    "keywords": "резистор 220 кОм 1%, 0.25Вт 220к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-300k-1pct",
+    "name": "Резистор 0,25Вт 300 кОм ±1%",
+    "analog": "С2-29 0.25Вт 300 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-300k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 300 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 300 кОм з допуском 1%.",
+    "keywords": "резистор 300 кОм 1%, 0.25Вт 300к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-470k-1pct",
+    "name": "Резистор 0,25Вт 470 кОм ±1%",
+    "analog": "С2-29 0.25Вт 470 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-470k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 470 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 470 кОм з допуском 1%.",
+    "keywords": "резистор 470 кОм 1%, 0.25Вт 470к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-680k-1pct",
+    "name": "Резистор 0,25Вт 680 кОм ±1%",
+    "analog": "С2-29 0.25Вт 680 кОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-680k-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 680 кОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 680 кОм з допуском 1%.",
+    "keywords": "резистор 680 кОм 1%, 0.25Вт 680к, прецизійний резистор",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-025-1m-1pct",
+    "name": "Резистор 0,25Вт 1 МОм ±1%",
+    "analog": "С2-29 0.25Вт 1 МОм",
+    "price": 1.50,
+    "currency": "UAH",
+    "url": "/components/resistors/res-025-1m-1pct.html",
+    "images": [
+      "/img/components/mlt-25.jpeg"
+    ],
+    "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 1 МОм, 1%.",
+    "description": "Високоточний прецизійний резистор 0,25Вт 1 МОм з допуском 1%.",
+    "keywords": "резистор 1 МОм 1%, 0.25Вт 1М, прецизійний резистор",
     "stock_status": "in_stock"
   }
 ]
