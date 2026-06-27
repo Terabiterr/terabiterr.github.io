@@ -253,6 +253,7 @@ footer {
 
 .components-promo {
     display: block;
+    grid-column: 1 / -1;
     background: var(--zx-yellow);
     color: var(--zx-black);
     padding: 20px;
