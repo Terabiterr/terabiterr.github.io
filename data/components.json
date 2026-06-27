@@ -420,18 +420,55 @@
     "stock_status": "in_stock"
   },
   {
-    "id": "mlt-0125-100r",
-    "name": "Резистор МЛТ-0,125 100 Ом ±5%",
-    "analog": "С2-23 0.125Вт 100 Ом",
+    "id": "mlt-0125-470r",
+    "name": "Резистор МЛТ-0,125 470 Ом ±5%",
+    "analog": "С2-23 0.125Вт 470 Ом",
     "price": 1.20,
     "currency": "UAH",
-    "url": "/components/resistors/mlt-0125-100r.html",
-    "images": [
-      "/img/components/mlt-0125.jpeg"
-    ],
-    "short_description": "Постійний металодіелектричний резистор МЛТ-0,125 потужністю 0,125 Вт, опір 100 Ом, допуск ±5%.",
-    "description": "Надійний резистор МЛТ-0,125 з номінальним опором 100 Ом — це класичний елемент для стабільної роботи в радіоелектронних схемах. Компонент характеризується високою термічною стійкістю та низьким рівнем власних шумів. Ідеально підходить для використання в дільниках напруги, обмежувальних ланцюгах та при ремонті вітчизняної або зарубіжної техніки. Товар відповідає стандарту ±5%, що забезпечує необхідну точність для більшості аматорських та професійних завдань.",
-    "keywords": "резистор МЛТ-0,125, купити резистор 100 Ом, МЛТ 100 Ом, радіодеталі Україна, постійний резистор 0.125Вт, компоненти для пайки, резистори оптом, електронні компоненти",
+    "url": "/components/resistors/mlt-0125-470r.html",
+    "images": ["/img/components/mlt-0125.jpeg"],
+    "short_description": "Резистор МЛТ-0,125, опір 470 Ом, потужність 0,125 Вт, допуск ±5%.",
+    "description": "Високонадійний резистор МЛТ-0,125 з номіналом 470 Ом. Широко застосовується в електроніці для обмеження струму та створення дільників напруги. Забезпечує стабільну роботу в широкому діапазоні температур.",
+    "keywords": "резистор 470 Ом, МЛТ-0,125, купити резистор 470 Ом, радіодеталі, резистор 0.125 Вт",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "mlt-0125-10k",
+    "name": "Резистор МЛТ-0,125 10 кОм ±5%",
+    "analog": "С2-23 0.125Вт 10 кОм",
+    "price": 1.20,
+    "currency": "UAH",
+    "url": "/components/resistors/mlt-0125-10k.html",
+    "images": ["/img/components/mlt-0125.jpeg"],
+    "short_description": "Резистор МЛТ-0,125, опір 10 кОм, потужність 0,125 Вт, допуск ±5%.",
+    "description": "Надійний металодіелектричний резистор МЛТ-0,125 номіналом 10 кОм. Ідеальний вибір для слабкострумових схем, вимірювальних приладів та іншої радіоапаратури. Стабільність характеристик гарантує довговічність схем.",
+    "keywords": "резистор 10 кОм, МЛТ-0,125, купити резистор 10к, радіодеталі Україна, електронні компоненти",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "mlt-0125-1k",
+    "name": "Резистор МЛТ-0,125 1 кОм ±5%",
+    "analog": "С2-23 0.125Вт 1 кОм",
+    "price": 1.20,
+    "currency": "UAH",
+    "url": "/components/resistors/mlt-0125-1k.html",
+    "images": ["/img/components/mlt-0125.jpeg"],
+    "short_description": "Резистор МЛТ-0,125, опір 1 кОм, потужність 0,125 Вт, допуск ±5%.",
+    "description": "Класичний резистор МЛТ-0,125 на 1 кОм. Використовується як базовий елемент у багатьох електронних конструкціях. Відрізняється надійністю та тривалим терміном експлуатації.",
+    "keywords": "резистор 1 кОм, МЛТ-0,125, купити резистор 1кОм, радіокомпоненти, резистор 0.125Вт",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "mlt-0125-11k",
+    "name": "Резистор МЛТ-0,125 1,1 кОм ±5%",
+    "analog": "С2-23 0.125Вт 1.1 кОм",
+    "price": 1.20,
+    "currency": "UAH",
+    "url": "/components/resistors/mlt-0125-11k.html",
+    "images": ["/img/components/mlt-0125.jpeg"],
+    "short_description": "Резистор МЛТ-0,125, опір 1,1 кОм, потужність 0,125 Вт, допуск ±5%.",
+    "description": "Прецизійний (в межах допуску) резистор МЛТ-0,125 на 1,1 кОм. Підходить для налаштування точних параметрів електричних кіл. Перевірений часом компонент для якісного ремонту техніки.",
+    "keywords": "резистор 1.1 кОм, МЛТ-0,125, купити резистор 1100 Ом, радіодеталі, резистори",
     "stock_status": "in_stock"
   },
   {
@@ -442,7 +479,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-10r-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний металоплівковий резистор, потужність 0,25 Вт (1/4W), опір 10 Ом, допуск ±1%.",
     "description": "Високоточний прецизійний резистор з допуском 1% та номіналом 10 Ом. Завдяки низькому відхиленню від номінального значення та потужності 0,25 Вт (1/4W), цей компонент ідеально підходить для вимірювальних приладів, аудіоапаратури та схем, де критично важливою є стабільність параметрів. Металоплівкова технологія забезпечує низький рівень власних шумів та температурну стабільність.",
@@ -457,7 +494,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-22r-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 22 Ом, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 22 Ом з допуском 1%. Ідеальний для стабільних схем.",
@@ -472,7 +509,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-47r-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 47 Ом, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 47 Ом з допуском 1%. Забезпечує низький рівень шумів.",
@@ -487,7 +524,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-150r-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 150 Ом, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 150 Ом з допуском 1%. Надійний компонент для точних схем.",
@@ -502,7 +539,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-680r-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 680 Ом, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 680 Ом з допуском 1%.",
@@ -517,7 +554,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-2k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 2 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 2 кОм з допуском 1%.",
@@ -532,7 +569,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-22k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 2,2 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 2,2 кОм з допуском 1%.",
@@ -547,7 +584,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-33k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 3,3 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 3,3 кОм з допуском 1%.",
@@ -562,7 +599,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-47k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 4,7 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 4,7 кОм з допуском 1%.",
@@ -577,7 +614,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-51k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 5,1 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 5,1 кОм з допуском 1%.",
@@ -592,7 +629,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-68k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 6,8 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 6,8 кОм з допуском 1%.",
@@ -607,7 +644,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-20k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 20 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 20 кОм з допуском 1%.",
@@ -622,7 +659,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-47k-1pct-2.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 47 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 47 кОм з допуском 1%.",
@@ -637,7 +674,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-51k-1pct-2.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 51 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 51 кОм з допуском 1%.",
@@ -652,7 +689,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-68k-1pct-2.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 68 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 68 кОм з допуском 1%.",
@@ -667,7 +704,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-100k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 100 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 100 кОм з допуском 1%.",
@@ -682,7 +719,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-220k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 220 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 220 кОм з допуском 1%.",
@@ -697,7 +734,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-300k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 300 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 300 кОм з допуском 1%.",
@@ -712,7 +749,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-470k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 470 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 470 кОм з допуском 1%.",
@@ -727,7 +764,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-680k-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 680 кОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 680 кОм з допуском 1%.",
@@ -742,7 +779,7 @@
     "currency": "UAH",
     "url": "/components/resistors/res-025-1m-1pct.html",
     "images": [
-      "/img/components/mlt-25.jpeg"
+      "/img/components/mlt-25.jpg"
     ],
     "short_description": "Прецизійний резистор 0,25 Вт (1/4W), 1 МОм, 1%.",
     "description": "Високоточний прецизійний резистор 0,25Вт 1 МОм з допуском 1%.",
