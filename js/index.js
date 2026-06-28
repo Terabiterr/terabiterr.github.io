@@ -1,6 +1,13 @@
 //Cart
 const CartManager = {
     items: JSON.parse(localStorage.getItem('cart') || '[]'),
+    clear() {
+        if (confirm("Ви впевнені, що хочете очистити корзину?")) {
+            this.items = [];
+            this.save();
+            this.renderModal(); // Перемальовуємо модалку після очищення
+        }
+    },
     save() {
         localStorage.setItem('cart', JSON.stringify(this.items));
         this.updateCounter();
@@ -440,9 +447,14 @@ function initCartModal() {
                     <div id="cart-items-list"></div>
                     <a id="checkout-btn" href="#" class="btn-action">Замовити в Telegram</a>
                     <button onclick="document.getElementById('cart-modal').style.display='none'">Закрити</button>
+                    <button id="clear-cart-btn" class="btn-secondary">Очистити корзину</button>
                 </div>
             `;
             document.body.appendChild(modal);
+            // Слухач для кнопки очищення
+            document.getElementById('clear-cart-btn').addEventListener('click', () => {
+                CartManager.clear();
+            });
         }
 
         const list = document.getElementById('cart-items-list');
