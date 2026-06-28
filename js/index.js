@@ -1,3 +1,28 @@
+//Cart
+const CartManager = {
+    items: JSON.parse(localStorage.getItem('cart') || '[]'),
+    save() {
+        localStorage.setItem('cart', JSON.stringify(this.items));
+        this.updateCounter();
+    },
+    add(product) {
+        const existing = this.items.find(i => i.id === product.id);
+        if (existing) existing.quantity++;
+        else this.items.push({ ...product, quantity: 1 });
+        this.save();
+    },
+    updateCounter() {
+        const el = document.getElementById('cart-count');
+        if (el) el.innerText = this.items.reduce((sum, item) => sum + item.quantity, 0);
+    },
+    getTelegramLink() {
+        if (this.items.length === 0) return "#";
+        let text = "Замовлення з ZX-KIT:%0A";
+        this.items.forEach(i => { text += `%0A- ${i.name} (${i.quantity} шт.)`; });
+        return `https://t.me/terabiterr?text=${text}`;
+    }
+};
+
 // --- Змінні для пагінації ---
 let allProducts = [];
 let currentPage = 1;
@@ -5,7 +30,8 @@ const itemsPerPage = 8;
 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
-
+    CartManager.updateCounter();
+    initCartModal();
     // Якщо ми на сторінці товару/компонента
     if (document.getElementById('product-root')) {
         // Визначаємо, що саме завантажувати
@@ -221,6 +247,7 @@ function updateComponentSEO(comp) {
     document.head.appendChild(script);
 }
 // --- Логіка сторінки компонента ---
+// --- Оновлена логіка сторінки компонента ---
 async function initComponentPage() {
     const id = new URLSearchParams(window.location.search).get('id');
     if (!id) return;
@@ -229,23 +256,51 @@ async function initComponentPage() {
         const resp = await fetch('/data/components.json');
         const list = await resp.json();
         const data = list.find(p => p.id === id);
-        if (!data) return;
-        // Викликаємо SEO оновлення
+        
+        if (!data) {
+            console.error("Компонент не знайдено");
+            return;
+        }
+
+        // 1. Оновлення SEO та мета-даних
         updateComponentSEO(data);
+
+        // 2. Заповнення інформації на сторінці
         document.title = data.name;
         document.getElementById('p-name').innerText = data.name;
         document.getElementById('p-price').innerHTML = `<span>${data.price} ${data.currency || 'UAH'}</span>`;
         document.getElementById('p-desc').innerHTML = data.description;
-        document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Хочу замовити компонент ${data.name}`;
 
+        // 3. Робота зі специфікаціями
         const specsTable = document.getElementById('p-specs');
         if (specsTable) {
             specsTable.innerHTML = `<tr><td class="label">Аналог</td><td class="val">${data.analog || '---'}</td></tr>`;
         }
 
+        // 4. Логіка кнопки "Додати в корзину" замість прямого переходу в Telegram
+        const tgBtn = document.getElementById('tg-order');
+        if (tgBtn) {
+            tgBtn.innerText = "ДОДАТИ В КОРЗИНУ";
+            tgBtn.href = "#";
+            tgBtn.onclick = (e) => {
+                e.preventDefault();
+                CartManager.add({
+                    id: data.id,
+                    name: data.name,
+                    price: data.price
+                });
+                // Можна додати візуальний фідбек для користувача
+                alert(`${data.name} додано до вашої корзини!`);
+            };
+        }
+
+        // 5. Галерея та Zoom
         renderGallery(data.images);
         initZoom();
-    } catch (err) { console.error(err); }
+
+    } catch (err) { 
+        console.error("Помилка ініціалізації сторінки компонента:", err); 
+    }
 }
 
 // --- Допоміжні функції ---
@@ -285,7 +340,7 @@ async function loadComments() {
     try {
         const response = await fetch('/data/comments.json');
         const comments = await response.json();
-        
+
         // Знаходимо футер, щоб вставити відгуки перед ним
         const footer = document.querySelector('footer');
         if (!footer) return;
@@ -326,12 +381,12 @@ async function loadComments() {
 }
 
 // Функція відправки відгуку/питання в Telegram
-window.submitComment = function() {
+window.submitComment = function () {
     // 1. Отримуємо елементи
     const nameInput = document.getElementById('name');
     const commentInput = document.getElementById('comment');
     const ratingInput = document.getElementById('rating');
-    
+
     // 2. Перевіряємо, чи існують ці елементи на сторінці (захист від помилок)
     if (!nameInput || !commentInput) {
         console.error("Поля форми не знайдені на цій сторінці!");
@@ -341,7 +396,7 @@ window.submitComment = function() {
     const name = nameInput.value.trim();
     const commentText = commentInput.value.trim();
     const rating = ratingInput ? ratingInput.value : "5";
-    
+
     // Отримуємо назву товару, якщо ми на сторінці товару
     const productName = document.getElementById('p-name') ? document.getElementById('p-name').innerText : "Головна сторінка";
 
@@ -365,3 +420,34 @@ window.submitComment = function() {
 };
 
 loadComments()
+
+//Cart logic
+// --- Логіка корзини в index.js ---
+function initCartModal() {
+    const btn = document.getElementById('cart-btn');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+        let modal = document.getElementById('cart-modal');
+        if (!modal) {
+            // Створюємо модалку, якщо її ще немає
+            modal = document.createElement('div');
+            modal.id = 'cart-modal';
+            modal.className = 'modal'; // Додайте стилі в CSS
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <h3>КОРЗИНА</h3>
+                    <div id="cart-items-list"></div>
+                    <a id="checkout-btn" href="#" class="btn-action">Замовити в Telegram</a>
+                    <button onclick="document.getElementById('cart-modal').style.display='none'">Закрити</button>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        const list = document.getElementById('cart-items-list');
+        list.innerHTML = CartManager.items.map(i => `<div>${i.name} - ${i.quantity} шт.</div>`).join('');
+        document.getElementById('checkout-btn').href = CartManager.getTelegramLink();
+        modal.style.display = 'block';
+    });
+}
