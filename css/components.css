@@ -370,7 +370,7 @@ header {
 
 /* Вміст вікна */
 .modal-content {
-    background: #fff;
+    background: #000;
     margin: 10% auto; /* Центрування */
     padding: 20px;
     width: 80%;
