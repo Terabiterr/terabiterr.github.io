@@ -58,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('components-list')) {
         loadComponents();
     }
+
+    updateBackButton();
 });
 
 // --- Логіка каталогу ---
@@ -462,4 +464,22 @@ function initCartModal() {
         document.getElementById('checkout-btn').href = CartManager.getTelegramLink();
         modal.style.display = 'block';
     });
+}
+
+function updateBackButton() {
+    const backBtn = document.querySelector('.btn-back');
+    if (!backBtn) return;
+
+    // Отримуємо URL попередньої сторінки
+    const referrer = document.referrer;
+
+    // Перевіряємо, чи перехід був саме з нашого сайту та з конкретної сторінки
+    if (referrer.includes('components.html')) {
+        backBtn.href = '/components.html';
+        backBtn.innerText = 'Повернутися до компонентів';
+    } else {
+        // За замовчуванням (або якщо перехід з index.html чи іншого місця)
+        backBtn.href = '/';
+        backBtn.innerText = 'Повернутися до каталогу';
+    }
 }
