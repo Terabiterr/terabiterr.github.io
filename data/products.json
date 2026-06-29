@@ -95,6 +95,37 @@
   }
 },
 {
+  "id": "ZX-PHX-081",
+  "meta": {
+    "title": "ZXM-Phoenix Rev 08.1 — професійна платформа ZX Spectrum",
+    "description": "Остання ревізія 08.1 потужного клону ZXM-Phoenix. 2MB RAM, TurboSound, IDE, SD-Card, PS/2 та ATX живлення.",
+    "keywords": "ZXM-Phoenix, ZX Spectrum, Rev 08.1, ретро-комп'ютер, TurboSound, Z80, DIY, спектрум розширення"
+  },
+  "product": {
+    "name": "ZXM-Phoenix Rev 08.1 (Чисті плати)",
+    "sku": "ZX-PHX-081",
+    "price": 1400,
+    "currency": "UAH",
+    "images": [
+      "../img/pheonix/1.jpg",
+      "../img/pheonix/2.jpg",
+      "../img/pheonix/3.jpg"
+    ],
+    "specs": [
+      { "label": "Процесор", "val": "TMPZ84C00-8 (3.5 / 7.0 МГц)" },
+      { "label": "ОЗУ", "val": "1024 - 2048 Кб (SIMM 30pin)" },
+      { "label": "Звук", "val": "TurboSound (2x YM2149F)" },
+      { "label": "Накопичувачі", "val": "FDD (ВГ93), IDE (Nemo), SD Card" },
+      { "label": "Периферія", "val": "PS/2 клавіатура/миша, RS232, Kempston" },
+      { "label": "Форм-фактор", "val": "mATX (220x240мм), живлення ATX" }
+    ],
+    "description": "<strong>ZXM-Phoenix Rev 08.1</strong> — це не просто клон, а потужна професійна платформа для ентузіастів ZX Spectrum. Завдяки архітектурі, що базується на шині ZX-BUS, та широким можливостям розширення, ця плата виходить далеко за межі можливостей оригінальних машин.<br><br><strong>Ключові можливості:</strong><br>• <strong>Продуктивність:</strong> Турбо-режим 7 МГц та до 2Мб оперативної пам'яті.<br>• <strong>Мультимедіа:</strong> Реалізація TurboSound (два звукові процесори) забезпечує багате стереозвучання.<br>• <strong>Інтерфейси:</strong> Повна підтримка сучасних та класичних інтерфейсів: IDE (Nemo), SD-карт, PS/2 для миші та клавіатури, RS232.<br>• <strong>Стабільність:</strong> Живлення ATX та форм-фактор mATX дозволяють зручно розмістити систему у стандартному корпусі ПК.<br><br>Це ідеальний вибір для створення повноцінного ретро-робочого місця.",
+    "schema": {
+      "description": "ZXM-Phoenix Rev 08.1: потужна DIY платформа ZX Spectrum з підтримкою IDE, SD-карт, 2MB RAM та TurboSound."
+    }
+  }
+},
+{
   "id": "ZX-FDC-MB8877",
   "meta": {
     "title": "Контролер гнучких дисків для ZX Spectrum на базі MB8877A",
