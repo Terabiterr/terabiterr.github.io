@@ -33,7 +33,7 @@ const CartManager = {
 // --- Змінні для пагінації ---
 let allProducts = [];
 let currentPage = 1;
-const itemsPerPage = 8;
+const itemsPerPage = 16;
 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
