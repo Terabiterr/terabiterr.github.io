@@ -5,6 +5,25 @@ let allReviews = []; // Змінна для зберігання всіх від
 //Cart
 const CartManager = {
     items: JSON.parse(localStorage.getItem('cart') || '[]'),
+    shuffleArray(array) {
+        return [...array].sort(() => Math.random() - 0.5);
+    },
+
+    async init() {
+        try {
+            const resp = await fetch('/data/components.json');
+            this.allData = await resp.json();
+            
+            // ПЕРЕМІШУЄМО відразу після завантаження
+            this.allData = this.shuffleArray(this.allData);
+            
+            this.filteredData = [...this.allData];
+            this.render();
+            this.setupEventListeners();
+        } catch (err) { 
+            console.error("Помилка завантаження компонентів:", err); 
+        }
+    },
     clear() {
         if (confirm("Ви впевнені, що хочете очистити корзину?")) {
             this.items = [];
