@@ -90,7 +90,7 @@ async function loadComponents() {
         }
         // ------------------------------------------
 
-        container.innerHTML = components.map(c => `
+        container.innerHTML = shuffled.map(c => `
             <a href="/products/template.html?id=${c.id}&isComponent=true" class="card-link">
                 <article class="card">
                     <img src="${c.images[0]}" alt="${c.name}" loading="lazy">
