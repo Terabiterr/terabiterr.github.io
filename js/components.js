@@ -3,6 +3,8 @@ const CatalogManager = {
     filteredData: [],
     currentPage: 1,
     itemsPerPage: 12,
+    currentFilter: "",
+    currentSort: "default",
 
     async init() {
         try {
@@ -19,32 +21,48 @@ const CatalogManager = {
     },
 
     setupEventListeners() {
-        // 1. Пошук
-        const searchInput = document.getElementById('search-input');
-        if (searchInput) {
-            searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
-        }
+        // Пошук
+        document.getElementById('search-input')?.addEventListener('input', (e) => {
+            this.currentSearch = e.target.value;
+            this.applyFiltersAndSort();
+        });
 
-        // 2. Фільтри (обробка кнопок)
+        // Сортування
+        document.getElementById('sort-select')?.addEventListener('change', (e) => {
+            this.currentSort = e.target.value;
+            this.applyFiltersAndSort();
+        });
+
+        // Категорії
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                // Візуальна активність
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 e.target.classList.add('active');
-
-                // Значення з data-category
-                const filterValue = e.target.dataset.category;
-                
-                // Вписуємо текст у пошук, якщо натиснули кнопку, крім "ВСЕ"
-                if (searchInput) {
-                    searchInput.value = filterValue === "" ? "" : e.target.innerText;
-                }
-                
-                this.handleSearch(filterValue);
+                this.currentFilter = e.target.dataset.category;
+                this.applyFiltersAndSort();
             });
         });
     },
 
+    applyFiltersAndSort() {
+        let data = [...this.allData];
+
+        // 1. Фільтрація
+        const search = document.getElementById('search-input')?.value.toLowerCase() || "";
+        data = data.filter(c => 
+            (c.name.toLowerCase().includes(search) || c.description.toLowerCase().includes(search)) &&
+            (this.currentFilter === "" || c.name.toLowerCase().includes(this.currentFilter))
+        );
+
+        // 2. Сортування
+        if (this.currentSort === 'price-asc') data.sort((a, b) => a.price - b.price);
+        else if (this.currentSort === 'price-desc') data.sort((a, b) => b.price - a.price);
+        else if (this.currentSort === 'name-asc') data.sort((a, b) => a.name.localeCompare(b.name));
+
+        this.filteredData = data;
+        this.currentPage = 1;
+        this.render();
+    },
     handleSearch(term) {
         const t = term.toLowerCase();
         

@@ -28,7 +28,8 @@
 
     <header>
         <div class="header-inner">
-            <h1 class="zx-title">ZX-KIT: RADIO COMPONENTS | <button id="cart-btn" class="cart-btn">🛒 Корзина (<span id="cart-count">0</span>)</button></h1>
+            <h1 class="zx-title">ZX-KIT: RADIO COMPONENTS | <button id="cart-btn" class="cart-btn">🛒 Корзина (<span
+                        id="cart-count">0</span>)</button></h1>
         </div>
     </header>
 
@@ -48,7 +49,12 @@
 
             <div class="catalog-controls">
                 <input type="text" id="search-input" placeholder="Пошук компонентів...">
-
+                <select id="sort-select" class="filter-btn">
+                    <option value="default">За замовчуванням</option>
+                    <option value="price-asc">Ціна: від дешевих</option>
+                    <option value="price-desc">Ціна: від дорогих</option>
+                    <option value="name-asc">Назва: А-Я</option>
+                </select>
                 <div class="filter-container">
                     <button class="filter-btn active" data-category="">ВСЕ</button>
                     <button class="filter-btn" data-category="резистор">РЕЗИСТОРИ</button>
