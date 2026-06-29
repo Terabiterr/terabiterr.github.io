@@ -138,6 +138,15 @@
             <button type="button" onclick="submitComment()" class="page-btn">Надіслати на модерацію</button>
         </form>
     </section>
+    <section id="reviews-section" style="max-width: 800px; margin: 40px auto;">
+        <h2 style="text-align: center; color: var(--zx-yellow);">ВІДГУКИ КЛІЄНТІВ</h2>
+        <div id="reviews-list"></div>
+        <div class="pagination-container">
+            <button class="page-btn" onclick="changeReviewPage(-1)"> &lt;&lt; ПЕРЕДНІ </button>
+            <span id="review-page-info">PAGE 1</span>
+            <button class="page-btn" onclick="changeReviewPage(1)"> НАСТУПНІ &gt;&gt; </button>
+        </div>
+    </section>
     <footer>
         <div class="footer-content">
             <div class="footer-section">

@@ -1,3 +1,7 @@
+let currentReviewPage = 1;
+const reviewsPerPage = 8;
+let allReviews = []; // Змінна для зберігання всіх відгуків
+
 //Cart
 const CartManager = {
     items: JSON.parse(localStorage.getItem('cart') || '[]'),
@@ -348,46 +352,56 @@ function initZoom() {
 async function loadComments() {
     try {
         const response = await fetch('/data/comments.json');
-        const comments = await response.json();
+        allReviews = await response.json(); // Зберігаємо у глобальну змінну
 
-        // Знаходимо футер, щоб вставити відгуки перед ним
         const footer = document.querySelector('footer');
         if (!footer) return;
 
         const section = document.createElement('section');
-        section.className = 'reviews-section';
-        section.innerHTML = `
-            <h2 style="text-align: center; margin: 40px 0;">Відгуки про ZXKit</h2>
-            <div class="reviews-grid">
-                ${comments.map(c => `
-                    <div class="review-card">
-                        <div class="stars">${'★'.repeat(c.rating)}${'☆'.repeat(5 - c.rating)}</div>
-                        <p class="text">"${c.text}"</p>
-                        <div class="author"><strong>${c.author}</strong></div>
-                        <small class="date">${c.date}</small>
-                    </div>
-                `).join('')}
-            </div>
-        `;
-
+        section.id = "reviews-section";
+        section.style.margin = "40px auto";
+        section.style.maxWidth = "800px";
         footer.parentNode.insertBefore(section, footer);
 
-        // Додаємо Schema.org для SEO (загальний рейтинг магазину)
-        const schema = {
-            "@context": "https://schema.org/",
-            "@type": "AggregateRating",
-            "itemReviewed": { "@type": "Store", "name": "ZXKit" },
-            "ratingValue": "5.0",
-            "reviewCount": comments.length
-        };
-
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.text = JSON.stringify(schema);
-        document.head.appendChild(script);
-
+        renderReviewPage(); // Малюємо першу сторінку
     } catch (err) { console.error("Помилка завантаження відгуків:", err); }
 }
+
+function renderReviewPage() {
+    const section = document.getElementById('reviews-section');
+    const start = (currentReviewPage - 1) * reviewsPerPage;
+    const paginated = allReviews.slice(start, start + reviewsPerPage);
+
+    section.innerHTML = `
+        <h2 style="text-align: center; margin: 40px 0;">Відгуки про ZXKit</h2>
+        <div class="reviews-grid">
+            ${paginated.map(c => `
+                <div class="review-card" style="border: 1px solid var(--zx-cyan); padding: 15px; margin: 10px 0;">
+                    <div class="stars">${'★'.repeat(c.rating)}${'☆'.repeat(5 - c.rating)}</div>
+                    <p class="text">"${c.text}"</p>
+                    <div class="author"><strong>${c.author}</strong></div>
+                    <small class="date">${c.date}</small>
+                </div>
+            `).join('')}
+        </div>
+        <div class="pagination-container" style="text-align: center; margin-top: 20px;">
+            <button class="page-btn" onclick="changeReviewPage(-1)"> &lt;&lt; ПЕРЕДНІ </button>
+            <span id="review-page-info" style="margin: 0 15px;">PAGE ${currentReviewPage}</span>
+            <button class="page-btn" onclick="changeReviewPage(1)"> НАСТУПНІ &gt;&gt; </button>
+        </div>
+    `;
+}
+
+// Функція перемикання сторінок відгуків
+window.changeReviewPage = function(dir) {
+    const maxPages = Math.ceil(allReviews.length / reviewsPerPage);
+    const newPage = currentReviewPage + dir;
+    if (newPage >= 1 && newPage <= maxPages) {
+        currentReviewPage = newPage;
+        renderReviewPage();
+        document.getElementById('reviews-section').scrollIntoView({ behavior: 'smooth' });
+    }
+};
 
 // Функція відправки відгуку/питання в Telegram
 window.submitComment = function () {
@@ -483,3 +497,4 @@ function updateBackButton() {
         backBtn.innerText = 'Повернутися до каталогу';
     }
 }
+
