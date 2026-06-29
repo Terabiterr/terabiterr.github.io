@@ -82,15 +82,7 @@ async function loadComponents() {
         const container = document.getElementById('components-list');
         if (!container) return;
 
-        // --- Логіка випадкового виводу (Shuffle) ---
-        const shuffled = [...components]; // Створюємо копію масиву
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Обмін елементами
-        }
-        // ------------------------------------------
-
-        container.innerHTML = shuffled.map(c => `
+        container.innerHTML = components.map(c => `
             <a href="/products/template.html?id=${c.id}&isComponent=true" class="card-link">
                 <article class="card">
                     <img src="${c.images[0]}" alt="${c.name}" loading="lazy">
