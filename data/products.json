@@ -126,6 +126,64 @@
   }
 },
 {
+  "id": "ZX-SOUND-MULTISOUND",
+  "meta": {
+    "title": "ZX-Multisound від Андрія Карпова — універсальна звукова карта для ZX Spectrum",
+    "description": "Потужна звукова карта для ZX Spectrum: TurboSound FM, General Sound, SAA1099, SounDrive та MIDI. Ідеальне DIY рішення для аудіофілів.",
+    "keywords": "ZX Spectrum, звукова карта, TurboSound FM, General Sound, SAA1099, SounDrive, MIDI, ZX-Multisound, ретро-комп'ютер"
+  },
+  "product": {
+    "name": "ZX-Multisound (Чиста плата)",
+    "sku": "ZX-SOUND-MULTISOUND",
+    "price": 450,
+    "currency": "UAH",
+    "images": [
+      "../img/multisound/1.jpg"
+    ],
+    "specs": [
+      { "label": "TurboSound FM", "val": "2x YM2203" },
+      { "label": "General Sound", "val": "16MHz, 1024Kb RAM" },
+      { "label": "Додатково", "val": "SAA1099, SounDrive, MIDI, 4x DACs" },
+      { "label": "Живлення", "val": "+5В та +12В" },
+      { "label": "Форм-фактор", "val": "Low profile (170x64мм)" }
+    ],
+    "description": "<strong>ZX-Multisound</strong> — це багатофункціональний звуковий комбайн для ZX Spectrum, розроблений Андрієм Карповим. Плата поєднує в собі майже всі класичні та сучасні стандарти звуку для цієї платформи, перетворюючи ваш комп'ютер на справжню музичну студію.<br><br><strong>Ключові особливості:</strong><br>• <strong>TurboSound FM:</strong> Два чіпи YM2203 для багатого синтезу звуку.<br>• <strong>General Sound:</strong> Повноцінна підтримка GS з 1Мб оперативної пам'яті.<br>• <strong>Широкий вибір:</strong> Вбудована підтримка SAA1099, SounDrive та MIDI-синтезатора.<br>• <strong>Компактність:</strong> Низькопрофільна плата дозволяє зручно розмістити карту навіть у компактних корпусах.<br><br><em>Зверніть увагу: це чиста плата для самостійної збірки (DIY конструктор). Комплектуючі в комплект не входять.</em>",
+    "schema": {
+      "description": "Універсальна звукова карта ZX-Multisound для ZX Spectrum. Підтримка GS, TurboSound FM, SAA1099, SounDrive та MIDI."
+    }
+  }
+},
+{
+  "id": "ZX-KHARKOV-128",
+  "meta": {
+    "title": "Харків 128К Rev 4.0 — набір для збірки ZX Spectrum",
+    "description": "Повний набір (конструктор) для збірки топового клону ZX Spectrum на серії 1533. 128К ОЗУ, підтримка VGA, SCART, USB-клавіатури.",
+    "keywords": "Харків 128К, ZX Spectrum, конструктор, DIY, 1533 серія, ретро-комп'ютер, DivMMC, NEMOBUS"
+  },
+  "product": {
+    "name": "Харків 128К Rev 4.0 (Конструктор)",
+    "sku": "ZX-KHARKOV-128",
+    "price": 4250,
+    "currency": "UAH",
+    "images": [
+      "../img/kharkov/1.jpg",
+      "../img/kharkov/2.jpg",
+      "../img/kharkov/7.jpg"
+    ],
+    "specs": [
+      { "label": "Версія", "val": "Rev 4.0.0" },
+      { "label": "Логіка", "val": "1533 серія (топові компоненти)" },
+      { "label": "Пам'ять", "val": "128 Кб (на мікросхемах 16РУ5)" },
+      { "label": "Відео", "val": "VGA, SCART, RCA, S-Video (AD725)" },
+      { "label": "Периферія", "val": "Підтримка USB-клавіатури, шина NEMOBUS" }
+    ],
+    "description": "<strong>Харків 128К Rev 4.0</strong> — це сучасна ревізія легендарного українського клону ZX Spectrum. Це повноцінний набір для самостійної збірки, у якому використано найкращу логіку серії 1533. Плата зберігає вірність класичній архітектурі з динамічною пам'яттю (16РУ5), забезпечуючи ідеальну сумісність з усім спектром класичного софту.<br><br><strong>Особливості комплекту:</strong><br>• <strong>Сучасний комфорт:</strong> Вбудована підтримка відеовиходів VGA, SCART, RCA та S-Video (через кодер AD725).<br>• <strong>Можливості розширення:</strong> Повна підтримка DivMMC через шину NEMOBUS та вбудований контролер USB-клавіатури.<br>• <strong>Комплектація:</strong> До набору входить якісна друкована плата, усі необхідні мікросхеми серії 1533, прошита ПЗУ та набір пасивних компонентів.<br><br>Це ідеальний проект для тих, хто хоче зібрати власний класичний Спектрум «з нуля» з максимальним задоволенням від процесу пайки та налаштування.",
+    "schema": {
+      "description": "Набір (конструктор) для збірки ZX Spectrum Харків 128К Rev 4.0 на логіці 1533 серії. Включає все необхідне для збірки."
+    }
+  }
+},
+{
   "id": "ZX-FDC-MB8877",
   "meta": {
     "title": "Контролер гнучких дисків для ZX Spectrum на базі MB8877A",

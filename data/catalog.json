@@ -4,6 +4,8 @@
   { "id": "ZX-FDC-MB8877", "name": "Контролер дисковода (FDC) для ZX Spectrum (MB8877A)", "price": 320, "img": "/img/diskovod/1.jpg" },
   { "id": "ZX-A01", "name": "Книги 'Як написати гру на ZX Spectrum 1 і 2 тома'", "price": 1900, "img": "/img/books_zx/1.png" },
   { "id": "ZX-PHX-081", "name": "ZXM-Phoenix Rev 08.1 (Чисті плати)", "price": 1400, "img": "img/pheonix/1.jpg" },
+  { "id": "ZX-SOUND-MULTISOUND", "name": "ZX-Multisound (Чиста плата)", "price": 450, "img": "img/multisound/1.jpg" },
+  { "id": "ZX-KHARKOV-128", "name": "Харків 128К Rev 4.0 (Конструктор)", "price": 4250, "img": "img/kharkov/1.jpg" },
   { "id": "ZX-KEY-CHERRY", "name": "Чиста плата механічної клавіатури (Cherry MX)", "price": 480, "img": "img/keyboard/1.jpg" },
   { "id": "ZX-B003", "name": "Sega Genesis v2.3 (оригінал) + повний комплект", "price": 4999, "img": "/img/sega_genessis/1.jpg" },
   { "id": "ZX-000", "name": "DivMMC від microDRV - Чиста плата", "price": 270, "img": "/img/divmmc_microdrv/1.jpg" },
