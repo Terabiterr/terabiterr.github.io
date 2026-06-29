@@ -1,6 +1,7 @@
 [
   { "id": "ZX-CROCODILE-01", "name": "Pentagon 1024 ZP Crocodile Rev 3 [Преміум]", "price": 14999, "img": "/img/pentagon_crocodile/1.jpg" },
   { "id": "ZX-EVO-4MB", "name": "ZX Evolution 4MB Rev B3 (Зібраний)", "price": 4800, "img": "/img/zxevo-assembled/1.jpg" },
+  { "id": "ZX-FDC-MB8877", "name": "Контролер дисковода (FDC) для ZX Spectrum (MB8877A)", "price": 320, "img": "/img/diskovod/1.jpg" },
   { "id": "ZX-A01", "name": "Книги 'Як написати гру на ZX Spectrum 1 і 2 тома'", "price": 1900, "img": "/img/books_zx/1.png" },
   { "id": "ZX-B003", "name": "Sega Genesis v2.3 (оригінал) + повний комплект", "price": 4999, "img": "/img/sega_genessis/1.jpg" },
   { "id": "ZX-000", "name": "DivMMC від microDRV - Чиста плата", "price": 270, "img": "/img/divmmc_microdrv/1.jpg" },
