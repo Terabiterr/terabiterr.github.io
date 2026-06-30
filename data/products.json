@@ -80,11 +80,11 @@
     "price": 3200,
     "currency": "UAH",
     "images": [
-      "leningrad_2/1.jpg",
-      "leningrad_2/2.jpg",
-      "leningrad_2/3.jpg",
-      "leningrad_2/4.jpg",
-      "leningrad_2/5.jpg"
+      "../img/leningrad_2/1.jpg",
+      "../img/leningrad_2/2.jpg",
+      "../img/leningrad_2/3.jpg",
+      "../img/leningrad_2/4.jpg",
+      "../img/leningrad_2/5.jpg"
     ],
     "specs": [
       {"label": "Модель", "val": "Ленінград 2"},
