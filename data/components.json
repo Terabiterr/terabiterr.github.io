@@ -15,6 +15,58 @@
     "stock_status": "in_stock"
   },
   {
+    "id": "Z80-CPU",
+    "name": "Процесор Zilog Z80",
+    "analog": "КР1858ВМ1",
+    "price": 120,
+    "currency": "UAH",
+    "url": "/components/template.html?id=Z80-CPU",
+    "images": ["/img/components/z80.png"],
+    "short_description": "Серце вашого ZX Spectrum. Класичний 8-бітний мікропроцесор.",
+    "description": "Оригінальний процесор Zilog Z80. Надійний компонент для ремонту або складання нових ретро-комп'ютерів. Забезпечує стабільну роботу на штатних частотах.",
+    "keywords": "Z80, Zilog, процесор ZX Spectrum, КР1858ВМ1, 8-бітний процесор, ремонт Спектрума",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "27C512-ROM",
+    "name": "ПЗУ 27C512 (EPROM)",
+    "analog": "КР573РФ8 (частковий)",
+    "price": 110,
+    "currency": "UAH",
+    "url": "/components/template.html?id=27C512-ROM",
+    "images": ["/img/components/27c512.jpg"],
+    "short_description": "Мікросхема пам'яті EPROM 512Кбіт (64КБ) для зберігання прошивок.",
+    "description": "УФ-стиральна або одноразова (в залежності від корпусу) мікросхема ПЗУ об'ємом 64КБ. Ідеально підходить для зберігання прошивок BIOS та ігор для ZX Spectrum.",
+    "keywords": "27C512, EPROM, ПЗУ, прошивка Spectrum, ретро пам'ять, радіокомпоненти",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "YM2149F-SOUND",
+    "name": "Звуковий чіп YM2149F",
+    "analog": "AY-3-8910",
+    "price": 350,
+    "currency": "UAH",
+    "url": "/components/template.html?id=YM2149F-SOUND",
+    "images": ["/img/components/ym2149.jpg"],
+    "short_description": "Легендарний звуковий генератор для отримання якісного AY-звуку.",
+    "description": "Звуковий співпроцесор YM2149F — повний аналог AY-3-8910. Необхідний компонент для реалізації музичних можливостей у клонах ZX Spectrum та інших 8-бітних системах.",
+    "keywords": "YM2149F, AY-3-8910, звук ZX Spectrum, чіпсет, ретро музика, радіодеталі",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "SERVICE-FLASH",
+    "name": "Послуга: Прошивка ПЗУ",
+    "analog": "N/A",
+    "price": 300,
+    "currency": "UAH",
+    "url": "/components/template.html?id=SERVICE-FLASH",
+    "images": ["/img/components/service_pzu.jpeg"],
+    "short_description": "Професійний запис вашої прошивки на мікросхему ПЗУ.",
+    "description": "Послуга програмування мікросхем ПЗУ (EPROM, EEPROM). Надайте нам файл прошивки — і ми запишемо його на ваш чіп. Гарантія коректності запису.",
+    "keywords": "прошивка ПЗУ, запис EPROM, послуги ZX Spectrum, програмування мікросхем, ретро ремонт",
+    "stock_status": "in_stock"
+  },
+  {
   "id": "1533IR23-SMD",
   "name": "ЭКФ1533ИР23 / 74ALS374 SOIC-20",
   "analog": "74ALS374 / КР1533ИР23",
