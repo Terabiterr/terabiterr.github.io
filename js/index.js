@@ -498,3 +498,18 @@ function updateBackButton() {
     }
 }
 
+  (function() {
+    // Встановіть тут нову версію, коли внесете серйозні зміни в каталог
+    const CURRENT_VERSION = 'v2026-06-30-01'; 
+    
+    // Перевіряємо поточну версію в localStorage
+    const savedVersion = localStorage.getItem('site_version');
+    
+    if (savedVersion !== CURRENT_VERSION) {
+      // Якщо версії не збігаються — оновлюємо версію і робимо хард-релоад
+      localStorage.setItem('site_version', CURRENT_VERSION);
+      
+      // Перезавантаження з ігноруванням кешу
+      window.location.reload(true);
+    }
+  })();
