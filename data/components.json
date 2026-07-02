@@ -37,7 +37,7 @@
     "currency": "UAH",
     "url": "/components/template.html?id=socket-dip28-std",
     "images": [
-      "/img/components/pannel_dip28.jpg"
+      "/img/components/pannel_dip28.png"
     ],
     "short_description": "Стандартна 28-контактна панель для мікросхем ПЗУ або контролерів.",
     "description": "Класична панель DIP-28 забезпечує надійне кріплення мікросхем у вашому пристрої. Ідеальний вибір для заміни ПЗУ (ROM) або периферійних вузлів у клонах ZX Spectrum, де важливий баланс між ціною та якістю контакту.",
