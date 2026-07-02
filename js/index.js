@@ -16,11 +16,29 @@ const CartManager = {
         localStorage.setItem('cart', JSON.stringify(this.items));
         this.updateCounter();
     },
-    add(product) {
+    add(product, quantity = 1) { // Додаємо аргумент кількості
         const existing = this.items.find(i => i.id === product.id);
-        if (existing) existing.quantity++;
-        else this.items.push({ ...product, quantity: 1 });
+        if (existing) {
+            existing.quantity += parseInt(quantity);
+        } else {
+            this.items.push({ ...product, quantity: parseInt(quantity) });
+        }
         this.save();
+        this.renderModal(); // Перемальовуємо, якщо модалка відкрита
+    },
+    updateQuantity(id, quantity) {
+        const item = this.items.find(i => i.id === id);
+        if (item) {
+            item.quantity = Math.max(1, parseInt(quantity) || 1);
+            this.save();
+            this.renderModal();
+        }
+    },
+
+    remove(id) {
+        this.items = this.items.filter(i => i.id !== id);
+        this.save();
+        this.renderModal();
     },
     updateCounter() {
         const el = document.getElementById('cart-count');
@@ -454,19 +472,15 @@ function initCartModal() {
         let modal = document.getElementById('cart-modal');
         if (!modal) {
             // Створюємо модалку, якщо її ще немає
-            modal = document.createElement('div');
-            modal.id = 'cart-modal';
-            modal.className = 'modal'; // Додайте стилі в CSS
-            modal.innerHTML = `
-                <div class="modal-content">
-                    <h3>КОРЗИНА</h3>
-                    <div id="cart-items-list"></div>
-                    <a id="checkout-btn" href="#" class="btn-action">Замовити в Telegram</a>
-                    <button onclick="document.getElementById('cart-modal').style.display='none'">Закрити</button>
-                    <button id="clear-cart-btn" class="btn-secondary">Очистити корзину</button>
-                </div>
-            `;
-            document.body.appendChild(modal);
+           const list = document.getElementById('cart-items-list');
+    list.innerHTML = CartManager.items.map(i => `
+        <div class="cart-item">
+            <span>${i.name}</span>
+            <input type="number" value="${i.quantity}" min="1" 
+                   onchange="CartManager.updateQuantity('${i.id}', this.value)">
+            <button onclick="CartManager.remove('${i.id}')">✕</button>
+        </div>
+    `).join('');
             // Слухач для кнопки очищення
             document.getElementById('clear-cart-btn').addEventListener('click', () => {
                 CartManager.clear();
