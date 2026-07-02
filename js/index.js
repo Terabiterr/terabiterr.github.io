@@ -49,6 +49,23 @@ const CartManager = {
         let text = "Замовлення з ZX-KIT:%0A";
         this.items.forEach(i => { text += `%0A- ${i.name} (${i.quantity} шт.)`; });
         return `https://t.me/terabiterr?text=${text}`;
+    },
+    renderModal() {
+        const modal = document.getElementById('cart-modal');
+        if (!modal) return;
+
+        const list = document.getElementById('cart-items-list');
+        list.innerHTML = this.items.map(i => `
+            <div class="cart-item">
+                <span>${i.name}</span>
+                <input type="number" value="${i.quantity}" min="1" 
+                       onchange="CartManager.updateQuantity('${i.id}', this.value)">
+                <button onclick="CartManager.remove('${i.id}')" style="color:red; cursor:pointer;">✕</button>
+            </div>
+        `).join('');
+        
+        // Оновлюємо посилання на Telegram
+        document.getElementById('checkout-btn').href = this.getTelegramLink();
     }
 };
 
@@ -471,25 +488,23 @@ function initCartModal() {
     btn.addEventListener('click', () => {
         let modal = document.getElementById('cart-modal');
         if (!modal) {
-            // Створюємо модалку, якщо її ще немає
-           const list = document.getElementById('cart-items-list');
-    list.innerHTML = CartManager.items.map(i => `
-        <div class="cart-item">
-            <span>${i.name}</span>
-            <input type="number" value="${i.quantity}" min="1" 
-                   onchange="CartManager.updateQuantity('${i.id}', this.value)">
-            <button onclick="CartManager.remove('${i.id}')">✕</button>
-        </div>
-    `).join('');
-            // Слухач для кнопки очищення
-            document.getElementById('clear-cart-btn').addEventListener('click', () => {
-                CartManager.clear();
-            });
+            modal = document.createElement('div');
+            modal.id = 'cart-modal';
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <h3>КОРЗИНА</h3>
+                    <div id="cart-items-list"></div>
+                    <a id="checkout-btn" href="#" class="btn-action">Замовити в Telegram</a>
+                    <button onclick="document.getElementById('cart-modal').style.display='none'">Закрити</button>
+                    <button id="clear-cart-btn" class="btn-secondary">Очистити корзину</button>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            document.getElementById('clear-cart-btn').addEventListener('click', () => CartManager.clear());
         }
-
-        const list = document.getElementById('cart-items-list');
-        list.innerHTML = CartManager.items.map(i => `<div>${i.name} - ${i.quantity} шт.</div>`).join('');
-        document.getElementById('checkout-btn').href = CartManager.getTelegramLink();
+        
+        CartManager.renderModal(); // Оновлюємо вміст перед показом
         modal.style.display = 'block';
     });
 }
