@@ -10,11 +10,11 @@ const CatalogManager = {
             this.allData = await resp.json();
             this.filteredData = [...this.allData];
             this.render();
-            
+
             // Налаштовуємо всі обробники
             this.setupEventListeners();
-        } catch (err) { 
-            console.error("Помилка завантаження компонентів:", err); 
+        } catch (err) {
+            console.error("Помилка завантаження компонентів:", err);
         }
     },
 
@@ -34,12 +34,12 @@ const CatalogManager = {
 
                 // Значення з data-category
                 const filterValue = e.target.dataset.category;
-                
+
                 // Вписуємо текст у пошук, якщо натиснули кнопку, крім "ВСЕ"
                 if (searchInput) {
                     searchInput.value = filterValue === "" ? "" : e.target.innerText;
                 }
-                
+
                 this.handleSearch(filterValue);
             });
         });
@@ -47,13 +47,22 @@ const CatalogManager = {
 
     handleSearch(term) {
         const t = term.toLowerCase();
-        
-        // Фільтрація: назва або опис
-        this.filteredData = this.allData.filter(c => 
-            (c.name && c.name.toLowerCase().includes(t)) || 
-            (c.description && c.description.toLowerCase().includes(t))
-        );
-        
+
+        // Якщо прийшов пустий рядок (кнопка "ВСЕ"), показуємо все
+        if (t === "") {
+            this.filteredData = [...this.allData];
+        } else {
+            // Фільтруємо за категорією (якщо збігається data-category) 
+            // АБО за текстовим запитом у назві/описі
+            this.filteredData = this.allData.filter(c => {
+                const matchesCategory = (c.category && c.category.toLowerCase() === t);
+                const matchesText = (c.name && c.name.toLowerCase().includes(t)) ||
+                    (c.description && c.description.toLowerCase().includes(t));
+
+                return matchesCategory || matchesText;
+            });
+        }
+
         this.currentPage = 1;
         this.render();
     },
@@ -91,7 +100,7 @@ const CatalogManager = {
         const nav = document.getElementById('pagination');
         if (!nav) return;
         const total = Math.ceil(this.filteredData.length / this.itemsPerPage);
-        
+
         if (total <= 1) { nav.innerHTML = ''; return; }
 
         nav.innerHTML = `
