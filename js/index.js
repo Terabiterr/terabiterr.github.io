@@ -222,6 +222,13 @@ async function initProductPage() {
         const item = list.find(p => p.id === id);
         if (!item) return;
 
+        // --- Канонічний тег ---
+        const canonical = document.getElementById('canonical-url');
+        if (canonical) {
+            canonical.setAttribute('href', window.location.href); 
+        }
+        // ------------------------
+
         const data = item.product;
 
         // Оновлюємо SEO
@@ -309,6 +316,13 @@ async function initComponentPage() {
             console.error("Компонент не знайдено");
             return;
         }
+
+        // --- ДОДАЙТЕ ЦЕЙ БЛОК ---
+        const canonical = document.getElementById('canonical-url');
+        if (canonical) {
+            canonical.setAttribute('href', window.location.href);
+        }
+        // ------------------------
 
         // 1. Оновлення SEO та мета-даних
         updateComponentSEO(data);
