@@ -19,49 +19,31 @@ const CatalogManager = {
     },
 
     setupEventListeners() {
-        // 1. Пошук
         const searchInput = document.getElementById('search-input');
+        const categorySelect = document.getElementById('category-filter');
+
+        // Обробка пошуку
         if (searchInput) {
-            searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
+            searchInput.addEventListener('input', () => this.applyFilters());
         }
 
-        // 2. Фільтри (обробка кнопок)
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // Візуальна активність
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-
-                // Значення з data-category
-                const filterValue = e.target.dataset.category;
-
-                // Вписуємо текст у пошук, якщо натиснули кнопку, крім "ВСЕ"
-                if (searchInput) {
-                    searchInput.value = filterValue === "" ? "" : e.target.innerText;
-                }
-
-                this.handleSearch(filterValue);
-            });
-        });
+        // Обробка випадаючого списку
+        if (categorySelect) {
+            categorySelect.addEventListener('change', () => this.applyFilters());
+        }
     },
 
-    handleSearch(term) {
-        const t = term.toLowerCase();
+    applyFilters() {
+        const searchTerm = document.getElementById('search-input').value.toLowerCase();
+        const categoryValue = document.getElementById('category-filter').value.toLowerCase();
 
-        // Якщо прийшов пустий рядок (кнопка "ВСЕ"), показуємо все
-        if (t === "") {
-            this.filteredData = [...this.allData];
-        } else {
-            // Фільтруємо за категорією (якщо збігається data-category) 
-            // АБО за текстовим запитом у назві/описі
-            this.filteredData = this.allData.filter(c => {
-                const matchesCategory = (c.category && c.category.toLowerCase() === t);
-                const matchesText = (c.name && c.name.toLowerCase().includes(t)) ||
-                    (c.description && c.description.toLowerCase().includes(t));
+        this.filteredData = this.allData.filter(c => {
+            const matchesCategory = categoryValue === "" || (c.category && c.category.toLowerCase() === categoryValue);
+            const matchesText = (c.name && c.name.toLowerCase().includes(searchTerm)) ||
+                                (c.description && c.description.toLowerCase().includes(searchTerm));
 
-                return matchesCategory || matchesText;
-            });
-        }
+            return matchesCategory && matchesText;
+        });
 
         this.currentPage = 1;
         this.render();

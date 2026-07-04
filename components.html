@@ -102,24 +102,28 @@
             <div class="catalog-controls">
                 <input type="text" id="search-input" placeholder="Пошук компонентів...">
 
-                <div class="filter-container">
-                    <button class="filter-btn active" data-category="">ВСЕ</button>
-                    <button class="filter-btn" data-category="стабілізатор">СТАБІЛІЗАТОРИ</button>
-                    <button class="filter-btn" data-category="транзистор">ТРАНЗИСТОРИ</button>
-                    <button class="filter-btn" data-category="програматор">ПРОГРАМАТОРИ</button>
-                    <button class="filter-btn" data-category="паяльне">ПАЯЛЬНЕ</button>
-                    <button class="filter-btn" data-category="інструмент">ІНСТРУМЕНТ</button>
-                    <button class="filter-btn" data-category="динамік">ДИНАМІКИ</button>
-                    <button class="filter-btn" data-category="макетна">МАКЕТНІ ПЛАТИ</button>
-                    <button class="filter-btn" data-category="дисплей">ДИСПЛЕЇ</button>
-                    <button class="filter-btn" data-category="резистор">РЕЗИСТОРИ</button>
-                    <button class="filter-btn" data-category="конденсатор">КОНДЕНСАТОРИ</button>
-                    <button class="filter-btn" data-category="мікросхема">МІКРОСХЕМИ</button>
-                    <button class="filter-btn" data-category="кварц">КВАРЦІ</button>
-                    <button class="filter-btn" data-category="панель">ПАНЕЛЬКИ</button>
-                </div>
+                <select id="category-filter" class="filter-select">
+                    <option value="">-- Всі категорії --</option>
+                    <option value="мікросхема">Мікросхеми</option>
+                    <option value="транзистор">Транзистори</option>
+                    <option value="діод">Діоди та випрямлячі</option>
+                    <option value="резистор">Резистори</option>
+                    <option value="конденсатор">Конденсатори</option>
+                    <option value="стабілізатор">Стабілізатори</option>
+                    <option value="кварц">Кварцові резонатори</option>
+                    <option value="роз'єм">Роз'єми та перехідники</option>
+                    <option value="панель">Панельки для ІС</option>
+                    <option value="динамік">Динаміки та звукові модулі</option>
+                    <option value="дисплей">Дисплеї та індикатори</option>
+                    <option value="програматор">Програматори</option>
+                    <option value="паяльне">Паяльне обладнання</option>
+                    <option value="інструмент">Інструменти</option>
+                    <option value="макетна">Макетні плати</option>
+                    <option value="провід">Провід та кабелі</option>
+                    <option value="корпус">Корпуси</option>
+                    <option value="вимірювальне">Вимірювальні прилади</option>
+                </select>
             </div>
-
             <div class="grid" id="components-list"></div>
             <div id="pagination" class="pagination-container"></div>
         </section>

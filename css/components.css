@@ -446,3 +446,19 @@ header {
     cursor: pointer;
     width: 100%;
 }
+
+.filter-select {
+    padding: 10px;
+    background: #000;
+    color: var(--zx-cyan);
+    border: 2px solid var(--zx-cyan);
+    font-family: monospace;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--zx-yellow);
+}
