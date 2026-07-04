@@ -63,7 +63,7 @@ const CartManager = {
                 <button onclick="CartManager.remove('${i.id}')" style="color:red; cursor:pointer;">✕</button>
             </div>
         `).join('');
-        
+
         // Оновлюємо посилання на Telegram
         document.getElementById('checkout-btn').href = this.getTelegramLink();
     }
@@ -225,7 +225,10 @@ async function initProductPage() {
         // --- Канонічний тег ---
         const canonical = document.getElementById('canonical-url');
         if (canonical) {
-            canonical.setAttribute('href', window.location.href); 
+            canonical.setAttribute('href', window.location.href);
+            // Використовуйте цей підхід, щоб гарантувати чистоту URL:
+            const url = window.location.href.replace(/&amp;/g, '&');
+            canonical.setAttribute('href', url);
         }
         // ------------------------
 
@@ -311,7 +314,7 @@ async function initComponentPage() {
         const resp = await fetch('/data/components.json');
         const list = await resp.json();
         const data = list.find(p => p.id === id);
-        
+
         if (!data) {
             console.error("Компонент не знайдено");
             return;
@@ -321,6 +324,9 @@ async function initComponentPage() {
         const canonical = document.getElementById('canonical-url');
         if (canonical) {
             canonical.setAttribute('href', window.location.href);
+            // Використовуйте цей підхід, щоб гарантувати чистоту URL:
+            const url = window.location.href.replace(/&amp;/g, '&');
+            canonical.setAttribute('href', url);
         }
         // ------------------------
 
@@ -360,8 +366,8 @@ async function initComponentPage() {
         renderGallery(data.images);
         initZoom();
 
-    } catch (err) { 
-        console.error("Помилка ініціалізації сторінки компонента:", err); 
+    } catch (err) {
+        console.error("Помилка ініціалізації сторінки компонента:", err);
     }
 }
 
@@ -442,7 +448,7 @@ function renderReviewPage() {
 }
 
 // Функція перемикання сторінок відгуків
-window.changeReviewPage = function(dir) {
+window.changeReviewPage = function (dir) {
     const maxPages = Math.ceil(allReviews.length / reviewsPerPage);
     const newPage = currentReviewPage + dir;
     if (newPage >= 1 && newPage <= maxPages) {
@@ -517,7 +523,7 @@ function initCartModal() {
             document.body.appendChild(modal);
             document.getElementById('clear-cart-btn').addEventListener('click', () => CartManager.clear());
         }
-        
+
         CartManager.renderModal(); // Оновлюємо вміст перед показом
         modal.style.display = 'block';
     });
@@ -541,18 +547,18 @@ function updateBackButton() {
     }
 }
 
-  (function() {
+(function () {
     // Встановіть тут нову версію, коли внесете серйозні зміни в каталог
-    const CURRENT_VERSION = 'v2026-06-30-01'; 
-    
+    const CURRENT_VERSION = 'v2026-06-30-01';
+
     // Перевіряємо поточну версію в localStorage
     const savedVersion = localStorage.getItem('site_version');
-    
+
     if (savedVersion !== CURRENT_VERSION) {
-      // Якщо версії не збігаються — оновлюємо версію і робимо хард-релоад
-      localStorage.setItem('site_version', CURRENT_VERSION);
-      
-      // Перезавантаження з ігноруванням кешу
-      window.location.reload(true);
+        // Якщо версії не збігаються — оновлюємо версію і робимо хард-релоад
+        localStorage.setItem('site_version', CURRENT_VERSION);
+
+        // Перезавантаження з ігноруванням кешу
+        window.location.reload(true);
     }
-  })();
+})();
