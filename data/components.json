@@ -2,6 +2,7 @@
   {
     "id": "4164-15nl",
     "name": "4164-15NL/565РУ5",
+    "category": "мікросхема",
     "analog": "565РУ5",
     "price": 42,
     "currency": "UAH",
@@ -17,6 +18,7 @@
   {
     "id": "socket-dip16-std",
     "name": "Панелька DIP-16 (стандарт)",
+    "category": "панель",
     "analog": "Роз'єм DIP16 (тюльпан)",
     "price": 3,
     "currency": "UAH",
@@ -32,6 +34,7 @@
   {
     "id": "socket-dip28-std",
     "name": "Панелька DIP-28 (стандарт)",
+    "category": "панель",
     "analog": "Роз'єм DIP28 (тюльпан)",
     "price": 5,
     "currency": "UAH",
@@ -47,6 +50,7 @@
   {
     "id": "socket-dip40-std",
     "name": "Панелька DIP-40 (стандарт)",
+    "category": "панель",
     "analog": "Роз'єм DIP40 (тюльпан)",
     "price": 9,
     "currency": "UAH",
@@ -60,42 +64,48 @@
     "stock_status": "in_stock"
   },
   {
-  "id": "yac512-m",
-  "name": "YAC512-M Цифро-аналоговий перетворювач (ЦАП)",
-  "analog": "YAC512",
-  "price": 185,
-  "currency": "UAH",
-  "url": "/components/template.html?id=yac512-m",
-  "images": [
-    "/img/components/yac512.jpg"
-  ],
-  "short_description": "Високоякісний 16-бітний аудіо ЦАП для професійної та побутової аудіоапаратури. Надійний компонент для ремонту звукових систем.",
-  "description": "Мікросхема YAC512-M являє собою спеціалізований 16-бітний цифро-аналоговий перетворювач (ЦАП), що широко застосовується в аудіотехніці для забезпечення високої точності відтворення звуку. Завдяки низькому рівню спотворень та стабільним характеристикам, цей компонент ідеально підходить для ремонту та обслуговування музичних інструментів, студійного обладнання та аудіофільської апаратури. Кожна мікросхема проходить тестування перед відправкою, гарантуючи повну відповідність технічним специфікаціям.",
-  "keywords": "YAC512-M, YAC512, мікросхема ЦАП, 16-бітний ЦАП, аудіо компоненти купити, ремонт звукової апаратури, мікросхеми для звуку, електронні компоненти Україна, звуковий перетворювач, радіодеталі для аудіо",
-  "stock_status": "in_stock"
-},
+    "id": "yac512-m",
+    "name": "YAC512-M Цифро-аналоговий перетворювач (ЦАП)",
+    "category": "мікросхема",
+    "analog": "YAC512",
+    "price": 185,
+    "currency": "UAH",
+    "url": "/components/template.html?id=yac512-m",
+    "images": [
+      "/img/components/yac512.jpg"
+    ],
+    "short_description": "Високоякісний 16-бітний аудіо ЦАП для професійної та побутової аудіоапаратури. Надійний компонент для ремонту звукових систем.",
+    "description": "Мікросхема YAC512-M являє собою спеціалізований 16-бітний цифро-аналоговий перетворювач (ЦАП), що широко застосовується в аудіотехніці для забезпечення високої точності відтворення звуку. Завдяки низькому рівню спотворень та стабільним характеристикам, цей компонент ідеально підходить для ремонту та обслуговування музичних інструментів, студійного обладнання та аудіофільської апаратури. Кожна мікросхема проходить тестування перед відправкою, гарантуючи повну відповідність технічним специфікаціям.",
+    "keywords": "YAC512-M, YAC512, мікросхема ЦАП, 16-бітний ЦАП, аудіо компоненти купити, ремонт звукової апаратури, мікросхеми для звуку, електронні компоненти Україна, звуковий перетворювач, радіодеталі для аудіо",
+    "stock_status": "in_stock"
+  },
   {
-  "id": "74AHCT1G125DB",
-  "name": "74AHCT1G125DBV (Буфер, SOT-23-5)",
-  "category": "мікросхема",
-  "analog": "74HCT125 (логічний аналог)",
-  "price": 12.50,
-  "currency": "UAH",
-  "url": "/components/template.html?id=74AHCT1G125DB",
-  "images": ["/img/components/74AHCT1G125DB.jpg"],
-  "short_description": "Одноканальний буферний драйвер з трьома станами, корпус SOT-23-5.",
-  "description": "Мікросхема Високошвидкісний CMOS-буфер серії AHCT. Має входи з TTL-сумісними рівнями, що дозволяє легко використовувати його у схемах з 5В логікою (наприклад, у ZX Spectrum). Корпус SOT-23-5 дозволяє суттєво зекономити місце на платі при ремонті чи модернізації. Забезпечує стабільну роботу на високих частотах та низьке споживання енергії.",
-  "keywords": "74AHCT1G125, буфер SOT-23-5, логіка, радіодеталі, ZX Spectrum ремонт, мікросхема буфер, радіокомпоненти Україна, SMD логіка",
-  "stock_status": "in_stock"
-},
+    "id": "74AHCT1G125DB",
+    "name": "74AHCT1G125DBV (Буфер, SOT-23-5)",
+    "category": "мікросхема",
+    "analog": "74HCT125 (логічний аналог)",
+    "price": 12.50,
+    "currency": "UAH",
+    "url": "/components/template.html?id=74AHCT1G125DB",
+    "images": [
+      "/img/components/74AHCT1G125DB.jpg"
+    ],
+    "short_description": "Одноканальний буферний драйвер з трьома станами, корпус SOT-23-5.",
+    "description": "Мікросхема Високошвидкісний CMOS-буфер серії AHCT. Має входи з TTL-сумісними рівнями, що дозволяє легко використовувати його у схемах з 5В логікою (наприклад, у ZX Spectrum). Корпус SOT-23-5 дозволяє суттєво зекономити місце на платі при ремонті чи модернізації. Забезпечує стабільну роботу на високих частотах та низьке споживання енергії.",
+    "keywords": "74AHCT1G125, буфер SOT-23-5, логіка, радіодеталі, ZX Spectrum ремонт, мікросхема буфер, радіокомпоненти Україна, SMD логіка",
+    "stock_status": "in_stock"
+  },
   {
     "id": "1533KP11",
     "name": "1533КП11 / 74ALS153 (Мультиплексор)",
+    "category": "мікросхема",
     "analog": "74ALS153",
     "price": 35,
     "currency": "UAH",
     "url": "/components/template.html?id=1533KP11",
-    "images": ["/img/components/dip16.jpg"],
+    "images": [
+      "/img/components/dip16.jpg"
+    ],
     "short_description": "Мультиплексор 4-в-1, серія 1533.",
     "description": "Мікросхема Високошвидкісний мультиплексор даних. Широко використовується в архітектурі ZX Spectrum для керування шинами адрес та даних.",
     "keywords": "1533КП11, 74ALS153, мікросхема, мультиплексор, радіодеталі ZX Spectrum, ремонт Спектрума",
@@ -104,11 +114,14 @@
   {
     "id": "555KP12",
     "name": "555КП12 / 74LS153 (Мультиплексор)",
+    "category": "мікросхема",
     "analog": "74LS153",
     "price": 35,
     "currency": "UAH",
     "url": "/components/template.html?id=555KP12",
-    "images": ["/img/components/dip16.jpg"],
+    "images": [
+      "/img/components/dip16.jpg"
+    ],
     "short_description": "Мультиплексор 4-в-1, серія 555.",
     "description": "Мікросхема Класичний мультиплексор серії 555. Надійний компонент для ремонту радянських клонів ZX Spectrum.",
     "keywords": "555КП12, 74LS153, мікросхема, мультиплексор, радіодеталі, ремонт електроніки",
@@ -117,11 +130,14 @@
   {
     "id": "1533IR22",
     "name": "1533ІР22 / 74ALS373 (Регістр)",
+    "category": "мікросхема",
     "analog": "74ALS373",
     "price": 30,
     "currency": "UAH",
     "url": "/components/template.html?id=1533IR22",
-    "images": ["/img/components/dip20.jpg"],
+    "images": [
+      "/img/components/dip20.jpg"
+    ],
     "short_description": "Восьмирозрядний регістр-засувка (Latch), серія 1533.",
     "description": "Мікросхема Прозорий регістр-засувка з трьома станами на виході. Необхідний для буферизації шини даних.",
     "keywords": "1533ІР22, 74ALS373, регістр, Latch, мікросхема, радіодеталі ZX Spectrum",
@@ -130,11 +146,14 @@
   {
     "id": "555LL1",
     "name": "555ЛЛ1 / 74LS32 (Логіка АБО)",
+    "category": "мікросхема",
     "analog": "74LS32",
     "price": 25,
     "currency": "UAH",
     "url": "/components/template.html?id=555LL1",
-    "images": ["/img/components/DIP14.jpg"],
+    "images": [
+      "/img/components/DIP14.jpg"
+    ],
     "short_description": "Чотири елементи 2АБО, серія 555.",
     "description": "Мікросхема Базовий логічний елемент 'АБО'. Основа схемотехніки багатьох вузлів ZX Spectrum.",
     "keywords": "555ЛЛ1, 74LS32, логічний елемент, АБО, мікросхема, радіокомпоненти",
@@ -143,11 +162,14 @@
   {
     "id": "1533LN1",
     "name": "1533ЛН1 / 74ALS04 (Інвертор)",
+    "category": "мікросхема",
     "analog": "74ALS04",
     "price": 25,
     "currency": "UAH",
     "url": "/components/template.html?id=1533LN1",
-    "images": ["/img/components/DIP14.jpg"],
+    "images": [
+      "/img/components/DIP14.jpg"
+    ],
     "short_description": "Шість інверторів, серія 1533.",
     "description": "Мікросхема Інвертуючий логічний елемент. Використовується для інверсії сигналів керування.",
     "keywords": "1533ЛН1, 74ALS04, інвертор, мікросхема, логіка, радіодеталі",
@@ -156,11 +178,14 @@
   {
     "id": "74LS244-94",
     "name": "74LS244 / К1533АП5 (Оригінал, 1994)",
+    "category": "мікросхема",
     "analog": "К1533АП5",
     "price": 45,
     "currency": "UAH",
     "url": "/components/template.html?id=74LS244-94",
-    "images": ["/img/components/dip20.jpg"],
+    "images": [
+      "/img/components/dip20.jpg"
+    ],
     "short_description": "Мікросхема Оригінальний восьмирозрядний буфер 74LS244 (1994 р.).",
     "description": "Мікросхема Якісний оригінальний буферний драйвер. Ідеально підходить для автентичного ремонту ретро-комп'ютерів.",
     "keywords": "74LS244, К1533АП5, буфер, оригінальна мікросхема, ремонт ретро, ZX Spectrum",
@@ -169,11 +194,14 @@
   {
     "id": "1533LI1",
     "name": "1533ЛИ1 / 74ALS08 (Логіка І)",
+    "category": "мікросхема",
     "analog": "74ALS08",
     "price": 25,
     "currency": "UAH",
     "url": "/components/template.html?id=1533LI1",
-    "images": ["/img/components/DIP14.jpg"],
+    "images": [
+      "/img/components/DIP14.jpg"
+    ],
     "short_description": "Чотири елементи 2І, серія 1533.",
     "description": "Мікросхема Логічний елемент 'І'. Використовується для формування сигналів вибору адреси.",
     "keywords": "1533ЛИ1, 74ALS08, мікросхема, логіка І, радіодеталі, ZX Spectrum",
@@ -182,11 +210,14 @@
   {
     "id": "Z80-CPU",
     "name": "Процесор Zilog Z80",
+    "category": "мікросхема",
     "analog": "КР1858ВМ1",
     "price": 120,
     "currency": "UAH",
     "url": "/components/template.html?id=Z80-CPU",
-    "images": ["/img/components/z80.png"],
+    "images": [
+      "/img/components/z80.png"
+    ],
     "short_description": "Мікросхема Серце вашого ZX Spectrum. Класичний 8-бітний мікропроцесор.",
     "description": "Мікросхема Оригінальний процесор Zilog Z80. Надійний компонент для ремонту або складання нових ретро-комп'ютерів. Забезпечує стабільну роботу на штатних частотах.",
     "keywords": "Z80, Zilog, процесор ZX Spectrum, КР1858ВМ1, 8-бітний процесор, ремонт Спектрума",
@@ -195,11 +226,14 @@
   {
     "id": "27C512-ROM",
     "name": "ПЗУ 27C512 (EPROM)",
+    "category": "мікросхема",
     "analog": "КР573РФ8 (частковий)",
     "price": 110,
     "currency": "UAH",
     "url": "/components/template.html?id=27C512-ROM",
-    "images": ["/img/components/27c512.jpg"],
+    "images": [
+      "/img/components/27c512.jpg"
+    ],
     "short_description": "Мікросхема Мікросхема пам'яті EPROM 512Кбіт (64КБ) для зберігання прошивок.",
     "description": "Мікросхема УФ-стиральна або одноразова (в залежності від корпусу) мікросхема ПЗУ об'ємом 64КБ. Ідеально підходить для зберігання прошивок BIOS та ігор для ZX Spectrum.",
     "keywords": "27C512, EPROM, ПЗУ, прошивка Spectrum, ретро пам'ять, радіокомпоненти",
@@ -208,11 +242,14 @@
   {
     "id": "YM2149F-SOUND",
     "name": "Звуковий чіп YM2149F",
+    "category": "мікросхема",
     "analog": "AY-3-8910",
     "price": 350,
     "currency": "UAH",
     "url": "/components/template.html?id=YM2149F-SOUND",
-    "images": ["/img/components/ym2149.jpg"],
+    "images": [
+      "/img/components/ym2149.jpg"
+    ],
     "short_description": "Мікросхема Легендарний звуковий генератор для отримання якісного AY-звуку.",
     "description": "Мікросхема Звуковий співпроцесор YM2149F — повний аналог AY-3-8910. Необхідний компонент для реалізації музичних можливостей у клонах ZX Spectrum та інших 8-бітних системах.",
     "keywords": "YM2149F, AY-3-8910, звук ZX Spectrum, чіпсет, ретро музика, радіодеталі",
@@ -221,11 +258,14 @@
   {
     "id": "SERVICE-FLASH",
     "name": "Послуга: Прошивка ПЗУ",
+    "category": "послуга",
     "analog": "N/A",
     "price": 300,
     "currency": "UAH",
     "url": "/components/template.html?id=SERVICE-FLASH",
-    "images": ["/img/components/service_pzu.jpeg"],
+    "images": [
+      "/img/components/service_pzu.jpeg"
+    ],
     "short_description": "Мікросхема Професійний запис вашої прошивки на мікросхему ПЗУ.",
     "description": "Послуга програмування мікросхем ПЗУ (EPROM, EEPROM). Надайте нам файл прошивки — і ми запишемо його на ваш чіп. Гарантія коректності запису.",
     "keywords": "прошивка ПЗУ, запис EPROM, послуги ZX Spectrum, програмування мікросхем, ретро ремонт",
@@ -234,293 +274,1047 @@
   {
     "id": "1117-3.3",
     "name": "Стабілізатор напруги AMS1117-3.3",
+    "category": "стабілізатор",
     "analog": "LM1117-3.3",
     "price": 11.5,
     "currency": "UAH",
     "url": "/components/template.html?id=1117-3.3",
-    "images": ["/img/components/1117.jpg"],
+    "images": [
+      "/img/components/1117.jpg"
+    ],
     "short_description": "Лінійний стабілізатор напруги 3.3В, корпус SOT-223.",
     "description": "Мікросхема AMS1117-3.3 забезпечує стабільну вихідну напругу 3.3В. Широко використовується в проєктах на базі мікроконтролерів, для живлення периферії та в ремонті сучасної електроніки, що працює з 8-бітними системами.",
     "keywords": "AMS1117, стабілізатор 3.3В, радіодеталі, ремонт електроніки, DIY, стабілізатор напруги, радіокомпоненти Україна",
     "stock_status": "in_stock"
-},
+  },
   {
-  "id": "1533IR23-SMD",
-  "name": "ЭКФ1533ИР23 / 74ALS374 SOIC-20",
-  "analog": "74ALS374 / КР1533ИР23",
-  "price": 32,
-  "currency": "UAH",
-  "url": "/components/template.html?id=1533IR23-SMD",
-  "images": [
-    "/img/components/EKFIR23.jpeg"
-  ],
-  "short_description": "Восьмирозрядний регістр із D-триггерами та виходами з третім станом у корпусі SOIC-20.",
-  "description": "Мікросхема ЭКФ1533ИР23 є вітчизняним аналогом популярної серії 74ALS374. Це високошвидкісний восьмирозрядний регістр із тристабільними виходами, виконаний у компактному SMD-корпусі (SOIC-20). Широко застосовується у логічних схемах 8-бітних комп'ютерів (зокрема ZX Spectrum та клони), для буферизації шин даних та побудови портів введення-виведення. Висока швидкодія та низьке енергоспоживання серії 1533 роблять її чудовим вибором для сучасного ремонту або модернізації ретро-заліза.",
-  "keywords": "ЭКФ1533ИР23, 74ALS374, регістр, SMD мікросхеми, логіка для ZX Spectrum, ремонт ретро комп'ютерів, радіодеталі, КР1533",
-  "stock_status": "in_stock"
-},
+    "id": "1533IR23-SMD",
+    "name": "ЭКФ1533ИР23 / 74ALS374 SOIC-20",
+    "category": "мікросхема",
+    "analog": "74ALS374 / КР1533ИР23",
+    "price": 32,
+    "currency": "UAH",
+    "url": "/components/template.html?id=1533IR23-SMD",
+    "images": [
+      "/img/components/EKFIR23.jpeg"
+    ],
+    "short_description": "Восьмирозрядний регістр із D-триггерами та виходами з третім станом у корпусі SOIC-20.",
+    "description": "Мікросхема ЭКФ1533ИР23 є вітчизняним аналогом популярної серії 74ALS374. Це високошвидкісний восьмирозрядний регістр із тристабільними виходами, виконаний у компактному SMD-корпусі (SOIC-20). Широко застосовується у логічних схемах 8-бітних комп'ютерів (зокрема ZX Spectrum та клони), для буферизації шин даних та побудови портів введення-виведення. Висока швидкодія та низьке енергоспоживання серії 1533 роблять її чудовим вибором для сучасного ремонту або модернізації ретро-заліза.",
+    "keywords": "ЭКФ1533ИР23, 74ALS374, регістр, SMD мікросхеми, логіка для ZX Spectrum, ремонт ретро комп'ютерів, радіодеталі, КР1533",
+    "stock_status": "in_stock"
+  },
   {
-  "id": "rp2040-zero",
-  "name": "RP2040-Zero/Мікроконтролер",
-  "analog": "Raspberry Pi Pico",
-  "price": 155,
-  "currency": "UAH",
-  "url": "/components/template.html?id=rp2040-zero",
-  "images": [
-    "/img/components/rp2040-zero.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Компактна плата розробки на базі двоядерного мікроконтролера RP2040.",
-  "description": "Мікросхема RP2040-Zero — це високопродуктивна та компактна плата розробки на базі того ж двоядерного процесора ARM Cortex-M0+, що і Raspberry Pi Pico. Завдяки своїм мініатюрним розмірам та виведеним портам GPIO, модуль ідеально підходить для інтеграції в проекти автоматизації, створення емуляторів, контролерів периферії або сучасних адаптерів для ретро-комп'ютерів. Підтримує програмування на MicroPython, C/C++ та Arduino. Потужний інструмент для сучасних DIY-проектів.",
-  "keywords": "RP2040-Zero, Raspberry Pi Pico, мікроконтролер, плата розробки, ARM Cortex-M0+, DIY електроніка, програмування мікроконтролерів, купити RP2040, радіокомпоненти Україна",
-  "stock_status": "in_stock"
-},
+    "id": "rp2040-zero",
+    "name": "RP2040-Zero/Мікроконтролер",
+    "category": "мікроконтрол",
+    "analog": "Raspberry Pi Pico",
+    "price": 155,
+    "currency": "UAH",
+    "url": "/components/template.html?id=rp2040-zero",
+    "images": [
+      "/img/components/rp2040-zero.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Компактна плата розробки на базі двоядерного мікроконтролера RP2040.",
+    "description": "Мікросхема RP2040-Zero — це високопродуктивна та компактна плата розробки на базі того ж двоядерного процесора ARM Cortex-M0+, що і Raspberry Pi Pico. Завдяки своїм мініатюрним розмірам та виведеним портам GPIO, модуль ідеально підходить для інтеграції в проекти автоматизації, створення емуляторів, контролерів периферії або сучасних адаптерів для ретро-комп'ютерів. Підтримує програмування на MicroPython, C/C++ та Arduino. Потужний інструмент для сучасних DIY-проектів.",
+    "keywords": "RP2040-Zero, Raspberry Pi Pico, мікроконтролер, плата розробки, ARM Cortex-M0+, DIY електроніка, програмування мікроконтролерів, купити RP2040, радіокомпоненти Україна",
+    "stock_status": "in_stock"
+  },
   {
-  "id": "w27c512p-45-plcc",
-  "name": "W27C512P-45/EEPROM (PLCC-32)",
-  "analog": "27C512, W27E512",
-  "price": 150,
-  "currency": "UAH",
-  "url": "/components/template.html?id=w27c512p-45-plcc",
-  "images": [
-    "/img/components/PLCC-32.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Швидка EEPROM 64Kx8 (512Kbit) у корпусі PLCC-32.",
-  "description": "Мікросхема W27C512P-45 у корпусі PLCC-32 — це швидка електрично стиральна програмована пам'ять (EEPROM). Завдяки технології Flash пам'ять легко перезаписується без використання ультрафіолету. Час доступу 45 нс забезпечує високу продуктивність у системах із швидкими процесорами. Корпус PLCC-32 дозволяє використовувати мікросхему в сучасних компактних пристроях, адаптерах або платах модернізації ретро-комп'ютерів. Сумісна з програматорами, що підтримують стандарт 27C512.",
-  "keywords": "W27C512P-45 PLCC, EEPROM 512K, пам'ять для ZX Spectrum, програмована пам'ять SMD, 27C512 аналог, мікросхема PLCC32, радіодеталі Україна",
-  "stock_status": "in_stock"
-},
-  {"id": "res-0805-1r", "name": "Резистор 0805 1R 1%", "analog": "SMD 0805 1 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-1r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 1 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 1 Ом, точність 1%.", "keywords": "резистор 0805 1R, SMD резистор 1 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-3r3", "name": "Резистор 0805 3.3R 1%", "analog": "SMD 0805 3.3 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-3r3", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 3.3 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 3.3 Ом, точність 1%.", "keywords": "резистор 0805 3.3R, SMD резистор 3.3 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-5r1", "name": "Резистор 0805 5.1R 1%", "analog": "SMD 0805 5.1 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-5r1", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 5.1 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 5.1 Ом, точність 1%.", "keywords": "резистор 0805 5.1R, SMD резистор 5.1 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-10r", "name": "Резистор 0805 10R 1%", "analog": "SMD 0805 10 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-10r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 10 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 10 Ом, точність 1%.", "keywords": "резистор 0805 10R, SMD резистор 10 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-22r", "name": "Резистор 0805 22R 1%", "analog": "SMD 0805 22 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-22r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 22 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 22 Ом, точність 1%.", "keywords": "резистор 0805 22R, SMD резистор 22 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-47r", "name": "Резистор 0805 47R 1%", "analog": "SMD 0805 47 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-47r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 47 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 47 Ом, точність 1%.", "keywords": "резистор 0805 47R, SMD резистор 47 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-62r", "name": "Резистор 0805 62R 1%", "analog": "SMD 0805 62 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-62r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 62 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 62 Ом, точність 1%.", "keywords": "резистор 0805 62R, SMD резистор 62 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-82r", "name": "Резистор 0805 82R 1%", "analog": "SMD 0805 82 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-82r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 82 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 82 Ом, точність 1%.", "keywords": "резистор 0805 82R, SMD резистор 82 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-100r", "name": "Резистор 0805 100R 1%", "analog": "SMD 0805 100 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-100r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 100 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 100 Ом, точність 1%.", "keywords": "резистор 0805 100R, SMD резистор 100 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-150r", "name": "Резистор 0805 150R 1%", "analog": "SMD 0805 150 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-150r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 150 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 150 Ом, точність 1%.", "keywords": "резистор 0805 150R, SMD резистор 150 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-330r", "name": "Резистор 0805 330R 1%", "analog": "SMD 0805 330 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-330r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 330 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 330 Ом, точність 1%.", "keywords": "резистор 0805 330R, SMD резистор 330 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-470r", "name": "Резистор 0805 470R 1%", "analog": "SMD 0805 470 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-470r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 470 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 470 Ом, точність 1%.", "keywords": "резистор 0805 470R, SMD резистор 470 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-680r", "name": "Резистор 0805 680R 1%", "analog": "SMD 0805 680 Ом", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-680r", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 680 Ом 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 680 Ом, точність 1%.", "keywords": "резистор 0805 680R, SMD резистор 680 Ом", "stock_status": "in_stock"},
-  {"id": "res-0805-1k", "name": "Резистор 0805 1K 1%", "analog": "SMD 0805 1 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-1k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 1 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 1 кОм, точність 1%.", "keywords": "резистор 0805 1K, SMD резистор 1 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-1k8", "name": "Резистор 0805 1.8K 1%", "analog": "SMD 0805 1.8 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-1k8", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 1.8 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 1.8 кОм, точність 1%.", "keywords": "резистор 0805 1.8K, SMD резистор 1.8 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-3k", "name": "Резистор 0805 3K 1%", "analog": "SMD 0805 3 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-3k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 3 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 3 кОм, точність 1%.", "keywords": "резистор 0805 3K, SMD резистор 3 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-4k7", "name": "Резистор 0805 4.7K 1%", "analog": "SMD 0805 4.7 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-4k7", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 4.7 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 4.7 кОм, точність 1%.", "keywords": "резистор 0805 4.7K, SMD резистор 4.7 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-5k1", "name": "Резистор 0805 5.1K 1%", "analog": "SMD 0805 5.1 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-5k1", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 5.1 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 5.1 кОм, точність 1%.", "keywords": "резистор 0805 5.1K, SMD резистор 5.1 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-7k5", "name": "Резистор 0805 7.5K 1%", "analog": "SMD 0805 7.5 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-7k5", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 7.5 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 7.5 кОм, точність 1%.", "keywords": "резистор 0805 7.5K, SMD резистор 7.5 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-10k", "name": "Резистор 0805 10K 1%", "analog": "SMD 0805 10 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-10k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 10 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 10 кОм, точність 1%.", "keywords": "резистор 0805 10K, SMD резистор 10 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-12k", "name": "Резистор 0805 12K 1%", "analog": "SMD 0805 12 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-12k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 12 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 12 кОм, точність 1%.", "keywords": "резистор 0805 12K, SMD резистор 12 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-18k", "name": "Резистор 0805 18K 1%", "analog": "SMD 0805 18 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-18k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 18 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 18 кОм, точність 1%.", "keywords": "резистор 0805 18K, SMD резистор 18 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-33k", "name": "Резистор 0805 33K 1%", "analog": "SMD 0805 33 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-33k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 33 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 33 кОм, точність 1%.", "keywords": "резистор 0805 33K, SMD резистор 33 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-43k", "name": "Резистор 0805 43K 1%", "analog": "SMD 0805 43 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-43k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 43 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 43 кОм, точність 1%.", "keywords": "резистор 0805 43K, SMD резистор 43 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-51k", "name": "Резистор 0805 51K 1%", "analog": "SMD 0805 51 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-51k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 51 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 51 кОм, точність 1%.", "keywords": "резистор 0805 51K, SMD резистор 51 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-75k", "name": "Резистор 0805 75K 1%", "analog": "SMD 0805 75 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-75k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 75 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 75 кОм, точність 1%.", "keywords": "резистор 0805 75K, SMD резистор 75 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-100k", "name": "Резистор 0805 100K 1%", "analog": "SMD 0805 100 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-100k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 100 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 100 кОм, точність 1%.", "keywords": "резистор 0805 100K, SMD резистор 100 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-200k", "name": "Резистор 0805 200K 1%", "analog": "SMD 0805 200 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-200k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 200 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 200 кОм, точність 1%.", "keywords": "резистор 0805 200K, SMD резистор 200 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-300k", "name": "Резистор 0805 300K 1%", "analog": "SMD 0805 300 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-300k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 300 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 300 кОм, точність 1%.", "keywords": "резистор 0805 300K, SMD резистор 300 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-390k", "name": "Резистор 0805 390K 1%", "analog": "SMD 0805 390 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-390k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 390 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 390 кОм, точність 1%.", "keywords": "резистор 0805 390K, SMD резистор 390 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-470k", "name": "Резистор 0805 470K 1%", "analog": "SMD 0805 470 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-470k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 470 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 470 кОм, точність 1%.", "keywords": "резистор 0805 470K, SMD резистор 470 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-680k", "name": "Резистор 0805 680K 1%", "analog": "SMD 0805 680 кОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-680k", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 680 кОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 680 кОм, точність 1%.", "keywords": "резистор 0805 680K, SMD резистор 680 кОм", "stock_status": "in_stock"},
-  {"id": "res-0805-1m", "name": "Резистор 0805 1M 1%", "analog": "SMD 0805 1 МОм", "price": 0.7, "currency": "UAH", "url": "/components/template.html?id=res-0805-1m", "images": ["/img/components/res-0805.jpg"], "short_description": "Резистор SMD 0805 1 МОм 1%.", "description": "Прецизійний SMD резистор 0805. Номінал: 1 МОм, точність 1%.", "keywords": "резистор 0805 1M, SMD резистор 1 МОм", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-10pf", "name": "Конденсатор 0805 16V 10pF", "analog": "SMD 0805 C0G/NP0", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-10pf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 10pF, 16V.", "description": "Керамічний SMD конденсатор у корпусі 0805. Ємність: 10 пФ, робоча напруга: 16В. Використовується у високочастотних колах та фільтрах.", "keywords": "конденсатор 0805 10pF, SMD кераміка 10pF, радіодеталі", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-22pf", "name": "Конденсатор 0805 16V 22pF", "analog": "SMD 0805 C0G/NP0", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-22pf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 22pF, 16V.", "description": "Керамічний SMD конденсатор 0805. Ємність: 22 пФ, 16В. Стабільний діелектрик для точних схем.", "keywords": "конденсатор 0805 22pF, SMD конденсатор 22пФ", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-33pf", "name": "Конденсатор 0805 16V 33pF", "analog": "SMD 0805", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-33pf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 33pF, 16V.", "description": "Керамічний SMD конденсатор 0805, 33 пФ, 16В.", "keywords": "конденсатор 0805 33pF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-47pf", "name": "Конденсатор 0805 16V 47pF", "analog": "SMD 0805", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-47pf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 47pF, 16V.", "description": "Керамічний SMD конденсатор 0805, 47 пФ, 16В.", "keywords": "конденсатор 0805 47pF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-220pf", "name": "Конденсатор 0805 16V 220pF", "analog": "SMD 0805 X7R", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-220pf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 220pF, 16V.", "description": "Керамічний SMD конденсатор 0805, 220 пФ, 16В.", "keywords": "конденсатор 0805 220pF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-470pf", "name": "Конденсатор 0805 16V 470pF", "analog": "SMD 0805 X7R", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-470pf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 470pF, 16V.", "description": "Керамічний SMD конденсатор 0805, 470 пФ, 16В.", "keywords": "конденсатор 0805 470pF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-1nf", "name": "Конденсатор 0805 16V 1nF", "analog": "SMD 0805 X7R", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-1nf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 1nF, 16V.", "description": "Керамічний SMD конденсатор 0805, 1 нФ (1000 пФ), 16В.", "keywords": "конденсатор 0805 1nF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-2n2f", "name": "Конденсатор 0805 16V 2.2nF", "analog": "SMD 0805 X7R", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-2n2f", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 2.2nF, 16V.", "description": "Керамічний SMD конденсатор 0805, 2.2 нФ, 16В.", "keywords": "конденсатор 0805 2.2nF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-10nf", "name": "Конденсатор 0805 16V 10nF", "analog": "SMD 0805 X7R", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-10nf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 10nF, 16V.", "description": "Керамічний SMD конденсатор 0805, 10 нФ, 16В.", "keywords": "конденсатор 0805 10nF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-100nf", "name": "Конденсатор 0805 16V 100nF", "analog": "SMD 0805 X7R", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-100nf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 100nF, 16V.", "description": "Керамічний SMD конденсатор 0805, 100 нФ, 16В. Стандарт для фільтрації живлення.", "keywords": "конденсатор 0805 100nF, кераміка 0805", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-470nf", "name": "Конденсатор 0805 16V 470nF", "analog": "SMD 0805 X7R", "price": 2, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-470nf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 470nF, 16V.", "description": "Керамічний SMD конденсатор 0805, 470 нФ, 16В.", "keywords": "конденсатор 0805 470nF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-1uf", "name": "Конденсатор 0805 16V 1uF", "analog": "SMD 0805 X5R", "price": 3, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-1uf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 1uF, 16V.", "description": "Керамічний SMD конденсатор 0805, 1 мкФ, 16В.", "keywords": "конденсатор 0805 1uF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-2u2f", "name": "Конденсатор 0805 16V 2.2uF", "analog": "SMD 0805 X5R", "price": 3, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-2u2f", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 2.2uF, 16V.", "description": "Керамічний SMD конденсатор 0805, 2.2 мкФ, 16В.", "keywords": "конденсатор 0805 2.2uF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-4u7f", "name": "Конденсатор 0805 16V 4.7uF", "analog": "SMD 0805 X5R", "price": 3, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-4u7f", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 4.7uF, 16V.", "description": "Керамічний SMD конденсатор 0805, 4.7 мкФ, 16В.", "keywords": "конденсатор 0805 4.7uF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-10uf", "name": "Конденсатор 0805 16V 10uF", "analog": "SMD 0805 X5R", "price": 4, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-10uf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 10uF, 16V.", "description": "Керамічний SMD конденсатор 0805, 10 мкФ, 16В.", "keywords": "конденсатор 0805 10uF", "stock_status": "in_stock"},
-  {"id": "cap-0805-16v-22uf", "name": "Конденсатор 0805 16V 22uF", "analog": "SMD 0805 X5R", "price": 5, "currency": "UAH", "url": "/components/template.html?id=cap-0805-16v-22uf", "images": ["/img/components/cap-0805.jpg"], "short_description": "Керамічний SMD конденсатор 0805, 22uF, 16V.", "description": "Керамічний SMD конденсатор 0805, 22 мкФ, 16В.", "keywords": "конденсатор 0805 22uF", "stock_status": "in_stock"},
-{
-  "id": "78m05",
-  "name": "78M05/Стабілізатор напруги",
-  "analog": "L78M05, КР142ЕН5А",
-  "price": 8,
-  "currency": "UAH",
-  "url": "/components/template.html?id=78m05",
-  "images": [
-    "/img/components/78m05.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Інтегральний стабілізатор напруги +5В, 0.5А у корпусі D-PAK (TO-252).",
-  "description": "78M05 — це трививідний позитивний стабілізатор напруги, що забезпечує стабільний вихід +5В при струмі навантаження до 0.5А. Модель у корпусі D-PAK (TO-252) призначена для поверхневого монтажу (SMD), що дозволяє ефективно відводити тепло через плату. Мікросхема має вбудований захист від перегріву, короткого замикання та перевищення струму. Ідеальний вибір для живлення мікроконтролерів, логічних схем, вузлів ZX Spectrum та інших пристроїв, де потрібна стабільна напруга 5В.",
-  "keywords": "78M05, стабілізатор 5В, L78M05, стабілізатор напруги SMD, TO-252, радіодеталі Україна, компоненти для живлення, ремонт ZX Spectrum",
-  "stock_status": "in_stock"
-},
+    "id": "w27c512p-45-plcc",
+    "name": "W27C512P-45/EEPROM (PLCC-32)",
+    "category": "мікроконтрол",
+    "analog": "27C512, W27E512",
+    "price": 150,
+    "currency": "UAH",
+    "url": "/components/template.html?id=w27c512p-45-plcc",
+    "images": [
+      "/img/components/PLCC-32.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Швидка EEPROM 64Kx8 (512Kbit) у корпусі PLCC-32.",
+    "description": "Мікросхема W27C512P-45 у корпусі PLCC-32 — це швидка електрично стиральна програмована пам'ять (EEPROM). Завдяки технології Flash пам'ять легко перезаписується без використання ультрафіолету. Час доступу 45 нс забезпечує високу продуктивність у системах із швидкими процесорами. Корпус PLCC-32 дозволяє використовувати мікросхему в сучасних компактних пристроях, адаптерах або платах модернізації ретро-комп'ютерів. Сумісна з програматорами, що підтримують стандарт 27C512.",
+    "keywords": "W27C512P-45 PLCC, EEPROM 512K, пам'ять для ZX Spectrum, програмована пам'ять SMD, 27C512 аналог, мікросхема PLCC32, радіодеталі Україна",
+    "stock_status": "in_stock"
+  },
   {
-  "id": "dip-switch-6-3bit",
-  "name": "DIP Switch 6-pin (3-bit) 2.54mm",
-  "analog": "Перемикач DIP 3 позиції",
-  "price": 12,
-  "currency": "UAH",
-  "url": "/components/template.html?id=dip-switch-6-3bit",
-  "images": [
-    "/img/components/switch_pin3.png"
-  ],
-  "short_description": "Великою партією дешевше! DIP-перемикач на 6 контактів (3 позиції) з кроком 2.54 мм.",
-  "description": "Компактний DIP-перемикач на 6 контактів, що надає 3 незалежні позиції перемикання (3-bit). Стандартний крок 2.54 мм забезпечує повну сумісність з макетними платами, панельками DIP та друкованими платами. Використовується для вибору режимів роботи, налаштування системних адрес або конфігурації апаратних параметрів у пристроях на базі мікроконтролерів та ретро-комп'ютерах. Забезпечує надійний механічний контакт та довговічність.",
-  "keywords": "DIP Switch 6 pin, перемикач 3-bit, DIP перемикач 2.54мм, вибір режиму, радіодеталі Україна, компоненти для пайки, ремонт електроніки",
-  "stock_status": "in_stock"
-},
+    "id": "res-0805-1r",
+    "name": "Резистор 0805 1R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 1 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-1r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 1 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 1 Ом, точність 1%.",
+    "keywords": "резистор 0805 1R, SMD резистор 1 Ом",
+    "stock_status": "in_stock"
+  },
   {
-  "id": "lm358d",
-  "name": "LM358D/Операційний підсилювач",
-  "analog": "LM358, AD8552",
-  "price": 5,
-  "currency": "UAH",
-  "url": "/components/template.html?id=lm358d",
-  "images": [
-    "/img/components/lm358d.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Здвоєний операційний підсилювач LM358D у корпусі SOIC-8.",
-  "description": "LM358D — це здвоєний операційний підсилювач із низьким рівнем енергоспоживання та широким діапазоном напруги живлення. Мікросхема стабільно працює як при однополярному, так і при двополярному живленні. Широко використовується в промисловій автоматиці, аудіо-техніці, підсилювачах сигналів датчиків та при проектуванні схем для ZX Spectrum та інших ретро-комп'ютерів. Корпус SOIC-8 дозволяє зручно використовувати компонент у поверхневому монтажі (SMD).",
-  "keywords": "LM358D, операційний підсилювач, купити LM358, здвоєний ОП, мікросхема SOIC-8, радіодеталі Україна, електронні компоненти для ремонту",
-  "stock_status": "in_stock"
-},
-{
-  "id": "74hc86",
-  "name": "74HC86/1564ЛП5",
-  "analog": "1564ЛП5, 1564ЛП5",
-  "price": 12,
-  "currency": "UAH",
-  "url": "/components/template.html?id=74hc86",
-  "images": [
-    "/img/components/DIP14.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Чотири елементи 2-Input Exclusive-OR Gate (логіка виключного АБО).",
-  "description": "Мікросхема 74HC86 містить чотири логічні елементи 'ВИКЛЮЧНЕ АБО' (XOR). Вона є функціональним аналогом радянської мікросхеми 555ЛП5 (1564ЛП5). Компонент виготовлений за технологією CMOS, що забезпечує високу швидкодію при низькому споживанні енергії. Широко застосовується у схемотехніці ZX Spectrum, цифрових пристроях, програматорах та DIY-конструкторах. Товар перевірений на працездатність.",
-  "keywords": "74HC86, 1564ЛП5, логічні елементи XOR, ремонт ZX Spectrum, мікросхеми купити, радіодеталі Україна, логіка для ретро комп'ютерів",
-  "stock_status": "in_stock"
-},
-{
-  "id": "crystal-32mhz-7050",
-  "name": "Кварцовий генератор 32MHz (SMD 7050)",
-  "analog": "Генератор прямокутних імпульсів 32 МГц",
-  "price": 17,
-  "currency": "UAH",
-  "url": "/components/template.html?id=crystal-32mhz-7050",
-  "images": [
-    "/img/components/smd_crystal_7050.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Активний кварцовий генератор 32 МГц у корпусі SMD 7050 (5x7 мм).",
-  "description": "Високостабільний активний кварцовий генератор з робочою частотою 32 МГц. Стандартний корпус SMD 7050 (розміри 5x7 мм) забезпечує легку інтеграцію в сучасні друковані плати. Активний тип генератора (з вбудованим підсилювачем) гарантує формування стабільного тактового сигналу прямокутної форми. Ідеально підходить для мікроконтролерів, процесорів ZX Spectrum, цифрової техніки та DIY-проєктів. Товар відрізняється високою надійністю та тривалим терміном експлуатації.",
-  "keywords": "кварц 32 МГц, активний генератор 32MHz, SMD 7050, кварцовий резонатор 5x7 мм, тактовий генератор, радіодеталі для ZX Spectrum, електронні компоненти Україна",
-  "stock_status": "in_stock"
-},
-{
-  "id": "cap-1000uf-16v-smd",
-  "name": "Конденсатор 1000uF 16V (SMD 10x10.5)",
-  "analog": "Електролітичний SMD конденсатор 1000мкФ 16В",
-  "price": 17,
-  "currency": "UAH",
-  "url": "/components/template.html?id=cap-1000uf-16v-smd",
-  "images": [
-    "/img/components/smd_1000uf.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Електролітичний SMD конденсатор 1000мкФ 16В, розмір 10x10.5 мм.",
-  "description": "Високоякісний електролітичний конденсатор для поверхневого монтажу (SMD). Має ємність 1000 мкФ та робочу напругу 16В. Стандартний розмір корпусу 10x10.5 мм (VT) робить його ідеальним для фільтрації живлення в сучасних електронних вузлах, стабілізації напруги в DIY-конструкторах та при ремонті плат ZX Spectrum. Забезпечує низький внутрішній опір (ESR) та стабільну роботу в широкому температурному діапазоні.",
-  "keywords": "конденсатор 1000мкФ 16В, SMD конденсатор 10x10.5, електролітичний конденсатор, радіокомпоненти Україна, фільтрація живлення, компоненти для пайки, ремонт електроніки",
-  "stock_status": "in_stock"
-},
-{
-  "id": "saa1099p",
-  "name": "SAA1099P/Звуковий генератор",
-  "analog": "Phillips SAA1099",
-  "price": 120,
-  "currency": "UAH",
-  "url": "/components/template.html?id=saa1099p",
-  "images": [
-    "/img/components/DIP18.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Philips SAA1099P — 6-канальний програмований звуковий генератор (DIP18).",
-  "description": "SAA1099P — це легендарний 6-канальний програмований звуковий генератор (PSG), розроблений компанією Philips. Мікросхема широко відома завдяки використанню в звукових картах для ПК (наприклад, Creative Music System) та ентузіастами ретро-комп'ютерів для модернізації систем на базі ZX Spectrum. Забезпечує відтворення стереозвуку, генерацію шумів та обвідних кривих. Оригінальний компонент у корпусі DIP18, що ідеально підходить для встановлення в панельки при ремонті або створенні нових звукових пристроїв.",
-  "keywords": "SAA1099P, звуковий генератор, Philips SAA1099, звукова карта ZX Spectrum, ретро звук, PSG мікросхема, DIP18, радіокомпоненти для ретро комп'ютерів, купити SAA1099P",
-  "stock_status": "in_stock"
-},
-{
-  "id": "cap-10uf-16v-smd-4x54",
-  "name": "Конденсатор 10uF 16V (SMD 4x5.4 RVT)",
-  "analog": "Електролітичний SMD конденсатор 10мкФ 16В",
-  "price": 3,
-  "currency": "UAH",
-  "url": "/components/template.html?id=cap-10uf-16v-smd-4x54",
-  "images": [
-    "/img/components/smd_capacitor.png"
-  ],
-  "short_description": "Великою партією дешевше! Електролітичний SMD конденсатор 10мкФ 16В, розмір 4x5.4 мм (серія RVT).",
-  "description": "Компактний електролітичний конденсатор для поверхневого монтажу (SMD) серії RVT. Ємність становить 10 мкФ при робочій напрузі 16 В. Розмір корпусу 4x5.4 мм дозволяє ефективно використовувати простір на друкованій платі. Цей компонент чудово підходить для фільтрації високочастотних завад по колах живлення, блокування постійної складової та використання у ланцюгах розв'язки в цифровій техніці та ретро-комп'ютерах ZX Spectrum. Вирізняється високою надійністю та тривалим терміном експлуатації.",
-  "keywords": "конденсатор 10мкФ 16В, SMD конденсатор 4x5.4, RVT конденсатор, радіокомпоненти Україна, фільтрація живлення, компоненти для пайки, ремонт електроніки",
-  "stock_status": "in_stock"
-},
-{
-  "id": "74hct245-soic",
-  "name": "74HCT245/Шинний формувач (SOIC-20)",
-  "analog": "SN74HCT245D",
-  "price": 15,
-  "currency": "UAH",
-  "url": "/components/template.html?id=74hct245-soic",
-  "images": [
-    "/img/components/SOIC-20.jpg"
-  ],
-  "short_description": "Великою партією дешевше! 8-канальний шинний формувач у корпусі для поверхневого монтажу (SOIC-20).",
-  "description": "74HCT245 у корпусі SOIC-20 — це компактна версія 8-канального двонаправленого шинного формувача (трансивера). Завдяки технології поверхневого монтажу (SMD) ця мікросхема займає значно менше місця на друкованій платі, що робить її ідеальним вибором для сучасних периферійних плат, адаптерів або модернізації існуючих пристроїв. Має аналогічну функціональність із DIP-версією, забезпечуючи 8 біт паралельної передачі даних із високою швидкістю та низьким енергоспоживанням.",
-  "keywords": "74HCT245 SOIC, 74HCT245D, шинний формувач SMD, двонаправлений трансивер, ремонт електроніки, логічні мікросхеми купити, компоненти ZX Spectrum, радіодеталі Україна",
-  "stock_status": "in_stock"
-},
-{
-  "id": "cap-10uf-50v-1206",
-  "name": "Конденсатор 10uF 50V (1206 X5R/X7R)",
-  "analog": "Керамічний SMD конденсатор 10мкФ 50В",
-  "price": 8,
-  "currency": "UAH",
-  "url": "/components/template.html?id=cap-10uf-50v-1206",
-  "images": [
-    "/img/components/cap-1206.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Керамічний SMD конденсатор 10мкФ 50В у корпусі 1206.",
-  "description": "Керамічний багатошаровий SMD конденсатор (MLCC) у типорозмірі 1206. Забезпечує ємність 10 мкФ при високій робочій напрузі 50 В. Завдяки низькому еквівалентному послідовному опору (ESR) та високій стабільності параметрів, цей конденсатор є відмінним рішенням для фільтрації шумів по шинах живлення, розв'язки сигналів у високочастотних колах та стабілізації напруги у мікропроцесорних системах, включаючи ремонт ZX Spectrum та іншої цифрової техніки. Компактний корпус 1206 (3.2x1.6 мм) зручний для автоматичного та ручного монтажу.",
-  "keywords": "конденсатор 10мкФ 50В, SMD 1206, керамічний конденсатор, MLCC 10uF, радіодеталі Україна, фільтрація живлення, компоненти для пайки, ремонт електроніки",
-  "stock_status": "in_stock"
-},
-{
-  "id": "dip-switch-10-5bit",
-  "name": "DIP Switch 10-pin (5-bit) 2.54mm",
-  "analog": "Перемикач DIP 5 позицій",
-  "price": 15,
-  "currency": "UAH",
-  "url": "/components/template.html?id=dip-switch-10-5bit",
-  "images": [
-    "/img/components/switch_pin5.jpg"
-  ],
-  "short_description": "Великою партією дешевше! DIP-перемикач на 10 контактів (5 позицій) з кроком 2.54 мм.",
-  "description": "Надійний DIP-перемикач (Dual In-line Package) на 10 контактів, що забезпечує 5 незалежних позицій (5-bit). Стандартний крок виводів 2.54 мм дозволяє легко монтувати перемикач як на друковану плату, так і в стандартні панельки або макетні плати (breadboards). Ідеально підходить для конфігурації адрес пристроїв, вибору режимів роботи схем, налаштування опцій у DIY-проектах та модернізації ретро-комп'ютерів. Забезпечує чітке механічне перемикання та тривалий ресурс роботи.",
-  "keywords": "DIP Switch 10 pin, перемикач 5-bit, DIP перемикач 2.54мм, налаштування режимів, радіодеталі Україна, компоненти для пайки, ремонт електроніки",
-  "stock_status": "in_stock"
-},
-{
-  "id": "cap-100uf-10v-1206",
-  "name": "Конденсатор 100uF 10V (1206)",
-  "analog": "Керамічний SMD конденсатор 100мкФ 10В",
-  "price": 10,
-  "currency": "UAH",
-  "url": "/components/template.html?id=cap-100uf-10v-1206",
-  "images": [
-    "/img/components/cap-1206.jpg"
-  ],
-  "short_description": "Великою партією дешевше! Керамічний SMD конденсатор 100мкФ 10В у корпусі 1206.",
-  "description": "Керамічний багатошаровий конденсатор (MLCC) з великою ємністю 100 мкФ при робочій напрузі 10 В. Типорозмір 1206 (3.2x1.6 мм) дозволяє використовувати його в щільно закомпонованих електронних пристроях. Завдяки низькому ESR та високій ємнісній щільності, цей конденсатор є відмінним рішенням для локальної фільтрації живлення мікроконтролерів, логічних мікросхем та інших цифрових вузлів, включаючи схеми ZX Spectrum. Він стабільно працює при живленні 3.3В та 5В, забезпечуючи надійну роботу пристрою.",
-  "keywords": "конденсатор 100мкФ 10В, SMD 1206, керамічний конденсатор, MLCC 100uF, радіодеталі Україна, фільтрація живлення, компоненти для пайки, ремонт електроніки",
-  "stock_status": "in_stock"
-},
+    "id": "res-0805-3r3",
+    "name": "Резистор 0805 3.3R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 3.3 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-3r3",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 3.3 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 3.3 Ом, точність 1%.",
+    "keywords": "резистор 0805 3.3R, SMD резистор 3.3 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-5r1",
+    "name": "Резистор 0805 5.1R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 5.1 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-5r1",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 5.1 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 5.1 Ом, точність 1%.",
+    "keywords": "резистор 0805 5.1R, SMD резистор 5.1 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-10r",
+    "name": "Резистор 0805 10R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 10 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-10r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 10 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 10 Ом, точність 1%.",
+    "keywords": "резистор 0805 10R, SMD резистор 10 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-22r",
+    "name": "Резистор 0805 22R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 22 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-22r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 22 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 22 Ом, точність 1%.",
+    "keywords": "резистор 0805 22R, SMD резистор 22 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-47r",
+    "name": "Резистор 0805 47R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 47 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-47r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 47 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 47 Ом, точність 1%.",
+    "keywords": "резистор 0805 47R, SMD резистор 47 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-62r",
+    "name": "Резистор 0805 62R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 62 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-62r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 62 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 62 Ом, точність 1%.",
+    "keywords": "резистор 0805 62R, SMD резистор 62 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-82r",
+    "name": "Резистор 0805 82R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 82 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-82r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 82 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 82 Ом, точність 1%.",
+    "keywords": "резистор 0805 82R, SMD резистор 82 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-100r",
+    "name": "Резистор 0805 100R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 100 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-100r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 100 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 100 Ом, точність 1%.",
+    "keywords": "резистор 0805 100R, SMD резистор 100 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-150r",
+    "name": "Резистор 0805 150R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 150 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-150r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 150 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 150 Ом, точність 1%.",
+    "keywords": "резистор 0805 150R, SMD резистор 150 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-330r",
+    "name": "Резистор 0805 330R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 330 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-330r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 330 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 330 Ом, точність 1%.",
+    "keywords": "резистор 0805 330R, SMD резистор 330 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-470r",
+    "name": "Резистор 0805 470R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 470 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-470r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 470 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 470 Ом, точність 1%.",
+    "keywords": "резистор 0805 470R, SMD резистор 470 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-680r",
+    "name": "Резистор 0805 680R 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 680 Ом",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-680r",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 680 Ом 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 680 Ом, точність 1%.",
+    "keywords": "резистор 0805 680R, SMD резистор 680 Ом",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-1k",
+    "name": "Резистор 0805 1K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 1 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-1k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 1 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 1 кОм, точність 1%.",
+    "keywords": "резистор 0805 1K, SMD резистор 1 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-1k8",
+    "name": "Резистор 0805 1.8K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 1.8 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-1k8",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 1.8 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 1.8 кОм, точність 1%.",
+    "keywords": "резистор 0805 1.8K, SMD резистор 1.8 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-3k",
+    "name": "Резистор 0805 3K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 3 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-3k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 3 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 3 кОм, точність 1%.",
+    "keywords": "резистор 0805 3K, SMD резистор 3 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-4k7",
+    "name": "Резистор 0805 4.7K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 4.7 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-4k7",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 4.7 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 4.7 кОм, точність 1%.",
+    "keywords": "резистор 0805 4.7K, SMD резистор 4.7 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-5k1",
+    "name": "Резистор 0805 5.1K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 5.1 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-5k1",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 5.1 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 5.1 кОм, точність 1%.",
+    "keywords": "резистор 0805 5.1K, SMD резистор 5.1 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-7k5",
+    "name": "Резистор 0805 7.5K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 7.5 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-7k5",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 7.5 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 7.5 кОм, точність 1%.",
+    "keywords": "резистор 0805 7.5K, SMD резистор 7.5 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-10k",
+    "name": "Резистор 0805 10K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 10 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-10k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 10 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 10 кОм, точність 1%.",
+    "keywords": "резистор 0805 10K, SMD резистор 10 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-12k",
+    "name": "Резистор 0805 12K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 12 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-12k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 12 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 12 кОм, точність 1%.",
+    "keywords": "резистор 0805 12K, SMD резистор 12 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-18k",
+    "name": "Резистор 0805 18K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 18 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-18k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 18 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 18 кОм, точність 1%.",
+    "keywords": "резистор 0805 18K, SMD резистор 18 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-33k",
+    "name": "Резистор 0805 33K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 33 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-33k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 33 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 33 кОм, точність 1%.",
+    "keywords": "резистор 0805 33K, SMD резистор 33 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-43k",
+    "name": "Резистор 0805 43K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 43 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-43k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 43 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 43 кОм, точність 1%.",
+    "keywords": "резистор 0805 43K, SMD резистор 43 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-51k",
+    "name": "Резистор 0805 51K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 51 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-51k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 51 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 51 кОм, точність 1%.",
+    "keywords": "резистор 0805 51K, SMD резистор 51 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-75k",
+    "name": "Резистор 0805 75K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 75 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-75k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 75 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 75 кОм, точність 1%.",
+    "keywords": "резистор 0805 75K, SMD резистор 75 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-100k",
+    "name": "Резистор 0805 100K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 100 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-100k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 100 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 100 кОм, точність 1%.",
+    "keywords": "резистор 0805 100K, SMD резистор 100 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-200k",
+    "name": "Резистор 0805 200K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 200 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-200k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 200 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 200 кОм, точність 1%.",
+    "keywords": "резистор 0805 200K, SMD резистор 200 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-300k",
+    "name": "Резистор 0805 300K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 300 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-300k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 300 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 300 кОм, точність 1%.",
+    "keywords": "резистор 0805 300K, SMD резистор 300 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-390k",
+    "name": "Резистор 0805 390K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 390 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-390k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 390 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 390 кОм, точність 1%.",
+    "keywords": "резистор 0805 390K, SMD резистор 390 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-470k",
+    "name": "Резистор 0805 470K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 470 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-470k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 470 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 470 кОм, точність 1%.",
+    "keywords": "резистор 0805 470K, SMD резистор 470 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-680k",
+    "name": "Резистор 0805 680K 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 680 кОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-680k",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 680 кОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 680 кОм, точність 1%.",
+    "keywords": "резистор 0805 680K, SMD резистор 680 кОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "res-0805-1m",
+    "name": "Резистор 0805 1M 1%",
+    "category": "Резистор",
+    "analog": "SMD 0805 1 МОм",
+    "price": 0.7,
+    "currency": "UAH",
+    "url": "/components/template.html?id=res-0805-1m",
+    "images": [
+      "/img/components/res-0805.jpg"
+    ],
+    "short_description": "Резистор SMD 0805 1 МОм 1%.",
+    "description": "Прецизійний SMD резистор 0805. Номінал: 1 МОм, точність 1%.",
+    "keywords": "резистор 0805 1M, SMD резистор 1 МОм",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-10pf",
+    "name": "Конденсатор 0805 16V 10pF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 C0G/NP0",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-10pf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 10pF, 16V.",
+    "description": "Керамічний SMD конденсатор у корпусі 0805. Ємність: 10 пФ, робоча напруга: 16В. Використовується у високочастотних колах та фільтрах.",
+    "keywords": "конденсатор 0805 10pF, SMD кераміка 10pF, радіодеталі",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-22pf",
+    "name": "Конденсатор 0805 16V 22pF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 C0G/NP0",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-22pf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 22pF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805. Ємність: 22 пФ, 16В. Стабільний діелектрик для точних схем.",
+    "keywords": "конденсатор 0805 22pF, SMD конденсатор 22пФ",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-33pf",
+    "name": "Конденсатор 0805 16V 33pF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-33pf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 33pF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 33 пФ, 16В.",
+    "keywords": "конденсатор 0805 33pF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-47pf",
+    "name": "Конденсатор 0805 16V 47pF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-47pf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 47pF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 47 пФ, 16В.",
+    "keywords": "конденсатор 0805 47pF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-220pf",
+    "name": "Конденсатор 0805 16V 220pF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X7R",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-220pf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 220pF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 220 пФ, 16В.",
+    "keywords": "конденсатор 0805 220pF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-470pf",
+    "name": "Конденсатор 0805 16V 470pF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X7R",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-470pf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 470pF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 470 пФ, 16В.",
+    "keywords": "конденсатор 0805 470pF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-1nf",
+    "name": "Конденсатор 0805 16V 1nF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X7R",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-1nf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 1nF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 1 нФ (1000 пФ), 16В.",
+    "keywords": "конденсатор 0805 1nF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-2n2f",
+    "name": "Конденсатор 0805 16V 2.2nF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X7R",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-2n2f",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 2.2nF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 2.2 нФ, 16В.",
+    "keywords": "конденсатор 0805 2.2nF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-10nf",
+    "name": "Конденсатор 0805 16V 10nF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X7R",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-10nf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 10nF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 10 нФ, 16В.",
+    "keywords": "конденсатор 0805 10nF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-100nf",
+    "name": "Конденсатор 0805 16V 100nF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X7R",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-100nf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 100nF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 100 нФ, 16В. Стандарт для фільтрації живлення.",
+    "keywords": "конденсатор 0805 100nF, кераміка 0805",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-470nf",
+    "name": "Конденсатор 0805 16V 470nF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X7R",
+    "price": 2,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-470nf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 470nF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 470 нФ, 16В.",
+    "keywords": "конденсатор 0805 470nF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-1uf",
+    "name": "Конденсатор 0805 16V 1uF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X5R",
+    "price": 3,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-1uf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 1uF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 1 мкФ, 16В.",
+    "keywords": "конденсатор 0805 1uF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-2u2f",
+    "name": "Конденсатор 0805 16V 2.2uF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X5R",
+    "price": 3,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-2u2f",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 2.2uF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 2.2 мкФ, 16В.",
+    "keywords": "конденсатор 0805 2.2uF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-4u7f",
+    "name": "Конденсатор 0805 16V 4.7uF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X5R",
+    "price": 3,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-4u7f",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 4.7uF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 4.7 мкФ, 16В.",
+    "keywords": "конденсатор 0805 4.7uF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-10uf",
+    "name": "Конденсатор 0805 16V 10uF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X5R",
+    "price": 4,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-10uf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 10uF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 10 мкФ, 16В.",
+    "keywords": "конденсатор 0805 10uF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-0805-16v-22uf",
+    "name": "Конденсатор 0805 16V 22uF",
+    "category": "Конденсатор",
+    "analog": "SMD 0805 X5R",
+    "price": 5,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-0805-16v-22uf",
+    "images": [
+      "/img/components/cap-0805.jpg"
+    ],
+    "short_description": "Керамічний SMD конденсатор 0805, 22uF, 16V.",
+    "description": "Керамічний SMD конденсатор 0805, 22 мкФ, 16В.",
+    "keywords": "конденсатор 0805 22uF",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "78m05",
+    "name": "78M05/Стабілізатор напруги",
+    "category": "стабілізатор",
+    "analog": "L78M05, КР142ЕН5А",
+    "price": 8,
+    "currency": "UAH",
+    "url": "/components/template.html?id=78m05",
+    "images": [
+      "/img/components/78m05.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Інтегральний стабілізатор напруги +5В, 0.5А у корпусі D-PAK (TO-252).",
+    "description": "78M05 — це трививідний позитивний стабілізатор напруги, що забезпечує стабільний вихід +5В при струмі навантаження до 0.5А. Модель у корпусі D-PAK (TO-252) призначена для поверхневого монтажу (SMD), що дозволяє ефективно відводити тепло через плату. Мікросхема має вбудований захист від перегріву, короткого замикання та перевищення струму. Ідеальний вибір для живлення мікроконтролерів, логічних схем, вузлів ZX Spectrum та інших пристроїв, де потрібна стабільна напруга 5В.",
+    "keywords": "78M05, стабілізатор 5В, L78M05, стабілізатор напруги SMD, TO-252, радіодеталі Україна, компоненти для живлення, ремонт ZX Spectrum",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "dip-switch-6-3bit",
+    "name": "DIP Switch 6-pin (3-bit) 2.54mm",
+    "category": "Перемикач",
+    "analog": "Перемикач DIP 3 позиції",
+    "price": 12,
+    "currency": "UAH",
+    "url": "/components/template.html?id=dip-switch-6-3bit",
+    "images": [
+      "/img/components/switch_pin3.png"
+    ],
+    "short_description": "Великою партією дешевше! DIP-перемикач на 6 контактів (3 позиції) з кроком 2.54 мм.",
+    "description": "Компактний DIP-перемикач на 6 контактів, що надає 3 незалежні позиції перемикання (3-bit). Стандартний крок 2.54 мм забезпечує повну сумісність з макетними платами, панельками DIP та друкованими платами. Використовується для вибору режимів роботи, налаштування системних адрес або конфігурації апаратних параметрів у пристроях на базі мікроконтролерів та ретро-комп'ютерах. Забезпечує надійний механічний контакт та довговічність.",
+    "keywords": "DIP Switch 6 pin, перемикач 3-bit, DIP перемикач 2.54мм, вибір режиму, радіодеталі Україна, компоненти для пайки, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "lm358d",
+    "name": "LM358D/Операційний підсилювач",
+    "category": "мікросхема",
+    "analog": "LM358, AD8552",
+    "price": 5,
+    "currency": "UAH",
+    "url": "/components/template.html?id=lm358d",
+    "images": [
+      "/img/components/lm358d.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Здвоєний операційний підсилювач LM358D у корпусі SOIC-8.",
+    "description": "LM358D — це здвоєний операційний підсилювач із низьким рівнем енергоспоживання та широким діапазоном напруги живлення. Мікросхема стабільно працює як при однополярному, так і при двополярному живленні. Широко використовується в промисловій автоматиці, аудіо-техніці, підсилювачах сигналів датчиків та при проектуванні схем для ZX Spectrum та інших ретро-комп'ютерів. Корпус SOIC-8 дозволяє зручно використовувати компонент у поверхневому монтажі (SMD).",
+    "keywords": "LM358D, операційний підсилювач, купити LM358, здвоєний ОП, мікросхема SOIC-8, радіодеталі Україна, електронні компоненти для ремонту",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "74hc86",
+    "name": "74HC86/1564ЛП5",
+    "category": "мікросхема",
+    "analog": "1564ЛП5, 1564ЛП5",
+    "price": 12,
+    "currency": "UAH",
+    "url": "/components/template.html?id=74hc86",
+    "images": [
+      "/img/components/DIP14.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Чотири елементи 2-Input Exclusive-OR Gate (логіка виключного АБО).",
+    "description": "Мікросхема 74HC86 містить чотири логічні елементи 'ВИКЛЮЧНЕ АБО' (XOR). Вона є функціональним аналогом радянської мікросхеми 555ЛП5 (1564ЛП5). Компонент виготовлений за технологією CMOS, що забезпечує високу швидкодію при низькому споживанні енергії. Широко застосовується у схемотехніці ZX Spectrum, цифрових пристроях, програматорах та DIY-конструкторах. Товар перевірений на працездатність.",
+    "keywords": "74HC86, 1564ЛП5, логічні елементи XOR, ремонт ZX Spectrum, мікросхеми купити, радіодеталі Україна, логіка для ретро комп'ютерів",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "crystal-32mhz-7050",
+    "name": "Кварцовий генератор 32MHz (SMD 7050)",
+    "category": "Кварц",
+    "analog": "Генератор прямокутних імпульсів 32 МГц",
+    "price": 17,
+    "currency": "UAH",
+    "url": "/components/template.html?id=crystal-32mhz-7050",
+    "images": [
+      "/img/components/smd_crystal_7050.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Активний кварцовий генератор 32 МГц у корпусі SMD 7050 (5x7 мм).",
+    "description": "Високостабільний активний кварцовий генератор з робочою частотою 32 МГц. Стандартний корпус SMD 7050 (розміри 5x7 мм) забезпечує легку інтеграцію в сучасні друковані плати. Активний тип генератора (з вбудованим підсилювачем) гарантує формування стабільного тактового сигналу прямокутної форми. Ідеально підходить для мікроконтролерів, процесорів ZX Spectrum, цифрової техніки та DIY-проєктів. Товар відрізняється високою надійністю та тривалим терміном експлуатації.",
+    "keywords": "кварц 32 МГц, активний генератор 32MHz, SMD 7050, кварцовий резонатор 5x7 мм, тактовий генератор, радіодеталі для ZX Spectrum, електронні компоненти Україна",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-1000uf-16v-smd",
+    "name": "Конденсатор 1000uF 16V (SMD 10x10.5)",
+    "category": "Конденсатор",
+    "analog": "Електролітичний SMD конденсатор 1000мкФ 16В",
+    "price": 17,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-1000uf-16v-smd",
+    "images": [
+      "/img/components/smd_1000uf.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Електролітичний SMD конденсатор 1000мкФ 16В, розмір 10x10.5 мм.",
+    "description": "Високоякісний електролітичний конденсатор для поверхневого монтажу (SMD). Має ємність 1000 мкФ та робочу напругу 16В. Стандартний розмір корпусу 10x10.5 мм (VT) робить його ідеальним для фільтрації живлення в сучасних електронних вузлах, стабілізації напруги в DIY-конструкторах та при ремонті плат ZX Spectrum. Забезпечує низький внутрішній опір (ESR) та стабільну роботу в широкому температурному діапазоні.",
+    "keywords": "конденсатор 1000мкФ 16В, SMD конденсатор 10x10.5, електролітичний конденсатор, радіокомпоненти Україна, фільтрація живлення, компоненти для пайки, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "saa1099p",
+    "name": "SAA1099P/Звуковий генератор",
+    "category": "мікросхема",
+    "analog": "Phillips SAA1099",
+    "price": 120,
+    "currency": "UAH",
+    "url": "/components/template.html?id=saa1099p",
+    "images": [
+      "/img/components/DIP18.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Philips SAA1099P — 6-канальний програмований звуковий генератор (DIP18).",
+    "description": "SAA1099P — це легендарний 6-канальний програмований звуковий генератор (PSG), розроблений компанією Philips. Мікросхема широко відома завдяки використанню в звукових картах для ПК (наприклад, Creative Music System) та ентузіастами ретро-комп'ютерів для модернізації систем на базі ZX Spectrum. Забезпечує відтворення стереозвуку, генерацію шумів та обвідних кривих. Оригінальний компонент у корпусі DIP18, що ідеально підходить для встановлення в панельки при ремонті або створенні нових звукових пристроїв.",
+    "keywords": "SAA1099P, звуковий генератор, Philips SAA1099, звукова карта ZX Spectrum, ретро звук, PSG мікросхема, DIP18, радіокомпоненти для ретро комп'ютерів, купити SAA1099P",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-10uf-16v-smd-4x54",
+    "name": "Конденсатор 10uF 16V (SMD 4x5.4 RVT)",
+    "category": "Конденсатор",
+    "analog": "Електролітичний SMD конденсатор 10мкФ 16В",
+    "price": 3,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-10uf-16v-smd-4x54",
+    "images": [
+      "/img/components/smd_capacitor.png"
+    ],
+    "short_description": "Великою партією дешевше! Електролітичний SMD конденсатор 10мкФ 16В, розмір 4x5.4 мм (серія RVT).",
+    "description": "Компактний електролітичний конденсатор для поверхневого монтажу (SMD) серії RVT. Ємність становить 10 мкФ при робочій напрузі 16 В. Розмір корпусу 4x5.4 мм дозволяє ефективно використовувати простір на друкованій платі. Цей компонент чудово підходить для фільтрації високочастотних завад по колах живлення, блокування постійної складової та використання у ланцюгах розв'язки в цифровій техніці та ретро-комп'ютерах ZX Spectrum. Вирізняється високою надійністю та тривалим терміном експлуатації.",
+    "keywords": "конденсатор 10мкФ 16В, SMD конденсатор 4x5.4, RVT конденсатор, радіокомпоненти Україна, фільтрація живлення, компоненти для пайки, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "74hct245-soic",
+    "name": "74HCT245/Шинний формувач (SOIC-20)",
+    "category": "мікросхема",
+    "analog": "SN74HCT245D",
+    "price": 15,
+    "currency": "UAH",
+    "url": "/components/template.html?id=74hct245-soic",
+    "images": [
+      "/img/components/SOIC-20.jpg"
+    ],
+    "short_description": "Великою партією дешевше! 8-канальний шинний формувач у корпусі для поверхневого монтажу (SOIC-20).",
+    "description": "74HCT245 у корпусі SOIC-20 — це компактна версія 8-канального двонаправленого шинного формувача (трансивера). Завдяки технології поверхневого монтажу (SMD) ця мікросхема займає значно менше місця на друкованій платі, що робить її ідеальним вибором для сучасних периферійних плат, адаптерів або модернізації існуючих пристроїв. Має аналогічну функціональність із DIP-версією, забезпечуючи 8 біт паралельної передачі даних із високою швидкістю та низьким енергоспоживанням.",
+    "keywords": "74HCT245 SOIC, 74HCT245D, шинний формувач SMD, двонаправлений трансивер, ремонт електроніки, логічні мікросхеми купити, компоненти ZX Spectrum, радіодеталі Україна",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-10uf-50v-1206",
+    "name": "Конденсатор 10uF 50V (1206 X5R/X7R)",
+    "category": "Конденсатор",
+    "analog": "Керамічний SMD конденсатор 10мкФ 50В",
+    "price": 8,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-10uf-50v-1206",
+    "images": [
+      "/img/components/cap-1206.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Керамічний SMD конденсатор 10мкФ 50В у корпусі 1206.",
+    "description": "Керамічний багатошаровий SMD конденсатор (MLCC) у типорозмірі 1206. Забезпечує ємність 10 мкФ при високій робочій напрузі 50 В. Завдяки низькому еквівалентному послідовному опору (ESR) та високій стабільності параметрів, цей конденсатор є відмінним рішенням для фільтрації шумів по шинах живлення, розв'язки сигналів у високочастотних колах та стабілізації напруги у мікропроцесорних системах, включаючи ремонт ZX Spectrum та іншої цифрової техніки. Компактний корпус 1206 (3.2x1.6 мм) зручний для автоматичного та ручного монтажу.",
+    "keywords": "конденсатор 10мкФ 50В, SMD 1206, керамічний конденсатор, MLCC 10uF, радіодеталі Україна, фільтрація живлення, компоненти для пайки, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "dip-switch-10-5bit",
+    "name": "DIP Switch 10-pin (5-bit) 2.54mm",
+    "category": "Перемикач",
+    "analog": "Перемикач DIP 5 позицій",
+    "price": 15,
+    "currency": "UAH",
+    "url": "/components/template.html?id=dip-switch-10-5bit",
+    "images": [
+      "/img/components/switch_pin5.jpg"
+    ],
+    "short_description": "Великою партією дешевше! DIP-перемикач на 10 контактів (5 позицій) з кроком 2.54 мм.",
+    "description": "Надійний DIP-перемикач (Dual In-line Package) на 10 контактів, що забезпечує 5 незалежних позицій (5-bit). Стандартний крок виводів 2.54 мм дозволяє легко монтувати перемикач як на друковану плату, так і в стандартні панельки або макетні плати (breadboards). Ідеально підходить для конфігурації адрес пристроїв, вибору режимів роботи схем, налаштування опцій у DIY-проектах та модернізації ретро-комп'ютерів. Забезпечує чітке механічне перемикання та тривалий ресурс роботи.",
+    "keywords": "DIP Switch 10 pin, перемикач 5-bit, DIP перемикач 2.54мм, налаштування режимів, радіодеталі Україна, компоненти для пайки, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
+  {
+    "id": "cap-100uf-10v-1206",
+    "name": "Конденсатор 100uF 10V (1206)",
+    "category": "Конденсатор",
+    "analog": "Керамічний SMD конденсатор 100мкФ 10В",
+    "price": 10,
+    "currency": "UAH",
+    "url": "/components/template.html?id=cap-100uf-10v-1206",
+    "images": [
+      "/img/components/cap-1206.jpg"
+    ],
+    "short_description": "Великою партією дешевше! Керамічний SMD конденсатор 100мкФ 10В у корпусі 1206.",
+    "description": "Керамічний багатошаровий конденсатор (MLCC) з великою ємністю 100 мкФ при робочій напрузі 10 В. Типорозмір 1206 (3.2x1.6 мм) дозволяє використовувати його в щільно закомпонованих електронних пристроях. Завдяки низькому ESR та високій ємнісній щільності, цей конденсатор є відмінним рішенням для локальної фільтрації живлення мікроконтролерів, логічних мікросхем та інших цифрових вузлів, включаючи схеми ZX Spectrum. Він стабільно працює при живленні 3.3В та 5В, забезпечуючи надійну роботу пристрою.",
+    "keywords": "конденсатор 100мкФ 10В, SMD 1206, керамічний конденсатор, MLCC 100uF, радіодеталі Україна, фільтрація живлення, компоненти для пайки, ремонт електроніки",
+    "stock_status": "in_stock"
+  },
   {
     "id": "XTAL-14MHZ-HC49",
     "name": "Кварцевий резонатор 14Mhz HC49",
+    "category": "Кварц",
     "analog": "відсутній",
     "price": 15.50,
     "currency": "UAH",
@@ -536,6 +1330,7 @@
   {
     "id": "ceramic-disc-2pf",
     "name": "Конденсатор керамічний дисковий 2пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -551,6 +1346,7 @@
   {
     "id": "ceramic-disc-5pf",
     "name": "Конденсатор керамічний дисковий 5пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -566,6 +1362,7 @@
   {
     "id": "ceramic-disc-10pf",
     "name": "Конденсатор керамічний дисковий 10пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -581,6 +1378,7 @@
   {
     "id": "ceramic-disc-22pf",
     "name": "Конденсатор керамічний дисковий 22пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -596,6 +1394,7 @@
   {
     "id": "ceramic-disc-30pf",
     "name": "Конденсатор керамічний дисковий 30пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -611,6 +1410,7 @@
   {
     "id": "ceramic-disc-33pf",
     "name": "Конденсатор керамічний дисковий 33пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -626,6 +1426,7 @@
   {
     "id": "ceramic-disc-47pf",
     "name": "Конденсатор керамічний дисковий 47пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -641,6 +1442,7 @@
   {
     "id": "ceramic-disc-68pf",
     "name": "Конденсатор керамічний дисковий 68пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -656,6 +1458,7 @@
   {
     "id": "ceramic-disc-100pf",
     "name": "Конденсатор керамічний дисковий 100пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -671,6 +1474,7 @@
   {
     "id": "ceramic-disc-220pf",
     "name": "Конденсатор керамічний дисковий 220пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -686,6 +1490,7 @@
   {
     "id": "ceramic-disc-330pf",
     "name": "Конденсатор керамічний дисковий 330пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -701,6 +1506,7 @@
   {
     "id": "ceramic-disc-470pf",
     "name": "Конденсатор керамічний дисковий 470пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -716,6 +1522,7 @@
   {
     "id": "ceramic-disc-680p",
     "name": "Конденсатор керамічний дисковий 680пФ",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -731,6 +1538,7 @@
   {
     "id": "ceramic-disc-102",
     "name": "Конденсатор керамічний дисковий 102 (1нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -746,6 +1554,7 @@
   {
     "id": "ceramic-disc-152",
     "name": "Конденсатор керамічний дисковий 152 (1.5нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -761,6 +1570,7 @@
   {
     "id": "ceramic-disc-222",
     "name": "Конденсатор керамічний дисковий 222 (2.2нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -776,6 +1586,7 @@
   {
     "id": "ceramic-disc-332",
     "name": "Конденсатор керамічний дисковий 332 (3.3нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -791,6 +1602,7 @@
   {
     "id": "ceramic-disc-472",
     "name": "Конденсатор керамічний дисковий 472 (4.7нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -806,6 +1618,7 @@
   {
     "id": "ceramic-disc-682",
     "name": "Конденсатор керамічний дисковий 682 (6.8нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -821,6 +1634,7 @@
   {
     "id": "ceramic-disc-103",
     "name": "Конденсатор керамічний дисковий 103 (10нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -836,6 +1650,7 @@
   {
     "id": "ceramic-disc-223",
     "name": "Конденсатор керамічний дисковий 223 (22нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -851,6 +1666,7 @@
   {
     "id": "ceramic-disc-473",
     "name": "Конденсатор керамічний дисковий 473 (47нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -866,6 +1682,7 @@
   {
     "id": "ceramic-disc-683",
     "name": "Конденсатор керамічний дисковий 683 (68нФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -881,6 +1698,7 @@
   {
     "id": "ceramic-disc-104",
     "name": "Конденсатор керамічний дисковий 104 (100нФ / 0.1мкФ)",
+    "category": "Конденсатор",
     "analog": "К10-7В",
     "price": 1.5,
     "currency": "UAH",
@@ -896,6 +1714,7 @@
   {
     "id": "mlt-0125-510r",
     "name": "Резистор МЛТ-0,125 510 Ом ±5%",
+    "category": "Резистор",
     "analog": "С2-23 0.125Вт 510 Ом",
     "price": 1.20,
     "currency": "UAH",
@@ -911,6 +1730,7 @@
   {
     "id": "mlt-0125-100r",
     "name": "Резистор МЛТ-0,125 100 Ом ±5%",
+    "category": "Резистор",
     "analog": "С2-23 0.125Вт 100 Ом",
     "price": 1.20,
     "currency": "UAH",
@@ -926,11 +1746,14 @@
   {
     "id": "mlt-0125-470r",
     "name": "Резистор МЛТ-0,125 470 Ом ±5%",
+    "category": "Резистор",
     "analog": "С2-23 0.125Вт 470 Ом",
     "price": 1.20,
     "currency": "UAH",
     "url": "/components/resistors/mlt-0125-470r.html",
-    "images": ["/img/components/mlt-0125.jpeg"],
+    "images": [
+      "/img/components/mlt-0125.jpeg"
+    ],
     "short_description": "Резистор МЛТ-0,125, опір 470 Ом, потужність 0,125 Вт, допуск ±5%.",
     "description": "Високонадійний резистор МЛТ-0,125 з номіналом 470 Ом. Широко застосовується в електроніці для обмеження струму та створення дільників напруги. Забезпечує стабільну роботу в широкому діапазоні температур.",
     "keywords": "резистор 470 Ом, МЛТ-0,125, купити резистор 470 Ом, радіодеталі, резистор 0.125 Вт",
@@ -939,11 +1762,14 @@
   {
     "id": "mlt-0125-10k",
     "name": "Резистор МЛТ-0,125 10 кОм ±5%",
+    "category": "Резистор",
     "analog": "С2-23 0.125Вт 10 кОм",
     "price": 1.20,
     "currency": "UAH",
     "url": "/components/resistors/mlt-0125-10k.html",
-    "images": ["/img/components/mlt-0125.jpeg"],
+    "images": [
+      "/img/components/mlt-0125.jpeg"
+    ],
     "short_description": "Резистор МЛТ-0,125, опір 10 кОм, потужність 0,125 Вт, допуск ±5%.",
     "description": "Надійний металодіелектричний резистор МЛТ-0,125 номіналом 10 кОм. Ідеальний вибір для слабкострумових схем, вимірювальних приладів та іншої радіоапаратури. Стабільність характеристик гарантує довговічність схем.",
     "keywords": "резистор 10 кОм, МЛТ-0,125, купити резистор 10к, радіодеталі Україна, електронні компоненти",
@@ -952,11 +1778,14 @@
   {
     "id": "mlt-0125-1k",
     "name": "Резистор МЛТ-0,125 1 кОм ±5%",
+    "category": "Резистор",
     "analog": "С2-23 0.125Вт 1 кОм",
     "price": 1.20,
     "currency": "UAH",
     "url": "/components/resistors/mlt-0125-1k.html",
-    "images": ["/img/components/mlt-0125.jpeg"],
+    "images": [
+      "/img/components/mlt-0125.jpeg"
+    ],
     "short_description": "Резистор МЛТ-0,125, опір 1 кОм, потужність 0,125 Вт, допуск ±5%.",
     "description": "Класичний резистор МЛТ-0,125 на 1 кОм. Використовується як базовий елемент у багатьох електронних конструкціях. Відрізняється надійністю та тривалим терміном експлуатації.",
     "keywords": "резистор 1 кОм, МЛТ-0,125, купити резистор 1кОм, радіокомпоненти, резистор 0.125Вт",
@@ -965,11 +1794,14 @@
   {
     "id": "mlt-0125-11k",
     "name": "Резистор МЛТ-0,125 1,1 кОм ±5%",
+    "category": "Резистор",
     "analog": "С2-23 0.125Вт 1.1 кОм",
     "price": 1.20,
     "currency": "UAH",
     "url": "/components/resistors/mlt-0125-11k.html",
-    "images": ["/img/components/mlt-0125.jpeg"],
+    "images": [
+      "/img/components/mlt-0125.jpeg"
+    ],
     "short_description": "Резистор МЛТ-0,125, опір 1,1 кОм, потужність 0,125 Вт, допуск ±5%.",
     "description": "Прецизійний (в межах допуску) резистор МЛТ-0,125 на 1,1 кОм. Підходить для налаштування точних параметрів електричних кіл. Перевірений часом компонент для якісного ремонту техніки.",
     "keywords": "резистор 1.1 кОм, МЛТ-0,125, купити резистор 1100 Ом, радіодеталі, резистори",
@@ -978,6 +1810,7 @@
   {
     "id": "res-025-10r-1pct",
     "name": "Резистор 0,25Вт 10 Ом ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 10 Ом",
     "price": 1.50,
     "currency": "UAH",
@@ -993,6 +1826,7 @@
   {
     "id": "res-025-22r-1pct",
     "name": "Резистор 0,25Вт 22 Ом ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 22 Ом",
     "price": 1.50,
     "currency": "UAH",
@@ -1008,6 +1842,7 @@
   {
     "id": "res-025-47r-1pct",
     "name": "Резистор 0,25Вт 47 Ом ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 47 Ом",
     "price": 1.50,
     "currency": "UAH",
@@ -1023,6 +1858,7 @@
   {
     "id": "res-025-150r-1pct",
     "name": "Резистор 0,25Вт 150 Ом ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 150 Ом",
     "price": 1.50,
     "currency": "UAH",
@@ -1038,6 +1874,7 @@
   {
     "id": "res-025-680r-1pct",
     "name": "Резистор 0,25Вт 680 Ом ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 680 Ом",
     "price": 1.50,
     "currency": "UAH",
@@ -1053,6 +1890,7 @@
   {
     "id": "res-025-2k-1pct",
     "name": "Резистор 0,25Вт 2 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 2 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1068,6 +1906,7 @@
   {
     "id": "res-025-22k-1pct",
     "name": "Резистор 0,25Вт 2,2 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 2.2 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1083,6 +1922,7 @@
   {
     "id": "res-025-33k-1pct",
     "name": "Резистор 0,25Вт 3,3 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 3.3 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1098,6 +1938,7 @@
   {
     "id": "res-025-47k-1pct",
     "name": "Резистор 0,25Вт 4,7 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 4.7 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1113,6 +1954,7 @@
   {
     "id": "res-025-51k-1pct",
     "name": "Резистор 0,25Вт 5,1 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 5.1 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1128,6 +1970,7 @@
   {
     "id": "res-025-68k-1pct",
     "name": "Резистор 0,25Вт 6,8 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 6.8 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1143,6 +1986,7 @@
   {
     "id": "res-025-20k-1pct",
     "name": "Резистор 0,25Вт 20 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 20 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1158,6 +2002,7 @@
   {
     "id": "res-025-47k-1pct-2",
     "name": "Резистор 0,25Вт 47 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 47 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1173,6 +2018,7 @@
   {
     "id": "res-025-51k-1pct-2",
     "name": "Резистор 0,25Вт 51 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 51 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1188,6 +2034,7 @@
   {
     "id": "res-025-68k-1pct-2",
     "name": "Резистор 0,25Вт 68 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 68 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1203,6 +2050,7 @@
   {
     "id": "res-025-100k-1pct",
     "name": "Резистор 0,25Вт 100 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 100 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1218,6 +2066,7 @@
   {
     "id": "res-025-220k-1pct",
     "name": "Резистор 0,25Вт 220 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 220 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1233,6 +2082,7 @@
   {
     "id": "res-025-300k-1pct",
     "name": "Резистор 0,25Вт 300 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 300 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1248,6 +2098,7 @@
   {
     "id": "res-025-470k-1pct",
     "name": "Резистор 0,25Вт 470 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 470 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1263,6 +2114,7 @@
   {
     "id": "res-025-680k-1pct",
     "name": "Резистор 0,25Вт 680 кОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 680 кОм",
     "price": 1.50,
     "currency": "UAH",
@@ -1278,6 +2130,7 @@
   {
     "id": "res-025-1m-1pct",
     "name": "Резистор 0,25Вт 1 МОм ±1%",
+    "category": "Резистор",
     "analog": "С2-29 0.25Вт 1 МОм",
     "price": 1.50,
     "currency": "UAH",
