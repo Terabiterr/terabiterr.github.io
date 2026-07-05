@@ -57,7 +57,7 @@
   {
     "id": "diode-1n4148",
     "name": "Діод імпульсний 1N4148 (аналог КД522)",
-    "category": "Діо",
+    "category": "діод",
     "analog": "КД522",
     "price": 2.5,
     "currency": "UAH",
@@ -70,7 +70,7 @@
   {
     "id": "button-6x6x10",
     "name": "Кнопка тактова DIP 6x6x10мм",
-    "category": "Кноп",
+    "category": "кнопка",
     "analog": "---",
     "price": 5,
     "currency": "UAH",
