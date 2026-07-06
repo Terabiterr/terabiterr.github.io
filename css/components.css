@@ -462,3 +462,54 @@ header {
     outline: none;
     border-color: var(--zx-yellow);
 }
+
+/* =======================================
+   Переключатель тем
+======================================= */
+
+.header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.theme-toggle{
+
+    padding:10px 16px;
+
+    border:2px solid var(--zx-cyan);
+
+    background:#000;
+
+    color:var(--zx-cyan);
+
+    font-family:'Press Start 2P', monospace;
+
+    font-size:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.theme-toggle:hover{
+
+    color:var(--zx-yellow);
+
+    border-color:var(--zx-yellow);
+
+    transform:translateY(-2px);
+
+}
+
+@media(max-width:700px){
+
+    .header-inner{
+
+        flex-direction:column;
+
+    }
+
+}
