@@ -55,14 +55,46 @@ const CartManager = {
         if (!modal) return;
 
         const list = document.getElementById('cart-items-list');
-        list.innerHTML = this.items.map(i => `
-            <div class="cart-item">
-                <span>${i.name}</span>
-                <input type="number" value="${i.quantity}" min="1" 
-                       onchange="CartManager.updateQuantity('${i.id}', this.value)">
-                <button onclick="CartManager.remove('${i.id}')" style="color:red; cursor:pointer;">✕</button>
+        list.innerHTML = this.items.length
+            ? this.items.map(i => `
+        <div class="cart-item">
+
+            <div class="cart-item-info">
+                <div class="cart-item-name">
+                    ${i.name}
+                </div>
+
+                <div class="cart-item-controls">
+
+                    <input
+                        class="cart-qty"
+                        type="number"
+                        min="1"
+                        value="${i.quantity}"
+                        onchange="CartManager.updateQuantity('${i.id}',this.value)">
+
+                    <button
+                        class="cart-remove"
+                        onclick="CartManager.remove('${i.id}')">
+
+                        ✕
+
+                    </button>
+
+                </div>
+
             </div>
-        `).join('');
+
+        </div>
+    `).join('')
+            :
+            `
+        <div class="cart-empty">
+
+            Корзина порожня
+
+        </div>
+    `;
 
         // Оновлюємо посилання на Telegram
         document.getElementById('checkout-btn').href = this.getTelegramLink();
