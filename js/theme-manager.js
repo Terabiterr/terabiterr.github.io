@@ -3,57 +3,42 @@
     const styleId = 'injected-theme-styles';
 
     const modernCSS = `
-        /* --- GLOBAL & STRUCTURE --- */
-        body, main, .container { background: #f8f9fa !important; color: #1a1a1a !important; font-family: 'Inter', 'Segoe UI', sans-serif !important; }
-        header { background: #ffffff !important; border-bottom: 1px solid #e0e0e0 !important; padding: 20px 0 !important; }
+        /* --- 1. ГЛОБАЛЬНЫЙ СБРОС --- */
+        body, .container, main { background: #f8f9fa !important; color: #1a1a1a !important; }
         
-        /* --- TITLE & THEME BUTTON --- */
-        .zx-title { color: #000 !important; font-size: 24px !important; font-weight: 800 !important; display: flex !important; align-items: center !important; }
+        /* --- 2. HEADER & TITLE --- */
+        header { background: #ffffff !important; border-bottom: 2px solid #e0e0e0 !important; }
+        .zx-title { color: #000 !important; display: flex !important; align-items: center !important; flex-wrap: wrap !important; }
         .theme-switch-btn { 
-            margin-left: 15px !important; 
-            padding: 6px 12px !important; 
-            background: #000 !important; 
-            color: #fff !important; 
-            border: none !important; 
-            border-radius: 4px !important; 
-            cursor: pointer !important; 
-            font-size: 11px !important;
-            text-transform: uppercase !important;
-            letter-spacing: 1px !important;
+            margin-left: 20px !important; padding: 8px 16px !important; 
+            background: #000 !important; color: #fff !important; 
+            border: none !important; border-radius: 6px !important; 
+            cursor: pointer !important; font-weight: bold !important; 
         }
+
+        /* --- 3. SIDEBAR (Принудительно белый фон) --- */
+        .sidebar, .sidebar-box { background: #ffffff !important; border: 1px solid #e0e0e0 !important; color: #333 !important; }
+        .sidebar-box a, .contact-link { color: #0056b3 !important; }
+
+        /* --- 4. КАРТОЧКИ И ТОВАРЫ --- */
+        .card, .grid .card { background: #ffffff !important; border: 1px solid #e0e0e0 !important; color: #333 !important; }
+        .card h3, .card .card-desc { color: #333 !important; }
+        .card-price { color: #2e7d32 !important; font-weight: 800 !important; }
         
-        /* --- SIDEBAR MENU (Исправление черного фона) --- */
-        .sidebar-box { background: #ffffff !important; border: 1px solid #e0e0e0 !important; border-radius: 8px !important; }
-        .box-title { color: #333 !important; border-bottom: 1px solid #eee !important; margin-bottom: 10px !important; }
-        .contact-link { color: #0056b3 !important; background: transparent !important; }
-
-        /* --- CARDS & GRID --- */
-        .card { background: #ffffff !important; border: 1px solid #e0e0e0 !important; box-shadow: none !important; }
-        .card img { background: transparent !important; }
-        .card-price { color: #2e7d32 !important; font-weight: 900 !important; }
-        h2 { color: #000 !important; border-left: 5px solid #0056b3 !important; }
-
-        /* --- PAGINATION (Покраска кнопок) --- */
-        .pagination-container button, .page-btn { 
-            background: #ffffff !important; 
-            border: 1px solid #ced4da !important; 
-            color: #333 !important; 
-            padding: 8px 16px !important; 
-            border-radius: 4px !important;
+        /* --- 5. ОТЗЫВЫ И ФОРМЫ --- */
+        .review-form, .review-card { background: #ffffff !important; border: 1px solid #e0e0e0 !important; color: #333 !important; }
+        .review-card .text, .review-card .author { color: #333 !important; }
+        input, textarea, select, .filter-select { 
+            background: #ffffff !important; border: 1px solid #ccc !important; color: #333 !important; 
         }
+
+        /* --- 6. ФУТЕР И ПАГИНАЦИЯ --- */
+        .site-footer, .footer { background: #ffffff !important; color: #333 !important; border-top: 2px solid #e0e0e0 !important; }
+        .pagination-container, .pagination-container button { background: #ffffff !important; color: #333 !important; border: 1px solid #ccc !important; }
         .pagination-container button:hover { background: #0056b3 !important; color: #fff !important; }
-
-        /* --- INPUTS & FORMS --- */
-        #search-input, .filter-select, .review-form input, .review-form textarea, .review-form select { 
-            background: #ffffff !important; 
-            border: 1px solid #ced4da !important; 
-            color: #333 !important; 
-        }
         
-        /* --- FOOTER (Светлая тема) --- */
-        .site-footer { background: #ffffff !important; border-top: 2px solid #e0e0e0 !important; color: #333 !important; }
-        .footer-column h4 { color: #000 !important; border-bottom: 2px solid #0056b3 !important; }
-        .copyright { color: #666 !important; }
+        /* --- 7. УДАЛЕНИЕ РЕТРО-ЭЛЕМЕНТОВ --- */
+        .spectrum-bar { display: none !important; }
     `;
 
     function applyTheme(isModern) {
@@ -68,7 +53,6 @@
             styleTag.innerHTML = modernCSS;
             localStorage.setItem(themeKey, 'modern');
         } else {
-            // Удаляем стили, возвращая оригинальный CSS
             if (styleTag) styleTag.remove();
             localStorage.setItem(themeKey, 'retro');
         }
@@ -78,7 +62,7 @@
         const titleContainer = document.querySelector('.zx-title');
         if (!titleContainer) return;
 
-        // Удаляем старую, если есть
+        // Удаляем старую кнопку перед созданием новой
         const existingBtn = document.querySelector('.theme-switch-btn');
         if (existingBtn) existingBtn.remove();
 
@@ -95,9 +79,7 @@
     }
 
     window.addEventListener('DOMContentLoaded', () => {
-        // Устанавливаем тему
-        const savedTheme = localStorage.getItem(themeKey);
-        if (savedTheme === 'modern') {
+        if (localStorage.getItem(themeKey) === 'modern') {
             applyTheme(true);
         }
         initThemeBtn();
