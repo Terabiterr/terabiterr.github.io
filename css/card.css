@@ -1,357 +1,209 @@
-:root {
-    --text-main: 13px;
-    --text-sub: 12px;
-    --header-size: 22px;
-    --max-width: 1100px;
+/* ==========================================================
+   ZX-KIT
+   CARD.CSS
+   Стили страницы товара
+========================================================== */
+
+
+/* ==========================================================
+   PRODUCT GALLERY
+========================================================== */
+
+.main-viewer{
+
+    cursor:zoom-in;
+
 }
 
-body {
-    font-size: var(--text-main);
-    background-color: #050505;
-    color: #ddd;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#zoom-modal{
+
+    cursor:zoom-out;
+
 }
 
-/* Кнопка повернення */
-.back-nav {
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 20px 0 0 0;
-    padding: 0 2.5%;
+.thumb{
+
+    opacity:.65;
+
+    transition:
+        opacity .2s,
+        transform .2s;
+
 }
 
-.btn-back {
-    display: inline-flex;
-    align-items: center;
-    color: var(--zx-cyan);
-    text-decoration: none;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.2s;
+.thumb:hover{
+
+    opacity:1;
+
+    transform:scale(1.05);
+
 }
 
-.btn-back:hover {
-    color: var(--zx-yellow);
-    transform: translateX(-5px);
+.thumb.active{
+
+    opacity:1;
+
 }
 
-.btn-back::before {
-    content: "←";
-    margin-right: 8px;
-    font-size: 14px;
+
+/* ==========================================================
+   PRODUCT INFO
+========================================================== */
+
+.product-h1{
+
+    word-break:break-word;
+
 }
 
-.container-wide {
-    width: 95%;
-    max-width: var(--max-width);
-    margin: 10px auto 40px auto;
+.price-tag{
+
+    white-space:nowrap;
+
 }
 
-.product-grid {
-    display: grid;
-    /* Галерея займає 2 частини, опис - 1 частину, але не менше 350px */
-    grid-template-columns: 2fr minmax(350px, 1fr); 
-    gap: 2px;
-    background-color: #222;
-    border: 1px solid #222;
-    align-items: start;
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.text-content img{
+
+    max-width:100%;
+
+    height:auto;
+
 }
 
-.product-grid>div {
-    background: #000;
-    padding: 30px;
+.text-content table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
 }
 
-/* Галерея */
-.main-viewer {
-    width: 100%;
-    aspect-ratio: 4/3;
-    border: 1px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    cursor: zoom-in;
-    background: #111;
+.text-content iframe{
+
+    max-width:100%;
+
 }
 
-.main-viewer img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+
+/* ==========================================================
+   SPECIFICATIONS
+========================================================== */
+
+.spec-table td{
+
+    vertical-align:top;
+
 }
 
-.thumbs-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-top: 15px;
+
+/* ==========================================================
+   COMMENTS
+========================================================== */
+
+.comment-item:last-child{
+
+    border-bottom:none;
+
 }
 
-.thumb {
-    aspect-ratio: 1;
-    border: 1px solid #333;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.2s;
-    object-fit: cover;
-    width: 100%;
+
+/* ==========================================================
+   TELEGRAM BUTTON
+========================================================== */
+
+#tg-order{
+
+    text-align:center;
+
 }
 
-.thumb:hover,
-.thumb.active {
-    opacity: 1;
-    border-color: var(--zx-cyan);
+
+/* ==========================================================
+   IMAGE LOADING
+========================================================== */
+
+.main-viewer img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
 }
 
-/* Контент */
-.product-h1 {
-    font-size: var(--header-size);
-    color: #fff;
-    text-transform: uppercase;
-    margin: 0;
+.thumb{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
 }
 
-.sku {
-    color: var(--zx-cyan);
-    font-size: 10px;
-    margin-bottom: 25px;
+
+/* ==========================================================
+   ZOOM ANIMATION
+========================================================== */
+
+#zoom-modal{
+
+    animation:zoomFade .2s ease;
+
 }
 
-.spec-table {
-    width: 100%;
-    margin-bottom: 25px;
-    border-collapse: collapse;
-}
+@keyframes zoomFade{
 
-.spec-table td {
-    padding: 10px 0;
-    border-bottom: 1px solid #1a1a1a;
-    font-size: var(--text-sub);
-}
+    from{
 
-.label {
-    color: #777;
-}
+        opacity:0;
 
-.val {
-    color: #fff;
-    text-align: right;
-}
-
-.price-tag {
-    font-size: 28px;
-    color: var(--zx-yellow);
-    margin: 20px 0;
-    font-weight: bold;
-}
-
-.btn-action {
-    display: block;
-    background: var(--zx-red);
-    color: #fff;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    text-transform: uppercase;
-}
-
-.btn-action:hover {
-    background: var(--zx-magenta);
-    transform: translateY(-2px);
-}
-
-.full-description {
-    background: #000;
-    border: 1px solid #222;
-    margin-top: 2px;
-    padding: 40px;
-}
-
-.full-description h2 {
-    color: var(--zx-yellow);
-    font-size: 16px;
-    border-left: 4px solid var(--zx-red);
-    padding-left: 15px;
-    margin-bottom: 20px;
-}
-
-.text-content {
-    column-count: 2;
-    column-gap: 40px;
-    font-size: 13px;
-    color: #aaa;
-    text-align: justify;
-}
-
-/* Коментарі */
-.comment-box {
-    background: #0a0a0a;
-    padding: 20px;
-    border: 1px solid #222;
-    margin-top: 20px;
-}
-
-.comment-input {
-    width: 100%;
-    height: 80px;
-    background: #000;
-    border: 1px solid #333;
-    color: #fff;
-    padding: 10px;
-    font-size: 12px;
-    resize: none;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-.btn-comment {
-    background: var(--zx-cyan);
-    border: none;
-    color: #000;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.comment-item {
-    border-bottom: 1px solid #1a1a1a;
-    padding: 15px 0;
-}
-
-.comment-user {
-    color: var(--zx-green);
-    font-size: 11px;
-    font-weight: bold;
-}
-
-@media (max-width: 900px) {
-    .product-grid {
-        grid-template-columns: 1fr;
     }
 
-    .text-content {
-        column-count: 1;
+    to{
+
+        opacity:1;
+
     }
 
-    .back-nav {
-        padding: 0 5%;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:900px){
+
+    .thumbs-row{
+
+        grid-template-columns:repeat(4,1fr);
+
     }
+
 }
 
-#zoom-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
-    cursor: zoom-out;
-}
 
-#zoom-modal img {
-    max-width: 90%;
-    max-height: 90%;
-}
+@media(max-width:600px){
 
-/* --- 10. Модальне вікно (Корзина) --- */
+    .product-h1{
 
-.modal { 
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0; top: 0; 
-    width: 100%; height: 100%; 
-    background: rgba(0,0,0,0.8);
-}
+        font-size:18px;
 
-.modal-content { 
-    background: #000; 
-    margin: 5% auto; /* Трохи менший відступ зверху для мобільних */
-    padding: 15px; 
-    width: 95%;      /* На мобільних майже на весь екран */
-    max-width: 500px; 
-    max-height: 80vh; /* Обмеження висоти, щоб вікно не вилазило за екран */
-    border: 4px solid var(--zx-cyan);
-    color: var(--zx-white);
-    font-family: 'Press Start 2P', monospace;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
+    }
 
-/* Додаємо прокручування для списку, якщо товарів багато */
-#cart-items-list {
-    overflow-y: auto; /* Вмикає скролл, якщо контент не влазить */
-    flex-grow: 1;
-    margin-bottom: 15px;
-    padding-right: 5px; /* Щоб скроллбар не перекривав текст */
-}
+    .price-tag{
 
-/* Налаштування скроллбару (ретро-стиль) */
-#cart-items-list::-webkit-scrollbar {
-    width: 8px;
-}
-#cart-items-list::-webkit-scrollbar-thumb {
-    background: var(--zx-magenta);
-}
+        font-size:22px;
 
-.cart-item { 
-    display: grid;
-    grid-template-columns: 1fr 50px 30px; /* Трохи звузили колонки для мобільних */
-    align-items: center;
-    gap: 8px;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--zx-blue);
-    font-size: 9px; /* Менший шрифт для мобільних */
-}
+    }
 
-.cart-item input { 
-    width: 45px; 
-    height: 25px;
-    text-align: center; 
-    background: #111; 
-    border: 1px solid var(--zx-yellow);
-    color: var(--zx-white);
-    font-family: 'Press Start 2P', monospace;
-    font-size: 10px;
-}
+    .thumb{
 
-.btn-action { 
-    display: block; 
-    width: 100%; 
-    padding: 12px; 
-    margin: 5px 0; 
-    background: var(--zx-cyan); 
-    text-align: center; 
-    color: #000; 
-    text-decoration: none; 
-    font-size: 10px;
-    font-weight: bold;
-    box-sizing: border-box; 
-    border: none;
-    cursor: pointer;
-}
+        opacity:1;
 
-.btn-secondary {
-    background: transparent;
-    border: 2px solid var(--zx-magenta);
-    color: var(--zx-magenta);
-    padding: 8px;
-    margin-top: 5px;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 8px;
-    cursor: pointer;
-    width: 100%;
+    }
+
 }

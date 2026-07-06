@@ -1,67 +1,108 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*
+==========================================================
+ZX-KIT
+Theme Manager
+==========================================================
+*/
 
-    const themeLink = document.getElementById("theme-style");
-    const header = document.querySelector(".header-inner");
+class ThemeManager {
 
-    // ============================
-    // Кнопка переключения темы
-    // ============================
+    constructor() {
 
-    const button = document.createElement("button");
+        this.storageKey = "zxkit-theme";
 
-    button.id = "theme-toggle";
-    button.className = "theme-toggle";
+        this.themes = {
+            retro: "/css/theme-retro.css",
+            classic: "/css/theme-classic.css"
+        };
 
-    header.appendChild(button);
+        this.currentTheme = localStorage.getItem(this.storageKey) || "retro";
 
-    // ============================
-    // Применение темы
-    // ============================
-
-    function applyTheme(theme) {
-
-        if (theme === "light") {
-
-            themeLink.href = "/css/components-light.css";
-            button.innerHTML = "🖥 Retro";
-
-        } else {
-
-            themeLink.href = "/css/components.css";
-            button.innerHTML = "☀ Classic";
-
-        }
-
-        localStorage.setItem("site-theme", theme);
+        this.init();
 
     }
 
-    // ============================
-    // Загружаем сохраненную тему
-    // ============================
+    init() {
 
-    const savedTheme = localStorage.getItem("site-theme") || "retro";
+        this.loadTheme();
 
-    applyTheme(savedTheme);
+        document.addEventListener("DOMContentLoaded", () => {
 
-    // ============================
-    // Переключение
-    // ============================
+            this.createButton();
 
-    button.addEventListener("click", () => {
+        });
 
-        const current = localStorage.getItem("site-theme");
+    }
 
-        if (current === "retro") {
+    loadTheme() {
 
-            applyTheme("light");
+        const link = document.getElementById("theme-css");
+
+        if (!link) return;
+
+        link.href = this.themes[this.currentTheme];
+
+    }
+
+    saveTheme(theme) {
+
+        localStorage.setItem(this.storageKey, theme);
+
+    }
+
+    toggleTheme() {
+
+        this.currentTheme =
+            this.currentTheme === "retro"
+                ? "classic"
+                : "retro";
+
+        this.saveTheme(this.currentTheme);
+
+        this.loadTheme();
+
+        this.updateButton();
+
+    }
+
+    createButton() {
+
+        const header = document.querySelector(".header-inner");
+
+        if (!header) return;
+
+        const button = document.createElement("button");
+
+        button.id = "theme-switch";
+
+        button.className = "theme-switch";
+
+        button.onclick = () => this.toggleTheme();
+
+        header.appendChild(button);
+
+        this.updateButton();
+
+    }
+
+    updateButton() {
+
+        const button = document.getElementById("theme-switch");
+
+        if (!button) return;
+
+        if (this.currentTheme === "retro") {
+
+            button.textContent = "☀ CLASSIC";
 
         } else {
 
-            applyTheme("retro");
+            button.textContent = "🕹 RETRO";
 
         }
 
-    });
+    }
 
-});
+}
+
+new ThemeManager();

@@ -1,0 +1,1237 @@
+/* ==========================================================
+   ZX-KIT
+   BASE.CSS
+   Общая структура сайта
+   Используется всеми страницами
+========================================================== */
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    font-family:'Press Start 2P', monospace;
+
+    line-height:1.6;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+button,
+input,
+select,
+textarea{
+
+    font:inherit;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-weight:normal;
+
+    line-height:1.4;
+
+}
+
+p{
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+header{
+
+    width:100%;
+
+    padding:25px;
+
+}
+
+.header-inner{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.zx-title{
+
+    font-size:18px;
+
+    text-transform:uppercase;
+
+}
+
+.logo{
+
+    height:60px;
+
+    flex-shrink:0;
+
+}
+
+
+/* ==========================================================
+   PAGE CONTAINERS
+========================================================== */
+
+.container{
+
+    width:100%;
+
+    max-width:1500px;
+
+    margin:auto;
+
+    padding:20px;
+
+    display:grid;
+
+    grid-template-columns:300px 1fr;
+
+    gap:25px;
+
+    align-items:start;
+
+}
+
+.container-wide{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:20px auto 40px;
+
+}
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar{
+
+    width:100%;
+
+}
+
+.sidebar-box{
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+}
+
+.box-title{
+
+    padding-bottom:8px;
+
+    margin-bottom:15px;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+}
+
+.contact-link{
+
+    display:block;
+
+    margin:10px 0;
+
+    font-size:10px;
+
+}
+
+.guide-text{
+
+    font-size:10px;
+
+    line-height:2;
+
+}
+
+.guide-line{
+
+    display:inline-block;
+
+    width:35px;
+
+}
+
+
+/* ==========================================================
+   PAGE HEADINGS
+========================================================== */
+
+section>h2{
+
+    margin-bottom:20px;
+
+    padding-left:12px;
+
+    font-size:14px;
+
+}
+
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+
+    gap:20px;
+
+}
+
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+    overflow:hidden;
+
+}
+
+.card-link{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    margin:12px;
+
+    min-height:60px;
+
+    font-size:12px;
+
+    line-height:1.5;
+
+    word-break:break-word;
+
+}
+
+.card-price{
+
+    margin-top:auto;
+
+    padding:12px;
+
+    font-size:15px;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1100px){
+
+    .logo{
+
+        display:none;
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:700px){
+
+    .header-inner{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.page-btn,
+.cart-btn,
+.btn-action,
+.btn-secondary,
+.btn-comment{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 20px;
+
+    font-family:inherit;
+
+    font-size:10px;
+
+    text-transform:uppercase;
+
+}
+
+.btn-action{
+
+    width:100%;
+
+}
+
+.btn-secondary{
+
+    width:100%;
+
+    padding:10px;
+
+}
+
+.btn-comment{
+
+    padding:10px 20px;
+
+}
+
+
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+.pagination-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    padding:35px 0;
+
+}
+
+#page-info,
+#review-page-info{
+
+    font-size:10px;
+
+}
+
+
+/* ==========================================================
+   SEARCH / FILTERS
+========================================================== */
+
+.catalog-controls{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+#search-input{
+
+    flex:1;
+
+    min-width:250px;
+
+}
+
+.filter-select{
+
+    min-width:220px;
+
+}
+
+#search-input,
+.filter-select{
+
+    padding:12px;
+
+    font-family:inherit;
+
+}
+
+
+/* ==========================================================
+   REVIEW FORM
+========================================================== */
+
+.review-form{
+
+    width:100%;
+
+    max-width:600px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select{
+
+    width:100%;
+
+    padding:12px;
+
+    font-family:inherit;
+
+}
+
+.review-form textarea{
+
+    min-height:120px;
+
+    resize:vertical;
+
+}
+
+
+/* ==========================================================
+   REVIEWS
+========================================================== */
+
+.reviews-section{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+
+.reviews-title{
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+}
+
+.reviews-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+}
+
+.review-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:220px;
+
+    padding:20px;
+
+}
+
+.review-card .stars{
+
+    margin-bottom:10px;
+
+}
+
+.review-card .text{
+
+    flex:1;
+
+    font-size:11px;
+
+    line-height:1.7;
+
+}
+
+.review-card .author{
+
+    margin-top:15px;
+
+    font-size:11px;
+
+}
+
+.review-card .date{
+
+    margin-top:5px;
+
+    font-size:10px;
+
+}
+
+
+/* ==========================================================
+   MODAL
+========================================================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:1000;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.modal-content{
+
+    width:100%;
+
+    max-width:600px;
+
+    max-height:85vh;
+
+    overflow-y:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+
+/* ==========================================================
+   CART
+========================================================== */
+
+#cart-items-list{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    margin-bottom:15px;
+
+}
+
+.cart-item{
+
+    display:grid;
+
+    grid-template-columns:1fr 55px 35px;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 0;
+
+    font-size:10px;
+
+}
+
+.cart-item input{
+
+    width:50px;
+
+    height:30px;
+
+    text-align:center;
+
+    font-family:inherit;
+
+}
+
+
+/* ==========================================================
+   COMMON TABLES
+========================================================== */
+
+.spec-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:25px;
+
+}
+
+.spec-table td{
+
+    padding:10px 0;
+
+}
+
+.label{
+
+    width:45%;
+
+}
+
+.val{
+
+    text-align:right;
+
+}
+
+
+/* ==========================================================
+   COMMON TEXT BLOCKS
+========================================================== */
+
+.product-h1{
+
+    font-size:22px;
+
+    line-height:1.5;
+
+}
+
+.price-tag{
+
+    margin:25px 0;
+
+    font-size:28px;
+
+}
+
+.comment-box{
+
+    margin-top:20px;
+
+    padding:20px;
+
+}
+
+.comment-input{
+
+    width:100%;
+
+    min-height:90px;
+
+    padding:12px;
+
+    resize:vertical;
+
+    font-family:inherit;
+
+}
+
+.comment-item{
+
+    padding:15px 0;
+
+}
+
+.comment-user{
+
+    font-size:11px;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+    .catalog-controls{
+
+        flex-direction:column;
+
+    }
+
+    #search-input,
+    .filter-select{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .cart-item{
+
+        grid-template-columns:1fr 45px 30px;
+
+        gap:8px;
+
+    }
+
+    .product-h1{
+
+        font-size:18px;
+
+    }
+
+    .price-tag{
+
+        font-size:22px;
+
+    }
+
+}
+/* ==========================================================
+   PRODUCT PAGE
+========================================================== */
+
+.back-nav{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:20px auto 0;
+
+    padding:0 20px;
+
+}
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr minmax(350px,1fr);
+
+    gap:2px;
+
+    align-items:start;
+
+}
+
+.product-grid > div{
+
+    padding:30px;
+
+}
+
+
+/* ==========================================================
+   PRODUCT GALLERY
+========================================================== */
+
+.gallery-section{
+
+    width:100%;
+
+}
+
+.main-viewer{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.main-viewer img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+.thumbs-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.thumb{
+
+    width:100%;
+
+    aspect-ratio:1;
+
+    object-fit:cover;
+
+}
+
+
+/* ==========================================================
+   PROMO
+========================================================== */
+
+.components-promo{
+
+    display:block;
+
+    width:100%;
+
+    margin-bottom:30px;
+
+    padding:20px;
+
+}
+
+.promo-text{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+/* ==========================================================
+   MARQUEE
+========================================================== */
+
+.marquee{
+
+    width:100%;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    padding:6px 0;
+
+}
+
+.marquee-content{
+
+    display:inline-block;
+
+    white-space:nowrap;
+
+}
+
+
+/* ==========================================================
+   CONTACT IMAGE
+========================================================== */
+
+.contact-image{
+
+    margin-top:20px;
+
+    text-align:center;
+
+}
+
+.contact-image img{
+
+    max-width:260px;
+
+    margin:auto;
+
+}
+
+
+/* ==========================================================
+   ZOOM MODAL
+========================================================== */
+
+#zoom-modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+#zoom-modal img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    width:100%;
+
+    margin-top:auto;
+
+    padding:40px 20px;
+
+}
+
+.footer-inner,
+.footer-content{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.footer-column,
+.footer-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.footer-column h4,
+.footer-section h4{
+
+    font-size:14px;
+
+}
+
+.footer-column p,
+.footer-section p{
+
+    font-size:11px;
+
+    line-height:1.8;
+
+}
+
+.copyright{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    font-size:10px;
+
+}
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+
+/* ==========================================================
+   HELPERS
+========================================================== */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+.mt-10{
+
+    margin-top:10px;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1100px){
+
+    .product-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .footer-inner,
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .text-content{
+
+        column-count:1;
+
+    }
+
+}
+
+@media (max-width:700px){
+
+    .product-grid > div{
+
+        padding:20px;
+
+    }
+
+    .full-description{
+
+        padding:25px;
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .back-nav{
+
+        padding:0 10px;
+
+    }
+
+    .container-wide{
+
+        width:100%;
+
+        padding:0 10px;
+
+    }
+
+    .thumbs-row{
+
+        gap:6px;
+
+    }
+
+    .contact-image{
+
+        display:none;
+
+    }
+
+}

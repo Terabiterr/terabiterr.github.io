@@ -1,0 +1,197 @@
+/* ==========================================================
+   ZX-KIT
+   THEME RETRO
+   ZX Spectrum Theme
+========================================================== */
+
+
+/* ==========================================================
+   PALETTE
+========================================================== */
+
+:root{
+
+    --zx-blue:#0000AA;
+
+    --zx-black:#000000;
+
+    --zx-white:#FFFFFF;
+
+    --zx-yellow:#FFFF00;
+
+    --zx-cyan:#00FFFF;
+
+    --zx-magenta:#FF00FF;
+
+    --zx-red:#FF0000;
+
+    --zx-green:#00FF00;
+
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    background:var(--zx-blue);
+
+    color:var(--zx-white);
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+    background:
+    repeating-linear-gradient(
+        to bottom,
+        rgba(0,0,0,.08) 0px,
+        rgba(0,0,0,.08) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+header{
+
+    background:#000;
+
+    color:var(--zx-yellow);
+
+    border-bottom:6px solid var(--zx-magenta);
+
+    text-shadow:3px 3px var(--zx-red);
+
+}
+
+
+/* ==========================================================
+   ZX COLOR BAR
+========================================================== */
+
+.spectrum-bar{
+
+    display:flex;
+
+    height:12px;
+
+}
+
+.bar-red{
+
+    flex:1;
+
+    background:#ff0000;
+
+}
+
+.bar-yellow{
+
+    flex:1;
+
+    background:#ffff00;
+
+}
+
+.bar-green{
+
+    flex:1;
+
+    background:#00ff00;
+
+}
+
+.bar-cyan{
+
+    flex:1;
+
+    background:#00ffff;
+
+}
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar-box{
+
+    background:#000;
+
+    border:4px solid var(--zx-cyan);
+
+}
+
+.box-title{
+
+    color:var(--zx-yellow);
+
+    border-bottom:2px solid var(--zx-yellow);
+
+}
+
+.guide-text{
+
+    color:var(--zx-white);
+
+}
+
+.guide-line{
+
+    color:var(--zx-green);
+
+}
+
+.contact-link{
+
+    color:var(--zx-cyan);
+
+}
+
+.contact-link:hover{
+
+    color:var(--zx-magenta);
+
+}
+
+
+/* ==========================================================
+   TITLES
+========================================================== */
+
+h2{
+
+    color:var(--zx-yellow);
+
+    border-left:4px solid var(--zx-cyan);
+
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    color:inherit;
+
+}

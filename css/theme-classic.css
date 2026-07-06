@@ -1,0 +1,500 @@
+/* ==========================================================
+   ZX-KIT
+   CLASSIC LIGHT THEME
+========================================================== */
+
+
+/* ==========================================================
+   PALETTE
+========================================================== */
+
+:root{
+
+    --zx-blue:#2563eb;
+
+    --zx-black:#1f2937;
+
+    --zx-white:#ffffff;
+
+    --zx-yellow:#f59e0b;
+
+    --zx-cyan:#0ea5e9;
+
+    --zx-magenta:#7c3aed;
+
+    --zx-red:#dc2626;
+
+    --zx-green:#16a34a;
+
+    --bg:#f5f7fb;
+
+    --card:#ffffff;
+
+    --border:#dbe3ee;
+
+    --text:#1f2937;
+
+    --text-light:#6b7280;
+
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+body::after{
+
+    display:none;
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+header{
+
+    background:#ffffff;
+
+    color:var(--text);
+
+    border-bottom:1px solid var(--border);
+
+    text-shadow:none;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================================================
+   ZX COLOR BAR
+========================================================== */
+
+.spectrum-bar{
+
+    display:none;
+
+}
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar-box{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+
+}
+
+.box-title{
+
+    color:var(--text);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.guide-text{
+
+    color:var(--text-light);
+
+}
+
+.guide-line{
+
+    color:var(--zx-blue);
+
+    font-weight:bold;
+
+}
+
+.contact-link{
+
+    color:var(--zx-blue);
+
+}
+
+.contact-link:hover{
+
+    color:var(--zx-red);
+
+}
+
+
+/* ==========================================================
+   TITLES
+========================================================== */
+
+h2{
+
+    color:var(--text);
+
+    border-left:5px solid var(--zx-blue);
+
+}
+
+
+/* ==========================================================
+   CARDS
+========================================================== */
+
+.card{
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    transition:.25s;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+
+}
+
+.card img{
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+
+    border-color:var(--zx-blue);
+
+}
+
+.card h3{
+
+    color:var(--text);
+
+}
+
+.card-price{
+
+    color:var(--zx-green);
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.page-btn,
+.cart-btn,
+.btn-action,
+.btn-comment{
+
+    background:var(--zx-blue);
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:8px;
+
+    transition:.2s;
+
+}
+
+.page-btn:hover,
+.cart-btn:hover,
+.btn-action:hover,
+.btn-comment:hover{
+
+    background:#1d4ed8;
+
+}
+
+.btn-secondary{
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+    border-radius:8px;
+
+}
+
+.btn-secondary:hover{
+
+    background:#f3f4f6;
+
+}
+
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+input,
+textarea,
+select{
+
+    background:#fff;
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:none;
+
+    border-color:var(--zx-blue);
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+
+/* ==========================================================
+   REVIEWS
+========================================================== */
+
+.review-card{
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+}
+
+.review-card .stars{
+
+    color:#f59e0b;
+
+}
+
+.review-card .author{
+
+    color:var(--zx-blue);
+
+}
+
+.review-card .date{
+
+    color:var(--text-light);
+
+}
+
+
+/* ==========================================================
+   PRODUCT PAGE
+========================================================== */
+
+.product-grid>div{
+
+    background:#fff;
+
+}
+
+.full-description{
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+}
+
+.full-description h2{
+
+    border-left:5px solid var(--zx-blue);
+
+}
+
+.spec-table td{
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.label{
+
+    color:var(--text-light);
+
+}
+
+.val{
+
+    color:var(--text);
+
+}
+
+.price-tag{
+
+    color:var(--zx-green);
+
+}
+
+
+/* ==========================================================
+   MODALS
+========================================================== */
+
+.modal{
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.modal-content{
+
+    background:#fff;
+
+    border-radius:12px;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    background:#ffffff;
+
+    border-top:1px solid var(--border);
+
+}
+
+.footer-column h4,
+.footer-section h4{
+
+    color:var(--text);
+
+}
+
+.footer-column p,
+.footer-section p{
+
+    color:var(--text-light);
+
+}
+
+.footer-column a,
+.footer-section a{
+
+    color:var(--zx-blue);
+
+}
+
+.copyright{
+
+    color:var(--text-light);
+
+}
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef2f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#b9c4d4;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+
+}
+
+
+/* ==========================================================
+   PROMO
+========================================================== */
+
+.components-promo{
+
+    background:var(--zx-blue);
+
+    color:#fff;
+
+    border-radius:12px;
+
+    transition:.2s;
+
+}
+
+.components-promo:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ==========================================================
+   MARQUEE
+========================================================== */
+
+.marquee{
+
+    background:var(--zx-blue);
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    color:inherit;
+
+}
