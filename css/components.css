@@ -1,3 +1,15 @@
+:root {
+    --bg-primary: var(--zx-blue); /* По умолчанию синий */
+    --text-primary: var(--zx-white);
+    /* ... остальные переменные остаются ... */
+}
+
+body {
+    background: var(--bg-primary); /* Используем переменную */
+    color: var(--text-primary);
+    transition: background 0.3s, color 0.3s; /* Плавный переход */
+}
+
 /* --- 1. Базові налаштування (як в index.css) --- */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
