@@ -1,7 +1,8 @@
 /* ==========================================================
    ZX-KIT
    CARD.CSS
-   Стили страницы товара
+   Product Page
+   PART 1
 ========================================================== */
 
 
@@ -9,19 +10,64 @@
    PRODUCT GALLERY
 ========================================================== */
 
+.gallery-section{
+
+    position:relative;
+
+}
+
 .main-viewer{
 
     cursor:zoom-in;
 
+    transition:
+        transform .2s,
+        opacity .2s;
+
 }
 
-#zoom-modal{
+.main-viewer:hover{
 
-    cursor:zoom-out;
+    transform:scale(1.01);
+
+}
+
+.main-viewer img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+    transition:transform .25s;
+
+}
+
+.main-viewer:hover img{
+
+    transform:scale(1.02);
+
+}
+
+
+/* ==========================================================
+   THUMBNAILS
+========================================================== */
+
+.thumbs-row{
+
+    margin-top:20px;
 
 }
 
 .thumb{
+
+    cursor:pointer;
 
     opacity:.65;
 
@@ -29,19 +75,25 @@
         opacity .2s,
         transform .2s;
 
+    user-select:none;
+
+    -webkit-user-drag:none;
+
 }
 
 .thumb:hover{
 
     opacity:1;
 
-    transform:scale(1.05);
+    transform:translateY(-3px);
 
 }
 
 .thumb.active{
 
     opacity:1;
+
+    transform:translateY(-2px);
 
 }
 
@@ -50,9 +102,27 @@
    PRODUCT INFO
 ========================================================== */
 
+.info-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
 .product-h1{
 
     word-break:break-word;
+
+    overflow-wrap:anywhere;
+
+}
+
+.sku{
+
+    margin-bottom:28px;
 
 }
 
@@ -60,39 +130,20 @@
 
     white-space:nowrap;
 
-}
-
-
-/* ==========================================================
-   DESCRIPTION
-========================================================== */
-
-.text-content img{
-
-    max-width:100%;
-
-    height:auto;
-
-}
-
-.text-content table{
-
-    width:100%;
-
-    border-collapse:collapse;
-
-}
-
-.text-content iframe{
-
-    max-width:100%;
+    margin-top:auto;
 
 }
 
 
 /* ==========================================================
-   SPECIFICATIONS
+   SPEC TABLE
 ========================================================== */
+
+.spec-table{
+
+    margin-bottom:35px;
+
+}
 
 .spec-table td{
 
@@ -100,10 +151,276 @@
 
 }
 
+.label{
+
+    padding-right:20px;
+
+}
+
+.val{
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================================================
+   BUY BUTTON
+========================================================== */
+
+#tg-order{
+
+    margin-top:20px;
+
+    text-align:center;
+
+}
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.full-description{
+
+    margin-top:24px;
+
+}
+
+.full-description h2{
+
+    margin-bottom:32px;
+
+}
+
+.text-content{
+
+    padding:0 12px;
+
+    line-height:2;
+
+    letter-spacing:.15px;
+
+    word-break:break-word;
+
+    overflow-wrap:anywhere;
+
+}
+
+.text-content p{
+
+    margin-bottom:20px;
+
+}
+
+.text-content p:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/* ==========================================================
+   HEADINGS INSIDE DESCRIPTION
+========================================================== */
+
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4{
+
+    margin-top:36px;
+
+    margin-bottom:18px;
+
+    line-height:1.5;
+
+}
+
+.text-content h1:first-child,
+.text-content h2:first-child,
+.text-content h3:first-child{
+
+    margin-top:0;
+
+}
+
+
+/* ==========================================================
+   LISTS
+========================================================== */
+
+.text-content ul,
+.text-content ol{
+
+    margin:20px 0;
+
+    padding-left:26px;
+
+}
+
+.text-content li{
+
+    margin-bottom:12px;
+
+    line-height:1.9;
+
+}
+
+.text-content ul{
+
+    list-style:disc;
+
+}
+
+.text-content ol{
+
+    list-style:decimal;
+
+}
+
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+.text-content table{
+
+    width:100%;
+
+    margin:24px 0;
+
+    border-collapse:collapse;
+
+}
+
+.text-content td,
+.text-content th{
+
+    padding:12px 14px;
+
+    text-align:left;
+
+}
+
+.text-content th{
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+.text-content img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+    margin:30px auto;
+
+}
+
+
+/* ==========================================================
+   VIDEO
+========================================================== */
+
+.text-content iframe{
+
+    display:block;
+
+    width:100%;
+
+    min-height:420px;
+
+    margin:30px auto;
+
+}
+
+
+/* ==========================================================
+   CODE
+========================================================== */
+
+.text-content pre{
+
+    overflow:auto;
+
+    padding:20px;
+
+    margin:24px 0;
+
+}
+
+.text-content code{
+
+    font-family:monospace;
+
+}
+
+
+/* ==========================================================
+   BLOCKQUOTE
+========================================================== */
+
+.text-content blockquote{
+
+    margin:25px 0;
+
+    padding:18px 22px;
+
+    font-style:italic;
+
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+.text-content a{
+
+    text-decoration:underline;
+
+}
+
+.text-content a:hover{
+
+    text-decoration:none;
+
+}
 
 /* ==========================================================
    COMMENTS
 ========================================================== */
+
+.comment-box{
+
+    margin-top:10px;
+
+}
+
+.comment-input{
+
+    line-height:1.8;
+
+}
+
+.comment-input::placeholder{
+
+    opacity:.7;
+
+}
+
+.comment-item{
+
+    padding:18px 0;
+
+}
 
 .comment-item:last-child{
 
@@ -111,46 +428,82 @@
 
 }
 
+.comment-user{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
 
 /* ==========================================================
-   TELEGRAM BUTTON
+   BUY PANEL
 ========================================================== */
 
-#tg-order{
+.info-section{
 
-    text-align:center;
+    position:sticky;
+
+    top:95px;
+
+    align-self:start;
+
+}
+
+@media(max-width:1100px){
+
+    .info-section{
+
+        position:static;
+
+    }
 
 }
 
 
 /* ==========================================================
-   IMAGE LOADING
+   BUTTONS
 ========================================================== */
 
-.main-viewer img{
+.btn-action{
 
-    user-select:none;
+    min-height:54px;
 
-    -webkit-user-drag:none;
+    letter-spacing:.5px;
 
 }
 
-.thumb{
+.btn-action:hover{
 
-    user-select:none;
+    transform:translateY(-2px);
 
-    -webkit-user-drag:none;
+}
+
+.btn-comment{
+
+    min-height:48px;
 
 }
 
 
 /* ==========================================================
-   ZOOM ANIMATION
+   ZOOM MODAL
 ========================================================== */
 
 #zoom-modal{
 
-    animation:zoomFade .2s ease;
+    cursor:zoom-out;
+
+    animation:zoomFade .18s ease;
+
+}
+
+#zoom-modal img{
+
+    animation:zoomImage .22s ease;
 
 }
 
@@ -170,6 +523,105 @@
 
 }
 
+@keyframes zoomImage{
+
+    from{
+
+        transform:scale(.92);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* ==========================================================
+   IMAGE LOADING
+========================================================== */
+
+.main-viewer img{
+
+    transition:
+        opacity .25s,
+        transform .25s;
+
+}
+
+.main-viewer.loading img{
+
+    opacity:.35;
+
+}
+
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection{
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+
+    outline:3px solid currentColor;
+
+    outline-offset:3px;
+
+}
+
+
+/* ==========================================================
+   SMOOTH APPEAR
+========================================================== */
+
+.gallery-section,
+.info-section,
+.full-description{
+
+    animation:cardAppear .35s ease;
+
+}
+
+@keyframes cardAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
 
 /* ==========================================================
    MOBILE
@@ -181,28 +633,79 @@
 
         grid-template-columns:repeat(4,1fr);
 
+        gap:8px;
+
+    }
+
+    .btn-action{
+
+        min-height:50px;
+
     }
 
 }
 
+@media(max-width:700px){
+
+    .text-content{
+
+        padding:0;
+
+    }
+
+}
 
 @media(max-width:600px){
 
     .product-h1{
 
-        font-size:18px;
+        font-size:20px;
+
+        line-height:1.6;
+
+    }
+
+    .sku{
+
+        margin-bottom:18px;
 
     }
 
     .price-tag{
 
-        font-size:22px;
+        font-size:24px;
 
     }
 
     .thumb{
 
         opacity:1;
+
+    }
+
+    .thumb:hover{
+
+        transform:none;
+
+    }
+
+    .btn-action{
+
+        min-height:52px;
+
+        font-size:11px;
+
+    }
+
+    .btn-comment{
+
+        width:100%;
+
+    }
+
+    .comment-box{
+
+        padding:0;
 
     }
 
