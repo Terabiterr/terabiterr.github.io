@@ -6,26 +6,19 @@
 
 
 /* ==========================================================
-   PALETTE
+   ZX PALETTE
 ========================================================== */
 
 :root{
 
-    --zx-blue:#0000AA;
-
     --zx-black:#000000;
-
-    --zx-white:#FFFFFF;
-
-    --zx-yellow:#FFFF00;
-
-    --zx-cyan:#00FFFF;
-
-    --zx-magenta:#FF00FF;
-
+    --zx-blue:#0000AA;
     --zx-red:#FF0000;
-
+    --zx-magenta:#FF00FF;
     --zx-green:#00FF00;
+    --zx-cyan:#00FFFF;
+    --zx-yellow:#FFFF00;
+    --zx-white:#FFFFFF;
 
 }
 
@@ -40,7 +33,16 @@ body{
 
     color:var(--zx-white);
 
+    image-rendering:pixelated;
+
+    text-shadow:2px 2px #000;
+
+    overflow-x:hidden;
+
 }
+
+
+/* CRT Scanlines */
 
 body::after{
 
@@ -55,13 +57,115 @@ body::after{
     z-index:9999;
 
     background:
-    repeating-linear-gradient(
-        to bottom,
-        rgba(0,0,0,.08) 0px,
-        rgba(0,0,0,.08) 2px,
-        transparent 2px,
-        transparent 4px
-    );
+
+        repeating-linear-gradient(
+
+            to bottom,
+
+            rgba(0,0,0,.09) 0px,
+
+            rgba(0,0,0,.09) 2px,
+
+            transparent 2px,
+
+            transparent 4px
+
+        );
+
+}
+
+
+/* CRT Glow */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:9998;
+
+    background:
+
+        radial-gradient(
+
+            ellipse at center,
+
+            transparent 45%,
+
+            rgba(0,0,0,.35)
+
+        );
+
+}
+
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+body{
+
+    font-size:13px;
+
+}
+
+h1{
+
+    font-size:26px;
+
+    color:var(--zx-yellow);
+
+}
+
+h2{
+
+    font-size:18px;
+
+    color:var(--zx-yellow);
+
+}
+
+h3{
+
+    font-size:13px;
+
+    color:var(--zx-white);
+
+}
+
+p{
+
+    font-size:12px;
+
+    line-height:1.8;
+
+}
+
+small{
+
+    font-size:10px;
+
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    color:inherit;
+
+}
+
+a:hover{
+
+    color:var(--zx-cyan);
 
 }
 
@@ -78,18 +182,50 @@ header{
 
     border-bottom:6px solid var(--zx-magenta);
 
-    text-shadow:3px 3px var(--zx-red);
+    box-shadow:
+
+        0 0 0 4px #000,
+
+        0 0 0 8px var(--zx-cyan);
+
+    text-shadow:
+
+        3px 3px var(--zx-red);
+
+}
+
+
+.header-inner{
+
+    min-height:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+.zx-title{
+
+    font-size:20px;
+
+    letter-spacing:2px;
 
 }
 
 
 /* ==========================================================
-   ZX COLOR BAR
+   ZX RAINBOW BAR
 ========================================================== */
 
 .spectrum-bar{
 
     display:flex;
+
+    width:100%;
 
     height:12px;
 
@@ -132,11 +268,27 @@ header{
    SIDEBAR
 ========================================================== */
 
+.sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
 .sidebar-box{
 
     background:#000;
 
     border:4px solid var(--zx-cyan);
+
+    padding:18px;
+
+    box-shadow:
+
+        5px 5px 0 var(--zx-magenta);
 
 }
 
@@ -146,23 +298,19 @@ header{
 
     border-bottom:2px solid var(--zx-yellow);
 
-}
+    padding-bottom:10px;
 
-.guide-text{
-
-    color:var(--zx-white);
-
-}
-
-.guide-line{
-
-    color:var(--zx-green);
+    margin-bottom:15px;
 
 }
 
 .contact-link{
 
+    display:block;
+
     color:var(--zx-cyan);
+
+    margin:12px 0;
 
 }
 
@@ -172,26 +320,1586 @@ header{
 
 }
 
+.guide-text{
 
-/* ==========================================================
-   TITLES
-========================================================== */
+    color:#fff;
 
-h2{
+    line-height:2;
 
-    color:var(--zx-yellow);
+}
 
-    border-left:4px solid var(--zx-cyan);
+.guide-line{
+
+    color:var(--zx-green);
 
 }
 
 
 /* ==========================================================
-   LINKS
+   PAGE TITLES
 ========================================================== */
 
-a{
+section>h2{
+
+    color:var(--zx-yellow);
+
+    border-left:5px solid var(--zx-cyan);
+
+    padding-left:12px;
+
+}
+
+
+/* ==========================================================
+   CONTAINERS
+========================================================== */
+
+.container{
+
+    gap:25px;
+
+}
+
+.container-wide{
+
+    width:95%;
+
+}
+
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.grid{
+
+    gap:22px;
+
+}
+/* ==========================================================
+   PRODUCT CARDS
+========================================================== */
+
+.card{
+
+    background:#000;
+
+    border:4px solid var(--zx-cyan);
+
+    box-shadow:
+        6px 6px 0 var(--zx-magenta);
+
+    transition:
+        transform .15s,
+        box-shadow .15s,
+        border-color .15s;
+
+}
+
+.card:hover{
+
+    transform:translate(-2px,-2px);
+
+    border-color:var(--zx-yellow);
+
+    box-shadow:
+        10px 10px 0 var(--zx-yellow);
+
+}
+
+.card-link{
 
     color:inherit;
 
 }
+
+.card img{
+
+    width:100%;
+
+    background:#111;
+
+    border-bottom:3px solid var(--zx-cyan);
+
+}
+
+.card h3{
+
+    color:var(--zx-white);
+
+    padding:12px;
+
+    min-height:64px;
+
+}
+
+.card-price{
+
+    color:var(--zx-yellow);
+
+    font-size:16px;
+
+    padding:0 12px 14px;
+
+}
+
+
+/* ==========================================================
+   PRODUCT PAGE
+========================================================== */
+
+.product-grid>div{
+
+    background:#000;
+
+    border:4px solid var(--zx-cyan);
+
+    box-shadow:
+        6px 6px 0 var(--zx-magenta);
+
+}
+
+.full-description{
+
+    background:#000;
+
+    border:4px solid var(--zx-cyan);
+
+    box-shadow:
+        6px 6px 0 var(--zx-magenta);
+
+}
+
+.product-h1{
+
+    color:var(--zx-yellow);
+
+    font-size:24px;
+
+}
+
+.price-tag{
+
+    color:var(--zx-yellow);
+
+    font-size:30px;
+
+}
+
+.sku{
+
+    color:var(--zx-cyan);
+
+}
+
+
+/* ==========================================================
+   GALLERY
+========================================================== */
+
+.main-viewer{
+
+    background:#111;
+
+    border:3px solid var(--zx-cyan);
+
+}
+
+.thumb{
+
+    border:2px solid #222;
+
+    opacity:.65;
+
+}
+
+.thumb:hover{
+
+    border-color:var(--zx-yellow);
+
+    opacity:1;
+
+}
+
+.thumb.active{
+
+    opacity:1;
+
+    border-color:var(--zx-green);
+
+}
+
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+.spec-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.spec-table td{
+
+    border-bottom:2px solid #222;
+
+    padding:12px 0;
+
+}
+
+.label{
+
+    color:var(--zx-cyan);
+
+}
+
+.val{
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.page-btn,
+.cart-btn,
+.btn-action,
+.btn-secondary,
+.btn-comment{
+
+    background:#000;
+
+    color:var(--zx-yellow);
+
+    border:3px solid var(--zx-white);
+
+    transition:.15s;
+
+    cursor:pointer;
+
+}
+
+.page-btn:hover,
+.cart-btn:hover,
+.btn-action:hover,
+.btn-secondary:hover,
+.btn-comment:hover{
+
+    background:var(--zx-yellow);
+
+    color:#000;
+
+    border-color:var(--zx-yellow);
+
+}
+
+.page-btn:active,
+.cart-btn:active,
+.btn-action:active,
+.btn-secondary:active,
+.btn-comment:active{
+
+    transform:translateY(2px);
+
+}
+
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+input,
+textarea,
+select{
+
+    background:#000;
+
+    color:#fff;
+
+    border:3px solid var(--zx-cyan);
+
+    padding:12px;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:none;
+
+    border-color:var(--zx-yellow);
+
+}
+
+::placeholder{
+
+    color:#aaa;
+
+}
+
+
+/* ==========================================================
+   SEARCH
+========================================================== */
+
+#search-input{
+
+    background:#000;
+
+    color:#fff;
+
+}
+
+.filter-select{
+
+    background:#000;
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   COMMENTS
+========================================================== */
+
+.comment-box{
+
+    background:#000;
+
+    border:4px solid var(--zx-magenta);
+
+}
+
+.comment-input{
+
+    background:#111;
+
+}
+
+.comment-item{
+
+    border-bottom:2px dashed var(--zx-blue);
+
+}
+
+.comment-user{
+
+    color:var(--zx-green);
+
+}
+
+
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+.pagination-container{
+
+    gap:18px;
+
+}
+
+.page-btn.active{
+
+    background:var(--zx-yellow);
+
+    color:#000;
+
+}
+
+
+/* ==========================================================
+   REVIEWS
+========================================================== */
+
+.review-card{
+
+    background:#000;
+
+    border:4px solid var(--zx-cyan);
+
+    box-shadow:
+        6px 6px 0 var(--zx-magenta);
+
+}
+
+.review-card .author{
+
+    color:var(--zx-green);
+
+}
+
+.review-card .date{
+
+    color:var(--zx-cyan);
+
+}
+
+.review-card .stars{
+
+    color:var(--zx-yellow);
+
+}
+
+
+/* ==========================================================
+   PROMO BLOCK
+========================================================== */
+
+.components-promo{
+
+    background:#000;
+
+    border:4px solid var(--zx-yellow);
+
+    color:var(--zx-yellow);
+
+    box-shadow:
+        6px 6px 0 var(--zx-red);
+
+}
+
+.components-promo:hover{
+
+    border-color:var(--zx-green);
+
+}
+
+
+/* ==========================================================
+   MARQUEE
+========================================================== */
+
+.marquee{
+
+    background:#000;
+
+    color:var(--zx-yellow);
+
+    border-top:3px solid var(--zx-red);
+
+    border-bottom:3px solid var(--zx-red);
+
+}
+
+/* ==========================================================
+   MODAL WINDOWS
+========================================================== */
+
+.modal{
+
+    background:rgba(0,0,0,.88);
+
+    backdrop-filter:blur(2px);
+
+}
+
+.modal-content{
+
+    background:#000;
+
+    border:4px solid var(--zx-cyan);
+
+    box-shadow:
+        8px 8px 0 var(--zx-magenta);
+
+    color:#fff;
+
+}
+
+#cart-items-list{
+
+    scrollbar-width:thin;
+
+}
+
+.cart-item{
+
+    border-bottom:2px solid #222;
+
+}
+
+.cart-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.cart-item input{
+
+    background:#111;
+
+    border:2px solid var(--zx-yellow);
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   ZOOM MODAL
+========================================================== */
+
+#zoom-modal{
+
+    background:rgba(0,0,0,.94);
+
+}
+
+#zoom-modal img{
+
+    border:4px solid var(--zx-cyan);
+
+    box-shadow:
+
+        0 0 25px var(--zx-cyan),
+
+        10px 10px 0 var(--zx-magenta);
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    background:#000;
+
+    border-top:6px solid var(--zx-magenta);
+
+}
+
+.footer-column h4,
+.footer-section h4{
+
+    color:var(--zx-yellow);
+
+}
+
+.footer-column p,
+.footer-section p{
+
+    color:#ddd;
+
+}
+
+.footer-column a,
+.footer-section a{
+
+    color:var(--zx-cyan);
+
+}
+
+.footer-column a:hover,
+.footer-section a:hover{
+
+    color:var(--zx-yellow);
+
+}
+
+.copyright{
+
+    color:var(--zx-green);
+
+}
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+    height:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#000;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--zx-cyan);
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--zx-yellow);
+
+}
+
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection{
+
+    background:var(--zx-yellow);
+
+    color:#000;
+
+}
+
+
+/* ==========================================================
+   FOCUS
+========================================================== */
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:3px solid var(--zx-green);
+
+    outline-offset:2px;
+
+}
+
+
+/* ==========================================================
+   CRT EFFECTS
+========================================================== */
+
+@keyframes crtFlicker{
+
+    0%{
+
+        opacity:.98;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    40%{
+
+        opacity:.97;
+
+    }
+
+    60%{
+
+        opacity:1;
+
+    }
+
+    80%{
+
+        opacity:.985;
+
+    }
+
+    100%{
+
+        opacity:1;
+
+    }
+
+}
+
+body{
+
+    animation:crtFlicker .15s infinite;
+
+}
+
+
+/* ==========================================================
+   ZX BLINK
+========================================================== */
+
+@keyframes zxBlink{
+
+    0%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        opacity:1;
+
+    }
+
+}
+
+.blink{
+
+    animation:zxBlink 1s infinite;
+
+}
+
+
+/* ==========================================================
+   ZX GLOW
+========================================================== */
+
+.glow-yellow{
+
+    text-shadow:
+
+        0 0 6px var(--zx-yellow),
+
+        0 0 14px var(--zx-yellow);
+
+}
+
+.glow-cyan{
+
+    text-shadow:
+
+        0 0 6px var(--zx-cyan),
+
+        0 0 14px var(--zx-cyan);
+
+}
+
+.glow-magenta{
+
+    text-shadow:
+
+        0 0 6px var(--zx-magenta),
+
+        0 0 14px var(--zx-magenta);
+
+}
+
+
+/* ==========================================================
+   HELPERS
+========================================================== */
+
+.pixel-border{
+
+    border:4px solid var(--zx-cyan);
+
+    box-shadow:
+
+        6px 6px 0 var(--zx-magenta);
+
+}
+
+.pixel-title{
+
+    color:var(--zx-yellow);
+
+    text-shadow:
+
+        3px 3px var(--zx-red);
+
+}
+
+.pixel-green{
+
+    color:var(--zx-green);
+
+}
+
+.pixel-cyan{
+
+    color:var(--zx-cyan);
+
+}
+
+.pixel-yellow{
+
+    color:var(--zx-yellow);
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media(max-width:1100px){
+
+    body{
+
+        font-size:12px;
+
+    }
+
+    .header-inner{
+
+        gap:18px;
+
+    }
+
+    .product-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:900px){
+
+    header{
+
+        padding:16px;
+
+    }
+
+    .header-inner{
+
+        width:100%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        text-align:center;
+
+        gap:12px;
+
+    }
+
+    .zx-title{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+    }
+
+    .sidebar{
+
+        gap:15px;
+
+    }
+
+    .sidebar-box{
+
+        box-shadow:
+
+            4px 4px 0 var(--zx-magenta);
+
+    }
+
+    .card{
+
+        box-shadow:
+
+            4px 4px 0 var(--zx-magenta);
+
+    }
+
+    .product-grid>div{
+
+        box-shadow:
+
+            4px 4px 0 var(--zx-magenta);
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media(max-width:600px){
+
+    body{
+
+        font-size:11px;
+
+    }
+
+    h1{
+
+        font-size:20px;
+
+    }
+
+    h2{
+
+        font-size:16px;
+
+    }
+
+    h3{
+
+        font-size:11px;
+
+    }
+
+    .product-h1{
+
+        font-size:18px;
+
+    }
+
+    .price-tag{
+
+        font-size:22px;
+
+    }
+
+    .card h3{
+
+        min-height:auto;
+
+    }
+
+    .page-btn,
+    .cart-btn,
+    .btn-action,
+    .btn-secondary,
+    .btn-comment{
+
+        width:100%;
+
+    }
+
+    .thumbs-row{
+
+        gap:6px;
+
+    }
+
+    .footer-column,
+    .footer-section{
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL DEVICES
+========================================================== */
+
+@media(max-width:380px){
+
+    .header-inner{
+
+        gap:8px;
+
+    }
+
+    h1{
+
+        font-size:17px;
+
+    }
+
+    .product-h1{
+
+        font-size:16px;
+
+    }
+
+    .card{
+
+        border-width:3px;
+
+    }
+
+    .sidebar-box{
+
+        border-width:3px;
+
+    }
+
+}
+/* ==========================================================
+   ZX BASIC STYLE
+========================================================== */
+
+.basic-title::before{
+
+    content:"10 PRINT ";
+
+    color:var(--zx-green);
+
+}
+
+.basic-subtitle::before{
+
+    content:"20 REM ";
+
+    color:var(--zx-cyan);
+
+}
+
+.basic-command{
+
+    color:var(--zx-yellow);
+
+}
+
+.basic-number{
+
+    color:var(--zx-green);
+
+}
+
+.basic-keyword{
+
+    color:var(--zx-cyan);
+
+}
+
+.basic-string{
+
+    color:var(--zx-magenta);
+
+}
+
+
+/* ==========================================================
+   ZX BADGES
+========================================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:6px 10px;
+
+    font-size:10px;
+
+    border:2px solid #fff;
+
+    text-transform:uppercase;
+
+}
+
+.badge-new{
+
+    background:var(--zx-green);
+
+    color:#000;
+
+}
+
+.badge-hot{
+
+    background:var(--zx-red);
+
+    color:#fff;
+
+}
+
+.badge-sale{
+
+    background:var(--zx-yellow);
+
+    color:#000;
+
+}
+
+.badge-old{
+
+    background:var(--zx-magenta);
+
+    color:#fff;
+
+}
+
+
+/* ==========================================================
+   ZX FRAMES
+========================================================== */
+
+.frame-blue{
+
+    border:4px solid var(--zx-blue);
+
+}
+
+.frame-red{
+
+    border:4px solid var(--zx-red);
+
+}
+
+.frame-green{
+
+    border:4px solid var(--zx-green);
+
+}
+
+.frame-cyan{
+
+    border:4px solid var(--zx-cyan);
+
+}
+
+.frame-magenta{
+
+    border:4px solid var(--zx-magenta);
+
+}
+
+.frame-yellow{
+
+    border:4px solid var(--zx-yellow);
+
+}
+
+
+/* ==========================================================
+   ZX BACKGROUNDS
+========================================================== */
+
+.bg-black{
+
+    background:#000;
+
+}
+
+.bg-blue{
+
+    background:var(--zx-blue);
+
+}
+
+.bg-red{
+
+    background:var(--zx-red);
+
+}
+
+.bg-green{
+
+    background:var(--zx-green);
+
+}
+
+.bg-yellow{
+
+    background:var(--zx-yellow);
+
+    color:#000;
+
+}
+
+.bg-magenta{
+
+    background:var(--zx-magenta);
+
+}
+
+.bg-cyan{
+
+    background:var(--zx-cyan);
+
+    color:#000;
+
+}
+
+
+/* ==========================================================
+   ZX TEXT COLORS
+========================================================== */
+
+.text-black{
+
+    color:#000;
+
+}
+
+.text-white{
+
+    color:#fff;
+
+}
+
+.text-red{
+
+    color:var(--zx-red);
+
+}
+
+.text-green{
+
+    color:var(--zx-green);
+
+}
+
+.text-yellow{
+
+    color:var(--zx-yellow);
+
+}
+
+.text-cyan{
+
+    color:var(--zx-cyan);
+
+}
+
+.text-magenta{
+
+    color:var(--zx-magenta);
+
+}
+
+
+/* ==========================================================
+   ZX SHADOWS
+========================================================== */
+
+.shadow-red{
+
+    box-shadow:6px 6px 0 var(--zx-red);
+
+}
+
+.shadow-green{
+
+    box-shadow:6px 6px 0 var(--zx-green);
+
+}
+
+.shadow-yellow{
+
+    box-shadow:6px 6px 0 var(--zx-yellow);
+
+}
+
+.shadow-cyan{
+
+    box-shadow:6px 6px 0 var(--zx-cyan);
+
+}
+
+.shadow-magenta{
+
+    box-shadow:6px 6px 0 var(--zx-magenta);
+
+}
+
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes zxPulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.pulse{
+
+    animation:zxPulse 2s infinite;
+
+}
+
+
+@keyframes zxFlash{
+
+    0%{
+
+        background:#000;
+
+    }
+
+    50%{
+
+        background:var(--zx-yellow);
+
+        color:#000;
+
+    }
+
+    100%{
+
+        background:#000;
+
+    }
+
+}
+
+.flash{
+
+    animation:zxFlash 1s infinite;
+
+}
+
+
+@keyframes zxRainbow{
+
+    0%{
+
+        border-color:var(--zx-red);
+
+    }
+
+    20%{
+
+        border-color:var(--zx-yellow);
+
+    }
+
+    40%{
+
+        border-color:var(--zx-green);
+
+    }
+
+    60%{
+
+        border-color:var(--zx-cyan);
+
+    }
+
+    80%{
+
+        border-color:var(--zx-blue);
+
+    }
+
+    100%{
+
+        border-color:var(--zx-magenta);
+
+    }
+
+}
+
+.rainbow-border{
+
+    animation:zxRainbow 4s linear infinite;
+
+}
+
+
+/* ==========================================================
+   ZX DIVIDERS
+========================================================== */
+
+.hr-zx{
+
+    height:6px;
+
+    border:none;
+
+    margin:25px 0;
+
+    background:
+
+        linear-gradient(
+
+            to right,
+
+            #ff0000 0%,
+
+            #ffff00 20%,
+
+            #00ff00 40%,
+
+            #00ffff 60%,
+
+            #0000ff 80%,
+
+            #ff00ff 100%
+
+        );
+
+}
+
+
+/* ==========================================================
+   PIXEL IMAGES
+========================================================== */
+
+.pixel{
+
+    image-rendering:pixelated;
+
+    image-rendering:crisp-edges;
+
+}
+
+
+/* ==========================================================
+   LOADING CURSOR
+========================================================== */
+
+.cursor{
+
+    display:inline-block;
+
+    width:10px;
+
+    height:16px;
+
+    background:var(--zx-white);
+
+    animation:zxBlink 1s infinite;
+
+}
+
+
+/* ==========================================================
+   HOVER FX
+========================================================== */
+
+.hover-grow:hover{
+
+    transform:scale(1.03);
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.hover-glow:hover{
+
+    box-shadow:
+
+        0 0 15px var(--zx-yellow),
+
+        0 0 25px var(--zx-yellow);
+
+}
+
+
+/* ==========================================================
+   ZX PANEL
+========================================================== */
+
+.zx-panel{
+
+    background:#000;
+
+    border:4px solid var(--zx-cyan);
+
+    padding:20px;
+
+    box-shadow:
+
+        8px 8px 0 var(--zx-magenta);
+
+}
+
+
+/* ==========================================================
+   ZX WINDOW
+========================================================== */
+
+.zx-window{
+
+    background:#000;
+
+    border:5px solid var(--zx-white);
+
+    overflow:hidden;
+
+}
+
+.zx-window-header{
+
+    background:var(--zx-blue);
+
+    color:#fff;
+
+    padding:10px;
+
+    border-bottom:4px solid var(--zx-white);
+
+}
+
+
+/* ==========================================================
+   ZX TERMINAL
+========================================================== */
+
+.terminal{
+
+    background:#000;
+
+    color:var(--zx-green);
+
+    font-family:'Press Start 2P', monospace;
+
+    padding:20px;
+
+    line-height:2;
+
+}
+
+.terminal::after{
+
+    content:"█";
+
+    animation:zxBlink 1s infinite;
+
+}
+
+
+/* ==========================================================
+   END OF FILE
+========================================================== */
