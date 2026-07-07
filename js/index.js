@@ -68,6 +68,7 @@ const CartManager = {
 
         // Оновлений фрагмент в renderModal()
         // Всередині CartManager.renderModal()
+// Замініть map у renderModal на цей код:
 list.innerHTML = this.items.length
     ? this.items.map(i => `
     <div class="cart-item">
