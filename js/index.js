@@ -66,19 +66,20 @@ const CartManager = {
         const totalAmount = this.items.reduce((sum, i) => sum + (i.price * i.quantity), 0);
         const totalQty = this.items.reduce((sum, i) => sum + i.quantity, 0);
 
+        // Оновлений фрагмент в renderModal()
         list.innerHTML = this.items.length
             ? this.items.map(i => `
-        <div class="cart-item">
-            <div class="cart-item-name">${i.name}</div>
-            <div class="cart-item-controls">
-                <button onclick="CartManager.updateQuantity('${i.id}', ${i.quantity - 1})">-</button>
-                <span>${i.quantity}</span>
-                <button onclick="CartManager.updateQuantity('${i.id}', ${i.quantity + 1})">+</button>
-                <button class="cart-remove" onclick="CartManager.remove('${i.id}')">✕</button>
-            </div>
-            <div class="cart-item-price">${i.price * i.quantity} UAH</div>
+    <div class="cart-item">
+        <div class="cart-item-name">${i.name}</div>
+        <div class="cart-item-actions">
+            <button class="qty-btn" onclick="CartManager.updateQuantity('${i.id}', ${i.quantity - 1})">-</button>
+            <span class="qty-val">${i.quantity}</span>
+            <button class="qty-btn" onclick="CartManager.updateQuantity('${i.id}', ${i.quantity + 1})">+</button>
+            <button class="cart-remove" onclick="CartManager.remove('${i.id}')">✕</button>
         </div>
-    `).join('')
+        <div class="cart-item-price">${i.price * i.quantity} UAH</div>
+    </div>
+`).join('')
             : `<div class="cart-empty">Корзина порожня</div>`;
 
         // Додаємо блок підсумку, якщо є товари
