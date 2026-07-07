@@ -508,39 +508,34 @@ window.changeReviewPage = function (dir) {
 
 // Функція відправки відгуку/питання в Telegram
 window.submitComment = function () {
-    // 1. Отримуємо елементи
-    const nameInput = document.getElementById('name');
-    const commentInput = document.getElementById('comment');
-    const ratingInput = document.getElementById('rating');
-
-    // 2. Перевіряємо, чи існують ці елементи на сторінці (захист від помилок)
-    if (!nameInput || !commentInput) {
-        console.error("Поля форми не знайдені на цій сторінці!");
+    // 1. Отримуємо текстове поле
+    const commentInput = document.getElementById('user-comment');
+    
+    // 2. Перевірка наявності поля
+    if (!commentInput) {
+        console.error("Поле 'user-comment' не знайдено!");
         return;
     }
 
-    const name = nameInput.value.trim();
     const commentText = commentInput.value.trim();
-    const rating = ratingInput ? ratingInput.value : "5";
-
-    // Отримуємо назву товару, якщо ми на сторінці товару
-    const productName = document.getElementById('p-name') ? document.getElementById('p-name').innerText : "Головна сторінка";
 
     // 3. Валідація
-    if (name === "" || commentText === "") {
-        alert("Будь ласка, заповніть ім'я та текст відгуку.");
+    if (commentText === "") {
+        alert("Будь ласка, введіть текст повідомлення.");
         return;
     }
 
-    // 4. Формуємо текст повідомлення
-    const message = `🔔 Новий відгук з сайту\n\n📦 Товар: ${productName}\n👤 Ім'я: ${name}\n⭐ Рейтинг: ${rating}/5\n💬 Відгук: ${commentText}`;
+    // Отримуємо назву товару (якщо ми на сторінці товару)
+    const productName = document.getElementById('p-name') ? document.getElementById('p-name').innerText : "Головна сторінка";
+
+    // 4. Формуємо текст повідомлення (можна додати запит імені, якщо потрібно)
+    const message = `🔔 Нове питання з сайту\n\n📦 Товар: ${productName}\n💬 Повідомлення: ${commentText}`;
 
     // 5. Відкриваємо Telegram
     const telegramUrl = `https://t.me/terabiterr?text=${encodeURIComponent(message)}`;
     window.open(telegramUrl, '_blank');
 
-    // 6. Очищаємо поля
-    nameInput.value = "";
+    // 6. Очищаємо поле
     commentInput.value = "";
     alert("Дякуємо! Ваше повідомлення відправлено.");
 };
