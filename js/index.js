@@ -49,10 +49,21 @@ const CartManager = {
         const el = document.getElementById('cart-count');
         if (el) el.innerText = this.items.reduce((sum, item) => sum + item.quantity, 0);
     },
+    // Оновлений метод getTelegramLink у CartManager
     getTelegramLink() {
         if (this.items.length === 0) return "#";
+
+        // Рахуємо суму
+        const totalAmount = this.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
         let text = "Замовлення з ZX-KIT:%0A";
-        this.items.forEach(i => { text += `%0A- ${i.name} (${i.quantity} шт.)`; });
+        this.items.forEach(i => {
+            text += `%0A- ${i.name} (${i.quantity} шт.) - ${i.price * i.quantity} UAH`;
+        });
+
+        // Додаємо загальну суму в кінець
+        text += `%0A%0A---%0AЗагальна сума: ${totalAmount} UAH`;
+
         return `https://t.me/terabiterr?text=${text}`;
     },
     // У CartManager
@@ -68,9 +79,9 @@ const CartManager = {
 
         // Оновлений фрагмент в renderModal()
         // Всередині CartManager.renderModal()
-// Замініть map у renderModal на цей код:
-list.innerHTML = this.items.length
-    ? this.items.map(i => `
+        // Замініть map у renderModal на цей код:
+        list.innerHTML = this.items.length
+            ? this.items.map(i => `
     <div class="cart-item">
         <div class="cart-item-name">${i.name}</div>
         <div class="cart-item-controls">
@@ -82,7 +93,7 @@ list.innerHTML = this.items.length
         <div class="cart-item-price">${i.price * i.quantity} UAH</div>
     </div>
 `).join('')
-    : `<div class="cart-empty">Корзина порожня</div>`;
+            : `<div class="cart-empty">Корзина порожня</div>`;
 
         // Додаємо блок підсумку, якщо є товари
         const footer = this.items.length ? `
