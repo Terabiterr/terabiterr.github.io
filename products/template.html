@@ -56,7 +56,41 @@
 
                 <div class="price-tag" id="p-price">---</div>
 
-                <a href="#" id="tg-order" class="btn-action">ЗАМОВИТИ В TELEGRAM</a>
+<!-- Блок тільки для компонентів -->
+<div id="cart-controls" class="cart-controls hidden">
+
+    <div class="qty-selector">
+
+        <button type="button" id="qty-minus">−</button>
+
+        <input
+            type="number"
+            id="qty-input"
+            value="1"
+            min="1"
+        >
+
+        <button type="button" id="qty-plus">+</button>
+
+    </div>
+
+    <button
+        id="add-cart-btn"
+        class="btn-action"
+        type="button">
+
+        ДОДАТИ В КОРЗИНУ
+
+    </button>
+
+</div>
+
+<!-- Для звичайних товарів -->
+<a href="#" id="tg-order" class="btn-action">
+
+    ЗАМОВИТИ В TELEGRAM
+
+</a>
             </div>
         </div>
 

@@ -34,7 +34,41 @@ const CartManager = {
             this.renderModal();
         }
     },
+    increase(id) {
 
+        const item = this.items.find(i => i.id === id);
+
+        if (!item) return;
+
+        item.quantity++;
+
+        this.save();
+
+        this.renderModal();
+
+    },
+
+    decrease(id) {
+
+        const item = this.items.find(i => i.id === id);
+
+        if (!item) return;
+
+        item.quantity--;
+
+        if (item.quantity <= 0) {
+
+            this.remove(id);
+
+            return;
+
+        }
+
+        this.save();
+
+        this.renderModal();
+
+    },
     remove(id) {
         this.items = this.items.filter(i => i.id !== id);
         this.save();
@@ -45,59 +79,159 @@ const CartManager = {
         if (el) el.innerText = this.items.reduce((sum, item) => sum + item.quantity, 0);
     },
     getTelegramLink() {
+
         if (this.items.length === 0) return "#";
-        let text = "Замовлення з ZX-KIT:%0A";
-        this.items.forEach(i => { text += `%0A- ${i.name} (${i.quantity} шт.)`; });
-        return `https://t.me/terabiterr?text=${text}`;
+
+        let total = 0;
+        let quantity = 0;
+
+        let text =
+            `🛒 Замовлення ZX-KIT
+
+━━━━━━━━━━━━━━━━━━
+`;
+
+        this.items.forEach((item, index) => {
+
+            const sum = item.price * item.quantity;
+
+            total += sum;
+            quantity += item.quantity;
+
+            text +=
+                `${index + 1}. ${item.name}
+
+${item.price} грн × ${item.quantity}
+
+= ${sum} грн
+
+━━━━━━━━━━━━━━━━━━
+`;
+
+        });
+
+        text +=
+            `Позицій: ${this.items.length}
+
+Товарів: ${quantity}
+
+Загальна сума:
+
+${total} грн`;
+
+        return `https://t.me/terabiterr?text=${encodeURIComponent(text)};`
+
     },
     renderModal() {
-        const modal = document.getElementById('cart-modal');
+
+        const modal = document.getElementById("cart-modal");
+
         if (!modal) return;
 
-        const list = document.getElementById('cart-items-list');
-        list.innerHTML = this.items.length
-            ? this.items.map(i => `
-        <div class="cart-item">
+        const list = document.getElementById("cart-items-list");
 
-            <div class="cart-item-info">
-                <div class="cart-item-name">
-                    ${i.name}
-                </div>
+        if (this.items.length === 0) {
 
-                <div class="cart-item-controls">
+            list.innerHTML = `
 
-                    <input
-                        class="cart-qty"
-                        type="number"
-                        min="1"
-                        value="${i.quantity}"
-                        onchange="CartManager.updateQuantity('${i.id}',this.value)">
-
-                    <button
-                        class="cart-remove"
-                        onclick="CartManager.remove('${i.id}')">
-
-                        ✕
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-    `).join('')
-            :
-            `
         <div class="cart-empty">
 
-            Корзина порожня
+            <div class="cart-empty-icon">🛒</div>
+
+            <h3>Корзина порожня</h3>
+
+            <p>Додайте товари із каталогу.</p>
 
         </div>
-    `;
 
-        // Оновлюємо посилання на Telegram
-        document.getElementById('checkout-btn').href = this.getTelegramLink();
+        `;
+
+            document.getElementById("cart-total-price").innerText = "0 грн";
+
+            document.getElementById("cart-total-items").innerText = "0";
+
+            document.getElementById("cart-total-products").innerText = "0";
+
+            document.getElementById("checkout-btn").href = "#";
+
+            return;
+
+        }
+
+        let total = 0;
+
+        let quantity = 0;
+
+        list.innerHTML = this.items.map(item => {
+
+            const sum = item.price * item.quantity;
+
+            total += sum;
+
+            quantity += item.quantity;
+
+            return `
+
+<div class="cart-item">
+
+<div class="cart-title">
+
+${item.name}
+
+</div>
+
+<div class="cart-price">
+
+${item.price} грн × ${item.quantity}
+
+</div>
+
+<div class="cart-sum">
+
+Разом:
+
+<b>${sum} грн</b>
+
+</div>
+
+<div class="cart-controls">
+
+<button onclick="CartManager.decrease('${item.id}')">−</button>
+
+<span>${item.quantity}</span>
+
+<button onclick="CartManager.increase('${item.id}')">+</button>
+
+<button class="cart-remove"
+
+onclick="CartManager.remove('${item.id}')">
+
+🗑
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+        }).join("");
+
+        document.getElementById("cart-total-price").innerText =
+
+            `${total} грн`;
+
+        document.getElementById("cart-total-items").innerText =
+
+            quantity;
+
+        document.getElementById("cart-total-products").innerText =
+
+            this.items.length;
+
+        document.getElementById("checkout-btn").href = this.getTelegramLink();
+
     }
 };
 
@@ -269,10 +403,68 @@ async function initProductPage() {
         // Оновлюємо SEO
         updateProductSEO(item);
 
+        document
+    .getElementById("cart-controls")
+    .classList.add("hidden");
+
+document
+    .getElementById("tg-order")
+    .style.display = "flex";
+
         // Відображення даних
         document.getElementById('p-name').innerText = data.name;
         document.getElementById('p-price').innerHTML = `<span>${data.price} ${data.currency || 'UAH'}</span>`;
         document.getElementById('p-desc').innerHTML = data.description;
+        document
+    .getElementById("cart-controls")
+    .classList.remove("hidden");
+
+document
+    .getElementById("tg-order")
+    .style.display = "none";
+    const qtyInput =
+    document.getElementById("qty-input");
+
+document
+.getElementById("qty-minus")
+.onclick = () => {
+
+    qtyInput.value = Math.max(
+        1,
+        Number(qtyInput.value) - 1
+    );
+
+};
+document
+.getElementById("add-cart-btn")
+.onclick = () => {
+
+    CartManager.add(
+
+        {
+
+            id:data.id,
+
+            name:data.name,
+
+            price:data.price
+
+        },
+
+        Number(qtyInput.value)
+
+    );
+
+};
+
+document
+.getElementById("qty-plus")
+.onclick = () => {
+
+    qtyInput.value =
+        Number(qtyInput.value) + 1;
+
+};
         document.getElementById('tg-order').href = `https://t.me/terabiterr?text=Хочу замовити ${data.name}`;
 
         // SKU (якщо є в шаблоні)
@@ -375,23 +567,6 @@ async function initComponentPage() {
         const specsTable = document.getElementById('p-specs');
         if (specsTable) {
             specsTable.innerHTML = `<tr><td class="label">Аналог</td><td class="val">${data.analog || '---'}</td></tr>`;
-        }
-
-        // 4. Логіка кнопки "Додати в корзину" замість прямого переходу в Telegram
-        const tgBtn = document.getElementById('tg-order');
-        if (tgBtn) {
-            tgBtn.innerText = "ДОДАТИ В КОРЗИНУ";
-            tgBtn.href = "#";
-            tgBtn.onclick = (e) => {
-                e.preventDefault();
-                CartManager.add({
-                    id: data.id,
-                    name: data.name,
-                    price: data.price
-                });
-                // Можна додати візуальний фідбек для користувача
-                alert(`${data.name} додано до вашої корзини!`);
-            };
         }
 
         // 5. Галерея та Zoom
@@ -534,31 +709,127 @@ loadComments()
 //Cart logic
 // --- Логіка корзини в index.js ---
 function initCartModal() {
-    const btn = document.getElementById('cart-btn');
+
+    const btn = document.getElementById("cart-btn");
+
     if (!btn) return;
 
-    btn.addEventListener('click', () => {
-        let modal = document.getElementById('cart-modal');
+    btn.addEventListener("click", () => {
+
+        let modal = document.getElementById("cart-modal");
+
         if (!modal) {
-            modal = document.createElement('div');
-            modal.id = 'cart-modal';
-            modal.className = 'modal';
+
+            modal = document.createElement("div");
+
+            modal.id = "cart-modal";
+
+            modal.className = "modal";
+
             modal.innerHTML = `
-                <div class="modal-content">
-                    <h3>КОРЗИНА</h3>
-                    <div id="cart-items-list"></div>
-                    <a id="checkout-btn" href="#" class="btn-action">Замовити в Telegram</a>
-                    <button onclick="document.getElementById('cart-modal').style.display='none'">Закрити</button>
-                    <button id="clear-cart-btn" class="btn-secondary">Очистити корзину</button>
-                </div>
-            `;
+
+<div class="modal-content cart-modal-content">
+
+    <div class="cart-header">
+
+        <h2>🛒 КОРЗИНА</h2>
+
+    </div>
+
+    <div id="cart-items-list"></div>
+
+    <div class="cart-summary">
+
+        <div class="summary-row">
+
+            <span>Позицій</span>
+
+            <strong id="cart-total-products">0</strong>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Товарів</span>
+
+            <strong id="cart-total-items">0</strong>
+
+        </div>
+
+        <div class="summary-row total">
+
+            <span>Загальна сума</span>
+
+            <strong id="cart-total-price">0 грн</strong>
+
+        </div>
+
+    </div>
+
+    <div class="cart-buttons">
+
+        <a id="checkout-btn"
+
+           class="btn-action"
+
+           target="_blank">
+
+            Замовити у Telegram
+
+        </a>
+
+        <button
+
+            id="clear-cart-btn"
+
+            class="btn-secondary">
+
+            Очистити корзину
+
+        </button>
+
+        <button
+
+            class="btn-secondary"
+
+            onclick="document.getElementById('cart-modal').style.display='none'">
+
+            Закрити
+
+        </button>
+
+    </div>
+
+</div>
+
+`;
+
             document.body.appendChild(modal);
-            document.getElementById('clear-cart-btn').addEventListener('click', () => CartManager.clear());
+
+            document
+
+                .getElementById("clear-cart-btn")
+
+                .addEventListener("click", () => CartManager.clear());
+
+            modal.addEventListener("click", (e) => {
+
+                if (e.target === modal) {
+
+                    modal.style.display = "none";
+
+                }
+
+            });
+
         }
 
-        CartManager.renderModal(); // Оновлюємо вміст перед показом
-        modal.style.display = 'block';
+        CartManager.renderModal();
+
+        modal.style.display = "flex";
+
     });
+
 }
 
 function updateBackButton() {
