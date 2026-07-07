@@ -1235,3 +1235,36 @@ footer{
     }
 
 }
+
+/* --- Покращення для кнопок в корзині --- */
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cart-item-controls button {
+    width: 25px; /* однаковий розмір для всіх кнопок */
+    height: 25px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Окремо для кнопки видалення, щоб вона не була більшою */
+.cart-remove {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+/* Стиль для кнопки Закрити */
+.close-modal-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-family: inherit;
+    text-transform: uppercase;
+}

@@ -67,20 +67,21 @@ const CartManager = {
         const totalQty = this.items.reduce((sum, i) => sum + i.quantity, 0);
 
         // Оновлений фрагмент в renderModal()
-        list.innerHTML = this.items.length
-            ? this.items.map(i => `
+        // Всередині CartManager.renderModal()
+list.innerHTML = this.items.length
+    ? this.items.map(i => `
     <div class="cart-item">
         <div class="cart-item-name">${i.name}</div>
-        <div class="cart-item-actions">
-            <button class="qty-btn" onclick="CartManager.updateQuantity('${i.id}', ${i.quantity - 1})">-</button>
-            <span class="qty-val">${i.quantity}</span>
-            <button class="qty-btn" onclick="CartManager.updateQuantity('${i.id}', ${i.quantity + 1})">+</button>
+        <div class="cart-item-controls">
+            <button onclick="CartManager.updateQuantity('${i.id}', ${i.quantity - 1})">-</button>
+            <span>${i.quantity}</span>
+            <button onclick="CartManager.updateQuantity('${i.id}', ${i.quantity + 1})">+</button>
             <button class="cart-remove" onclick="CartManager.remove('${i.id}')">✕</button>
         </div>
         <div class="cart-item-price">${i.price * i.quantity} UAH</div>
     </div>
 `).join('')
-            : `<div class="cart-empty">Корзина порожня</div>`;
+    : `<div class="cart-empty">Корзина порожня</div>`;
 
         // Додаємо блок підсумку, якщо є товари
         const footer = this.items.length ? `
@@ -546,21 +547,20 @@ function initCartModal() {
             modal = document.createElement('div');
             modal.id = 'cart-modal';
             modal.className = 'modal';
-            // В функції initCartModal
             modal.innerHTML = `
-    <div class="modal-content">
-        <h3>КОРЗИНА</h3>
-        <div id="cart-items-list"></div>
-        <div id="cart-total-box"></div> <a id="checkout-btn" href="#" class="btn-action">Замовити в Telegram</a>
-        <button onclick="document.getElementById('cart-modal').style.display='none'">Закрити</button>
-        <button id="clear-cart-btn" class="btn-secondary">Очистити</button>
-    </div>
-`;
+                <div class="modal-content">
+                    <h3>КОРЗИНА</h3>
+                    <div id="cart-items-list"></div>
+                    <div id="cart-total-box"></div>
+                    <a id="checkout-btn" href="#" class="btn-action">Замовити в Telegram</a>
+                    <button class="close-modal-btn" onclick="document.getElementById('cart-modal').style.display='none'">Закрити</button>
+                    <button id="clear-cart-btn" class="btn-secondary">Очистити корзину</button>
+                </div>
+            `;
             document.body.appendChild(modal);
             document.getElementById('clear-cart-btn').addEventListener('click', () => CartManager.clear());
         }
-
-        CartManager.renderModal(); // Оновлюємо вміст перед показом
+        CartManager.renderModal();
         modal.style.display = 'block';
     });
 }
