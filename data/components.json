@@ -70,7 +70,7 @@
   {
     "id": "programmer-ch341a-sop8",
     "name": "Програматор CH341A з адаптером та прищіпкою SOP8",
-    "category": "Програматори",
+    "category": "програматор",
     "analog": "---",
     "price": 300,
     "currency": "UAH",
@@ -83,7 +83,7 @@
   {
     "id": "mcu-stc-usb-ttl",
     "name": "Програматор MCU STC 51 / USB to TTL (3.3V/5V)",
-    "category": "Програматори",
+    "category": "програматор",
     "analog": "---",
     "price": 186,
     "currency": "UAH",
@@ -96,7 +96,7 @@
   {
     "id": "soldering-aneng-sl105",
     "name": "Паяльник ANENG SL105 Electric Soldering Iron 60W",
-    "category": "Інструменти",
+    "category": "паяльне",
     "analog": "---",
     "price": 362.78,
     "currency": "UAH",
@@ -109,7 +109,7 @@
   {
     "id": "pcb-5x7-single",
     "name": "Макетна плата одностороння 5x7 см",
-    "category": "Макетні плати",
+    "category": "макетна",
     "analog": "---",
     "price": 20,
     "currency": "UAH",
@@ -122,7 +122,7 @@
   {
     "id": "pcb-2x8-double",
     "name": "Макетна плата двостороння 2x8 см",
-    "category": "Макетні плати",
+    "category": "макетна",
     "analog": "---",
     "price": 20,
     "currency": "UAH",
@@ -135,7 +135,7 @@
   {
     "id": "pcb-3x7-double",
     "name": "Макетна плата двостороння 3x7 см",
-    "category": "Макетні плати",
+    "category": "макетна",
     "analog": "---",
     "price": 25,
     "currency": "UAH",
@@ -148,7 +148,7 @@
   {
     "id": "pcb-4x6-double",
     "name": "Макетна плата двостороння 4x6 см",
-    "category": "Макетні плати",
+    "category": "макетна",
     "analog": "---",
     "price": 30,
     "currency": "UAH",
@@ -161,7 +161,7 @@
   {
     "id": "pcb-5x7-double",
     "name": "Макетна плата двостороння з маскою 5x7 см",
-    "category": "Макетні плати",
+    "category": "макетна",
     "analog": "---",
     "price": 45,
     "currency": "UAH",
@@ -174,7 +174,7 @@
   {
     "id": "pcb-7x9-double",
     "name": "Макетна плата двостороння з маскою 7x9 см",
-    "category": "Макетні плати",
+    "category": "макетна",
     "analog": "---",
     "price": 70,
     "currency": "UAH",
@@ -187,14 +187,11 @@
   {
     "id": "lcd-091-display",
     "name": "LCD дисплей 0.91 дюйма",
-    "category": "Дисплеї",
+    "category": "дисплей",
     "analog": "---",
     "price": 120,
     "currency": "UAH",
-    "images": [
-      "/img/components/display_front.jpg",
-      "/img/components/display_back.jpg"
-    ],
+    "images": ["/img/components/display_front.jpg", "/img/components/display_back.jpg"],
     "short_description": "Компактний LCD дисплейний модуль 0.91 дюйма.",
     "description": "Малогабаритний дисплейний модуль для виведення текстової та графічної інформації. Чудовий вибір для портативних DIY-проектів на базі мікроконтролерів.",
     "keywords": "LCD дисплей 0.91, дисплей для Arduino, OLED модуль, екран для DIY, радіодеталі",
@@ -203,7 +200,7 @@
   {
     "id": "screwdriver-set-24in1",
     "name": "Набір прецизійних викруток 24 в 1",
-    "category": "Інструменти",
+    "category": "інструмент",
     "analog": "---",
     "price": 330,
     "currency": "UAH",
@@ -216,7 +213,7 @@
   {
     "id": "side-cutters-blue",
     "name": "Бокорізи прецизійні (сині)",
-    "category": "Інструменти",
+    "category": "інструмент",
     "analog": "---",
     "price": 135,
     "currency": "UAH",
@@ -229,14 +226,11 @@
   {
     "id": "soldering-adjustable-60w",
     "name": "Паяльник з регулюванням температури 60W",
-    "category": "Інструменти",
+    "category": "паяльне",
     "analog": "---",
     "price": 240,
     "currency": "UAH",
-    "images": [
-      "/img/components/60W_soldering_front.jpg",
-      "/img/components/60W_soldering_back.jpg"
-    ],
+    "images": ["/img/components/60W_soldering_front.jpg", "/img/components/60W_soldering_back.jpg"],
     "short_description": "Електричний паяльник 60 Вт з функцією регулювання температури.",
     "description": "Потужний та зручний паяльник з можливістю налаштування температури нагріву. Оптимальний вибір для ремонту електроніки та роботи з різними типами припою.",
     "keywords": "паяльник з регулятором, паяльник 60Вт, інструмент для ремонту, пайка, радіомонтаж",
@@ -245,7 +239,7 @@
   {
     "id": "buzzer-12085-passive",
     "name": "Пасивний бузер 12085 (12x8.5 мм)",
-    "category": "Динамік",
+    "category": "динамік",
     "analog": "---",
     "price": 15,
     "currency": "UAH",
