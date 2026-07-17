@@ -1,11 +1,5 @@
 [
   {
-    "id": "ZX-CROCODILE-01",
-    "name": "Pentagon 1024 ZP Crocodile Rev 3 [Преміум]",
-    "price": 14999,
-    "img": "/img/pentagon_crocodile/1.jpg"
-  },
-  {
     "id": "ZX-EVO-4MB",
     "name": "ZX Evolution 4MB Rev B3 (Зібраний)",
     "price": 4800,
@@ -42,12 +36,6 @@
     "img": "img/leningrad_48_assembled/1.jpg"
   },
   {
-    "id": "ZX-L2018",
-    "name": "ZX Spectrum Ленінград 2 (48KB) у механічному корпусі",
-    "price": 3200,
-    "img": "/img/leningrad_2/1.jpg"
-  },
-  {
     "id": "ZX-SOUND-MULTISOUND",
     "name": "ZX-Multisound (Чиста плата)",
     "price": 450,
@@ -64,12 +52,6 @@
     "name": "Чиста плата механічної клавіатури (Cherry MX)",
     "price": 480,
     "img": "img/keyboard/1.jpg"
-  },
-  {
-    "id": "ZX-B003",
-    "name": "Sega Genesis v2.3 (оригінал) + повний комплект",
-    "price": 4999,
-    "img": "/img/sega_genessis/1.jpg"
   },
   {
     "id": "ZX-000",
@@ -138,12 +120,6 @@
     "img": "/img/murmulator/1.jpg"
   },
   {
-    "id": "ZX-011",
-    "name": "ZX Spectrum Harlequin 128 (Зібраний)",
-    "price": 4350,
-    "img": "/img/harlequin/3.webp"
-  },
-  {
     "id": "ZX-012",
     "name": "PiCard General Sound/DivMMC чиста плата",
     "price": 280,
@@ -190,17 +166,5 @@
     "name": "DIY TETRIS STM32 на матриці",
     "price": 499,
     "img": "/img/diy_tetris/1.jpg"
-  },
-  {
-    "id": "XBOX-360-120",
-    "name": "XBOX 360 великий пакет ТОП",
-    "price": 2700,
-    "img": "/img/xbox_360/1.jpg"
-  },
-  {
-    "id": "HI-FI-018",
-    "name": "S90 Союз 50АС-012 + Амфітон-У-002",
-    "price": 7800,
-    "img": "/img/s90_amfiton/1.jpg"
   }
 ]
