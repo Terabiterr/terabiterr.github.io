@@ -13,22 +13,12 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-CROCODILE-01</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-EVO-4MB</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-A01</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-B003</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
   </url>
@@ -88,11 +78,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-011</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-012</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
@@ -129,16 +114,6 @@
   </url>
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=TETRIS-018</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=XBOX-360-120</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=HI-FI-018</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
   </url>
@@ -780,12 +755,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-L2018</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zxkit.com.ua/products/template.html?id=Z80-CPU&amp;isComponent=true</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -1039,6 +1008,96 @@
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=rosin-pine-20g&amp;isComponent=true</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=solder-wire-10g&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=transistor-bc557&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=transistor-bc547&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=solder-spool-1.5mm&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-5mm-red&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-5mm-yellow&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-5mm-green&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-5mm-blue&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-5mm-white&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-3mm-red&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-3mm-yellow&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-3mm-blue&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-3mm-green&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=led-3mm-white&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=silicone-mat-30x20&amp;isComponent=true</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
