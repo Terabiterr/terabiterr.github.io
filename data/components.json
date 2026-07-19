@@ -70,7 +70,7 @@
   {
     "id": "led-5mm-red",
     "name": "Світлодіод 5mm червоний",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 15,
     "currency": "UAH",
@@ -83,7 +83,7 @@
   {
     "id": "led-5mm-yellow",
     "name": "Світлодіод 5mm жовтий",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 15,
     "currency": "UAH",
@@ -96,7 +96,7 @@
   {
     "id": "led-5mm-green",
     "name": "Світлодіод 5mm зелений",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 15,
     "currency": "UAH",
@@ -109,7 +109,7 @@
   {
     "id": "led-5mm-blue",
     "name": "Світлодіод 5mm синій",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 15,
     "currency": "UAH",
@@ -122,7 +122,7 @@
   {
     "id": "led-5mm-white",
     "name": "Світлодіод 5mm білий",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 15,
     "currency": "UAH",
@@ -135,7 +135,7 @@
   {
     "id": "led-3mm-red",
     "name": "Світлодіод 3mm червоний",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 3,
     "currency": "UAH",
@@ -148,7 +148,7 @@
   {
     "id": "led-3mm-yellow",
     "name": "Світлодіод 3mm жовтий",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 3,
     "currency": "UAH",
@@ -161,7 +161,7 @@
   {
     "id": "led-3mm-blue",
     "name": "Світлодіод 3mm синій",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 3,
     "currency": "UAH",
@@ -174,7 +174,7 @@
   {
     "id": "led-3mm-green",
     "name": "Світлодіод 3mm зелений",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 3,
     "currency": "UAH",
@@ -187,7 +187,7 @@
   {
     "id": "led-3mm-white",
     "name": "Світлодіод 3mm білий",
-    "category": "дисплей",
+    "category": "світлодіоди",
     "analog": "---",
     "price": 3,
     "currency": "UAH",
