@@ -66,12 +66,6 @@
     "img": "/img/kharkov/1.webp"
   },
   {
-    "id": "ZX-C02",
-    "name": "Системний блок (AMD Phenom II)",
-    "price": 1800,
-    "img": "/img/pc_amd/1.webp"
-  },
-  {
     "id": "ZX-002",
     "name": "PiCard + WI-FI модуль (чисті плати)",
     "price": 350,
