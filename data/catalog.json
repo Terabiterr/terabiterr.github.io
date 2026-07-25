@@ -6,6 +6,12 @@
     "img": "/img/zxevo-assembled/1.jpg"
   },
   {
+    "id": "MINI-KB-I8-BT-RF",
+    "name": "Міні-клавіатура I8 (Bluetooth + RF, з акумулятором)",
+    "price": 380,
+    "img": "/img/mini_kb_i8/1.jpg"
+  },
+  {
     "id": "ZX-FDC-MB8877",
     "name": "Контролер дисковода (FDC) для ZX Spectrum (MB8877A)",
     "price": 320,
