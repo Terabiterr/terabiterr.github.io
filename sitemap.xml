@@ -28,11 +28,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-001</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-002</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
@@ -1099,6 +1094,12 @@
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=MINI-KB-I8-BT-RF</loc>
     <lastmod>2026-07-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=sn60pb40-12g&amp;isComponent=true</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
