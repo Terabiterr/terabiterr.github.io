@@ -54,6 +54,24 @@
     "img": "img/kharkov/1.jpg"
   },
   {
+    "id": "xbox-360-skyrim-legendary",
+    "name": "The Elder Scrolls V: Skyrim (XBOX 360, Ліцензія)",
+    "price": 1300,
+    "img": "../img/disks/skyrim/1.jpg"
+  },
+  {
+    "id": "usb-capture-card-20",
+    "name": "USB Карта Захоплення 2.0 (USB -> HDMI)",
+    "price": 270,
+    "img": "../img/capture/capture_usb_2.jpg"
+  },
+  {
+    "id": "usb-capture-card-30",
+    "name": "USB Карта Захоплення 3.0 (USB -> HDMI)",
+    "price": 350,
+    "img": "../img/capture/capture_usb_3.jpg"
+  },
+  {
     "id": "ZX-KEY-CHERRY",
     "name": "Чиста плата механічної клавіатури (Cherry MX)",
     "price": 480,
