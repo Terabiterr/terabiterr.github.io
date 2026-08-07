@@ -6,6 +6,18 @@
     "img": "/img/zxevo-assembled/1.jpg"
   },
   {
+    "id": "CUSTOM-MECHANICAL-KEYBOARD-DIY",
+    "name": "Механічна клавіатура DIY (Premium Edition)",
+    "price": 2300,
+    "img": "/img/mech_keyboard/1.jpg"
+  },
+  {
+    "id": "ZX-SPECTRUM-KHARKIV-128",
+    "name": "ZX Spectrum 128 (Харків Rev 4.0.0)",
+    "price": 5300,
+    "img": "/img/zx_spectrum_kharkiv/1.jpg"
+  },
+  {
     "id": "MINI-KB-I8-BT-RF",
     "name": "Міні-клавіатура I8 (Bluetooth + RF, з акумулятором)",
     "price": 380,
