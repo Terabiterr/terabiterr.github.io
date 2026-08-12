@@ -56,6 +56,39 @@
     }
   },
   {
+    "id": "ZX-SPECTRUM-MURMULATOR-RP2040",
+    "meta": {
+      "title": "ZX Spectrum Murmulator на RP2040 | Прошивка FruitBat, HDMI, YAMAHA звук, SD-карта",
+      "description": "Купити ZX Spectrum Murmulator на мікроконтролері RP2040 з прошивкою FruitBat. Сучасний ретро комп'ютер з SD-картою ігор, якісним відео через HDMI, підтримкою USB клавіатури та звуком YAMAHA AY.",
+      "keywords": "ZX Spectrum Murmulator, RP2040, FruitBat, купити Спектрум HDMI, Murmulator Україна, ZX Spectrum USB клавіатура, YAMAHA звук, ігри ZX Spectrum"
+    },
+    "product": {
+      "name": "ZX Spectrum Murmulator (RP2040, FruitBat)",
+      "sku": "ZX-SPECTRUM-MURMULATOR-RP2040",
+      "price": 1900,
+      "currency": "UAH",
+      "images": [
+        "../img/zx_spectrum_murmulator/1.jpg",
+        "../img/zx_spectrum_murmulator/2.jpg",
+        "../img/zx_spectrum_murmulator/3.jpg",
+        "../img/zx_spectrum_murmulator/4.jpg"
+      ],
+      "specs": [
+        { "label": "Платформа", "val": "Murmulator на RP2040" },
+        { "label": "Прошивка", "val": "FruitBat" },
+        { "label": "Звук", "val": "YAMAHA AY" },
+        { "label": "Відеовихід", "val": "Mini-HDMI (кабель в комплекті)" },
+        { "label": "Носій", "val": "SD-карта з набором ігор та демок" },
+        { "label": "Клавіатура", "val": "USB клавіатура (Type-C)" },
+        { "label": "Живлення", "val": "Type-C (на платі 2 роз'єми Type-C)" }
+      ],
+      "description": "Представляємо сучасну реалізацію культового ретро-комп'ютера — <strong>ZX Spectrum Murmulator на базі RP2040</strong> з прошивкою <strong>FruitBat</strong>. Це ідеальний варіант для тих, хто хоче насолоджуватися улюбленими 8-бітними іграми та програмами на сучасному телевізорі чи моніторі без зайвих складнощів.<br><br>Все повністю налаштовано і готове до роботи прямо з коробки. Головна особливість збірки — якісне цифрове зображення через <strong>Mini-HDMI</strong> (кабель вже в комплекті) та відмінний звук <strong>YAMAHA AY</strong>, реалізований у прошивці. Також у комплекті постачається <strong>SD-карта</strong> з великою колекцією ігор та демок.<br><br><strong>Особливості комплексу:</strong><br>• <strong>Готове рішення:</strong> SD-карта з купою ігор та демок у комплекті.<br>• <strong>Зручне підключення:</strong> Комплектується Mini-HDMI кабелем для виведення чіткої картинки.<br>• <strong>Периферія:</strong> Підтримка сучасної <strong>USB клавіатури</strong> через Type-C.<br>• <strong>Живлення:</strong> Зручне живлення через Type-C (на платі передбачено 2 порти Type-C).<br><br>Чудовий вибір за доступною ціною для поціновувачів ретро-комп'ютингу в сучасному виконанні.",
+      "schema": {
+        "description": "Зібраний ZX Spectrum Murmulator на RP2040 з прошивкою FruitBat. SD-карта з іграми, Mini-HDMI кабель, підтримка USB клавіатури, звук YAMAHA AY, живлення Type-C."
+      }
+    }
+  },
+  {
     "id": "LENINGRAD-48-NEW",
     "meta": {
       "title": "ZX Spectrum Ленінград 48КБ | Нова збірка на мікросхемах 1533 серії",
