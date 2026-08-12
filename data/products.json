@@ -12,8 +12,7 @@
       "price": 2300,
       "currency": "UAH",
       "images": [
-        "../img/mech_keyboard/1.jpg",
-        "../img/mech_keyboard/2.jpg"
+        "../img/mech_keyboard/1.jpg"
       ],
       "specs": [
         { "label": "Тип перемикачів", "val": "Механічні з мідними контактами" },
@@ -41,7 +40,9 @@
       "currency": "UAH",
       "images": [
         "../img/zx_spectrum_kharkiv/1.jpg",
-        "../img/zx_spectrum_kharkiv/2.jpg"
+        "../img/zx_spectrum_kharkiv/2.jpg",
+        "../img/zx_spectrum_kharkiv/3.jpg",
+        "../img/zx_spectrum_kharkiv/4.jpg"
       ],
       "specs": [
         { "label": "Версія плати", "val": "Харків 128 Rev 4.0.0" },
