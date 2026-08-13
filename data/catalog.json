@@ -1,9 +1,69 @@
 [
+    {
+    "id": "ZX-SPECTRUM-KHARKIV-128",
+    "name": "ZX Spectrum 128 (Харків Rev 4.0.0)",
+    "price": 5300,
+    "img": "/img/zx_spectrum_kharkiv/1.jpg"
+  },
+    {
+    "id": "ZX-KHARKOV-128",
+    "name": "Харків 128К Rev 4.0 (Конструктор)",
+    "price": 4250,
+    "img": "img/kharkov/1.jpg"
+  },
+    {
+    "id": "DENDY-018",
+    "name": "Dendy (Famicom Clone) Великий пакет",
+    "price": 1999,
+    "img": "/img/dendy_8bit/1.jpg"
+  },
+    {
+    "id": "ZX-013",
+    "name": "Pentagon 128кб Yamaha (Зібраний)",
+    "price": 4300,
+    "img": "/img/pentagon/2.jpg"
+  },
   {
     "id": "PICARD-DIY-WIFI",
     "name": "Конструктор PiCard + Wi-Fi повний комплект (Зірвись у мережу)",
     "price": 2350,
     "img": "../img/picard_constructor/1.jpg"
+  },
+    {
+    "id": "ZX-007",
+    "name": "ZX Spectrum конструктор Львів 48КБ",
+    "price": 3800,
+    "img": "/img/lviv/1.webp"
+  },
+  {
+    "id": "ZX-008",
+    "name": "USB клавіатура конструктор (RP2040)",
+    "price": 420,
+    "img": "/img/keyboard/1.webp"
+  },
+  {
+    "id": "ZX-009",
+    "name": "Murmulator HDMI/VGA/TypC/PS2 (Кіт)",
+    "price": 750,
+    "img": "/img/murmulator/1.jpg"
+  },
+    {
+    "id": "ZX-003",
+    "name": "ZX Spectrum Superfo Harlequin 128 Конструктор",
+    "price": 4200,
+    "img": "/img/harlequin/1.webp"
+  },
+  {
+    "id": "ZX-004",
+    "name": "ZX Spectrum Pentagon 128КБ + AY Конструктор",
+    "price": 3850,
+    "img": "/img/pentagon/1.webp"
+  },
+  {
+    "id": "ZX-005",
+    "name": "ZX Spectrum Ленінград 48КБ Конструктор",
+    "price": 2350,
+    "img": "/img/leningrad/1.webp"
   },
   {
     "id": "ZX-SPECTRUM-MURMULATOR-RP2040",
@@ -16,12 +76,6 @@
     "name": "Механічна клавіатура DIY (Premium Edition)",
     "price": 2300,
     "img": "/img/mech_keyboard/1.jpg"
-  },
-  {
-    "id": "ZX-SPECTRUM-KHARKIV-128",
-    "name": "ZX Spectrum 128 (Харків Rev 4.0.0)",
-    "price": 5300,
-    "img": "/img/zx_spectrum_kharkiv/1.jpg"
   },
   {
     "id": "MINI-KB-I8-BT-RF",
@@ -66,12 +120,6 @@
     "img": "img/multisound/1.jpg"
   },
   {
-    "id": "ZX-KHARKOV-128",
-    "name": "Харків 128К Rev 4.0 (Конструктор)",
-    "price": 4250,
-    "img": "img/kharkov/1.jpg"
-  },
-  {
     "id": "xbox-360-skyrim-legendary",
     "name": "The Elder Scrolls V: Skyrim (XBOX 360, Ліцензія)",
     "price": 1300,
@@ -108,58 +156,16 @@
     "img": "/img/pentagon_leo/2.jpg"
   },
   {
-    "id": "ZX-003",
-    "name": "ZX Spectrum Superfo Harlequin 128 Конструктор",
-    "price": 4200,
-    "img": "/img/harlequin/1.webp"
-  },
-  {
-    "id": "ZX-004",
-    "name": "ZX Spectrum Pentagon 128КБ + AY Конструктор",
-    "price": 3850,
-    "img": "/img/pentagon/1.webp"
-  },
-  {
-    "id": "ZX-005",
-    "name": "ZX Spectrum Ленінград 48КБ Конструктор",
-    "price": 2350,
-    "img": "/img/leningrad/1.webp"
-  },
-  {
     "id": "ZX-006",
     "name": "Turbosound + Kempston плата розширення",
     "price": 280,
     "img": "/img/turbosound/1.webp"
   },
   {
-    "id": "ZX-007",
-    "name": "ZX Spectrum конструктор Львів 48КБ",
-    "price": 3800,
-    "img": "/img/lviv/1.webp"
-  },
-  {
-    "id": "ZX-008",
-    "name": "USB клавіатура конструктор (RP2040)",
-    "price": 420,
-    "img": "/img/keyboard/1.webp"
-  },
-  {
-    "id": "ZX-009",
-    "name": "Murmulator HDMI/VGA/TypC/PS2 (Кіт)",
-    "price": 750,
-    "img": "/img/murmulator/1.jpg"
-  },
-  {
     "id": "ZX-012",
     "name": "PiCard General Sound/DivMMC чиста плата",
     "price": 280,
     "img": "/img/picard/1.jpg"
-  },
-  {
-    "id": "ZX-013",
-    "name": "Pentagon 128кб Yamaha (Зібраний)",
-    "price": 4300,
-    "img": "/img/pentagon/2.jpg"
   },
   {
     "id": "ZX-015",
@@ -184,12 +190,6 @@
     "name": "Леніград 48 чиста оригінальна плата",
     "price": 750,
     "img": "/img/leningrad_clear/1.jpg"
-  },
-  {
-    "id": "DENDY-018",
-    "name": "Dendy (Famicom Clone) Великий пакет",
-    "price": 1999,
-    "img": "/img/dendy_8bit/1.jpg"
   },
   {
     "id": "TETRIS-018",
