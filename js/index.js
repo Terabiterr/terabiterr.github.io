@@ -179,9 +179,10 @@ async function loadComponents() {
 
 function renderPage() {
     const container = document.getElementById('products');
-    const pageInfo = document.getElementById('page-info');
+    const pageInfo = document.getElementById('page-info'); // Це ID елемента в HTML
     if (!container) return;
 
+    const maxPages = Math.ceil(allProducts.length / itemsPerPage);
     const start = (currentPage - 1) * itemsPerPage;
     const paginatedItems = allProducts.slice(start, start + itemsPerPage);
 
@@ -195,7 +196,8 @@ function renderPage() {
         </a>
     `).join('');
 
-    if (pageInfo) pageInfo.innerText = `PAGE ${currentPage}`;
+    // Оновлюємо текст сторінки
+    if (pageInfo) pageInfo.innerText = `${currentPage} з ${maxPages || 1}`;
 }
 
 window.changePage = function (step) {
@@ -472,8 +474,11 @@ async function loadComments() {
 
 function renderReviewPage() {
     const section = document.getElementById('reviews-section');
+    const maxPages = Math.ceil(allReviews.length / reviewsPerPage); // Додаємо розрахунок сторінок
     const start = (currentReviewPage - 1) * reviewsPerPage;
     const paginated = allReviews.slice(start, start + reviewsPerPage);
+
+    // ... (код генерації HTML відгуків залишається без змін) ...
 
     section.innerHTML = `
         <h2 style="text-align: center; margin: 40px 0;">Відгуки про ZXKit</h2>
@@ -489,7 +494,7 @@ function renderReviewPage() {
         </div>
         <div class="pagination-container" style="text-align: center; margin-top: 20px;">
             <button class="page-btn" onclick="changeReviewPage(-1)"> &lt;&lt; ПЕРЕДНІ </button>
-            <span id="review-page-info" style="margin: 0 15px;">PAGE ${currentReviewPage}</span>
+            <span id="review-page-info" style="margin: 0 15px;">${currentReviewPage} з ${maxPages || 1}</span>
             <button class="page-btn" onclick="changeReviewPage(1)"> НАСТУПНІ &gt;&gt; </button>
         </div>
     `;
