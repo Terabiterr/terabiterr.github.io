@@ -17,6 +17,12 @@
     "price": 1999,
     "img": "/img/dendy_8bit/1.jpg"
   },
+  {
+  "id": "MURMULATOR-USB-HUB-X4",
+  "name": "Конструктор Murmulator (з USB Hub x4)",
+  "price": 1500,
+  "img": "/img/murmulator/1.jpg"
+},
     {
     "id": "ZX-013",
     "name": "Pentagon 128кб Yamaha (Зібраний)",
