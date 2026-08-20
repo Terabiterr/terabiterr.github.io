@@ -27,34 +27,6 @@
     }
   },
   {
-    "id": "PICARD-DIY-WIFI",
-    "meta": {
-      "title": "Конструктор PiCard для ZX Spectrum | General Sound, DivMMC, Wi-Fi | Купити Україна",
-      "description": "Повний комплект конструктора PiCard для самостійної збірки. Підтримка General Sound, Z-Controller, DivMMC та Wi-Fi. Можливість завантаження ігор та софту з репозиторіїв. Ідеально для ретро-ентузіастів.",
-      "keywords": "PiCard, ZX Spectrum конструктор, General Sound, DivMMC, Wi-Fi для Спектрума, ретро-комп'ютери, завантаження ігор ZX Spectrum, купити PiCard Україна"
-    },
-    "product": {
-      "name": "Конструктор для самостійної збірки PiCard + Wi-Fi (Повний комплект)",
-      "sku": "PICARD-KIT-WIFI-001",
-      "price": 2350,
-      "currency": "UAH",
-      "images": [
-        "../img/picard_constructor/1.jpg",
-        "../img/picard_constructor/2.jpg"
-      ],
-      "specs": [
-        { "label": "Тип пристрою", "val": "Мультифункціональний контролер" },
-        { "label": "Функціонал", "val": "General Sound, DivMMC, Z-Controller" },
-        { "label": "Підключення", "val": "Wi-Fi (доступ до онлайн-репозиторіїв)" },
-        { "label": "Призначення", "val": "DIY проекти, апгрейд ZX Spectrum" }
-      ],
-      "description": "<strong>Конструктор PiCard</strong> — це універсальне рішення «все-в-одному» для справжніх фанатів ZX Spectrum. Цей набір дозволяє власноруч зібрати потужний мультифункціональний пристрій, який суттєво розширює можливості вашого ретро-комп'ютера.<br><br>Пристрій об'єднує в собі <strong>General Sound</strong> для якісного аудіо, <strong>DivMMC</strong> для швидкої роботи з носіями даних та <strong>Z-Controller</strong> для керування периферією. Головною особливістю є вбудований <strong>Wi-Fi модуль</strong>, який перетворює ваш ZX Spectrum на сучасний онлайн-пристрій: ви отримуєте можливість завантажувати ігри та корисний софт безпосередньо з мережевих репозиторіїв.<br><br><strong>Ключові переваги:</strong><br>• <strong>Всебічна сумісність:</strong> Об'єднання трьох популярних інтерфейсів на одній платі.<br>• <strong>Онлайн-можливості:</strong> Wi-Fi модуль дає доступ до безмежної бібліотеки ігор та програм.<br>• <strong>DIY-досвід:</strong> Повний комплект компонентів для самостійної збірки дарує задоволення від створення власного «заліза».<br>• <strong>Надійність:</strong> Якісна розводка плати та перевірені компоненти для стабільної роботи.<br><br>Це ідеальний вибір для тих, хто хоче вдихнути нове життя у ZX Spectrum та оцінити переваги сучасних технологій у ретро-форматі.",
-      "schema": {
-        "description": "Комплект для самостійної збірки PiCard з Wi-Fi інтерфейсом. Підтримує General Sound, DivMMC та Z-Controller для ZX Spectrum."
-      }
-    }
-  },
-  {
   "id": "MURMULATOR-USB-HUB-X4",
   "meta": {
     "title": "Конструктор Murmulator з USB Hub | Повний комплект | Купити Україна",
@@ -84,36 +56,6 @@
     }
   }
 },
-  {
-    "id": "ZX-SPECTRUM-KHARKIV-128",
-    "meta": {
-      "title": "ZX Spectrum 128КБ Харків Rev 4.0.0 | Повний фарш: VGA, SCART, YAMAHA",
-      "description": "Зібраний ZX Spectrum 128 Rev 4.0.0 (Харків). Ідеальна налаштована плата: VGA, SCART, HDMI, YAMAHA звук, Z80, RGB підсвітка. Купити легенду в ідеальному стані.",
-      "keywords": "ZX Spectrum Харків 128, Rev 4.0.0, купити Спектрум, ретро комп'ютер YAMAHA, VGA для ZX Spectrum, SCART, Z80 оригінал, комп'ютер ZX Spectrum купити Україна, Kempston Joystick"
-    },
-    "product": {
-      "name": "ZX Spectrum 128 (Харків Rev 4.0.0)",
-      "sku": "ZX-SPECTRUM-KHARKIV-128",
-      "price": 5300,
-      "currency": "UAH",
-      "images": [
-        "../img/zx_spectrum_kharkiv/1.jpg",
-        "../img/zx_spectrum_kharkiv/2.jpg",
-        "../img/zx_spectrum_kharkiv/3.jpg",
-        "../img/zx_spectrum_kharkiv/4.jpg"
-      ],
-      "specs": [
-        { "label": "Версія плати", "val": "Харків 128 Rev 4.0.0" },
-        { "label": "Процесор", "val": "Оригінальний Z80" },
-        { "label": "Звук", "val": "YAMAHA" },
-        { "label": "Відеоінтерфейси", "val": "VGA, SCART, RCA, S-VIDEO, DB-9" }
-      ],
-      "description": "Представляємо ультимативну збірку культового <strong>ZX Spectrum 128 (Харків Rev 4.0.0)</strong>. Це не просто ретро-комп'ютер, це професійно налаштований інструмент, який увібрав у себе всі можливі модернізації для комфортної роботи в сучасному світі.<br><br>Плата зібрана та налаштована до ідеалу: ми зберегли дух епохи, використовуючи <strong>оригінальний Z80</strong>, але доповнили його можливостями, про які у 90-х можна було лише мріяти. Якісний звук забезпечує чіп <strong>YAMAHA</strong>, а можливість підключення до будь-якого екрана через <strong>VGA, SCART, S-VIDEO чи RCA</strong> дозволяє насолоджуватися картинкою без втрати якості.<br><br><strong>Технічні можливості без меж:</strong><br>• <strong>Універсальність:</strong> Підтримка сучасної <strong>USB клавіатури</strong> та <strong>Kempston Joystick</strong>.<br>• <strong>Візуалізація:</strong> Стильна <strong>LED RGB-підсвітка</strong> та кодер AD725.<br>• <strong>Живлення та периферія:</strong> 3.5 DC, Molex 4pin, роз'єми Nemobus x2 для розширення системи.<br><br>Це «заряджений» Spectrum для тих, хто хоче отримати все і одразу: дістати з коробки, підключити і поринути в світ 8-бітної ностальгії з максимальною якістю зображення та звуку.",
-      "schema": {
-        "description": "Зібраний ZX Spectrum 128 Rev 4.0.0. Універсальна модель: VGA, SCART, YAMAHA, оригінальний Z80, підтримка USB клавіатури та безліч інших інтерфейсів."
-      }
-    }
-  },
   {
     "id": "ZX-SPECTRUM-MURMULATOR-RP2040",
     "meta": {

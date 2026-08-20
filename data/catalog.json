@@ -1,11 +1,5 @@
 [
-    {
-    "id": "ZX-SPECTRUM-KHARKIV-128",
-    "name": "ZX Spectrum 128 (Харків Rev 4.0.0)",
-    "price": 5300,
-    "img": "/img/zx_spectrum_kharkiv/1.jpg"
-  },
-    {
+  {
     "id": "ZX-KHARKOV-128",
     "name": "Харків 128К Rev 4.0 (Конструктор)",
     "price": 4250,
@@ -28,12 +22,6 @@
     "name": "Pentagon 128кб Yamaha (Зібраний)",
     "price": 4300,
     "img": "/img/pentagon/2.jpg"
-  },
-  {
-    "id": "PICARD-DIY-WIFI",
-    "name": "Конструктор PiCard + Wi-Fi повний комплект (Зірвись у мережу)",
-    "price": 2350,
-    "img": "../img/picard_constructor/1.jpg"
   },
     {
     "id": "ZX-007",
