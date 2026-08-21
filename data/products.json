@@ -1212,51 +1212,6 @@
     }
   },
   {
-    "id": "ZX-006",
-    "meta": {
-      "title": "Turbosound + Kempston | Чиста плата розширення для ZX Spectrum",
-      "description": "Чиста плата Turbosound + Kempston для ZX Spectrum. Подвійний AY звук (6 каналів) та інтерфейс джойстика на одній платі. Купити в Україні від Garage №42.",
-      "keywords": "Turbosound, Kempston, ZX Spectrum звук, AY-3-8912, Spectrum джойстик, розширення ZX, чиста плата, Garage 42"
-    },
-    "product": {
-      "name": "Turbosound + Kempston [чиста плата]",
-      "sku": "ZX-006",
-      "price": 280,
-      "currency": "UAH",
-      "images": [
-        "../img/turbosound/1.webp",
-        "../img/turbosound/2.webp",
-        "../img/turbosound/3.webp"
-      ],
-      "specs": [
-        {
-          "label": "Тип",
-          "val": "Звук + інтерфейс керування"
-        },
-        {
-          "label": "Звук",
-          "val": "2× AY-3-8912 / YM2149F (Turbosound)"
-        },
-        {
-          "label": "Сумісність",
-          "val": "ZX Spectrum 48K / 128K"
-        },
-        {
-          "label": "Інтерфейс",
-          "val": "Kempston Joystick (D-Sub 9pin)"
-        },
-        {
-          "label": "Підключення",
-          "val": "Edge Connector (системна шина)"
-        }
-      ],
-      "description": "<strong>Turbosound + Kempston</strong> — це апаратний апгрейд, який перетворює ваш класичний ZX Spectrum на потужну ретро-ігрову та демосценічну станцію. Товар постачається як <strong>чиста друкована плата (PCB)</strong> для самостійного монтажу.<br><br>На одній платі реалізовано дві незалежні схеми:<br><ul><li><strong>Turbosound:</strong> на базі двох звукових чипів AY-3-8912/YM2149F. Система подвоює кількість звукових каналів з 3 до 6, дозволяючи відтворювати складні «Turbosound-треки».</li><li><strong>Kempston Joystick:</strong> класичний стандарт підключення геймпадів, що забезпечує прямий контроль в іграх.</li></ul><br>Плата встановлюється в стандартний роз'єм розширення (Edge Connector) і має якісну шовкографію для зручного монтажу компонентів.",
-      "schema": {
-        "description": "Чиста друкована плата (PCB) для самостійної збірки комбінованого модуля розширення для комп'ютерів ZX Spectrum 48K/128K. Об'єднує систему Turbosound (на двох музичних чіпах AY-3-8912 або YM2149F) та класичний інтерфейс Kempston джойстика."
-      }
-    }
-  },
-  {
     "id": "ZX-008",
     "meta": {
       "title": "USB → ZX Spectrum конвертер клавіатури | RP2040",
