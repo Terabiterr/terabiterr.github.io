@@ -43,11 +43,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-006</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-007</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
@@ -1137,6 +1132,11 @@
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=MURMULATOR-USB-HUB-X4</loc>
     <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=ZX-SPECTRUM-KHARKIV-128K</loc>
+    <lastmod>2026-08-29</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

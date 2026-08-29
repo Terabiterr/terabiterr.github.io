@@ -1,5 +1,11 @@
 [
   {
+    "id": "ZX-SPECTRUM-KHARKIV-128K-ASSEMBLED",
+    "name": "Зібраний ZX Spectrum Харків 128КБ",
+    "price": 5300,
+    "img": "img/zx_spectrum_kharkiv/1.jpg"
+  },
+  {
     "id": "ZX-KHARKOV-128",
     "name": "Харків 128К Rev 4.0 (Конструктор)",
     "price": 4250,
