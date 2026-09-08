@@ -23,11 +23,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-002</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-003</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
@@ -54,11 +49,6 @@
   </url>
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-009</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-012</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
   </url>
@@ -232,10 +222,6 @@
   </url>
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-SOUND-MULTISOUND</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-KHARKOV-128</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -1132,11 +1118,6 @@
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=MURMULATOR-USB-HUB-X4</loc>
     <lastmod>2026-08-17</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-SPECTRUM-KHARKIV-128K</loc>
-    <lastmod>2026-08-29</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

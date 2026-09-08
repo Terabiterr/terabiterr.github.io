@@ -1,17 +1,5 @@
 [
   {
-    "id": "ZX-SPECTRUM-KHARKIV-128K-ASSEMBLED",
-    "name": "Зібраний ZX Spectrum Харків 128КБ",
-    "price": 5300,
-    "img": "img/zx_spectrum_kharkiv/1.jpg"
-  },
-  {
-    "id": "ZX-KHARKOV-128",
-    "name": "Харків 128К Rev 4.0 (Конструктор)",
-    "price": 4250,
-    "img": "img/kharkov/1.jpg"
-  },
-    {
     "id": "DENDY-018",
     "name": "Dendy (Famicom Clone) Великий пакет",
     "price": 1999,
@@ -148,18 +136,6 @@
     "name": "DivMMC від microDRV - Чиста плата",
     "price": 270,
     "img": "/img/divmmc_microdrv/1.jpg"
-  },
-  {
-    "id": "ZX-002",
-    "name": "PiCard + WI-FI модуль (чисті плати)",
-    "price": 350,
-    "img": "/img/pentagon_leo/2.jpg"
-  },
-  {
-    "id": "ZX-012",
-    "name": "PiCard General Sound/DivMMC чиста плата",
-    "price": 280,
-    "img": "/img/picard/1.jpg"
   },
   {
     "id": "ZX-015",
