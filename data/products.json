@@ -1035,21 +1035,68 @@
     }
   },
   {
-    "id": "ZX-016",
+    "id": "ZX-017123",
     "meta": {
-      "title": "Scorpion 256 Turbo+ & SMUK2 | Чисті плати ZX Spectrum",
-      "description": "Scorpion 256 Turbo+ — легендарний та потужний ZX Spectrum сумісний клон з розширеною пам'яттю, Turbo-режимом та платою SMUK2 у комплекті. Чисті плати від Garage №42.",
-      "keywords": "Scorpion 256 Turbo, ZX Spectrum 256K, SMUK2, Spectrum клон плата, ретро комп'ютер, чисті плати, Garage 42"
+      "title": "Karabas Go | FPGA ретро-комп'ютер та девборд (Spartan-6)",
+      "description": "Karabas Go — універсальна FPGA-плата на базі Spartan-6 для емуляції класичних ретро-комп'ютерів (ZX Spectrum Next, TS-Conf, Profi та інших) з потужним об'ємом пам'яті та перифериією.",
+      "keywords": "Karabas Go, FPGA retro computer, Spartan-6, ZX Spectrum Next, TS-Conf, ретро комп'ютер, плата, Andy Karpov"
     },
     "product": {
-      "name": "Scorpion 256 Turbo+ / SMUK2 [чисті плати]",
-      "sku": "ZX-016",
-      "price": 1000,
+      "name": "Karabas Go [FPGA Retro-Devboard]",
+      "sku": "ZX-017123",
+      "price": 1200,
       "currency": "UAH",
       "images": [
-        "../img/scorpion/1.jpg",
-        "../img/scorpion/1.jpg",
-        "../img/scorpion/2.jpg"
+        "../img/karabas-go/1.jpg",
+        "../img/karabas-go/2.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Тип",
+          "val": "FPGA ретро-платформа / девборд"
+        },
+        {
+          "label": "ПЛІМ (FPGA)",
+          "val": "Spartan-6 (25k LE)"
+        },
+        {
+          "label": "Мікроконтролер",
+          "val": "RP2040"
+        },
+        {
+          "label": "Пам'ять",
+          "val": "32MB SDRAM + 2x 2MB SRAM"
+        },
+        {
+          "label": "Інтерфейси",
+          "val": "VGA 8:8:8, USB x4, microSD, CF, Wi-Fi (ESP8266)"
+        },
+        {
+          "label": "Звук",
+          "val": "16-bit DAC, SAM2695 MIDI synth"
+        }
+      ],
+      "description": "<strong>Karabas Go</strong> — це сучасна багатофункціональна FPGA-платформа (devboard), розроблена для точної апаратної емуляції легендарних ретро-комп'ютерів та консолей (зокрема ZX Spectrum Next, TS-Conf, Profi, NES та інших). Проєкт базується на потужній ПЛІМ <strong>Spartan-6 (25k LE)</strong> та додатковому мікроконтролері RP2040.<br><br>Плата має вражаючий арсенал периферії: 32MB SDRAM, два чіпи SRAM по 2MB, відеовихід VGA 8:8:8, аудіопроцесор/синтезатор SAM2695, порти для джойстиків Sega/Atari, підтримку карт пам'яті SD/microSD та CompactFlash, а також модуль Wi-Fi (ESP8266). Ідеальний вибір для глибокого занурення у ретро-геймінг та апаратний хакерський девелопмент.",
+      "schema": {
+        "description": "Універсальна FPGA-плата Karabas Go на базі Spartan-6 для запуску та емуляції класичних ретро-комп'ютерів і систем з розширеною периферією."
+      }
+    }
+  },
+  {
+    "id": "ZX-018123",
+    "meta": {
+      "title": "ZX Spectrum Pentadiv III Plus | Найкраща ревізія клону",
+      "description": "Pentadiv III Plus — легендарний та найбільш досконалий клон ZX Spectrum. Максимальна стабільність, безкомпромісна сумісність з оригінальним софтом.",
+      "keywords": "Pentadiv III Plus, ZX Spectrum клон, найкращий спектрум, ретро комп'ютер, плата Pentadiv"
+    },
+    "product": {
+      "name": "ZX Spectrum Pentadiv III Plus [Чисті плати]",
+      "sku": "ZX-018123",
+      "price": 1150,
+      "currency": "UAH",
+      "images": [
+        "../img/pentadiv/1.jpg",
+        "../img/pentadiv/2.jpg"
       ],
       "specs": [
         {
@@ -1057,25 +1104,21 @@
           "val": "ZX Spectrum сумісний клон"
         },
         {
-          "label": "Пам'ять",
-          "val": "256 KB RAM"
-        },
-        {
-          "label": "Рівень",
-          "val": "Turbo (7 МГц) / розширений"
+          "label": "Ревізія",
+          "val": "Pentadiv III Plus"
         },
         {
           "label": "Сумісність",
-          "val": "ZX Spectrum 128 / Scorpion 256"
+          "val": "Максимальна (професійний рівень)"
         },
         {
-          "label": "Комплект",
-          "val": "Плата ПК + плата SMUK2 (IDE/RTC)"
+          "label": "Призначення",
+          "val": "Збірка класичного ретро-комп'ютера"
         }
       ],
-      "description": "<strong>Scorpion 256 Turbo+</strong> — це розширений та один із найбільш технічно досконалих ZX Spectrum-сумісних комп'ютерів професійного рівня. Він створений для підвищеної продуктивності, роботи з великими базами даних та складним ПЗ.<br><br>Завдяки <strong>256 KB оперативної пам’яті</strong> та апаратному Turbo-режиму (7 МГц), система відкриває доступ до Тіньової Сервісної Книги (Shadow Service Monitor). Чисті плати фірмового інтерфейсу <strong>SMUK2</strong> входять у комплект, дозволяючи підключати стандартні IDE-накопичувачі та енергонезалежний годинник (RTC). Набір орієнтований на досвідчених радіоаматорів.",
+      "description": "<strong>ZX Spectrum Pentadiv III Plus</strong> по праву вважається еталонною та найдосконалішою ревізією серед класичних клонів архітектури ZX Spectrum. Цей проєкт увібрав у себе найкращі інженерні рішення, забезпечуючи ідеальну таймінгову стабільність, безкомпромісну сумісність з величезною бібліотекою програмного забезпечення та ігор оригінального Спектрума.<br><br>Високоякісна розводка плати гарантує стабільну роботу та легкість під час самостійного збирання. Вибір справжніх поціновувачів класичного «залізного» ретро-комп'ютингу.",
       "schema": {
-        "description": "Комплект чистих друкованих плат (PCB) для самостійної збірки професійного клону ZX Spectrum - Scorpion 256 Turbo+. До комплекту входить плата комп'ютера та плата фірмового контролера SMUK2 для підключення HDD/IDE та RTC."
+        "description": "Комплект чистих друкованих плат найкращої ревізії легендарного клону ZX Spectrum - Pentadiv III Plus."
       }
     }
   },

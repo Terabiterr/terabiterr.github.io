@@ -1,5 +1,17 @@
 [
   {
+    "id": "ZX-017123",
+    "name": "Karabas Go (FPGA Devboard)",
+    "price": 1200,
+    "img": "/img/karabas-go/1.jpg"
+  },
+  {
+    "id": "ZX-018123",
+    "name": "ZX Spectrum Pentadiv III Plus",
+    "price": 1150,
+    "img": "/img/pentadiv/1.jpg"
+  },
+  {
     "id": "DENDY-018",
     "name": "Dendy (Famicom Clone) Великий пакет",
     "price": 1999,
@@ -142,12 +154,6 @@
     "name": "ZX Evolution CS2 (Чиста плата)",
     "price": 550,
     "img": "/img/zx_evo/1.jpg"
-  },
-  {
-    "id": "ZX-016",
-    "name": "Scorpion 256 Turbo+ & SMUK2 (Плати)",
-    "price": 1000,
-    "img": "/img/scorpion/1.jpg"
   },
   {
     "id": "ZX-017",
