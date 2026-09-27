@@ -1035,50 +1035,50 @@
     }
   },
   {
-    "id": "ZX-017123",
+    "id": "ZX-019123",
     "meta": {
-      "title": "Karabas Go | FPGA ретро-комп'ютер та девборд (Spartan-6)",
-      "description": "Karabas Go — універсальна FPGA-плата на базі Spartan-6 для емуляції класичних ретро-комп'ютерів (ZX Spectrum Next, TS-Conf, Profi та інших) з потужним об'ємом пам'яті та перифериією.",
-      "keywords": "Karabas Go, FPGA retro computer, Spartan-6, ZX Spectrum Next, TS-Conf, ретро комп'ютер, плата, Andy Karpov"
+      "title": "Karabas Pro Rev DS | FPGA ZX Spectrum & Profi клон з контролерами FDD/HDD",
+      "description": "Karabas Pro Rev DS — FPGA-ретрокомп'ютер на базі Altera Cyclone IV з підтримкою режимів ZX Spectrum та Profi, апаратними контролерами FDD і CF/HDD.",
+      "keywords": "Karabas Pro, Rev DS, FPGA retro computer, ZX Spectrum клон, Profi клон, Altera Cyclone, FDD HDD контролер, Andy Karpov"
     },
     "product": {
-      "name": "Karabas Go [FPGA Retro-Devboard]",
-      "sku": "ZX-017123",
+      "name": "Karabas Pro Rev DS [FPGA Retrocomputer]",
+      "sku": "ZX-019",
       "price": 1200,
       "currency": "UAH",
       "images": [
-        "../img/karabas-go/1.jpg",
-        "../img/karabas-go/2.jpg"
+        "../img/karabas-pro/1.jpg",
+        "../img/karabas-pro/2.jpg"
       ],
       "specs": [
         {
           "label": "Тип",
-          "val": "FPGA ретро-платформа / девборд"
+          "val": "FPGA ретро-комп'ютер / клон"
         },
         {
           "label": "ПЛІМ (FPGA)",
-          "val": "Spartan-6 (25k LE)"
+          "val": "Altera Cyclone IV (EP4CE10)"
         },
         {
-          "label": "Мікроконтролер",
-          "val": "RP2040"
+          "label": "Архітектура",
+          "val": "ZX Spectrum / Profi (зменшений формфактор)"
         },
         {
-          "label": "Пам'ять",
-          "val": "32MB SDRAM + 2x 2MB SRAM"
+          "label": "Контролери",
+          "val": "Реальні FDD та CF (HDD) контролери"
         },
         {
           "label": "Інтерфейси",
-          "val": "VGA 8:8:8, USB x4, microSD, CF, Wi-Fi (ESP8266)"
+          "val": "VGA, PS/2 (клавіатура/миша), SEGA joystick, ESP8266 Wi-Fi"
         },
         {
           "label": "Звук",
-          "val": "16-bit DAC, SAM2695 MIDI synth"
+          "val": "TurboSound (2x AY-3-8912), Soundrive, SAA1099"
         }
       ],
-      "description": "<strong>Karabas Go</strong> — це сучасна багатофункціональна FPGA-платформа (devboard), розроблена для точної апаратної емуляції легендарних ретро-комп'ютерів та консолей (зокрема ZX Spectrum Next, TS-Conf, Profi, NES та інших). Проєкт базується на потужній ПЛІМ <strong>Spartan-6 (25k LE)</strong> та додатковому мікроконтролері RP2040.<br><br>Плата має вражаючий арсенал периферії: 32MB SDRAM, два чіпи SRAM по 2MB, відеовихід VGA 8:8:8, аудіопроцесор/синтезатор SAM2695, порти для джойстиків Sega/Atari, підтримку карт пам'яті SD/microSD та CompactFlash, а також модуль Wi-Fi (ESP8266). Ідеальний вибір для глибокого занурення у ретро-геймінг та апаратний хакерський девелопмент.",
+      "description": "<strong>Karabas Pro Rev DS</strong> — це апаратний ретро-комп'ютер на базі FPGA <strong>Altera Cyclone IV (EP4CE10)</strong>, який концептуально є компактною та вдосконаленою реплікою легендарного радянського клону <strong>Profi</strong> у форматі плати розміром із 3.5\" дисковод.<br><br>Ревізія DS примітна відсутністю зайвих DIP-перемикачів, розширеною підтримкою 3-кнопкових джойстиків SEGA, наявністю вбудованого зумера та гнучким керуванням живленням. Плата підтримує класичні режими ZX Spectrum та високу роздільну здатність Profi (512x240), повноцінну роботу з реальними дисководами (FDD) і накопичувачами CompactFlash, а також розширений аудіопакет (TurboSound, Soundrive). Ідеальний вибір для поціновувачів класичного «заліза» з сучасними можливостями.",
       "schema": {
-        "description": "Універсальна FPGA-плата Karabas Go на базі Spartan-6 для запуску та емуляції класичних ретро-комп'ютерів і систем з розширеною периферією."
+        "description": "Друкована плата FPGA-ретрокомп'ютера Karabas Pro Rev DS з підтримкою архітектури ZX Spectrum та Profi, а також контролерами дисководів та HDD."
       }
     }
   },
