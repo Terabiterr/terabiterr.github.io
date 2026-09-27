@@ -78,6 +78,12 @@
     "img": "/img/mech_keyboard/1.jpg"
   },
   {
+    "id": "PS1-001",
+    "name": "Sony PlayStation 1 Collector's Edition",
+    "price": 3999,
+    "img": "/img/ps1/1.jpg"
+  },
+  {
     "id": "MINI-KB-I8-BT-RF",
     "name": "Міні-клавіатура I8 (Bluetooth + RF, з акумулятором)",
     "price": 380,
