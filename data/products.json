@@ -1035,53 +1035,61 @@
     }
   },
   {
-    "id": "ZX-019123",
-    "meta": {
-      "title": "Karabas Pro Rev DS | FPGA ZX Spectrum & Profi клон з контролерами FDD/HDD",
-      "description": "Karabas Pro Rev DS — FPGA-ретрокомп'ютер на базі Altera Cyclone IV з підтримкою режимів ZX Spectrum та Profi, апаратними контролерами FDD і CF/HDD.",
-      "keywords": "Karabas Pro, Rev DS, FPGA retro computer, ZX Spectrum клон, Profi клон, Altera Cyclone, FDD HDD контролер, Andy Karpov"
-    },
-    "product": {
-      "name": "Karabas Pro Rev DS [FPGA Retrocomputer]",
-      "sku": "ZX-019",
-      "price": 1200,
-      "currency": "UAH",
-      "images": [
-        "../img/karabas-pro/1.jpg",
-        "../img/karabas-pro/2.jpg"
-      ],
-      "specs": [
-        {
-          "label": "Тип",
-          "val": "FPGA ретро-комп'ютер / клон"
-        },
-        {
-          "label": "ПЛІМ (FPGA)",
-          "val": "Altera Cyclone IV (EP4CE10)"
-        },
-        {
-          "label": "Архітектура",
-          "val": "ZX Spectrum / Profi (зменшений формфактор)"
-        },
-        {
-          "label": "Контролери",
-          "val": "Реальні FDD та CF (HDD) контролери"
-        },
-        {
-          "label": "Інтерфейси",
-          "val": "VGA, PS/2 (клавіатура/миша), SEGA joystick, ESP8266 Wi-Fi"
-        },
-        {
-          "label": "Звук",
-          "val": "TurboSound (2x AY-3-8912), Soundrive, SAA1099"
-        }
-      ],
-      "description": "<strong>Karabas Pro Rev DS</strong> — це апаратний ретро-комп'ютер на базі FPGA <strong>Altera Cyclone IV (EP4CE10)</strong>, який концептуально є компактною та вдосконаленою реплікою легендарного радянського клону <strong>Profi</strong> у форматі плати розміром із 3.5\" дисковод.<br><br>Ревізія DS примітна відсутністю зайвих DIP-перемикачів, розширеною підтримкою 3-кнопкових джойстиків SEGA, наявністю вбудованого зумера та гнучким керуванням живленням. Плата підтримує класичні режими ZX Spectrum та високу роздільну здатність Profi (512x240), повноцінну роботу з реальними дисководами (FDD) і накопичувачами CompactFlash, а також розширений аудіопакет (TurboSound, Soundrive). Ідеальний вибір для поціновувачів класичного «заліза» з сучасними можливостями.",
-      "schema": {
-        "description": "Друкована плата FPGA-ретрокомп'ютера Karabas Pro Rev DS з підтримкою архітектури ZX Spectrum та Profi, а також контролерами дисководів та HDD."
-      }
-    }
+  "id": "ZX-019123",
+  "meta": {
+    "title": "Karabas Pro Rev DS | FPGA ZX Spectrum & Profi клон з контролерами FDD/HDD",
+    "description": "Karabas Pro Rev DS — FPGA-ретрокомп'ютер на базі Altera Cyclone IV з підтримкою режимів ZX Spectrum та Profi, апаратними контролерами FDD і CF/HDD, розширеною звуковою підсистемою та підтримкою SEGA-геймпадів.",
+    "keywords": "Karabas Pro, Rev DS, FPGA retro computer, ZX Spectrum клон, Profi клон, Altera Cyclone IV, FDD HDD контролер, TurboSound, Soundrive, SAA1099, Andy Karpov"
   },
+  "product": {
+    "name": "Karabas Pro Rev DS [FPGA Retrocomputer]",
+    "sku": "ZX-019",
+    "price": 1200,
+    "currency": "UAH",
+    "images": [
+      "../img/karabas-pro/1.jpg",
+      "../img/karabas-pro/2.jpg"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "val": "FPGA ретро-комп'ютер / клон"
+      },
+      {
+        "label": "ПЛІМ (FPGA)",
+        "val": "Altera Cyclone IV (EP4CE10)"
+      },
+      {
+        "label": "Архітектура",
+        "val": "ZX Spectrum 128 / Profi (зменшений формфактор)"
+      },
+      {
+        "label": "Пам'ять (RAM)",
+        "val": "2 МБ (з можливістю розширення до 6 МБ)"
+      },
+      {
+        "label": "Контролери",
+        "val": "Апаратний контролер ВГ93 (FDD) та CompactFlash (IDE HDD)"
+      },
+      {
+        "label": "Інтерфейси",
+        "val": "VGA, PS/2 (миша/клавіатура), SEGA joystick (з підтримкою 3-кнопок), ESP8266 Wi-Fi (через UART/ZX UNO)"
+      },
+      {
+        "label": "Звукова підсистема",
+        "val": "TurboSound (2x AY-3-8912), Soundrive (Covox), SAA1099, вбудований зумер"
+      },
+      {
+        "label": "Носії та конфігурація",
+        "val": "SD-карта (стандарт Z-controller), вбудована SPI-flash пам'ять (зберігання образові ПЗУ та бітстріму)"
+      }
+    ],
+    "description": "<strong>Karabas Pro Rev DS</strong> — це апаратний ретро-комп'ютер на базі ПЛІМ <strong>Altera Cyclone IV (EP4CE10)</strong>[cite: 3], який концептуально повторює архітектуру заліза Profi 5.06 та класичного ZX Spectrum[cite: 3] у компактному формфакторі плати[cite: 3].<br><br>Ревізія DS відзначається оптимізованим розведенням без зайвих DIP-перемикачів, розширеною підтримкою 3-кнопкових джойстиків SEGA[cite: 3], наявністю вбудованого зумера та гнучким керуванням живленням[cite: 3]. Плата підтримує як стандартний спектрумовський відеорежим, так і розширений екран Profi (512x240)[cite: 3] із палітрою 3:3:3 (512 кольорів)[cite: 3]. Апаратна частина включає контролер дисковода на реальному чіпі ВГ93, роз'єм CompactFlash для роботи з накопичувачами в режимі IDE, SD-контролер, а також потужний аудіокомплект у складі <strong>TurboSound (2x AY-3-8912)</strong>, <strong>Soundrive</strong>, та <strong>SAA1099</strong>[cite: 3]. Ідеальне рішення для поціновувачів класичного «заліза» з сучасними можливостями розширення.",
+    "schema": {
+      "description": "Друкована плата FPGA-ретрокомп'ютера Karabas Pro Rev DS з підтримкою архітектури ZX Spectrum та Profi, контролерами FDD/HDD та розширеним звуком."
+    }
+  }
+},
   {
     "id": "ZX-018123",
     "meta": {
