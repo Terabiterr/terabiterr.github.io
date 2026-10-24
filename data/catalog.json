@@ -1,5 +1,11 @@
 [
   {
+  "id": "DIY-MURMULATOR-RP2040",
+  "name": "Murmulator на RP2040-Zero HDMI/VGA (DIY конструктор)",
+  "price": 1170,
+  "img": "../img/murmulator/4.jpg"
+},
+  {
   "id": "PCB-MIST-FPGA",
   "name": "Комп'ютер mist (Чиста плата + панелі)",
   "price": 1150,
