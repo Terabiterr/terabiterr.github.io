@@ -1,5 +1,11 @@
 [
   {
+  "id": "PCB-MIST-FPGA",
+  "name": "Комп'ютер mist (Чиста плата + панелі)",
+  "price": 1150,
+  "img": "../img/mist/1.jpg"
+},
+  {
   "id": "PCB-PENTAGON-LEO-1024",
   "name": "Чиста плата PentagonLEO (v3.0)",
   "price": 880,
