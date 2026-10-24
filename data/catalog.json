@@ -1,5 +1,11 @@
 [
   {
+  "id": "PCB-LENINGRAD-3.2",
+  "name": "Ленінград 3.2 (Чиста плата)",
+  "price": 890,
+  "img": "../img/leningrad_3.2/1.jpg"
+},
+  {
   "id": "DIY-MURMULATOR-RP2040",
   "name": "Murmulator на RP2040-Zero HDMI/VGA (DIY конструктор)",
   "price": 1170,
@@ -176,8 +182,8 @@
   {
     "id": "ZX-015",
     "name": "ZX Evolution CS2 (Чиста плата)",
-    "price": 550,
-    "img": "/img/zx_evo/1.jpg"
+    "price": 770,
+    "img": "/img/zx_evo/3.jpg"
   },
   {
     "id": "ZX-017",
