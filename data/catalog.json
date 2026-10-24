@@ -96,12 +96,6 @@
     "img": "../img/zx_spectrum_murmulator/1.jpg"
   },
   {
-    "id": "CUSTOM-MECHANICAL-KEYBOARD-DIY",
-    "name": "Механічна клавіатура DIY (Premium Edition)",
-    "price": 2300,
-    "img": "/img/mech_keyboard/1.jpg"
-  },
-  {
     "id": "PS1-001",
     "name": "Sony PlayStation 1 Collector's Edition",
     "price": 4300,
@@ -200,7 +194,7 @@
   {
     "id": "TETRIS-018",
     "name": "DIY TETRIS STM32 на матриці",
-    "price": 499,
+    "price": 350,
     "img": "/img/diy_tetris/1.jpg"
   }
 ]
