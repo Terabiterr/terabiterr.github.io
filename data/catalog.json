@@ -1,26 +1,32 @@
 [
   {
+  "id": "PCB-PENT-LEO-V3",
+  "name": "Чиста плата PentagonLEO (v3.0)",
+  "price": 880,
+  "img": "../img/pentagon_leo/1.jpg"
+},
+  {
     "id": "ZX-019123",
     "name": "Karabas Pro Rev DS",
-    "price": 1200,
+    "price": 970,
     "img": "/img/karabas-pro/1.jpg"
   },
   {
     "id": "ZX-018123",
     "name": "ZX Spectrum Pentadiv III Plus",
-    "price": 1150,
+    "price": 930,
     "img": "/img/pentadiv/1.jpg"
   },
   {
     "id": "DENDY-018",
     "name": "Dendy (Famicom Clone) Великий пакет",
-    "price": 1999,
+    "price": 1350,
     "img": "/img/dendy_8bit/1.jpg"
   },
   {
   "id": "MURMULATOR-USB-HUB-X4",
   "name": "Конструктор Murmulator (з USB Hub x4)",
-  "price": 1500,
+  "price": 1350,
   "img": "/img/murmulator_hub/1.jpg"
 },
     {
