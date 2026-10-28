@@ -36,7 +36,7 @@
     "keywords": "Murmulator, мурмулятор, RP2040-Zero, DIY конструктор, ретро емулятор, ZX Spectrum RP2040, HDMI VGA RP2040, PSRAM, ретрокомп'ютинг купити"
   },
   "product": {
-    "name": "DIY Конструктор Murmulator на RP2040-Zero (HDMI/VGA)",
+    "name": "DIY Конструктор Murmulator на RP2040-Zero (HDMI/VGA) PSRAM-64",
     "sku": "KIT-MURM-RP2040-V01",
     "price": 1170,
     "currency": "UAH",
@@ -55,7 +55,7 @@
     ],
     "description": "<strong>Murmulator (v0.1)</strong> — це компактна та потужна DIY-платформа для апаратно-програмної емуляції ретро-комп'ютерів (ZX Spectrum, BK-0010/011M, Vector-06C, NES тощо) на базі популярного мікроконтролера <strong>RP2040-Zero</strong>.<br><br>Набір розроблений для самостійного збирання та пайка (DIY). Завдяки чипу розширення пам'яті <strong>PSRAM (8 МБ)</strong> та роз'єму <strong>MicroSD</strong> плата дозволяє завантажувати й запускати різноманітні образи ігор та програм безпосередньо з карти пам'яті.<br><br><strong>Основні можливості та периферія:</strong><br>• <strong>Відеовихід:</strong> Підтримка прямого виводу HDMI або VGA (вибір режиму джамперами на платі).<br>• <strong>Клавіатура та джойстик:</strong> Порт PS/2 (Mini-DIN6) для підключення стандартної клавіатури та штирьовий роз'єм для джойстика.<br>• <strong>Звук та Tape In:</strong> Вбудований фільтр/DAC для виводу якісного аудіо (3.5mm) та окремий магнітофонний вхід Tape-In з компаратором для завантаження програм з зовнішніх джерел.<br>• <strong>Живлення:</strong> Через роз'єм Type-C плати RP2040-Zero.<br><br>Чудовий проект для радіоаматорів та любителів 8-бітних і 16-бітних ретро-систем!",
     "schema": {
-      "description": "Конструктор DIY для самостійної збірки ретро-емулятора Murmulator на RP2040-Zero з HDMI/VGA та PSRAM."
+      "description": "PSRAM-64 Присутня на платі. Достатньо компактний та дуже потужний zx spectrum! Конструктор DIY для самостійної збірки ретро-емулятора Murmulator на RP2040-Zero з HDMI/VGA та PSRAM."
     }
   }
 },
@@ -208,9 +208,9 @@
       "keywords": "ZX Spectrum Murmulator, RP2040, FruitBat, купити Спектрум HDMI, Murmulator Україна, ZX Spectrum USB клавіатура, YAMAHA звук, ігри ZX Spectrum"
     },
     "product": {
-      "name": "ZX Spectrum Murmulator (RP2040, FruitBat)",
+      "name": "ZX Spectrum Murmulator (RP2040, FruitBat) Зібраний, Налаштований",
       "sku": "ZX-SPECTRUM-MURMULATOR-RP2040",
-      "price": 1900,
+      "price": 1370,
       "currency": "UAH",
       "images": [
         "../img/zx_spectrum_murmulator/1.jpg",
