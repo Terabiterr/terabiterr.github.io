@@ -7,7 +7,7 @@
 },
   {
   "id": "DIY-MURMULATOR-RP2040",
-  "name": "Murmulator на RP2040-Zero HDMI/VGA (DIY конструктор)",
+  "name": "Murmulator на RP2040-Zero HDMI/VGA (DIY конструктор) PSRAM-64",
   "price": 1170,
   "img": "../img/murmulator/4.jpg"
 },
@@ -92,7 +92,7 @@
   {
     "id": "ZX-SPECTRUM-MURMULATOR-RP2040",
     "name": "ZX Spectrum Murmulator (RP2040, FruitBat)",
-    "price": 1900,
+    "price": 1370,
     "img": "../img/zx_spectrum_murmulator/1.jpg"
   },
   {
