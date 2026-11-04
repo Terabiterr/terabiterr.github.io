@@ -1,9 +1,9 @@
 [
   {
-  "id": "PCB-LENINGRAD-3.2",
-  "name": "Ленінград 3.2 (Чиста плата)",
-  "price": 890,
-  "img": "../img/leningrad_3.2/1.jpg"
+  "id": "KIT-LENIN-32-REV",
+  "name": "Ленинград 3.2 стара школа для професіоналів (DIY конструктор)",
+  "price": 3200,
+  "img": "../img/leningrad_3.2/2.jpg"
 },
   {
   "id": "DIY-MURMULATOR-RP2040",
