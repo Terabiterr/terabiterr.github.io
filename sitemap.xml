@@ -1101,11 +1101,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=CUSTOM-MECHANICAL-KEYBOARD-DIY</loc>
-    <lastmod>2026-08-07</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-SPECTRUM-MURMULATOR-RP2040</loc>
     <lastmod>2026-08-12</lastmod>
     <priority>0.8</priority>
@@ -1128,6 +1123,26 @@
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=PS1-001</loc>
     <lastmod>2026-09-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=LENINGRAD-3-2-RETRO</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=DIY-MURMULATOR-RP2040</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=PCB-MIST-FPGA</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=PCB-PENTAGON-LEO-1024</loc>
+    <lastmod>2026-11-04</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
