@@ -5,6 +5,12 @@
   "price": 3200,
   "img": "../img/leningrad_3.2/2.jpg"
 },
+{
+  "id": "RP2350-PIZERO-ESPECTRUM",
+  "name": "RP2350 PiZero Waveshare + PSRAM64 + MicroSD (ESpectrum + TR-DOS)",
+  "price": 2350,
+  "img": "../img/rp2350/1.jpg"
+},
   {
   "id": "DIY-MURMULATOR-RP2040",
   "name": "Murmulator на RP2040-Zero HDMI/VGA (DIY конструктор) PSRAM-64",

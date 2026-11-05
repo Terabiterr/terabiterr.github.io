@@ -1,5 +1,37 @@
 [
   {
+  "id": "RP2350-PIZERO-ESPECTRUM",
+  "meta": {
+    "title": "RP2350 PiZero Waveshare + PSRAM64 + MicroSD | ESpectrum ZX Spectrum | Купити Україна",
+    "description": "Готовий комплект на базі RP2350 PiZero Waveshare з PSRAM64 та MicroSD карткою. Прошивка ESpectrum (Pentagon 128/512/1024, General Sound, Divmmc) та величезний збірник TR-DOS TRD файлів.",
+    "keywords": "RP2350 PiZero, Waveshare, ESpectrum, ZX Spectrum, TR-DOS, TRD, PSRAM64, ретрокомп'ютинг, купити Україна"
+  },
+  "product": {
+    "name": "RP2350 PiZero Waveshare + PSRAM64 + MicroSD (ESpectrum + Збірник TR-DOS)",
+    "sku": "KIT-RP2350-ESP-V01",
+    "price": 2350,
+    "currency": "UAH",
+    "images": [
+      "../img/rp2350/1.jpg",
+      "../img/rp2350/2.jpg",
+      "../img/rp2350/3.jpg",
+      "../img/rp2350/4.jpg",
+      "../img/rp2350/5.jpg"
+    ],
+    "specs": [
+      { "label": "Модуль керування", "val": "RP2350 PiZero (Waveshare)" },
+      { "label": "Зовнішня пам'ять", "val": "PSRAM64" },
+      { "label": "Пам'ять та контент", "val": "MicroSD з унікальним збірником TR-DOS TRD файлів (ігри, демки, журнали)" },
+      { "label": "Прошивка", "val": "ESpectrum (Pentagon 128, 512, 1024, General Sound, Divmmc та інша периферія)" },
+      { "label": "Комплектація", "val": "Плата з модулем, MicroSD карта, кабель mini-HDMI -> HDMI" }
+    ],
+    "description": "Потужний і універсальний комплект на базі сучасного мікроконтролера <strong>RP2350 PiZero (Waveshare)</strong> із зовнішньою пам'яттю <strong>PSRAM64</strong>. Працює на базі прошивки <strong>ESpectrum</strong>, що містить вшиті апаратні конфігурації ZX Spectrum (Pentagon 128, 512, 1024), звуковий супровід General Sound, підтримку Divmmc та іншу периферію.<br><br>До комплекту входить <strong>MicroSD картка з колосальним унікальним збірником TR-DOS TRD файлів</strong>: тисячі ігор, демо-сцени, старі журнали та безліч іншого контенту, якого вистачить на все життя! Також у комплекті одразу поставляється кабель <strong>mini-HDMI -> HDMI</strong> для зручного підключення до сучасних моніторів та телевізорів.",
+    "schema": {
+      "description": "Комплект RP2350 PiZero Waveshare + PSRAM64 з прошивкою ESpectrum та величезним збірником TR-DOS на MicroSD. В комплекті кабель mini-HDMI -> HDMI."
+    }
+  }
+},
+  {
   "id": "LENINGRAD-3-2-RETRO",
   "meta": {
     "title": "DIY Конструктор ZX Spectrum Ленинград 3.2 | Купити Україна",
