@@ -207,10 +207,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://zxkit.com.ua/products/template.html?id=ZX-PHX-081</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://zxkit.com.ua/products/template.html?id=ZX-SOUND-MULTISOUND</loc>
     <changefreq>weekly</changefreq>
   </url>
@@ -1148,6 +1144,11 @@
   <url>
     <loc>https://zxkit.com.ua/products/template.html?id=CF210SP-AM-FM-DIY-KIT</loc>
     <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zxkit.com.ua/products/template.html?id=ZXM-PHOENIX-08-1-DIY</loc>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

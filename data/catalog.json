@@ -1,5 +1,10 @@
 [
-
+{
+  "id": "ZXM-PHOENIX-08-1-DIY",
+  "name": "ZXM-Phoenix 08.1 Конструктор для самостійної збірки",
+  "price": 6900,
+  "img": "../img/pheonix/1.jpg"
+},
   {
   "id": "LENINGRAD-3-2-RETRO",
   "name": "Ленинград 3.2 стара школа для професіоналів (DIY конструктор)",
@@ -125,12 +130,6 @@
     "name": "Книги 'Як написати гру на ZX Spectrum 1 і 2 тома'",
     "price": 1900,
     "img": "/img/books_zx/1.png"
-  },
-  {
-    "id": "ZX-PHX-081",
-    "name": "ZXM-Phoenix Rev 08.1 (Чисті плати)",
-    "price": 1400,
-    "img": "img/pheonix/1.jpg"
   },
   {
     "id": "GENERAL-SOUND-2MB",
